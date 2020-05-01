@@ -23,4 +23,7 @@ setup(
             'bf20_mill=bf20_mill',
         ],
     },
+    install_requires=[
+       'qtpyvcp',
+    ],
 )

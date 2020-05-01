@@ -1,0 +1,3502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1323</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>1024</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_5" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="actionbutton_12">
+               <property name="text">
+                <string>ALERTS</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>2</number>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="actionbutton_11">
+               <property name="text">
+                <string>TOOL
+TABLE</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>3</number>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_10">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_15">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="actionbutton_20">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionButton" name="a">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnGcode">
+               <property name="text">
+                <string>G-CODE
+VIEWER</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>1</number>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnPlot">
+               <property name="text">
+                <string>PLOT</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>0</number>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="VCPStackedWidget" name="stwLeft">
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="plot">
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QWidget" name="widget_4" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <item>
+                     <widget class="QPushButton" name="btnPlotP">
+                      <property name="text">
+                       <string>P</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotX">
+                      <property name="text">
+                       <string>X</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotY">
+                      <property name="text">
+                       <string>Y</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotZ">
+                      <property name="text">
+                       <string>Z</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotZ2">
+                      <property name="text">
+                       <string>Z2</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotIn">
+                      <property name="text">
+                       <string>+</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>false</bool>
+                      </property>
+                      <property name="autoExclusive">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotOut">
+                      <property name="text">
+                       <string>-</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotCenter">
+                      <property name="text">
+                       <string>Center
+Plot</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="btnPlotRollPan">
+                      <property name="text">
+                       <string>Pan</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="HalButton" name="halbutton">
+                      <property name="text">
+                       <string>Start/
+Stop</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotClear">
+                      <property name="text">
+                       <string>Clear</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnPlotExt">
+                      <property name="text">
+                       <string>Mach
+Ext</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="VTKBackPlot" name="vtk"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="gcodeview">
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="GcodeEditor" name="gcodeeditor"/>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_11" native="true">
+                   <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <item>
+                     <spacer name="verticalSpacer_2">
+                      <property name="orientation">
+                       <enum>Qt::Vertical</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>20</width>
+                        <height>40</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_29">
+                      <property name="text">
+                       <string>Run
+From
+Line</string>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>program.run:#&lt;currrentLineLbl&gt;</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_30"/>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_31"/>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_32"/>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_28"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="alerts">
+                <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <item>
+                  <widget class="NotificationWidget" name="notificationwidget"/>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tooltable">
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <widget class="ToolTable" name="tooltable_2"/>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_14" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_9">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_44">
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_43">
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_42">
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_29">
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_28">
+                      <property name="text">
+                       <string>PushButton</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="horizontalWidget" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_7">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
+                    <item>
+                     <spacer name="horizontalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolClear">
+                      <property name="text">
+                       <string>CLEAR
+ALL</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolDel">
+                      <property name="text">
+                       <string>DEL
+LINE</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolAdd">
+                      <property name="text">
+                       <string>ADD</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolUp">
+                      <property name="text">
+                       <string>UP</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolDown">
+                      <property name="text">
+                       <string>DOWN</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolReload">
+                      <property name="text">
+                       <string>RELOAD</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnToolSave">
+                      <property name="text">
+                       <string>SAVE</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_6" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>72</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>72</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="ActionButton" name="btnExit">
+            <property name="text">
+             <string>EXIT</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_24">
+            <property name="styleSheet">
+             <string notr="true">border-color: #00EE00</string>
+            </property>
+            <property name="text">
+             <string>E-STOP</string>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:estop&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00EE00' if ch[0] == 0 else 'border-color: #FF0000'&quot;, &quot;name&quot;: &quot;Border Colour&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.estop.toggle</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_23">
+            <property name="text">
+             <string>POWER</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.power.toggle</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_22">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Home
+All</string>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;Border Colour&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Homed' if ch[0] else 'Home\\nAll'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.home.all</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MDIButton" name="mdibutton">
+            <property name="text">
+             <string>G0
+X0 Y0</string>
+            </property>
+            <property name="MDICommand" stdset="0">
+             <string>G0 X0 Y0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="MDIButton" name="mdibutton_2">
+            <property name="text">
+             <string>LOAD
+T1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_21">
+            <property name="text">
+             <string>RUN</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.run</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_19">
+            <property name="text">
+             <string>STEP</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.step</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_18">
+            <property name="text">
+             <string>PAUSE</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.pause</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_17">
+            <property name="text">
+             <string>RESUME</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.resume</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_16">
+            <property name="text">
+             <string>ABORT</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.abort</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_10" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="dro">
+             <layout class="QGridLayout" name="gridLayout_8">
+              <item row="4" column="1">
+               <widget class="DROWidget" name="z_abs">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::Z</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="StatusLabel" name="lblAxisX">
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>X</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="DROWidget" name="x_abs">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::Absolute</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::X</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="2">
+               <widget class="DROWidget" name="z_rel">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::Relative</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::Z</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="StatusLabel" name="lblAxisZ">
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Z</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="StatusLabel" name="statuslabel_8">
+                <property name="text">
+                 <string>G53</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;ActiveRel&quot;}]</string>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="DROWidget" name="y_abs">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::Y</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="3">
+               <widget class="StatusLabel" name="statuslabel_9">
+                <property name="text">
+                 <string>DTG</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="DROWidget" name="x_dtg">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::DistanceToGo</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="DROWidget" name="y_dtg">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::DistanceToGo</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::Y</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>14</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <widget class="DROWidget" name="z_dtg">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::DistanceToGo</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::Z</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="StatusLabel" name="statuslabel_7">
+                <property name="text">
+                 <string>ABS</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="StatusLabel" name="lblAxisY">
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Y</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="2">
+               <widget class="DROWidget" name="y_rel">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::Relative</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::Y</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>14</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="DROWidget" name="x_rel">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::Relative</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="DROWidget" name="a_abs">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExist&quot;}]</string>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::A</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="2">
+               <widget class="DROWidget" name="a_rel">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::Relative</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::A</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="3">
+               <widget class="DROWidget" name="a_dtg">
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                </property>
+                <property name="referenceType" stdset="0">
+                 <enum>DROWidget::DistanceToGo</enum>
+                </property>
+                <property name="axis" stdset="0">
+                 <enum>DROWidget::A</enum>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="StatusLabel" name="lblAxisA">
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>A</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;ActiveAxis&quot;}]</string>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>16</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2"/>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="horizontalSpacing">
+             <number>5</number>
+            </property>
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="StatusLabel" name="statuslabel_10">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+              <property name="rules" stdset="0">
+               <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:gcodes?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;EffecticeGcodes&quot;}]</string>
+              </property>
+              <property name="labelFont" stdset="0">
+               <string>12</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="StatusLabel" name="statuslabel_11">
+              <property name="text">
+               <string>TOOL: 0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+              <property name="rules" stdset="0">
+               <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'TOOL: {}'.format(ch[0])&quot;, &quot;name&quot;: &quot;LoadedTool&quot;}]</string>
+              </property>
+              <property name="labelFont" stdset="0">
+               <string>14</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_15" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="StatusLabel" name="statuslabel_3">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="rules" stdset="0">
+                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;True if ch[0] &gt; 0 else False&quot;, &quot;name&quot;: &quot;Enabled&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Insert\\nTool\\n{}'.format(ch[0]) if ch[0] &gt; 0 else ''&quot;, &quot;name&quot;: &quot;LabelUpdate&quot;}]</string>
+               </property>
+               <property name="labelFont" stdset="0">
+                <string>14</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="HalButton" name="halToolReady">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>PRESS WHEN
+CHANGED</string>
+               </property>
+               <property name="buttonFont" stdset="0">
+                <string>14</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="StatusLabel" name="statuslabel_12">
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:file&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'File: ' + ch[0].split('/')[-1] if ch[0] else 'No File Loaded'&quot;, &quot;name&quot;: &quot;LoadedFile&quot;}]</string>
+            </property>
+            <property name="labelFont" stdset="0">
+             <string>12</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_9" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>600</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>1000</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="VCPStackedWidget" name="stwRight">
+            <property name="currentIndex">
+             <number>3</number>
+            </property>
+            <widget class="QWidget" name="modesdro"/>
+            <widget class="QWidget" name="mdi">
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <item>
+               <widget class="VCPWidget" name="widget_12">
+                <layout class="QGridLayout" name="gridLayout_6">
+                 <item row="7" column="3">
+                  <widget class="QPushButton" name="pushButton_41">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="3">
+                  <widget class="QPushButton" name="pushButton_38">
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="QPushButton" name="pushButton_23">
+                   <property name="text">
+                    <string>T</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QPushButton" name="btnGcodeP5">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QPushButton" name="btnGcodeP1">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="1">
+                  <widget class="QPushButton" name="pushButton_33">
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="4" column="3">
+                  <widget class="QPushButton" name="pushButton_32">
+                   <property name="text">
+                    <string>9</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="2">
+                  <widget class="QPushButton" name="pushButton_37">
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="0" colspan="4">
+                  <widget class="MDIEntry" name="mdiEntry">
+                   <property name="placeholderText">
+                    <string>MDI:</string>
+                   </property>
+                   <property name="labelFont" stdset="0">
+                    <string>18</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="4">
+                  <widget class="QLabel" name="lblGcodeHelp">
+                   <property name="font">
+                    <font>
+                     <pointsize>8</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="8" column="0">
+                  <widget class="QPushButton" name="pushButton_26">
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QPushButton" name="btnGcodeP3">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QPushButton" name="btnGcodeP6">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="QPushButton" name="pushButton_31">
+                   <property name="text">
+                    <string>8</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="7" column="2">
+                  <widget class="QPushButton" name="pushButton_40">
+                   <property name="text">
+                    <string>.</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="1">
+                  <widget class="QPushButton" name="pushButton_36">
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="7" column="1">
+                  <widget class="QPushButton" name="pushButton_39">
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="7" column="0">
+                  <widget class="QPushButton" name="pushButton_25">
+                   <property name="text">
+                    <string>G</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="3">
+                  <widget class="QPushButton" name="btnMdiSend">
+                   <property name="text">
+                    <string>SEND</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QPushButton" name="pushButton_22">
+                   <property name="text">
+                    <string>F</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QPushButton" name="pushButton_30">
+                   <property name="text">
+                    <string>7</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="1">
+                  <widget class="QPushButton" name="btnParams">
+                   <property name="text">
+                    <string>PARAMS</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="3">
+                  <widget class="QPushButton" name="btnGcodeP8">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="3">
+                  <widget class="QPushButton" name="pushButton_35">
+                   <property name="text">
+                    <string>6</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="6" column="0">
+                  <widget class="QPushButton" name="pushButton_24">
+                   <property name="text">
+                    <string>M</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="8" column="2">
+                  <widget class="QPushButton" name="btnMdiBksp">
+                   <property name="text">
+                    <string>BKSP</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="2">
+                  <widget class="QPushButton" name="pushButton_34">
+                   <property name="text">
+                    <string>5</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="QPushButton" name="btnGcodeP4">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="QPushButton" name="btnGcodeP7">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QPushButton" name="btnGcodeP2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="manual">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QGroupBox" name="groupBox">
+                <property name="title">
+                 <string>Spindle</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="0" column="0">
+                  <widget class="ActionButton" name="actionbutton">
+                   <property name="text">
+                    <string>SPINDLE
+CWW</string>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.reverse</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpSpindle</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="ActionButton" name="actionbutton_4">
+                   <property name="text">
+                    <string>SPINDLE
+CW</string>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.forward</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpSpindle</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="actionbutton_14">
+                   <property name="text">
+                    <string>SPINDLE
+FASTER</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.faster</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="ActionButton" name="actionbutton_9">
+                   <property name="text">
+                    <string>SPINDLE
+SLOWER</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.slower</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="ActionButton" name="actionbutton_47">
+                   <property name="text">
+                    <string>STOP</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.off</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpSpindle</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="StatusLabel" name="statuslabel_2">
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Speed&quot;}]</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="title">
+                 <string>Jog Controls</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_2">
+                 <item row="0" column="0">
+                  <widget class="ActionButton" name="actionbutton_25">
+                   <property name="text">
+                    <string>CONT</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog-mode.continuous</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpContInc</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="4" column="4">
+                  <widget class="StatusLabel" name="statuslabel">
+                   <property name="text">
+                    <string>180.0
+N/A</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;settings:machine.jog.linear-speed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:linear_units?string&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{}\\n{}'.format(ch[0], ch[1])&quot;, &quot;name&quot;: &quot;JogSpeed&quot;}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="4">
+                  <widget class="ActionButton" name="actionbutton_41">
+                   <property name="text">
+                    <string>0.01</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:0.01</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="ActionButton" name="actionbutton_33">
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="ActionButton" name="actionbutton_38">
+                   <property name="text">
+                    <string>Z+</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:z,pos</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="ActionButton" name="actionbutton_40">
+                   <property name="text">
+                    <string>Z-</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:z,neg</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
+                  <widget class="ActionButton" name="actionbutton_39">
+                   <property name="text">
+                    <string>0.1</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:0.1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="ActionButton" name="actionbutton_34">
+                   <property name="text">
+                    <string>X+</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:x,pos</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="3">
+                  <widget class="VCPSettingsSlider" name="settings_slider">
+                   <property name="maximum">
+                    <number>2000</number>
+                   </property>
+                   <property name="singleStep">
+                    <number>100</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>500</number>
+                   </property>
+                   <property name="sliderPosition">
+                    <number>400</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>100</number>
+                   </property>
+                   <property name="settingName" stdset="0">
+                    <string>machine.jog.linear-speed</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="ActionButton" name="actionbutton_26">
+                   <property name="text">
+                    <string>INC</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog-mode.incremental</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpContInc</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="ActionButton" name="jog_A_plus">
+                   <property name="text">
+                    <string>A+</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:a,pos</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="ActionButton" name="jog_A_neg">
+                   <property name="text">
+                    <string>A-</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:a,neg</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="actionbutton_36">
+                   <property name="text">
+                    <string>Y+</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:y,pos</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="ActionButton" name="actionbutton_35">
+                   <property name="text">
+                    <string>X-</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:x,neg</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="ActionButton" name="actionbutton_37">
+                   <property name="text">
+                    <string>Y-</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:y,neg</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="homingcoord">
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="title">
+                 <string>Homing Options</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="0" column="1">
+                  <widget class="ActionButton" name="unhome_x">
+                   <property name="text">
+                    <string>X
+Not Homed</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nX' if ch[0] else 'X\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.unhome.axis.0</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="unhome_y">
+                   <property name="text">
+                    <string>Y
+Not Homed</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nY' if ch[0] else 'Y\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.unhome.axis.1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="ActionButton" name="home_y">
+                   <property name="text">
+                    <string>Home
+Y</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Y\\nHomed' if ch[0] else 'Home\\nY'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.home.axis.1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="ActionButton" name="home_x">
+                   <property name="text">
+                    <string>Home
+X</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'X\\nHomed' if ch[0] else 'Home\\nX'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.home.axis.0</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="ActionButton" name="home_z">
+                   <property name="text">
+                    <string>Home
+Z</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Z\\nHomed' if ch[0] else 'Home\\nZ'&quot;, &quot;name&quot;: &quot;IsHome&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomeCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.home.axis.2</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="ActionButton" name="unhome_z">
+                   <property name="text">
+                    <string>Z
+Not Homed</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nZ' if ch[0] else 'Z\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.unhome.axis.2</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="ActionButton" name="home_a">
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'A\\nHomed' if ch[0] else 'Home\\nA'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.home.axis.3</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="ActionButton" name="unhome_a">
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nA' if ch[0] else 'A\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.unhome.axis.3</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>14</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="title">
+                 <string>Coordinate Systems</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_4">
+                 <item row="0" column="1">
+                  <widget class="MDIButton" name="mdibutton_4">
+                   <property name="text">
+                    <string>G59.2</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G59.2</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="MDIButton" name="mdibutton_8">
+                   <property name="text">
+                    <string>G59</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G59</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="MDIButton" name="mdibutton_7">
+                   <property name="text">
+                    <string>G58</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G58</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="MDIButton" name="mdibutton_5">
+                   <property name="text">
+                    <string>G59.3</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G59.3</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="MDIButton" name="mdibutton_3">
+                   <property name="text">
+                    <string>G59.1</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G59.1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="MDIButton" name="mdibutton_6">
+                   <property name="text">
+                    <string>G57</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G57</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="MDIButton" name="mdibutton_9">
+                   <property name="text">
+                    <string>G54</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G54</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="MDIButton" name="mdibutton_10">
+                   <property name="text">
+                    <string>G55</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G55</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="MDIButton" name="mdibutton_11">
+                   <property name="text">
+                    <string>G56</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G56</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="g5xoffsets">
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="StatusLabel" name="statuslabel_4">
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Set {} Coordinate System Offsets'.format(ch[0])&quot;, &quot;name&quot;: &quot;G5x&quot;}]</string>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>14</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="g5xOffsetLbl">
+                <property name="text">
+                 <string>0</string>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <string>20</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <layout class="QGridLayout" name="gridLayout_7">
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="pushButton_12">
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="text">
+                     <string/>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="pushButton_15">
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="1" column="3">
+                   <widget class="QPushButton" name="pushButton_14">
+                    <property name="text">
+                     <string>6</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QPushButton" name="pushButton_16">
+                    <property name="text">
+                     <string>1</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="0" column="3">
+                   <widget class="QPushButton" name="pushButton_4">
+                    <property name="text">
+                     <string>9</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="4" column="3">
+                   <widget class="QPushButton" name="btnG5xClear">
+                    <property name="text">
+                     <string>CLEAR</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="2">
+                   <widget class="QPushButton" name="btnG5xBackSpace">
+                    <property name="text">
+                     <string>BKSP</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="2">
+                   <widget class="QPushButton" name="pushButton_7">
+                    <property name="text">
+                     <string>.</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QPushButton" name="pushButton_10">
+                    <property name="text">
+                     <string>0</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="1" column="2">
+                   <widget class="QPushButton" name="pushButton_13">
+                    <property name="text">
+                     <string>5</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="3" column="3">
+                   <widget class="QPushButton" name="pushButton_8">
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="2" column="2">
+                   <widget class="QPushButton" name="pushButton_17">
+                    <property name="text">
+                     <string>2</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="pushButton_11">
+                    <property name="text">
+                     <string>4</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QPushButton" name="pushButton_5">
+                    <property name="text">
+                     <string>8</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="pushButton_9">
+                    <property name="text">
+                     <string>7</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="2" column="3">
+                   <widget class="QPushButton" name="pushButton_18">
+                    <property name="text">
+                     <string>3</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>20</string>
+                    </property>
+                    <attribute name="buttonGroup">
+                     <string notr="true">btngrpG5x</string>
+                    </attribute>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="MDIButton" name="mdibutton_14">
+                    <property name="text">
+                     <string>SET
+X</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0X#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="2">
+                   <widget class="MDIButton" name="mdibutton_15">
+                    <property name="text">
+                     <string>SET
+Y</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0Y#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="3">
+                   <widget class="MDIButton" name="mdibutton_16">
+                    <property name="text">
+                     <string>SET
+Z</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0Z#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="MDIButton" name="mdibutton_12">
+                    <property name="text">
+                     <string>CLEAR
+G5x</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L2P1X0Y0Z0R0</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="MDIButton" name="mdibutton_13">
+                    <property name="text">
+                     <string>SET
+ X Y Z</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0X#&lt;g5xOffsetLbl&gt;Y#&lt;g5xOffsetLbl&gt;Z#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="MDIButton" name="mdibtnSetA">
+                    <property name="text">
+                     <string>SET
+A</string>
+                    </property>
+                    <property name="rules" stdset="0">
+                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0A#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page"/>
+            <widget class="QWidget" name="page_3"/>
+            <widget class="QWidget" name="loadfile">
+             <layout class="QVBoxLayout" name="verticalLayout_15">
+              <item>
+               <widget class="FileSystemTable" name="filesystemtable">
+                <property name="hiddenColumns" stdset="0">
+                 <string>1,2</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_13" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="btnParenDir">
+                   <property name="text">
+                    <string>PARENT
+DIR</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnOpenDir">
+                   <property name="text">
+                    <string>OPEN</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnUpFile">
+                   <property name="text">
+                    <string>UP</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnDownFile">
+                   <property name="text">
+                    <string>DOWN</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_5"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>75</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>75</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>5</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="ActionButton" name="actionbutton_2">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>PROBE</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>8</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="actionbutton_3">
+         <property name="text">
+          <string>FILE
+LOAD</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>7</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="actionbutton_5">
+         <property name="text">
+          <string>TOOL
+OFFSETS</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>6</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="actionbutton_7">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>E92
+OFFSETS</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>5</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="actionbutton_8">
+         <property name="text">
+          <string>G5x
+OFFSETS</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>4</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="actionbutton_6">
+         <property name="text">
+          <string>HOMING
+COORD</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>3</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="btnManual">
+         <property name="text">
+          <string>MANUAL</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>2</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="btnMdi">
+         <property name="text">
+          <string>MDI</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>1</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="ActionButton" name="btnModesDro">
+         <property name="text">
+          <string>DRO
+MODES</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="page" stdset="0">
+          <number>0</number>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">btngrpRightNav</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionOPEN">
+   <property name="text">
+    <string>oPEN</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionFullscreen">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Fullscreen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="5" margin="5"/>
+ <customwidgets>
+  <customwidget>
+   <class>HalButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
+  </customwidget>
+  <customwidget>
+   <class>FileSystemTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIEntry</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.containers.widget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DROWidget</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.dro_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>qtpyvcp.widgets.containers.stack</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>ToolTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.tool_table</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
+  </customwidget>
+  <customwidget>
+   <class>GcodeEditor</class>
+   <extends>QFrame</extends>
+   <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
+  </customwidget>
+  <customwidget>
+   <class>VTKBackPlot</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.action_button</header>
+  </customwidget>
+  <customwidget>
+   <class>NotificationWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.notification_widget</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnPlotP</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewP()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotX</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewX()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotY</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>276</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotZ</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotZ2</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewZ2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>399</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotIn</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotOut</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>492</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotCenter</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>setViewPath()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>548</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotClear</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>clearLivePlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>718</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotExt</sender>
+   <signal>clicked()</signal>
+   <receiver>vtk</receiver>
+   <slot>toggleMachineBounds()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>773</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPlotRollPan</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>vtk</receiver>
+   <slot>enable_panning(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>604</x>
+     <y>72</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>461</x>
+     <y>501</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnG5xClear</sender>
+   <signal>clicked()</signal>
+   <receiver>g5xOffsetLbl</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1172</x>
+     <y>880</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>591</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnParenDir</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>viewParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>934</x>
+     <y>941</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>694</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnUpFile</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1057</x>
+     <y>941</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>694</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnDownFile</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>selectNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1119</x>
+     <y>941</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>694</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnOpenDir</sender>
+   <signal>clicked()</signal>
+   <receiver>filesystemtable</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>996</x>
+     <y>941</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>694</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMdiSend</sender>
+   <signal>clicked()</signal>
+   <receiver>mdiEntry</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1170</x>
+     <y>937</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>530</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolClear</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>clearToolTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>462</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolDel</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>deleteSelectedTool()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>521</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolAdd</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>addTool()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolUp</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>selectPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>639</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolDown</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>selectNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolReload</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>loadToolTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>757</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnToolSave</sender>
+   <signal>clicked()</signal>
+   <receiver>tooltable_2</receiver>
+   <slot>saveToolTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>816</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>5</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>5</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+ <buttongroups>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpSpindle"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpContInc"/>
+ </buttongroups>
+</ui>

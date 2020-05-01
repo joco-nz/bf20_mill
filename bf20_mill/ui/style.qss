@@ -1,0 +1,249 @@
+QsciScintilla {
+    qproperty-backgroundcolor: #D9DADB;
+    qproperty-marginbackgroundcolor: #D9DADB;
+}
+
+ActionButton[actionName="machine.estop.toggle"]:checked{
+    border-color: #00EE00;
+}
+
+ActionButton[actionName="machine.power.toggle"]:checked{
+    border-color: #00FF00;
+}
+
+ActionButton[actionName="program.run"]:enabled{
+    border-color: #00EE00;
+}
+
+ActionButton[actionName="program.step"]:enabled{
+    border-color: #00EE00;
+}
+
+ActionButton[actionName="program.pause"]:enabled{
+    border-color: #00EE00;
+}
+
+ActionButton[actionName="program.resume"]:enabled{
+    border-color: #00EE00;
+}
+
+ActionButton[actionName="program.abort"]:enabled{
+    border-color: #00EE00;
+}
+
+HalButton[objectName="tool_changed"]:enabled {
+    border-color: #FF0000;
+}
+
+StatusLabel {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+StatusLabel[labelFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
+/* DROWidgets */
+DROWidget[labelFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+DROWidget[labelFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+DROWidget[labelFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+DROWidget[labelFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+DROWidget[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+DROWidget[labelFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
+/* QLineEdit */
+QLineEdit[labelFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
+
+
+
+VCPSettingsSlider, ActionSlider {
+    min-width: 50px;
+    height: 50px;
+}
+
+VCPSettingsSlider::groove:horizontal, ActionSlider::groove:horizontal {
+    border: 1px solid #999999;
+    /* the groove expands to the size of the slider by default.
+    by giving it a height, it has a fixed size */
+    height: 8px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    margin: 2px 0;
+}
+
+VCPSettingsSlider::handle:horizontal, ActionSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);
+    border: 1px solid #5c5c5c;
+    width: 18px;
+   /* handle is placed by default on the contents rect of the groove.
+    Expand outside the groove */
+    margin: -18px 0;
+    border-radius: 3px;
+}
+
+VCPSettingsSlider::groove:vertical, ActionSlider::groove:vertical {
+    border: 1px solid #999999;
+    /* the groove expands to the size of the slider by default.
+    by giving it a height, it has a fixed size */
+    width: 8px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    margin: 2px 0;
+}
+
+VCPSettingsSlider::handle:vertical, ActionSlider::handle:vertical {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);
+    border: 1px solid #5c5c5c;
+    height: 18px;
+   /* handle is placed by default on the contents rect of the groove.
+    Expand outside the groove */
+    margin: 0 -18px;
+    border-radius: 3px;
+}
+
+/*
+QWidget[objectName="g5xKeypad"] > QPushButton {
+    font: 20pt "Bebas Kai";
+}
+
+QWidget[objectName="g92Keypad"] > QPushButton {
+    font: 20pt "Bebas Kai";
+}
+
+QWidget[objectName="jogGroupBox"] > QPushButton {
+    font: 20pt "Bebas Kai";
+}
+
+QWidget[objectName="spindleGroupBox"] > QPushButton {
+    font: 20pt "Bebas Kai";
+}
+
+QWidget[objectName="holeOpKeypadCont"] > QPushButton {
+    font: 20pt "Bebas Kai";
+}
+
+QWidget[objectName="toolSetKeypad"] > QPushButton {
+    font: 20pt "Bebas Kai";
+}
+*/
+
+/* if a QPushButton has a dynamic property buttonFont
+set the font*/
+
+QPushButton[buttonFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
+QPushButton[buttonFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+QPushButton[buttonFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+QPushButton[buttonFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+QPushButton[buttonFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+QPushButton[buttonFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+QPushButton[buttonFont="30"] {
+    font: 30pt "Bebas Kai";
+}
+
+.QWidget {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+}
+
+QPushButton {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    min-width: 50px;
+    min-height: 50px;
+    border-color: #000000;
+}
+
+QPushButton:checked {
+    border-color: #00EE00;
+}
+
+QPushButton:pressed {
+    background-color: #dcdcdc;
+}
+
+QPushButton:disabled {
+    border-color: #949494;
+}
+
+
+

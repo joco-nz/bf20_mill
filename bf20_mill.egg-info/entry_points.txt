@@ -1,6 +1,0 @@
-[gui_scripts]
-bf20_mill = bf20_mill:main
-
-[qtpyvcp.vcp]
-bf20_mill = bf20_mill
-

@@ -1062,7 +1062,7 @@ T1</string>
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                 </property>
                 <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExist&quot;}]</string>
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExist&quot;}]</string>
                 </property>
                 <property name="axis" stdset="0">
                  <enum>DROWidget::A</enum>
@@ -1078,7 +1078,7 @@ T1</string>
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                 </property>
                 <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                 </property>
                 <property name="referenceType" stdset="0">
                  <enum>DROWidget::Relative</enum>
@@ -1097,7 +1097,7 @@ T1</string>
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                 </property>
                 <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                 </property>
                 <property name="referenceType" stdset="0">
                  <enum>DROWidget::DistanceToGo</enum>
@@ -1999,7 +1999,7 @@ N/A</string>
                     <string>A+</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:a,pos</string>
@@ -2015,7 +2015,7 @@ N/A</string>
                     <string>A-</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:a,neg</string>
@@ -2071,6 +2071,26 @@ N/A</string>
             </widget>
             <widget class="QWidget" name="homingcoord">
              <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <widget class="StatusLabel" name="statuslabel_5">
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joints?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;test&quot;}]</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
               <item>
                <widget class="QGroupBox" name="groupBox_3">
                 <property name="title">
@@ -2182,7 +2202,7 @@ Not Homed</string>
                  <item row="3" column="0">
                   <widget class="ActionButton" name="home_a">
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'A\\nHomed' if ch[0] else 'Home\\nA'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'A\\nHomed' if ch[0] else 'Home\\nA'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.3</string>
@@ -2195,7 +2215,7 @@ Not Homed</string>
                  <item row="3" column="1">
                   <widget class="ActionButton" name="unhome_a">
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nA' if ch[0] else 'A\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nA' if ch[0] else 'A\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.3</string>
@@ -3491,12 +3511,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

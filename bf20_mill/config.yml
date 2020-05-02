@@ -8,7 +8,7 @@ qtdesigner:
 vcp:
   name: bf20_mill
   version: v0.0.1
-  author: My Name
+  author: James Walker
   description: >
     Put a short description of your VCP here. This will be
     shown in the VCP Chooser when launching QtPyVCP with the
@@ -48,3 +48,4 @@ application:
   kwargs:
     # Specify the application wide stylesheet.
     stylesheet: {{ file.dir }}/ui/style.qss
+    { file.dir }}/resources/fonts/BebasKai.ttf

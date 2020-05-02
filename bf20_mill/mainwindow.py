@@ -2,8 +2,6 @@ from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
 ### Supports the @Slot decorator to solve property type issues.
 from qtpy.QtCore import Slot
 from qtpy.QtWidgets import QAbstractButton
-### Font DB for QT to support referencing custom fonts
-from qtpy.QtGui import QFontDatabase
 ### mdi GCODE text created by JT from linuxcnc
 import bf20_mill.mdi_text as mdiText
 
@@ -12,8 +10,6 @@ import bf20_mill.mdi_text as mdiText
 from qtpyvcp.utilities import logger
 LOG = logger.getLogger('qtpyvcp.' + __name__)
 
-# Add custom fonts
-QFontDatabase.addApplicationFont(os.path.join(VCP_DIR, 'fonts/BebasKai.ttf'))
 
 class MyMainWindow(VCPMainWindow):
     """Main window class for the VCP."""

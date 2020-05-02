@@ -975,7 +975,7 @@ T1</string>
                  <enum>DROWidget::Y</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>14</string>
+                 <string>16</string>
                 </property>
                </widget>
               </item>
@@ -1039,7 +1039,7 @@ T1</string>
                  <enum>DROWidget::Y</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>14</string>
+                 <string>16</string>
                 </property>
                </widget>
               </item>
@@ -1125,7 +1125,7 @@ T1</string>
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;ActiveAxis&quot;}]</string>
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;ActiveAxis&quot;}]</string>
                 </property>
                 <property name="labelFont" stdset="0">
                  <string>16</string>
@@ -2071,13 +2071,6 @@ N/A</string>
             </widget>
             <widget class="QWidget" name="homingcoord">
              <layout class="QVBoxLayout" name="verticalLayout_9">
-              <item>
-               <widget class="StatusLabel" name="statuslabel_5">
-                <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joints?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;test&quot;}]</string>
-                </property>
-               </widget>
-              </item>
               <item>
                <spacer name="verticalSpacer_5">
                 <property name="orientation">
@@ -3511,12 +3504,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

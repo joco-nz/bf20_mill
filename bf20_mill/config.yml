@@ -48,4 +48,4 @@ application:
   kwargs:
     # Specify the application wide stylesheet.
     stylesheet: {{ file.dir }}/ui/style.qss
-    custom_fonts: {{ file.dir }}/resources/fonts/BebasKai.ttf
+    custom_fonts: [ {{ file.dir }}/resources/fonts/BebasKai.ttf ]

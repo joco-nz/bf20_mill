@@ -641,7 +641,7 @@ LINE</string>
           <item>
            <widget class="ActionButton" name="actionbutton_24">
             <property name="styleSheet">
-             <string notr="true">border-color: #00EE00</string>
+             <string notr="true">border-color: #FF0000</string>
             </property>
             <property name="text">
              <string>E-STOP</string>
@@ -911,7 +911,7 @@ T1</string>
               <item row="1" column="2">
                <widget class="StatusLabel" name="statuslabel_8">
                 <property name="text">
-                 <string>G53</string>
+                 <string>G54</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1289,14 +1289,44 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>3</number>
+             <number>1</number>
             </property>
             <widget class="QWidget" name="modesdro"/>
             <widget class="QWidget" name="mdi">
              <layout class="QVBoxLayout" name="verticalLayout_14">
+              <property name="spacing">
+               <number>5</number>
+              </property>
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <widget class="VCPWidget" name="widget_12">
                 <layout class="QGridLayout" name="gridLayout_6">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
                  <item row="7" column="3">
                   <widget class="QPushButton" name="pushButton_41">
                    <property name="text">
@@ -1675,12 +1705,42 @@ CHANGED</string>
             </widget>
             <widget class="QWidget" name="manual">
              <layout class="QVBoxLayout" name="verticalLayout_8">
+              <property name="spacing">
+               <number>5</number>
+              </property>
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <widget class="QGroupBox" name="groupBox">
                 <property name="title">
                  <string>Spindle</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
                  <item row="0" column="0">
                   <widget class="ActionButton" name="actionbutton">
                    <property name="text">
@@ -1799,6 +1859,21 @@ SLOWER</string>
                  <string>Jog Controls</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_2">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
                  <item row="0" column="0">
                   <widget class="ActionButton" name="actionbutton_25">
                    <property name="text">
@@ -1828,7 +1903,7 @@ SLOWER</string>
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
                     <string>180.0
-N/A</string>
+in</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -2071,6 +2146,21 @@ N/A</string>
             </widget>
             <widget class="QWidget" name="homingcoord">
              <layout class="QVBoxLayout" name="verticalLayout_9">
+              <property name="spacing">
+               <number>5</number>
+              </property>
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <spacer name="verticalSpacer_5">
                 <property name="orientation">
@@ -2090,6 +2180,21 @@ N/A</string>
                  <string>Homing Options</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_3">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
                  <item row="0" column="1">
                   <widget class="ActionButton" name="unhome_x">
                    <property name="text">
@@ -2227,6 +2332,21 @@ Not Homed</string>
                  <string>Coordinate Systems</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_4">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
                  <item row="0" column="1">
                   <widget class="MDIButton" name="mdibutton_4">
                    <property name="text">
@@ -2351,6 +2471,21 @@ Not Homed</string>
             </widget>
             <widget class="QWidget" name="g5xoffsets">
              <layout class="QVBoxLayout" name="verticalLayout_10">
+              <property name="spacing">
+               <number>5</number>
+              </property>
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <spacer name="verticalSpacer_3">
                 <property name="orientation">
@@ -2688,6 +2823,21 @@ A</string>
             <widget class="QWidget" name="page_3"/>
             <widget class="QWidget" name="loadfile">
              <layout class="QVBoxLayout" name="verticalLayout_15">
+              <property name="spacing">
+               <number>5</number>
+              </property>
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
               <item>
                <widget class="FileSystemTable" name="filesystemtable">
                 <property name="hiddenColumns" stdset="0">
@@ -3504,12 +3654,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpSpindle"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

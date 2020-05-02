@@ -218,6 +218,12 @@ nostics</string>
                <property name="text">
                 <string>PROBE</string>
                </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
                <property name="page" stdset="0">
                 <number>4</number>
                </property>
@@ -768,6 +774,9 @@ Line</string>
                        <string>CLEAR
 ALL</string>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -776,12 +785,18 @@ ALL</string>
                        <string>DEL
 LINE</string>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnToolAdd">
                       <property name="text">
                        <string>ADD</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -790,12 +805,18 @@ LINE</string>
                       <property name="text">
                        <string>UP</string>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnToolDown">
                       <property name="text">
                        <string>DOWN</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -804,12 +825,18 @@ LINE</string>
                       <property name="text">
                        <string>RELOAD</string>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnToolSave">
                       <property name="text">
                        <string>SAVE</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -3973,12 +4000,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

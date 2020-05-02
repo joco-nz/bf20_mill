@@ -949,11 +949,11 @@ LINE</string>
              <string notr="true"/>
             </property>
             <property name="text">
-             <string>Home
-All</string>
+             <string>HOME
+ALL</string>
             </property>
             <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;Border Colour&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Homed' if ch[0] else 'Home\\nAll'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0].count(1) &gt;= 3 else ''&quot;, &quot;name&quot;: &quot;Border Colour&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0].count(1) &gt;= 3 else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.home.all</string>
@@ -4000,12 +4000,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

@@ -36,41 +36,56 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QWidget" name="widget" native="true">
       <layout class="QVBoxLayout" name="verticalLayout">
        <property name="spacing">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="leftMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="topMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="rightMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <item>
         <widget class="QWidget" name="widget_5" native="true">
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <property name="spacing">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="leftMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="topMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <property name="bottomMargin">
-           <number>5</number>
+           <number>0</number>
           </property>
           <item>
            <widget class="QWidget" name="widget_7" native="true">
@@ -116,25 +131,8 @@
                <property name="page" stdset="0">
                 <number>2</number>
                </property>
-               <attribute name="buttonGroup">
-                <string notr="true">btngrpLeftNav</string>
-               </attribute>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="actionbutton_11">
-               <property name="text">
-                <string>TOOL
-TABLE</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <property name="page" stdset="0">
-                <number>3</number>
+               <property name="buttonFont" stdset="0">
+                <string>16</string>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -144,13 +142,23 @@ TABLE</string>
              <item>
               <widget class="ActionButton" name="actionbutton_10">
                <property name="enabled">
-                <bool>false</bool>
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>Diag-
+nostics</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
                </property>
                <property name="autoExclusive">
                 <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>5</number>
+               </property>
+               <property name="buttonFont" stdset="0">
+                <string>16</string>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -206,6 +214,45 @@ TABLE</string>
               </widget>
              </item>
              <item>
+              <widget class="ActionButton" name="actionbutton_13">
+               <property name="text">
+                <string>PROBE</string>
+               </property>
+               <property name="page" stdset="0">
+                <number>4</number>
+               </property>
+               <property name="buttonFont" stdset="0">
+                <string>16</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="actionbutton_11">
+               <property name="text">
+                <string>TOOL
+TABLE</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>3</number>
+               </property>
+               <property name="buttonFont" stdset="0">
+                <string>16</string>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
               <widget class="QPushButton" name="btnGcode">
                <property name="text">
                 <string>G-CODE
@@ -219,6 +266,9 @@ VIEWER</string>
                </property>
                <property name="page" stdset="0">
                 <number>1</number>
+               </property>
+               <property name="buttonFont" stdset="0">
+                <string>16</string>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -242,6 +292,9 @@ VIEWER</string>
                <property name="page" stdset="0">
                 <number>0</number>
                </property>
+               <property name="buttonFont" stdset="0">
+                <string>16</string>
+               </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
                </attribute>
@@ -253,6 +306,21 @@ VIEWER</string>
           <item>
            <widget class="QWidget" name="widget_8" native="true">
             <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
@@ -260,9 +328,39 @@ VIEWER</string>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
                  <item>
                   <widget class="QWidget" name="widget_4" native="true">
                    <layout class="QHBoxLayout" name="horizontalLayout_2">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
                     <item>
                      <widget class="QPushButton" name="btnPlotP">
                       <property name="text">
@@ -273,6 +371,9 @@ VIEWER</string>
                       </property>
                       <property name="autoExclusive">
                        <bool>true</bool>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -287,6 +388,9 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -300,6 +404,9 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -312,6 +419,9 @@ VIEWER</string>
                       </property>
                       <property name="autoExclusive">
                        <bool>true</bool>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -339,12 +449,18 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>false</bool>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnPlotOut">
                       <property name="text">
                        <string>-</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -353,6 +469,9 @@ VIEWER</string>
                       <property name="text">
                        <string>Center
 Plot</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -367,6 +486,9 @@ Plot</string>
                       <property name="checked">
                        <bool>true</bool>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
@@ -375,12 +497,18 @@ Plot</string>
                        <string>Start/
 Stop</string>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>
                      <widget class="QPushButton" name="btnPlotClear">
                       <property name="text">
                        <string>Clear</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -392,6 +520,9 @@ Ext</string>
                       </property>
                       <property name="checkable">
                        <bool>true</bool>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
                       </property>
                      </widget>
                     </item>
@@ -405,12 +536,49 @@ Ext</string>
                </widget>
                <widget class="QWidget" name="gcodeview">
                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
                  <item>
-                  <widget class="GcodeEditor" name="gcodeeditor"/>
+                  <widget class="GcodeEditor" name="gcodeeditor">
+                   <property name="font">
+                    <font>
+                     <family>Ubuntu Mono</family>
+                     <pointsize>14</pointsize>
+                    </font>
+                   </property>
+                  </widget>
                  </item>
                  <item>
                   <widget class="QWidget" name="widget_11" native="true">
                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
                     <item>
                      <spacer name="verticalSpacer_2">
                       <property name="orientation">
@@ -426,6 +594,12 @@ Ext</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="actionbutton_29">
+                      <property name="minimumSize">
+                       <size>
+                        <width>54</width>
+                        <height>54</height>
+                       </size>
+                      </property>
                       <property name="text">
                        <string>Run
 From
@@ -433,6 +607,9 @@ Line</string>
                       </property>
                       <property name="actionName" stdset="0">
                        <string>program.run:#&lt;currrentLineLbl&gt;</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>12</string>
                       </property>
                      </widget>
                     </item>
@@ -455,6 +632,21 @@ Line</string>
                </widget>
                <widget class="QWidget" name="alerts">
                 <layout class="QVBoxLayout" name="verticalLayout_12">
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
                  <item>
                   <widget class="NotificationWidget" name="notificationwidget"/>
                  </item>
@@ -462,6 +654,21 @@ Line</string>
                </widget>
                <widget class="QWidget" name="tooltable">
                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
                  <item>
                   <widget class="ToolTable" name="tooltable_2"/>
                  </item>
@@ -608,6 +815,8 @@ LINE</string>
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="probe"/>
+               <widget class="QWidget" name="diagnostics"/>
               </widget>
              </item>
             </layout>
@@ -631,17 +840,35 @@ LINE</string>
           </size>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
           <item>
            <widget class="ActionButton" name="btnExit">
             <property name="text">
              <string>EXIT</string>
+            </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="ActionButton" name="actionbutton_24">
             <property name="styleSheet">
-             <string notr="true">border-color: #FF0000</string>
+             <string notr="true">border-color: #00EE00</string>
             </property>
             <property name="text">
              <string>E-STOP</string>
@@ -651,6 +878,9 @@ LINE</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.estop.toggle</string>
+            </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
             </property>
            </widget>
           </item>
@@ -664,6 +894,9 @@ LINE</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.power.toggle</string>
+            </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
             </property>
            </widget>
           </item>
@@ -695,6 +928,9 @@ All</string>
             <property name="actionName" stdset="0">
              <string>machine.home.all</string>
             </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -706,6 +942,9 @@ X0 Y0</string>
             <property name="MDICommand" stdset="0">
              <string>G0 X0 Y0</string>
             </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -713,6 +952,9 @@ X0 Y0</string>
             <property name="text">
              <string>LOAD
 T1</string>
+            </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
             </property>
            </widget>
           </item>
@@ -737,6 +979,9 @@ T1</string>
             <property name="actionName" stdset="0">
              <string>program.run</string>
             </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -746,6 +991,9 @@ T1</string>
             </property>
             <property name="actionName" stdset="0">
              <string>program.step</string>
+            </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
             </property>
            </widget>
           </item>
@@ -757,6 +1005,9 @@ T1</string>
             <property name="actionName" stdset="0">
              <string>program.pause</string>
             </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -767,6 +1018,9 @@ T1</string>
             <property name="actionName" stdset="0">
              <string>program.resume</string>
             </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -776,6 +1030,9 @@ T1</string>
             </property>
             <property name="actionName" stdset="0">
              <string>program.abort</string>
+            </property>
+            <property name="buttonFont" stdset="0">
+             <string>16</string>
             </property>
            </widget>
           </item>
@@ -801,23 +1058,38 @@ T1</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_5">
        <property name="spacing">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="leftMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="topMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="rightMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <property name="bottomMargin">
-        <number>5</number>
+        <number>0</number>
        </property>
        <item>
         <widget class="QWidget" name="widget_10" native="true">
          <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="leftMargin">
+           <number>5</number>
+          </property>
+          <property name="topMargin">
+           <number>5</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <property name="bottomMargin">
+           <number>5</number>
+          </property>
           <item>
            <widget class="QStackedWidget" name="stackedWidget">
             <property name="currentIndex">
@@ -825,6 +1097,21 @@ T1</string>
             </property>
             <widget class="QWidget" name="dro">
              <layout class="QGridLayout" name="gridLayout_8">
+              <property name="leftMargin">
+               <number>5</number>
+              </property>
+              <property name="topMargin">
+               <number>5</number>
+              </property>
+              <property name="rightMargin">
+               <number>5</number>
+              </property>
+              <property name="bottomMargin">
+               <number>5</number>
+              </property>
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <item row="4" column="1">
                <widget class="DROWidget" name="z_abs">
                 <property name="alignment">
@@ -834,7 +1121,7 @@ T1</string>
                  <enum>DROWidget::Z</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -869,7 +1156,7 @@ T1</string>
                  <enum>DROWidget::X</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -885,7 +1172,7 @@ T1</string>
                  <enum>DROWidget::Z</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -911,7 +1198,7 @@ T1</string>
               <item row="1" column="2">
                <widget class="StatusLabel" name="statuslabel_8">
                 <property name="text">
-                 <string>G54</string>
+                 <string>G53</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -933,7 +1220,7 @@ T1</string>
                  <enum>DROWidget::Y</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -959,7 +1246,7 @@ T1</string>
                  <enum>DROWidget::DistanceToGo</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -975,7 +1262,7 @@ T1</string>
                  <enum>DROWidget::Y</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -991,7 +1278,7 @@ T1</string>
                  <enum>DROWidget::Z</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -1039,7 +1326,7 @@ T1</string>
                  <enum>DROWidget::Y</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -1052,7 +1339,7 @@ T1</string>
                  <enum>DROWidget::Relative</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -1134,7 +1421,6 @@ T1</string>
               </item>
              </layout>
             </widget>
-            <widget class="QWidget" name="page_2"/>
            </widget>
           </item>
           <item>
@@ -1175,7 +1461,7 @@ T1</string>
                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:gcodes?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;EffecticeGcodes&quot;}]</string>
               </property>
               <property name="labelFont" stdset="0">
-               <string>12</string>
+               <string>14</string>
               </property>
              </widget>
             </item>
@@ -1200,6 +1486,21 @@ T1</string>
           <item>
            <widget class="QWidget" name="widget_15" native="true">
             <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <property name="spacing">
+              <number>5</number>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>5</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
              <item>
               <widget class="StatusLabel" name="statuslabel_3">
                <property name="alignment">
@@ -1289,7 +1590,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="modesdro"/>
             <widget class="QWidget" name="mdi">
@@ -1433,6 +1734,9 @@ CHANGED</string>
                    <property name="placeholderText">
                     <string>MDI:</string>
                    </property>
+                   <property name="clearButtonEnabled">
+                    <bool>false</bool>
+                   </property>
                    <property name="labelFont" stdset="0">
                     <string>18</string>
                    </property>
@@ -1454,9 +1758,15 @@ CHANGED</string>
                   </widget>
                  </item>
                  <item row="8" column="0">
-                  <widget class="QPushButton" name="pushButton_26">
+                  <widget class="QPushButton" name="btnMdiSpace">
                    <property name="text">
-                    <string/>
+                    <string>SPACE</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
                    </property>
                   </widget>
                  </item>
@@ -1529,19 +1839,6 @@ CHANGED</string>
                   <widget class="QPushButton" name="pushButton_39">
                    <property name="text">
                     <string>0</string>
-                   </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="7" column="0">
-                  <widget class="QPushButton" name="pushButton_25">
-                   <property name="text">
-                    <string>G</string>
                    </property>
                    <property name="buttonFont" stdset="0">
                     <string>20</string>
@@ -1698,6 +1995,19 @@ CHANGED</string>
                    </attribute>
                   </widget>
                  </item>
+                 <item row="7" column="0">
+                  <widget class="QPushButton" name="pushButton_25">
+                   <property name="text">
+                    <string>G</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMdi</string>
+                   </attribute>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -1835,7 +2145,7 @@ SLOWER</string>
                   </widget>
                  </item>
                  <item row="1" column="2">
-                  <widget class="StatusLabel" name="statuslabel_2">
+                  <widget class="StatusLabel" name="targetSpindleSpeed">
                    <property name="text">
                     <string>0.0</string>
                    </property>
@@ -1903,7 +2213,7 @@ SLOWER</string>
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
                     <string>180.0
-in</string>
+N/A</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -2897,7 +3207,7 @@ DIR</string>
               </item>
              </layout>
             </widget>
-            <widget class="QWidget" name="page_5"/>
+            <widget class="QWidget" name="probe"/>
            </widget>
           </item>
          </layout>
@@ -2950,28 +3260,6 @@ DIR</string>
         </spacer>
        </item>
        <item>
-        <widget class="ActionButton" name="actionbutton_2">
-         <property name="enabled">
-          <bool>false</bool>
-         </property>
-         <property name="text">
-          <string>PROBE</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="autoExclusive">
-          <bool>true</bool>
-         </property>
-         <property name="page" stdset="0">
-          <number>8</number>
-         </property>
-         <attribute name="buttonGroup">
-          <string notr="true">btngrpRightNav</string>
-         </attribute>
-        </widget>
-       </item>
-       <item>
         <widget class="ActionButton" name="actionbutton_3">
          <property name="text">
           <string>FILE
@@ -2986,6 +3274,9 @@ LOAD</string>
          <property name="page" stdset="0">
           <number>7</number>
          </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
+         </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
          </attribute>
@@ -2993,6 +3284,9 @@ LOAD</string>
        </item>
        <item>
         <widget class="ActionButton" name="actionbutton_5">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
          <property name="text">
           <string>TOOL
 OFFSETS</string>
@@ -3005,6 +3299,9 @@ OFFSETS</string>
          </property>
          <property name="page" stdset="0">
           <number>6</number>
+         </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3029,6 +3326,9 @@ OFFSETS</string>
          <property name="page" stdset="0">
           <number>5</number>
          </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
+         </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
          </attribute>
@@ -3049,6 +3349,9 @@ OFFSETS</string>
          <property name="page" stdset="0">
           <number>4</number>
          </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
+         </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
          </attribute>
@@ -3057,7 +3360,7 @@ OFFSETS</string>
        <item>
         <widget class="ActionButton" name="actionbutton_6">
          <property name="text">
-          <string>HOMING
+          <string>HOMING/
 COORD</string>
          </property>
          <property name="checkable">
@@ -3072,6 +3375,9 @@ COORD</string>
          <property name="page" stdset="0">
           <number>3</number>
          </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
+         </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
          </attribute>
@@ -3080,7 +3386,8 @@ COORD</string>
        <item>
         <widget class="ActionButton" name="btnManual">
          <property name="text">
-          <string>MANUAL</string>
+          <string>Jog/
+Spindle</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -3090,6 +3397,9 @@ COORD</string>
          </property>
          <property name="page" stdset="0">
           <number>2</number>
+         </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3110,6 +3420,9 @@ COORD</string>
          <property name="page" stdset="0">
           <number>1</number>
          </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
+         </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
          </attribute>
@@ -3118,7 +3431,7 @@ COORD</string>
        <item>
         <widget class="ActionButton" name="btnModesDro">
          <property name="text">
-          <string>DRO
+          <string>DRO/
 MODES</string>
          </property>
          <property name="checkable">
@@ -3129,6 +3442,9 @@ MODES</string>
          </property>
          <property name="page" stdset="0">
           <number>0</number>
+         </property>
+         <property name="buttonFont" stdset="0">
+          <string>16</string>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3654,12 +3970,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpSpindle"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

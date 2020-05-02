@@ -1,2 +1,6 @@
 #!/bin/bash
-python2 -m pip install --user qtpyvcp
+pip install -e .
+
+#
+# pip install git+https://github.com/joco-nz/bf20_mill
+#

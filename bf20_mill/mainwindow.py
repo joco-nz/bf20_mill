@@ -10,6 +10,9 @@ import bf20_mill.mdi_text as mdiText
 from qtpyvcp.utilities import logger
 LOG = logger.getLogger('qtpyvcp.' + __name__)
 
+# Add custom fonts
+QFontDatabase.addApplicationFont(os.path.join(VCP_DIR, 'fonts/BebasKai.ttf'))
+
 class MyMainWindow(VCPMainWindow):
     """Main window class for the VCP."""
     def __init__(self, *args, **kwargs):

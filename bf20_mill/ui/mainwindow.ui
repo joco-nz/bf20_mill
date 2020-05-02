@@ -436,6 +436,9 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
                      </widget>
                     </item>
                     <item>

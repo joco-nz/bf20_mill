@@ -330,7 +330,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>4</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -845,7 +845,29 @@ LINE</string>
                  </item>
                 </layout>
                </widget>
-               <widget class="QWidget" name="probe"/>
+               <widget class="QWidget" name="probe">
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QGroupBox" name="bxGuageProbe">
+                   <property name="title">
+                    <string>Manual Offset Probe</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_10">
+                    <item row="0" column="0">
+                     <widget class="QWidget" name="widget_16" native="true"/>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string>PushButton</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
                <widget class="QWidget" name="diagnostics"/>
               </widget>
              </item>
@@ -953,7 +975,7 @@ LINE</string>
 ALL</string>
             </property>
             <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0].count(1) &gt;= 3 else ''&quot;, &quot;name&quot;: &quot;Border Colour&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0].count(1) &gt;= 3 else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;Border Colour&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.home.all</string>
@@ -4003,9 +4025,9 @@ MODES</string>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

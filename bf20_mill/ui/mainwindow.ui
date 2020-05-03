@@ -330,7 +330,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>4</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -539,7 +539,11 @@ Ext</string>
                   </widget>
                  </item>
                  <item>
-                  <widget class="VTKBackPlot" name="vtk"/>
+                  <widget class="VTKBackPlot" name="vtk">
+                   <property name="enableProgramTicks" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -1004,6 +1008,9 @@ X0 Y0</string>
             <property name="text">
              <string>LOAD
 T1</string>
+            </property>
+            <property name="MDICommand" stdset="0">
+             <string>T1 M6</string>
             </property>
             <property name="buttonFont" stdset="0">
              <string>16</string>
@@ -4022,12 +4029,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

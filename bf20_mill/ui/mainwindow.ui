@@ -1590,6 +1590,50 @@ CHANGED</string>
                </property>
               </widget>
              </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_5">
+               <property name="title">
+                <string>Probing</string>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="HalLedIndicator" name="halProbeLed">
+                  <property name="color">
+                   <color>
+                    <red>0</red>
+                    <green>170</green>
+                    <blue>0</blue>
+                   </color>
+                  </property>
+                  <property name="state">
+                   <bool>false</bool>
+                  </property>
+                  <property name="flashing">
+                   <bool>false</bool>
+                  </property>
+                  <property name="flashRate">
+                   <number>500</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
             </layout>
            </widget>
           </item>
@@ -3592,6 +3636,11 @@ MODES</string>
    <container>1</container>
   </customwidget>
   <customwidget>
+   <class>HalLedIndicator</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_led</header>
+  </customwidget>
+  <customwidget>
    <class>VCPSettingsSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
@@ -4032,12 +4081,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

@@ -1417,7 +1417,7 @@ T1</string>
                  <enum>DROWidget::A</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -1436,7 +1436,7 @@ T1</string>
                  <enum>DROWidget::A</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -1455,7 +1455,7 @@ T1</string>
                  <enum>DROWidget::A</enum>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <string>16</string>
+                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -1569,7 +1569,7 @@ T1</string>
                 <set>Qt::AlignCenter</set>
                </property>
                <property name="rules" stdset="0">
-                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;True if ch[0] &gt; 0 else False&quot;, &quot;name&quot;: &quot;Enabled&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Insert\\nTool\\n{}'.format(ch[0]) if ch[0] &gt; 0 else ''&quot;, &quot;name&quot;: &quot;LabelUpdate&quot;}]</string>
+                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Enable&quot;, &quot;expression&quot;: &quot;True if ch[0] &gt; 0 else False&quot;, &quot;name&quot;: &quot;Enabled&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Insert Tool:\\n{}'.format(ch[0]) if ch[0] &gt; 0 else ''&quot;, &quot;name&quot;: &quot;LabelUpdate&quot;}]</string>
                </property>
                <property name="labelFont" stdset="0">
                 <string>14</string>

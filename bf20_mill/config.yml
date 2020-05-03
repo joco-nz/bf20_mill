@@ -44,6 +44,18 @@ windows:
       # Set the window title from from the date in the vcp section above.
       title: ( vcp.name ) ( vcp.version)
 
+notifications:
+    provider: qtpyvcp.plugins.notifications:Notifications
+    kwargs:
+      # show notification popups
+      enabled: False
+      # "native" or "dbus"
+      mode: dbus
+      # max number of notifications to show
+      max_messages: 5
+      # whether to save messages on exit
+      persistent: True
+
 application:
   kwargs:
     # Specify the application wide stylesheet.

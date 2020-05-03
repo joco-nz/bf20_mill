@@ -245,5 +245,8 @@ QPushButton:disabled {
     border-color: #949494;
 }
 
+QGroupBox[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
 
 

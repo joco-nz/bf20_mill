@@ -1592,11 +1592,29 @@ CHANGED</string>
              </item>
              <item>
               <widget class="QGroupBox" name="groupBox_5">
+               <property name="maximumSize">
+                <size>
+                 <width>60</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Ubuntu</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
                <property name="title">
                 <string>Probing</string>
                </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
                <property name="flat">
-                <bool>false</bool>
+                <bool>true</bool>
+               </property>
+               <property name="labelFont" stdset="0">
+                <string>12</string>
                </property>
                <layout class="QHBoxLayout" name="horizontalLayout_11">
                 <property name="leftMargin">
@@ -1613,6 +1631,15 @@ CHANGED</string>
                 </property>
                 <item>
                  <widget class="HalLedIndicator" name="halProbeLed">
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="diameter">
+                   <number>20</number>
+                  </property>
                   <property name="color">
                    <color>
                     <red>0</red>
@@ -4081,12 +4108,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

@@ -530,6 +530,9 @@ Ext</string>
                       <property name="checkable">
                        <bool>true</bool>
                       </property>
+                      <property name="checked">
+                       <bool>true</bool>
+                      </property>
                       <property name="buttonFont" stdset="0">
                        <string>16</string>
                       </property>
@@ -4029,12 +4032,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpSpindle"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

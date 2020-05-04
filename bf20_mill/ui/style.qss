@@ -50,6 +50,21 @@ StatusLabel {
     border-radius: 5px;
 }
 
+StatusLabel[DROHeading] {
+    font: 16pt "Bebas Kai";
+    background-color: lightgray;
+}
+
+StatusLabel[ActiveGCode] {
+    font: 14pt "Bebas Kai";
+    background-color: lightgray;
+}
+
+StatusLabel[ToolLoaded] {
+    font: 14pt "Bebas Kai";
+    background-color: lightgray;
+}
+
 StatusLabel[labelFont="20"] {
     font: 20pt "Bebas Kai";
 }
@@ -226,6 +241,7 @@ QWidget[objectName="toolSetKeypad"] > QPushButton {
 /* if a QPushButton has a dynamic property buttonFont
 set the font*/
 
+
 QPushButton[buttonFont="10"] {
     font: 10pt "Bebas Kai";
 }
@@ -257,7 +273,6 @@ QPushButton[buttonFont="30"] {
 .QWidget {
     border-style: solid;
     border-width: 1px;
-    border-color: #000000;
 }
 
 QPushButton {
@@ -266,11 +281,6 @@ QPushButton {
     border-radius: 5px;
     min-width: 50px;
     min-height: 50px;
-    border-color: #000000;
-}
-
-QPushButton:checked {
-/*    border-color: #00EE00; */
 }
 
 QPushButton:pressed {
@@ -278,7 +288,7 @@ QPushButton:pressed {
 }
 
 QPushButton:disabled {
-    border-color: gray;
+    color: gray;
 }
 
 
@@ -314,12 +324,10 @@ QPushButton[actionName="machine.power.toggle"]:pressed {
 
 QPushButton[actionName="machine.estop.toggle"]:checked {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 64, 64, 255), stop:0.446154 rgba(204, 0, 0, 255), stop:0.764103 rgba(225, 67, 67, 255), stop:1 rgba(249, 142, 142, 255));
-    border-color: black;
 }
 
 QPushButton[actionName="machine.estop.toggle"]:pressed {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 139, 139, 255), stop:0.446154 rgba(249, 142, 142, 255), stop:0.764103 rgba(225, 134, 134, 255), stop:1 rgba(249, 142, 142, 255));
-    border-color: black;
 }
 
 
@@ -328,16 +336,12 @@ QPushButton[actionName="machine.estop.toggle"]:pressed {
 */
 ActionButton[style='unhome'] {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 64, 64, 255), stop:0.446154 rgba(204, 0, 0, 255), stop:0.764103 rgba(225, 67, 67, 255), stop:1 rgba(249, 142, 142, 255));
-    border-color: black;
 }
 
 ActionButton[style='homed'] {
     color: black;
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(154, 231, 153, 255), stop:0.0974359 rgba(92, 243, 81, 255), stop:0.446154 rgba(52, 251, 35, 255), stop:1 rgba(154, 231, 153, 255));
 }
-
-
-
 
 
 DROWidget {
@@ -356,7 +360,7 @@ QGroupBox::title {
     color: white;
 }
 
-GcodeBackplot {
+VTKBackplot {
     border-color: black;
     border-style: solid;
     border-width: 2px;
@@ -372,14 +376,6 @@ GcodeEditor {
     border-width: 2px;
     border-radius: 4px;
     padding: 2px;
-}
-
-GcodeBackplot {
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 4px;
-    padding: 10px;
 }
 
 

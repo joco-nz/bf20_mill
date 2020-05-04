@@ -1207,8 +1207,8 @@ T1</string>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1258,8 +1258,8 @@ T1</string>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1274,8 +1274,8 @@ T1</string>
                 <property name="rules" stdset="0">
                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;ActiveRel&quot;}]</string>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1300,8 +1300,8 @@ T1</string>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1358,8 +1358,8 @@ T1</string>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1377,8 +1377,8 @@ T1</string>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -1528,8 +1528,8 @@ T1</string>
               <property name="rules" stdset="0">
                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:gcodes?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;EffecticeGcodes&quot;}]</string>
               </property>
-              <property name="labelFont" stdset="0">
-               <string>14</string>
+              <property name="ActiveGCode" stdset="0">
+               <string/>
               </property>
              </widget>
             </item>
@@ -1544,8 +1544,8 @@ T1</string>
               <property name="rules" stdset="0">
                <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'TOOL: {}'.format(ch[0])&quot;, &quot;name&quot;: &quot;LoadedTool&quot;}]</string>
               </property>
-              <property name="labelFont" stdset="0">
-               <string>14</string>
+              <property name="ToolLoaded" stdset="0">
+               <string/>
               </property>
              </widget>
             </item>
@@ -3299,6 +3299,12 @@ A</string>
                 <property name="hiddenColumns" stdset="0">
                  <string>1,2</string>
                 </property>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>200</number>
+                </attribute>
+                <attribute name="verticalHeaderDefaultSectionSize">
+                 <number>55</number>
+                </attribute>
                </widget>
               </item>
               <item>
@@ -4138,12 +4144,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

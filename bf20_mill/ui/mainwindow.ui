@@ -689,7 +689,11 @@ Line</string>
                   <number>5</number>
                  </property>
                  <item>
-                  <widget class="ToolTable" name="tooltable_2"/>
+                  <widget class="ToolTable" name="toolTbl">
+                   <attribute name="verticalHeaderDefaultSectionSize">
+                    <number>55</number>
+                   </attribute>
+                  </widget>
                  </item>
                  <item>
                   <widget class="QWidget" name="widget_14" native="true">
@@ -1909,7 +1913,7 @@ CHANGED</string>
                     <string>SPACE</string>
                    </property>
                    <property name="checkable">
-                    <bool>true</bool>
+                    <bool>false</bool>
                    </property>
                    <property name="buttonFont" stdset="0">
                     <string>16</string>
@@ -4000,7 +4004,7 @@ MODES</string>
   <connection>
    <sender>btnToolClear</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>clearToolTable()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4016,7 +4020,7 @@ MODES</string>
   <connection>
    <sender>btnToolDel</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>deleteSelectedTool()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4032,7 +4036,7 @@ MODES</string>
   <connection>
    <sender>btnToolAdd</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>addTool()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4048,7 +4052,7 @@ MODES</string>
   <connection>
    <sender>btnToolUp</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>selectPrevious()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4064,7 +4068,7 @@ MODES</string>
   <connection>
    <sender>btnToolDown</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>selectNext()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4080,7 +4084,7 @@ MODES</string>
   <connection>
    <sender>btnToolReload</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>loadToolTable()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4096,7 +4100,7 @@ MODES</string>
   <connection>
    <sender>btnToolSave</sender>
    <signal>clicked()</signal>
-   <receiver>tooltable_2</receiver>
+   <receiver>toolTbl</receiver>
    <slot>saveToolTable()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -4144,12 +4148,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpSpindle"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

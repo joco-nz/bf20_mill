@@ -343,6 +343,14 @@ ActionButton[style='homed'] {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(154, 231, 153, 255), stop:0.0974359 rgba(92, 243, 81, 255), stop:0.446154 rgba(52, 251, 35, 255), stop:1 rgba(154, 231, 153, 255));
 }
 
+/* Tooltable */
+QTableView {
+    font: 14pt "Bebas Kai";
+}
+
+QHeaderView {
+    font: 14pt "Bebas Kai";
+}
 
 DROWidget {
     color: black;

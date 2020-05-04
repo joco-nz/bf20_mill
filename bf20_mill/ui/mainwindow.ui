@@ -501,17 +501,6 @@ Plot</string>
                      </widget>
                     </item>
                     <item>
-                     <widget class="HalButton" name="halbutton">
-                      <property name="text">
-                       <string>Start/
-Stop</string>
-                      </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
                      <widget class="QPushButton" name="btnPlotClear">
                       <property name="text">
                        <string>Clear</string>
@@ -522,10 +511,24 @@ Stop</string>
                      </widget>
                     </item>
                     <item>
+                     <widget class="QPushButton" name="btnPlotProgExtent">
+                      <property name="text">
+                       <string>Prog
+EXTENT</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <string>16</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
                      <widget class="QPushButton" name="btnPlotExt">
                       <property name="text">
                        <string>Mach
-Ext</string>
+Extent</string>
                       </property>
                       <property name="checkable">
                        <bool>true</bool>
@@ -927,13 +930,16 @@ LINE</string>
           <item>
            <widget class="ActionButton" name="actionbutton_24">
             <property name="styleSheet">
-             <string notr="true">border-color: #00EE00</string>
+             <string notr="true"/>
             </property>
             <property name="text">
              <string>E-STOP</string>
             </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
             <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:estop&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00EE00' if ch[0] == 0 else 'border-color: #FF0000'&quot;, &quot;name&quot;: &quot;Border Colour&quot;}]</string>
+             <string>[]</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.estop.toggle</string>
@@ -982,7 +988,7 @@ LINE</string>
 ALL</string>
             </property>
             <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;Border Colour&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;CSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
             </property>
             <property name="actionName" stdset="0">
              <string>machine.home.all</string>
@@ -1600,8 +1606,11 @@ CHANGED</string>
                </property>
                <property name="font">
                 <font>
-                 <family>Ubuntu</family>
+                 <family>Bebas Kai</family>
                  <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
                 </font>
                </property>
                <property name="title">
@@ -1879,7 +1888,11 @@ CHANGED</string>
                   <widget class="QLabel" name="lblGcodeHelp">
                    <property name="font">
                     <font>
-                     <pointsize>8</pointsize>
+                     <family>Bebas Kai</family>
+                     <pointsize>15</pointsize>
+                     <weight>50</weight>
+                     <italic>false</italic>
+                     <bold>false</bold>
                     </font>
                    </property>
                    <property name="text">
@@ -2645,7 +2658,7 @@ N/A</string>
 Not Homed</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nX' if ch[0] else 'X\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nX' if ch[0] else 'X\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.0</string>
@@ -2662,7 +2675,7 @@ Not Homed</string>
 Not Homed</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nY' if ch[0] else 'Y\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nY' if ch[0] else 'Y\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.1</string>
@@ -2679,7 +2692,7 @@ Not Homed</string>
 Y</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Y\\nHomed' if ch[0] else 'Home\\nY'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Y\\nHomed' if ch[0] else 'Home\\nY'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?1&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.1</string>
@@ -2696,7 +2709,7 @@ Y</string>
 X</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'X\\nHomed' if ch[0] else 'Home\\nX'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'X\\nHomed' if ch[0] else 'Home\\nX'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.0</string>
@@ -2713,7 +2726,7 @@ X</string>
 Z</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Z\\nHomed' if ch[0] else 'Home\\nZ'&quot;, &quot;name&quot;: &quot;IsHome&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomeCSS&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Z\\nHomed' if ch[0] else 'Home\\nZ'&quot;, &quot;name&quot;: &quot;IsHome&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomeCSS&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.2</string>
@@ -2730,7 +2743,7 @@ Z</string>
 Not Homed</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nZ' if ch[0] else 'Z\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nZ' if ch[0] else 'Z\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?2&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.2</string>
@@ -2743,7 +2756,7 @@ Not Homed</string>
                  <item row="3" column="0">
                   <widget class="ActionButton" name="home_a">
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'A\\nHomed' if ch[0] else 'Home\\nA'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #00FF00' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'A\\nHomed' if ch[0] else 'Home\\nA'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.3</string>
@@ -2756,7 +2769,7 @@ Not Homed</string>
                  <item row="3" column="1">
                   <widget class="ActionButton" name="unhome_a">
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nA' if ch[0] else 'A\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Sheet&quot;, &quot;expression&quot;: &quot;'border-color: #FF0000' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nA' if ch[0] else 'A\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.3</string>
@@ -3686,6 +3699,7 @@ MODES</string>
    <class>GcodeEditor</class>
    <extends>QFrame</extends>
    <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>VTKBackPlot</class>
@@ -3867,7 +3881,7 @@ MODES</string>
   </connection>
   <connection>
    <sender>btnPlotRollPan</sender>
-   <signal>clicked(bool)</signal>
+   <signal>toggled(bool)</signal>
    <receiver>vtk</receiver>
    <slot>enable_panning(bool)</slot>
    <hints>
@@ -4089,6 +4103,22 @@ MODES</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnPlotProgExtent</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>vtk</receiver>
+   <slot>toggleProgramBounds(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>785</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>498</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -4108,12 +4138,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

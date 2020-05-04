@@ -15,9 +15,12 @@ QsciScintilla {
 }
 
 
+ActionButton[actionName="machine.estop.toggle"]:checked{
+    border-color: #00EE00;
+}
 
 ActionButton[actionName="machine.power.toggle"]:checked{
-    color: black;
+    border-color: #00FF00;
 }
 
 ActionButton[actionName="program.run"]:enabled{
@@ -321,24 +324,6 @@ QPushButton[actionName="machine.estop.toggle"]:pressed {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 139, 139, 255), stop:0.446154 rgba(249, 142, 142, 255), stop:0.764103 rgba(225, 134, 134, 255), stop:1 rgba(249, 142, 142, 255));
     border-color: black;
 }
-
-
-/*
-*  Unhome and Homed Styles
-*/
-ActionButton[style='unhome'] {
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 64, 64, 255), stop:0.446154 rgba(204, 0, 0, 255), stop:0.764103 rgba(225, 67, 67, 255), stop:1 rgba(249, 142, 142, 255));
-    border-color: black;
-}
-
-ActionButton[style='homed'] {
-    color: black;
-    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(154, 231, 153, 255), stop:0.0974359 rgba(92, 243, 81, 255), stop:0.446154 rgba(52, 251, 35, 255), stop:1 rgba(154, 231, 153, 255));
-}
-
-
-
-
 
 DROWidget {
     color: black;

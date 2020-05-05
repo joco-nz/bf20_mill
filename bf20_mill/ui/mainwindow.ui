@@ -1770,7 +1770,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>2</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -2363,9 +2363,18 @@ SLOWER</string>
                   <number>5</number>
                  </property>
                  <item row="3" column="2">
-                  <widget class="VCPSettingsLineEdit" name="settings_lineedit">
+                  <widget class="VCPSettingsLineEdit" name="manualXYoffset">
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="settingName" stdset="0">
                     <string>manual-touchoff.xy-offset</string>
+                   </property>
+                   <property name="textFormat" stdset="0">
+                    <string>{:10.3f}</string>
                    </property>
                   </widget>
                  </item>
@@ -2393,6 +2402,9 @@ SLOWER</string>
                      <height>85</height>
                     </size>
                    </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0Z#&lt;manualZoffset&gt;</string>
+                   </property>
                   </widget>
                  </item>
                  <item row="0" column="1">
@@ -2418,6 +2430,9 @@ SLOWER</string>
                      <width>85</width>
                      <height>85</height>
                     </size>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0Y#&lt;manualXYoffset&gt;</string>
                    </property>
                   </widget>
                  </item>
@@ -2445,6 +2460,9 @@ SLOWER</string>
                      <height>85</height>
                     </size>
                    </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0X-#&lt;manualXYoffset&gt;</string>
+                   </property>
                   </widget>
                  </item>
                  <item row="2" column="1">
@@ -2470,6 +2488,9 @@ SLOWER</string>
                      <width>85</width>
                      <height>85</height>
                     </size>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0Y-#&lt;manualXYoffset&gt;</string>
                    </property>
                   </widget>
                  </item>
@@ -2497,12 +2518,24 @@ SLOWER</string>
                      <height>85</height>
                     </size>
                    </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0X#&lt;manualXYoffset&gt;</string>
+                   </property>
                   </widget>
                  </item>
                  <item row="4" column="2">
-                  <widget class="VCPSettingsLineEdit" name="settings_lineedit_2">
+                  <widget class="VCPSettingsLineEdit" name="manualZoffset">
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="settingName" stdset="0">
                     <string>manual-touchoff.z-offset</string>
+                   </property>
+                   <property name="textFormat" stdset="0">
+                    <string>{:10.3f}</string>
                    </property>
                   </widget>
                  </item>
@@ -4382,10 +4415,10 @@ MODES</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

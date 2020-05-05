@@ -61,14 +61,14 @@ application:
         - {{ file.dir }}/resources/fonts/BebasKai.ttf
 
 settings:
-    manual-touchoff.xy-offset
+    manual-touchoff.xy-offset:
         description: the offset used by the X and Y manual touch off. This would normally be the radius of a wiggler or equivalent
         default_value: 0.0
         persistent: true
         min_value: -50
         max_value: 50
 
-    manual-touchoff.z-offset
+    manual-touchoff.z-offset:
         description: the offset used by the Z manual touch off. Normally a guage block or guage pin
         default_value: 0.0
         persistent: true

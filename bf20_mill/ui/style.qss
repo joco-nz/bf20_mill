@@ -9,36 +9,37 @@ QStatusBar {
 }
 
 
-QsciScintilla {
-    qproperty-backgroundcolor: #D9DADB;
-    qproperty-marginbackgroundcolor: #D9DADB;
-}
 
 
-
+/**********************************************************************
+ *                               Bottom Nav Bar                       *
+ *********************************************************************/
 ActionButton[actionName="machine.power.toggle"]:checked{
     color: black;
 }
 
 ActionButton[actionName="program.run"]:enabled{
-    border-color: #00EE00;
+    /*border-color: #00EE00;*/
 }
 
 ActionButton[actionName="program.step"]:enabled{
-    border-color: #00EE00;
 }
 
 ActionButton[actionName="program.pause"]:enabled{
-    border-color: #00EE00;
 }
 
 ActionButton[actionName="program.resume"]:enabled{
-    border-color: #00EE00;
 }
 
 ActionButton[actionName="program.abort"]:enabled{
-    border-color: #00EE00;
 }
+
+
+
+
+
+
+
 
 HalButton[objectName="tool_changed"]:enabled {
     border-color: #FF0000;
@@ -89,26 +90,6 @@ StatusLabel[labelFont="10"] {
     font: 10pt "Bebas Kai";
 }
 
-/* DROWidgets */
-DROWidget[labelFont="20"] {
-    font: 20pt "Bebas Kai";
-}
-
-DROWidget[labelFont="18"] {
-    font: 18pt "Bebas Kai";
-}
-
-DROWidget[labelFont="16"] {
-    font: 16pt "Bebas Kai";
-}
-
-DROWidget[labelFont="14"] {
-    font: 14pt "Bebas Kai";
-}
-
-DROWidget[labelFont="12"] {
-    font: 12pt "Bebas Kai";
-}
 
 DROWidget[labelFont="10"] {
     font: 10pt "Bebas Kai";
@@ -331,9 +312,9 @@ QPushButton[actionName="machine.estop.toggle"]:pressed {
 }
 
 
-/*
-*  Unhome and Homed Styles
-*/
+/**********************************************************************
+ *                               Homing/Unhoming                      *
+ *********************************************************************/
 ActionButton[style='unhome'] {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 64, 64, 255), stop:0.446154 rgba(204, 0, 0, 255), stop:0.764103 rgba(225, 67, 67, 255), stop:1 rgba(249, 142, 142, 255));
 }
@@ -343,7 +324,9 @@ ActionButton[style='homed'] {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(154, 231, 153, 255), stop:0.0974359 rgba(92, 243, 81, 255), stop:0.446154 rgba(52, 251, 35, 255), stop:1 rgba(154, 231, 153, 255));
 }
 
-/* Tooltable */
+/**********************************************************************
+ *                               Tooltable                            *
+ *********************************************************************/
 QTableView {
     font: 14pt "Bebas Kai";
 }
@@ -352,6 +335,26 @@ QHeaderView {
     font: 14pt "Bebas Kai";
 }
 
+
+QPushButton[ToolTblBtn] {
+    font: 16pt "Bebas Kai";
+}
+
+/**********************************************************************
+ *                        Work Offsets table                          *
+ *********************************************************************/
+QTableView#tblOffsets {
+    font: 12pt "Bebas Kai";
+}
+
+QHeaderView#tblOffsets {
+    font: 12pt "Bebas Kai";
+}
+
+
+/**********************************************************************
+ *                               DRO                                  *
+ *********************************************************************/
 DROWidget {
     color: black;
     border-color: black;
@@ -360,6 +363,29 @@ DROWidget {
     border-radius: 4px;
     background-color: white;
 }
+/* DROWidgets */
+DROWidget[labelFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+DROWidget[labelFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+DROWidget[labelFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+DROWidget[labelFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+DROWidget[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+
+
 
 QGroupBox::title {
     subcontrol-origin: margin;
@@ -368,6 +394,9 @@ QGroupBox::title {
     color: white;
 }
 
+/**********************************************************************
+ *                               VTK Backplot                         *
+ *********************************************************************/
 VTKBackplot {
     border-color: black;
     border-style: solid;
@@ -377,6 +406,9 @@ VTKBackplot {
     margin: 10px;
 }
 
+/**********************************************************************
+ *                               G-Code Editor                        *
+ *********************************************************************/
 GcodeEditor {
     background-color: white;
     border-color: black;
@@ -386,9 +418,18 @@ GcodeEditor {
     padding: 2px;
 }
 
+QsciScintilla {
+    qproperty-backgroundcolor: #D9DADB;
+    qproperty-marginbackgroundcolor: #D9DADB;
+}
+
+
+
+
+
+
 
 QGroupBox[labelFont="12"] {
     font: 12pt "Bebas Kai";
 }
-
 

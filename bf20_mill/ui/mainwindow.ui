@@ -198,22 +198,6 @@ nostics</string>
               </widget>
              </item>
              <item>
-              <widget class="ActionButton" name="a">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <attribute name="buttonGroup">
-                <string notr="true">btngrpLeftNav</string>
-               </attribute>
-              </widget>
-             </item>
-             <item>
               <widget class="ActionButton" name="actionbutton_13">
                <property name="text">
                 <string>PROBE</string>
@@ -233,6 +217,26 @@ nostics</string>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
                </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnWorkOffsets">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Work
+Offsets</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>4</number>
+               </property>
               </widget>
              </item>
              <item>
@@ -690,6 +694,23 @@ Line</string>
                  </property>
                  <item>
                   <widget class="ToolTable" name="toolTbl">
+                   <property name="confirmActions" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="currentToolColor" stdset="0">
+                    <color>
+                     <red>235</red>
+                     <green>235</green>
+                     <blue>235</blue>
+                    </color>
+                   </property>
+                   <property name="currentToolBackground" stdset="0">
+                    <color>
+                     <red>0</red>
+                     <green>128</green>
+                     <blue>0</blue>
+                    </color>
+                   </property>
                    <attribute name="verticalHeaderDefaultSectionSize">
                     <number>55</number>
                    </attribute>
@@ -783,13 +804,24 @@ Line</string>
                      </spacer>
                     </item>
                     <item>
+                     <widget class="QPushButton" name="btnToolLoadTool">
+                      <property name="text">
+                       <string>Load
+Tool</string>
+                      </property>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
                      <widget class="QPushButton" name="btnToolClear">
                       <property name="text">
                        <string>CLEAR
 ALL</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -799,8 +831,8 @@ ALL</string>
                        <string>DEL
 LINE</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -809,8 +841,8 @@ LINE</string>
                       <property name="text">
                        <string>ADD</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -819,8 +851,8 @@ LINE</string>
                       <property name="text">
                        <string>UP</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -829,8 +861,8 @@ LINE</string>
                       <property name="text">
                        <string>DOWN</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -839,8 +871,8 @@ LINE</string>
                       <property name="text">
                        <string>RELOAD</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -849,8 +881,8 @@ LINE</string>
                       <property name="text">
                        <string>SAVE</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="ToolTblBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -868,7 +900,9 @@ LINE</string>
                    </property>
                    <layout class="QGridLayout" name="gridLayout_10">
                     <item row="0" column="0">
-                     <widget class="QWidget" name="widget_16" native="true"/>
+                     <widget class="QWidget" name="widget_16" native="true">
+                      <layout class="QVBoxLayout" name="verticalLayout_17"/>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
@@ -1574,7 +1608,7 @@ T1</string>
               <number>5</number>
              </property>
              <item>
-              <widget class="StatusLabel" name="statuslabel_3">
+              <widget class="StatusLabel" name="lblToolLoading">
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
                </property>
@@ -1738,7 +1772,134 @@ CHANGED</string>
             <property name="currentIndex">
              <number>3</number>
             </property>
-            <widget class="QWidget" name="modesdro"/>
+            <widget class="QWidget" name="modesdro">
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item>
+               <widget class="QGroupBox" name="groupBox">
+                <property name="title">
+                 <string>Spindle</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout">
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="ActionButton" name="actionbutton">
+                   <property name="text">
+                    <string>SPINDLE
+CWW</string>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.reverse</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="ActionButton" name="actionbutton_4">
+                   <property name="text">
+                    <string>SPINDLE
+CW</string>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.forward</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="actionbutton_14">
+                   <property name="text">
+                    <string>SPINDLE
+FASTER</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.faster</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="ActionButton" name="actionbutton_9">
+                   <property name="text">
+                    <string>SPINDLE
+SLOWER</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.slower</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="ActionButton" name="actionbutton_47">
+                   <property name="text">
+                    <string>STOP</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.off</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>16</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="StatusLabel" name="targetSpindleSpeed">
+                   <property name="text">
+                    <string>0.0</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Speed&quot;}]</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
             <widget class="QWidget" name="mdi">
              <layout class="QVBoxLayout" name="verticalLayout_14">
               <property name="spacing">
@@ -2181,11 +2342,11 @@ CHANGED</string>
                <number>5</number>
               </property>
               <item>
-               <widget class="QGroupBox" name="groupBox">
+               <widget class="QGroupBox" name="groupBox_6">
                 <property name="title">
-                 <string>Spindle</string>
+                 <string>Work Touch Off</string>
                 </property>
-                <layout class="QGridLayout" name="gridLayout">
+                <layout class="QGridLayout" name="gridLayout_11">
                  <property name="leftMargin">
                   <number>5</number>
                  </property>
@@ -2201,112 +2362,153 @@ CHANGED</string>
                  <property name="spacing">
                   <number>5</number>
                  </property>
-                 <item row="0" column="0">
-                  <widget class="ActionButton" name="actionbutton">
-                   <property name="text">
-                    <string>SPINDLE
-CWW</string>
+                 <item row="3" column="2">
+                  <widget class="VCPSettingsLineEdit" name="settings_lineedit"/>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="MDIButton" name="mdibutton_17">
+                   <property name="minimumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.reverse</string>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
                    </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpSpindle</string>
-                   </attribute>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="ActionButton" name="actionbutton_4">
-                   <property name="text">
-                    <string>SPINDLE
-CW</string>
+                  <widget class="MDIButton" name="mdibutton_20">
+                   <property name="minimumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.forward</string>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/y_minus.png</normaloff>../resources/images/y_minus.png</iconset>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
                    </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpSpindle</string>
-                   </attribute>
                   </widget>
                  </item>
-                 <item row="1" column="1">
-                  <widget class="ActionButton" name="actionbutton_14">
-                   <property name="text">
-                    <string>SPINDLE
-FASTER</string>
+                 <item row="1" column="2">
+                  <widget class="MDIButton" name="mdibutton_22">
+                   <property name="minimumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.faster</string>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/x_minus.png</normaloff>../resources/images/x_minus.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="MDIButton" name="mdibutton_19">
+                   <property name="minimumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/y_plus.png</normaloff>../resources/images/y_plus.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
-                  <widget class="ActionButton" name="actionbutton_9">
-                   <property name="text">
-                    <string>SPINDLE
-SLOWER</string>
+                  <widget class="MDIButton" name="mdibutton_21">
+                   <property name="minimumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.slower</string>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/x_plus.png</normaloff>../resources/images/x_plus.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="2">
-                  <widget class="ActionButton" name="actionbutton_47">
+                 <item row="4" column="2">
+                  <widget class="VCPSettingsLineEdit" name="settings_lineedit_2"/>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="StatusLabel" name="statuslabel_2">
                    <property name="text">
-                    <string>STOP</string>
+                    <string>X/Y Offset</string>
                    </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="checked">
-                    <bool>true</bool>
-                   </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.off</string>
-                   </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpSpindle</string>
-                   </attribute>
                   </widget>
                  </item>
-                 <item row="1" column="2">
-                  <widget class="StatusLabel" name="targetSpindleSpeed">
+                 <item row="4" column="1">
+                  <widget class="StatusLabel" name="statuslabel_3">
                    <property name="text">
-                    <string>0.0</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Speed&quot;}]</string>
-                   </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                    <string>Z Offset</string>
                    </property>
                   </widget>
                  </item>
@@ -2622,7 +2824,7 @@ N/A</string>
                <number>5</number>
               </property>
               <item>
-               <spacer name="verticalSpacer_5">
+               <spacer name="verticalSpacer_3">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
@@ -2859,19 +3061,6 @@ Not Homed</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="0">
-                  <widget class="MDIButton" name="mdibutton_3">
-                   <property name="text">
-                    <string>G59.1</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G59.1</string>
-                   </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="1" column="0">
                   <widget class="MDIButton" name="mdibutton_6">
                    <property name="text">
@@ -2924,6 +3113,19 @@ Not Homed</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="0" column="0">
+                  <widget class="MDIButton" name="mdibutton_3">
+                   <property name="text">
+                    <string>G59.1</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G59.1</string>
+                   </property>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
+                   </property>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -2947,17 +3149,38 @@ Not Homed</string>
                <number>5</number>
               </property>
               <item>
-               <spacer name="verticalSpacer_3">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
+               <widget class="OffsetTable" name="tblOffsets">
+                <property name="enabled">
+                 <bool>false</bool>
                 </property>
-                <property name="sizeHint" stdset="0">
+                <property name="minimumSize">
                  <size>
-                  <width>20</width>
-                  <height>40</height>
+                  <width>0</width>
+                  <height>256</height>
                  </size>
                 </property>
-               </spacer>
+                <property name="showGrid">
+                 <bool>true</bool>
+                </property>
+                <property name="cornerButtonEnabled">
+                 <bool>false</bool>
+                </property>
+                <property name="displayColumns" stdset="0">
+                 <string>XYZA</string>
+                </property>
+                <attribute name="horizontalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>70</number>
+                </attribute>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                 <number>24</number>
+                </attribute>
+                <attribute name="verticalHeaderDefaultSectionSize">
+                 <number>25</number>
+                </attribute>
+               </widget>
               </item>
               <item>
                <widget class="StatusLabel" name="statuslabel_4">
@@ -2986,30 +3209,6 @@ Not Homed</string>
                <layout class="QGridLayout" name="gridLayout_5">
                 <item row="0" column="0">
                  <layout class="QGridLayout" name="gridLayout_7">
-                  <item row="1" column="0">
-                   <widget class="QPushButton" name="pushButton_12">
-                    <attribute name="buttonGroup">
-                     <string notr="true">btngrpG5x</string>
-                    </attribute>
-                   </widget>
-                  </item>
-                  <item row="0" column="0">
-                   <widget class="QPushButton" name="pushButton_3">
-                    <property name="text">
-                     <string/>
-                    </property>
-                    <attribute name="buttonGroup">
-                     <string notr="true">btngrpG5x</string>
-                    </attribute>
-                   </widget>
-                  </item>
-                  <item row="2" column="0">
-                   <widget class="QPushButton" name="pushButton_15">
-                    <attribute name="buttonGroup">
-                     <string notr="true">btngrpG5x</string>
-                    </attribute>
-                   </widget>
-                  </item>
                   <item row="1" column="3">
                    <widget class="QPushButton" name="pushButton_14">
                     <property name="text">
@@ -3186,49 +3385,24 @@ Not Homed</string>
                     </attribute>
                    </widget>
                   </item>
-                  <item row="5" column="1">
-                   <widget class="MDIButton" name="mdibutton_14">
+                  <item row="5" column="0">
+                   <widget class="MDIButton" name="mdibtnSetA">
                     <property name="text">
                      <string>SET
-X</string>
+A</string>
+                    </property>
+                    <property name="rules" stdset="0">
+                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                     </property>
                     <property name="MDICommand" stdset="0">
-                     <string>G10L20P0X#&lt;g5xOffsetLbl&gt;</string>
+                     <string>G10L20P0A#&lt;g5xOffsetLbl&gt;</string>
                     </property>
                     <property name="buttonFont" stdset="0">
                      <string>14</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="5" column="2">
-                   <widget class="MDIButton" name="mdibutton_15">
-                    <property name="text">
-                     <string>SET
-Y</string>
-                    </property>
-                    <property name="MDICommand" stdset="0">
-                     <string>G10L20P0Y#&lt;g5xOffsetLbl&gt;</string>
-                    </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="5" column="3">
-                   <widget class="MDIButton" name="mdibutton_16">
-                    <property name="text">
-                     <string>SET
-Z</string>
-                    </property>
-                    <property name="MDICommand" stdset="0">
-                     <string>G10L20P0Z#&lt;g5xOffsetLbl&gt;</string>
-                    </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="0">
+                  <item row="0" column="0">
                    <widget class="MDIButton" name="mdibutton_12">
                     <property name="text">
                      <string>CLEAR
@@ -3242,7 +3416,7 @@ G5x</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="4" column="0">
+                  <item row="1" column="0">
                    <widget class="MDIButton" name="mdibutton_13">
                     <property name="text">
                      <string>SET
@@ -3256,17 +3430,42 @@ G5x</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="5" column="0">
-                   <widget class="MDIButton" name="mdibtnSetA">
+                  <item row="2" column="0">
+                   <widget class="MDIButton" name="mdibutton_14">
                     <property name="text">
                      <string>SET
-A</string>
-                    </property>
-                    <property name="rules" stdset="0">
-                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==23&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
+X</string>
                     </property>
                     <property name="MDICommand" stdset="0">
-                     <string>G10L20P0A#&lt;g5xOffsetLbl&gt;</string>
+                     <string>G10L20P0X#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="MDIButton" name="mdibutton_15">
+                    <property name="text">
+                     <string>SET
+Y</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0Y#&lt;g5xOffsetLbl&gt;</string>
+                    </property>
+                    <property name="buttonFont" stdset="0">
+                     <string>14</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="MDIButton" name="mdibutton_16">
+                    <property name="text">
+                     <string>SET
+Z</string>
+                    </property>
+                    <property name="MDICommand" stdset="0">
+                     <string>G10L20P0Z#&lt;g5xOffsetLbl&gt;</string>
                     </property>
                     <property name="buttonFont" stdset="0">
                      <string>14</string>
@@ -3543,7 +3742,7 @@ COORD</string>
         <widget class="ActionButton" name="btnManual">
          <property name="text">
           <string>Jog/
-Spindle</string>
+Touch</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -3587,7 +3786,7 @@ Spindle</string>
        <item>
         <widget class="ActionButton" name="btnModesDro">
          <property name="text">
-          <string>DRO/
+          <string>Spindle/
 MODES</string>
          </property>
          <property name="checkable">
@@ -3664,6 +3863,11 @@ MODES</string>
    <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
   </customwidget>
   <customwidget>
+   <class>OffsetTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.offset_table</header>
+  </customwidget>
+  <customwidget>
    <class>VCPWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.containers.widget</header>
@@ -3684,6 +3888,11 @@ MODES</string>
    <extends>QStackedWidget</extends>
    <header>qtpyvcp.widgets.containers.stack</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
   </customwidget>
   <customwidget>
    <class>HalLedIndicator</class>
@@ -4129,6 +4338,22 @@ MODES</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnToolLoadTool</sender>
+   <signal>clicked()</signal>
+   <receiver>toolTbl</receiver>
+   <slot>loadSelectedTool()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>440</x>
+     <y>885</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -4148,12 +4373,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpSpindle"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpSpindle"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

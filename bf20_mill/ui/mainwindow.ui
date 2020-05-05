@@ -1770,7 +1770,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -2363,14 +2363,18 @@ SLOWER</string>
                   <number>5</number>
                  </property>
                  <item row="3" column="2">
-                  <widget class="VCPSettingsLineEdit" name="settings_lineedit"/>
+                  <widget class="VCPSettingsLineEdit" name="settings_lineedit">
+                   <property name="settingName" stdset="0">
+                    <string>manual-touchoff.xy-offset</string>
+                   </property>
+                  </widget>
                  </item>
                  <item row="1" column="1">
                   <widget class="MDIButton" name="mdibutton_17">
                    <property name="minimumSize">
                     <size>
-                     <width>90</width>
-                     <height>90</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -2395,8 +2399,8 @@ SLOWER</string>
                   <widget class="MDIButton" name="mdibutton_20">
                    <property name="minimumSize">
                     <size>
-                     <width>90</width>
-                     <height>90</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -2421,8 +2425,8 @@ SLOWER</string>
                   <widget class="MDIButton" name="mdibutton_22">
                    <property name="minimumSize">
                     <size>
-                     <width>90</width>
-                     <height>90</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -2447,8 +2451,8 @@ SLOWER</string>
                   <widget class="MDIButton" name="mdibutton_19">
                    <property name="minimumSize">
                     <size>
-                     <width>90</width>
-                     <height>90</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -2473,8 +2477,8 @@ SLOWER</string>
                   <widget class="MDIButton" name="mdibutton_21">
                    <property name="minimumSize">
                     <size>
-                     <width>90</width>
-                     <height>90</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -2496,7 +2500,11 @@ SLOWER</string>
                   </widget>
                  </item>
                  <item row="4" column="2">
-                  <widget class="VCPSettingsLineEdit" name="settings_lineedit_2"/>
+                  <widget class="VCPSettingsLineEdit" name="settings_lineedit_2">
+                   <property name="settingName" stdset="0">
+                    <string>manual-touchoff.z-offset</string>
+                   </property>
+                  </widget>
                  </item>
                  <item row="3" column="1">
                   <widget class="StatusLabel" name="statuslabel_2">
@@ -4375,10 +4383,9 @@ MODES</string>
  <buttongroups>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpSpindle"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

@@ -1,0 +1,97 @@
+; manual toolchange with automatic tool length probe
+
+o<test_change> sub
+(DEBUG,<-------- M6 remap firing -------->)
+
+; we need #<_ReferenceTool> to exist so check and create if needed
+o10 if [EXISTS[#<_ReferenceTool>]]
+    (DEBUG, _ReferenceTool exists with value: #<_ReferenceTool>)
+o10 else
+    (DEBUG, _ReferenceTool initalised)
+    #<_ReferenceTool>=0
+o10 endif
+
+; move to toolchange position: z, then xy
+g53 g0 Z #<_ini[change_position]z>
+g53 g0 X #<_ini[change_position]x> Y #<_ini[change_position]y>
+
+(DEBUG, standard M6 START)
+M6
+(DEBUG, standard M6 DONE)
+
+(we change feed, metric/in and potentially G90)
+(so record current modal state)
+(M73 is not useful here because it reverts G43 on return too)
+#<metric> = #<_metric>
+#<absolute> = #<_absolute>
+#<feed> = #<_feed>
+
+(DEBUG, Tool Selected == #<_selected_tool>)
+(DEBUG, Metric == #<metric>)
+(DEBUG, Absolute == #<absolute>)
+(DEBUG, Feed == #<feed>)
+
+; turn off toolset offsets
+(DEBUG, Turn off TLO with G49)
+G49
+
+G21 (TLO and toolchange position is in mm as per ini)
+G90 (absolute)
+
+
+; Test if we are using Tool 0 which is Tool Unload
+O200 if [#<_selected_tool> EQ 0]   ; an unload.
+    (DEBUG, Tool 0 - TOOL UNLOAD. Restore and exit macro)
+    O<restore> call [#<metric>] [#<absolute>] [#<feed>]
+O200    return [1] ; indicate success
+O200 endif
+
+; tool changed - move to toolsensor
+g53 g0 X #<_ini[toolsensor]x> Y #<_ini[toolsensor]y>
+g53 g0 Z #<_ini[toolsensor]z>
+
+; perhaps link to a pin to activate a probing LED on the gui
+M64 P  #<_ini[pins]probing> ; turn on probing led
+
+M64 P0
+; Prep and initiate the "fast" probe
+F #<_ini[toolsensor]probefeed>
+G91 (relative mode)
+G38.3 Z #<_ini[toolsensor]auto_maxprobe>
+(DEBUG, Prode contacted 1: Z = #5063, X = #5061, Y = #5062)
+; Back off 3mm
+G0 Z3
+; Wait for 1/2 sec
+G4 P0.5
+; Set feed to latching speed
+F #<_ini[toolsensor]probelatch>
+G38.3 Z -3.5
+(DEBUG, Prode contacted 2: Z = #5063, X = #5061, Y = #5062)
+; turn off probing led
+M65 P #<_ini[pins]probing>
+
+M65 P0
+; Test for if this is the reference tool (#<_ReferenceTool> == 0),
+; if true then save Z neasurement to #1000 for later tool change
+; offset calcs
+O400 if [#<_ReferenceTool> EQ 0]
+    #<_ReferenceToolLength>=#5063 (save reference tool length)
+    #<_ReferenceTool>=1
+    (DEBUG,Reference length is: #<_ReferenceToolLength>)
+O400 else
+     g43.1 z[#5063-#<_ReferenceToolLength>] (set new tool offset)
+     (DEBUG,New length is: #5063)
+O400 endif
+
+G90 (absolute)
+
+; move back to toolchange position: z, then xy
+g53 g0 Z #<_ini[change_position]z>
+g53 g0 X #<_ini[change_position]x> Y #<_ini[change_position]y>
+
+; restore g20/21, g90/g91, feed
+O<restore> call [#<metric>] [#<absolute>] [#<feed>]
+
+; succeed by returning a positive value
+o<manual_change> endsub [1]
+m2

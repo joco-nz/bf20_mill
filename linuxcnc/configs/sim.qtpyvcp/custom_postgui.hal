@@ -1,0 +1,22 @@
+# Include your custom_postgui HAL commands here
+# This file will not be overwritten when you run PNCconf again
+
+# link tool change macro to gui
+# motion.digital-out-00
+# CHANGE = 0
+#net guiDoToolChange     motion.digital-out-00 => qtpyvcp.halToolReady.enable
+net tool-change-request     => qtpyvcp.halToolReady.enable
+
+# motion.digital-out-01
+# PROBING = 1
+net guiProbeActive      motion.digital-out-01
+net guiProbeActive      => qtpyvcp.halProbeLed.on
+net guiProbeActive      => qtpyvcp.halProbeLed.flash
+
+# motion.digital-out-02
+# ENABLE = 2
+
+# motion.digital-in-00
+# CHANGED = 0
+#net guiToolChangeDone   qtpyvcp.halToolReady.out => motion.digital-in-00
+net tool-change-confirmed <= qtpyvcp.halToolReady.out

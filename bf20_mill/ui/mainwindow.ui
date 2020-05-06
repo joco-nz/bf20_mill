@@ -204,6 +204,34 @@ nostics</string>
               </widget>
              </item>
              <item>
+              <widget class="QPushButton" name="btnWorkOffsets">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <family>BebasKai</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>4</number>
+               </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="ActionButton" name="actionbutton_13">
                <property name="text">
                 <string>PROBE</string>
@@ -223,35 +251,6 @@ nostics</string>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
                </attribute>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="btnWorkOffsets">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="font">
-                <font>
-                 <family>BebasKai</family>
-                 <pointsize>16</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Work
-Offsets</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <property name="page" stdset="0">
-                <number>4</number>
-               </property>
-               <property name="leftNavBtn" stdset="0">
-                <string/>
-               </property>
               </widget>
              </item>
              <item>
@@ -349,7 +348,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -646,22 +645,47 @@ Line</string>
                       <property name="actionName" stdset="0">
                        <string>program.run:#&lt;currrentLineLbl&gt;</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>12</string>
+                      <property name="gcodeBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
                     <item>
-                     <widget class="ActionButton" name="actionbutton_30"/>
+                     <widget class="ActionButton" name="actionbutton_30">
+                      <property name="gcodeBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="ActionButton" name="actionbutton_31"/>
+                     <widget class="ActionButton" name="actionbutton_31">
+                      <property name="gcodeBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="ActionButton" name="actionbutton_32"/>
+                     <widget class="ActionButton" name="btnSaveGcode">
+                      <property name="text">
+                       <string>Save</string>
+                      </property>
+                      <property name="gcodeBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
                     </item>
                     <item>
-                     <widget class="ActionButton" name="actionbutton_28"/>
+                     <widget class="ActionButton" name="btnEditGcode">
+                      <property name="text">
+                       <string>Edit</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="gcodeBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
                     </item>
                    </layout>
                   </widget>
@@ -1248,6 +1272,12 @@ Z0</string>
               </item>
               <item row="2" column="0">
                <widget class="StatusLabel" name="lblAxisX">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>40</width>
@@ -1299,6 +1329,12 @@ Z0</string>
               </item>
               <item row="4" column="0">
                <widget class="StatusLabel" name="lblAxisZ">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>40</width>
@@ -1418,6 +1454,12 @@ Z0</string>
               </item>
               <item row="3" column="0">
                <widget class="StatusLabel" name="lblAxisY">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>0</height>
+                 </size>
+                </property>
                 <property name="maximumSize">
                  <size>
                   <width>40</width>
@@ -3902,12 +3944,18 @@ Z</string>
                     <string>PARENT
 DIR</string>
                    </property>
+                   <property name="fileBtns" stdset="0">
+                    <string/>
+                   </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QPushButton" name="btnOpenDir">
                    <property name="text">
                     <string>OPEN</string>
+                   </property>
+                   <property name="fileBtns" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3916,12 +3964,18 @@ DIR</string>
                    <property name="text">
                     <string>UP</string>
                    </property>
+                   <property name="fileBtns" stdset="0">
+                    <string/>
+                   </property>
                   </widget>
                  </item>
                  <item>
                   <widget class="QPushButton" name="btnDownFile">
                    <property name="text">
                     <string>DOWN</string>
+                   </property>
+                   <property name="fileBtns" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -4037,7 +4091,7 @@ OFFSETS</string>
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>E92
+          <string>G92
 OFFSETS</string>
          </property>
          <property name="checkable">
@@ -4727,6 +4781,38 @@ MODES</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnEditGcode</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>gcodeeditor</receiver>
+   <slot>setEditable(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>855</x>
+     <y>885</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>463</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSaveGcode</sender>
+   <signal>clicked()</signal>
+   <receiver>gcodeeditor</receiver>
+   <slot>save()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>855</x>
+     <y>826</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>463</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -4746,12 +4832,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

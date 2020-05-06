@@ -1,3 +1,6 @@
+/**********************************************************************
+ *                               Global                               *
+ *********************************************************************/
 QMainWindow {
     background: #2e3436
 }
@@ -8,53 +11,25 @@ QStatusBar {
     font-size: 12pt;
 }
 
-
-
-
-/**********************************************************************
- *                               Bottom Nav Bar                       *
- *********************************************************************/
-ActionButton[actionName="machine.power.toggle"]:checked{
-    color: black;
+.QWidget {
+    border-style: solid;
+    border-width: 1px;
 }
 
-ActionButton[actionName="program.run"]:enabled{
-    /*border-color: #00EE00;*/
+QPushButton {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    min-width: 50px;
+    min-height: 50px;
 }
 
-ActionButton[actionName="program.step"]:enabled{
+QPushButton:pressed {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
 }
 
-ActionButton[actionName="program.pause"]:enabled{
-}
-
-ActionButton[actionName="program.resume"]:enabled{
-}
-
-ActionButton[actionName="program.abort"]:enabled{
-}
-
-
-
-/**********************************************************************
- *                             Left Nav Bar                           *
- *********************************************************************/
-QPushButton[leftNavBtn] {
-        font: 14pt "Bebas Kai";
-}
-
-/**********************************************************************
- *                             Right Nav Bar                           *
- *********************************************************************/
-QPushButton[rightNavBtn] {
-        font: 14pt "Bebas Kai";
-}
-
-
-
-
-HalButton[objectName="tool_changed"]:enabled {
-    border-color: #FF0000;
+QPushButton:disabled {
+    color: gray;
 }
 
 StatusLabel {
@@ -62,76 +37,6 @@ StatusLabel {
     border-width: 2px;
     border-radius: 5px;
 }
-
-StatusLabel[DROHeading] {
-    font: 16pt "Bebas Kai";
-    background-color: lightgray;
-}
-
-StatusLabel[ActiveGCode] {
-    font: 14pt "Bebas Kai";
-    background-color: lightgray;
-}
-
-StatusLabel[ToolLoaded] {
-    font: 14pt "Bebas Kai";
-    background-color: lightgray;
-}
-
-StatusLabel[labelFont="20"] {
-    font: 20pt "Bebas Kai";
-}
-
-StatusLabel[labelFont="18"] {
-    font: 18pt "Bebas Kai";
-}
-
-StatusLabel[labelFont="16"] {
-    font: 16pt "Bebas Kai";
-}
-
-StatusLabel[labelFont="14"] {
-    font: 14pt "Bebas Kai";
-}
-
-StatusLabel[labelFont="12"] {
-    font: 12pt "Bebas Kai";
-}
-
-StatusLabel[labelFont="10"] {
-    font: 10pt "Bebas Kai";
-}
-
-
-DROWidget[labelFont="10"] {
-    font: 10pt "Bebas Kai";
-}
-
-/* QLineEdit */
-QLineEdit[labelFont="20"] {
-    font: 20pt "Bebas Kai";
-}
-
-QLineEdit[labelFont="18"] {
-    font: 18pt "Bebas Kai";
-}
-
-QLineEdit[labelFont="16"] {
-    font: 16pt "Bebas Kai";
-}
-
-QLineEdit[labelFont="14"] {
-    font: 14pt "Bebas Kai";
-}
-
-QLineEdit[labelFont="12"] {
-    font: 12pt "Bebas Kai";
-}
-
-QLineEdit[labelFont="10"] {
-    font: 10pt "Bebas Kai";
-}
-
 
 VCPLineEdit,
 QLineEdit, QLabel {
@@ -205,6 +110,133 @@ VCPSettingsSlider::handle:vertical, ActionSlider::handle:vertical {
     border-radius: 3px;
 }
 
+
+/**********************************************************************
+ *                               Bottom Nav Bar                       *
+ *********************************************************************/
+ActionButton[actionName="machine.power.toggle"]:checked{
+    color: black;
+}
+
+ActionButton[actionName="program.run"]:enabled{
+    /*border-color: #00EE00;*/
+}
+
+ActionButton[actionName="program.step"]:enabled{
+}
+
+ActionButton[actionName="program.pause"]:enabled{
+}
+
+ActionButton[actionName="program.resume"]:enabled{
+}
+
+ActionButton[actionName="program.abort"]:enabled{
+}
+
+QPushButton[actionName="machine.power.toggle"]:checked {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(154, 231, 153, 255), stop:0.0974359 rgba(92, 243, 81, 255), stop:0.446154 rgba(52, 251, 35, 255), stop:1 rgba(154, 231, 153, 255));
+}
+
+QPushButton[actionName="machine.power.toggle"]:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(208, 231, 207, 255), stop:0.0974359 rgba(189, 243, 185, 255), stop:0.446154 rgba(190, 251, 184, 255), stop:1 rgba(195, 231, 194, 255));
+}
+
+QPushButton[actionName="machine.estop.toggle"]:checked {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 64, 64, 255), stop:0.446154 rgba(204, 0, 0, 255), stop:0.764103 rgba(225, 67, 67, 255), stop:1 rgba(249, 142, 142, 255));
+}
+
+QPushButton[actionName="machine.estop.toggle"]:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(226, 139, 139, 255), stop:0.446154 rgba(249, 142, 142, 255), stop:0.764103 rgba(225, 134, 134, 255), stop:1 rgba(249, 142, 142, 255));
+}
+
+
+/**********************************************************************
+ *                             Left Nav Bar                           *
+ *********************************************************************/
+QPushButton[leftNavBtn] {
+        font: 14pt "Bebas Kai";
+}
+
+/**********************************************************************
+ *                             Right Nav Bar                          *
+ *********************************************************************/
+QPushButton[rightNavBtn] {
+        font: 14pt "Bebas Kai";
+}
+
+
+
+/**********************************************************************
+ *                         Manual Tool Change GUI                     *
+ *********************************************************************/
+HalButton[objectName="tool_changed"]:enabled {
+    border-color: #FF0000;
+}
+
+
+
+
+
+
+
+
+
+
+StatusLabel[labelFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+StatusLabel[labelFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
+
+
+/* QLineEdit */
+QLineEdit[labelFont="20"] {
+    font: 20pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="18"] {
+    font: 18pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="16"] {
+    font: 16pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="14"] {
+    font: 14pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="12"] {
+    font: 12pt "Bebas Kai";
+}
+
+QLineEdit[labelFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
+
+
+
 /*
 QWidget[objectName="g5xKeypad"] > QPushButton {
     font: 20pt "Bebas Kai";
@@ -263,27 +295,6 @@ QPushButton[buttonFont="30"] {
     font: 30pt "Bebas Kai";
 }
 
-.QWidget {
-    border-style: solid;
-    border-width: 1px;
-}
-
-QPushButton {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    min-width: 50px;
-    min-height: 50px;
-}
-
-QPushButton:pressed {
-    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
-}
-
-QPushButton:disabled {
-    color: gray;
-}
-
 
 QPushButton, QComboBox[editable="false"],
 QComboBox[editable="true"]::drop-down {
@@ -293,10 +304,6 @@ QComboBox[editable="true"]::drop-down {
     border-radius: 5px;
     border-width: 2px;
     background: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(213, 218, 216, 255), stop:0.169312 rgba(82, 82, 83, 255), stop:0.328042 rgba(72, 70, 73, 255), stop:0.492063 rgba(78, 77, 79, 255), stop:0.703704 rgba(72, 70, 73, 255), stop:0.86 rgba(82, 82, 83, 255), stop:1 rgba(213, 218, 216, 255));
-}
-
-QPushButton:pressed {
-    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
 }
 
 QPushButton:checked[option="true"] {
@@ -414,6 +421,14 @@ QPushButton[ToolTblBtn] {
 }
 
 /**********************************************************************
+ *                               File Loading                         *
+ *********************************************************************/
+QPushButton[fileBtns] {
+    font: 14pt "Bebas Kai";
+}
+
+
+/**********************************************************************
  *                        Work Offsets table                          *
  *********************************************************************/
 QTableView#tblOffsets {
@@ -436,7 +451,12 @@ DROWidget {
     border-radius: 4px;
     background-color: white;
 }
+
 /* DROWidgets */
+DROWidget[labelFont="10"] {
+    font: 10pt "Bebas Kai";
+}
+
 DROWidget[labelFont="20"] {
     font: 20pt "Bebas Kai";
 }
@@ -455,6 +475,21 @@ DROWidget[labelFont="14"] {
 
 DROWidget[labelFont="12"] {
     font: 12pt "Bebas Kai";
+}
+
+StatusLabel[DROHeading] {
+    font: 16pt "Bebas Kai";
+    background-color: lightgray;
+}
+
+StatusLabel[ActiveGCode] {
+    font: 14pt "Bebas Kai";
+    background-color: lightgray;
+}
+
+StatusLabel[ToolLoaded] {
+    font: 14pt "Bebas Kai";
+    background-color: lightgray;
 }
 
 
@@ -493,6 +528,10 @@ GcodeEditor {
     border-width: 2px;
     border-radius: 4px;
     padding: 2px;
+}
+
+QPushButton[gcodeBtn] {
+        font: 16pt "Bebas Kai";
 }
 
 QsciScintilla {

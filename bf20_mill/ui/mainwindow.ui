@@ -1815,7 +1815,7 @@ CHANGED</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -1838,7 +1838,7 @@ CWW</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -1861,7 +1861,7 @@ CW</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -1881,7 +1881,7 @@ FASTER</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -1901,7 +1901,7 @@ SLOWER</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -1960,7 +1960,7 @@ SLOWER</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -1991,7 +1991,7 @@ SLOWER</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -2022,7 +2022,7 @@ SLOWER</string>
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>60</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
@@ -2061,7 +2061,7 @@ SLOWER</string>
                   <widget class="ActionSlider" name="actionslider_2">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>50</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -2114,7 +2114,7 @@ SLOWER</string>
                   <widget class="ActionSlider" name="actionslider_3">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>50</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -2150,7 +2150,7 @@ SLOWER</string>
                   <widget class="ActionSlider" name="actionslider">
                    <property name="minimumSize">
                     <size>
-                     <width>60</width>
+                     <width>50</width>
                      <height>0</height>
                     </size>
                    </property>
@@ -3328,6 +3328,12 @@ Not Homed</string>
                    <property name="text">
                     <string>G59.2</string>
                    </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 8 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                   </property>
                    <property name="MDICommand" stdset="0">
                     <string>G59.2</string>
                    </property>
@@ -3340,6 +3346,12 @@ Not Homed</string>
                   <widget class="MDIButton" name="mdibutton_8">
                    <property name="text">
                     <string>G59</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 6 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
                    </property>
                    <property name="MDICommand" stdset="0">
                     <string>G59</string>
@@ -3354,6 +3366,12 @@ Not Homed</string>
                    <property name="text">
                     <string>G58</string>
                    </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 5 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                   </property>
                    <property name="MDICommand" stdset="0">
                     <string>G58</string>
                    </property>
@@ -3366,6 +3384,12 @@ Not Homed</string>
                   <widget class="MDIButton" name="mdibutton_5">
                    <property name="text">
                     <string>G59.3</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 9 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
                    </property>
                    <property name="MDICommand" stdset="0">
                     <string>G59.3</string>
@@ -3380,6 +3404,12 @@ Not Homed</string>
                    <property name="text">
                     <string>G57</string>
                    </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 4 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                   </property>
                    <property name="MDICommand" stdset="0">
                     <string>G57</string>
                    </property>
@@ -3392,6 +3422,12 @@ Not Homed</string>
                   <widget class="MDIButton" name="mdibutton_9">
                    <property name="text">
                     <string>G54</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 1 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
                    </property>
                    <property name="MDICommand" stdset="0">
                     <string>G54</string>
@@ -3406,6 +3442,12 @@ Not Homed</string>
                    <property name="text">
                     <string>G55</string>
                    </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 2 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                   </property>
                    <property name="MDICommand" stdset="0">
                     <string>G55</string>
                    </property>
@@ -3419,6 +3461,12 @@ Not Homed</string>
                    <property name="text">
                     <string>G56</string>
                    </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 3 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                   </property>
                    <property name="MDICommand" stdset="0">
                     <string>G56</string>
                    </property>
@@ -3431,6 +3479,12 @@ Not Homed</string>
                   <widget class="MDIButton" name="mdibutton_3">
                    <property name="text">
                     <string>G59.1</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 7 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
                    </property>
                    <property name="MDICommand" stdset="0">
                     <string>G59.1</string>
@@ -4692,11 +4746,11 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMode"/>
  </buttongroups>

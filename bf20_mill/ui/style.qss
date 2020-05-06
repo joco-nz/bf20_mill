@@ -36,7 +36,19 @@ ActionButton[actionName="program.abort"]:enabled{
 
 
 
+/**********************************************************************
+ *                             Left Nav Bar                           *
+ *********************************************************************/
+QPushButton[leftNavBtn] {
+        font: 14pt "Bebas Kai";
+}
 
+/**********************************************************************
+ *                             Right Nav Bar                           *
+ *********************************************************************/
+QPushButton[rightNavBtn] {
+        font: 14pt "Bebas Kai";
+}
 
 
 
@@ -324,6 +336,67 @@ ActionButton[style='homed'] {
     background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(154, 231, 153, 255), stop:0.0974359 rgba(92, 243, 81, 255), stop:0.446154 rgba(52, 251, 35, 255), stop:1 rgba(154, 231, 153, 255));
 }
 
+QPushButton[homeAxisBtn] {
+    font: 14pt "Bebas Kai";
+}
+
+QPushButton[G5xBtn] {
+    font: 20pt "Bebas Kai";
+}
+
+/**********************************************************************
+ *                               G5x Offset Setting                   *
+ *********************************************************************/
+
+QPushButton[G5xOffsetBtn] {
+    font: 14pt "Bebas Kai";
+}
+
+QPushButton[G5xOffsetKeyBtn] {
+    font: 20pt "Bebas Kai";
+}
+
+/**********************************************************************
+ *                               MDI Keys                             *
+ *********************************************************************/
+
+QPushButton[mdiKeyBtn] {
+    font: 20pt "Bebas Kai";
+}
+
+QPushButton[mdiBtn] {
+    font: 16pt "Bebas Kai";
+}
+
+
+/**********************************************************************
+ *                               Spindle                              *
+ *********************************************************************/
+
+QPushButton[spindleBtn] {
+    font: 16pt "Bebas Kai";
+}
+
+StatusLabel[spindleRPM] {
+    font: 20pt "Bebas Kai";
+}
+
+
+/**********************************************************************
+ *                               Jog Buttons                          *
+ *********************************************************************/
+QPushButton[jogBtn] {
+    font: 20pt "Bebas Kai";
+}
+
+/**********************************************************************
+ *                               Mode Buttons                          *
+ *********************************************************************/
+ActionButton[modeBtn] {
+    font: 20pt "Bebas Kai";
+}
+
+
 /**********************************************************************
  *                               Tooltable                            *
  *********************************************************************/
@@ -337,7 +410,7 @@ QHeaderView {
 
 
 QPushButton[ToolTblBtn] {
-    font: 16pt "Bebas Kai";
+    font: 14pt "Bebas Kai";
 }
 
 /**********************************************************************
@@ -404,6 +477,10 @@ VTKBackplot {
     border-radius: 4px;
     background-color: black;
     margin: 10px;
+}
+/* Backplot buttons */
+QPushButton[plotNavBtn] {
+        font: 16pt "Bebas Kai";
 }
 
 /**********************************************************************

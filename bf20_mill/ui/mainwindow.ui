@@ -131,8 +131,8 @@
                <property name="page" stdset="0">
                 <number>2</number>
                </property>
-               <property name="buttonFont" stdset="0">
-                <string>16</string>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -157,8 +157,8 @@ nostics</string>
                <property name="page" stdset="0">
                 <number>5</number>
                </property>
-               <property name="buttonFont" stdset="0">
-                <string>16</string>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -176,6 +176,9 @@ nostics</string>
                <property name="autoExclusive">
                 <bool>true</bool>
                </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
+               </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
                </attribute>
@@ -191,6 +194,9 @@ nostics</string>
                </property>
                <property name="autoExclusive">
                 <bool>true</bool>
+               </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -211,8 +217,8 @@ nostics</string>
                <property name="page" stdset="0">
                 <number>4</number>
                </property>
-               <property name="buttonFont" stdset="0">
-                <string>16</string>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -223,6 +229,12 @@ nostics</string>
               <widget class="QPushButton" name="btnWorkOffsets">
                <property name="enabled">
                 <bool>false</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <family>BebasKai</family>
+                 <pointsize>16</pointsize>
+                </font>
                </property>
                <property name="text">
                 <string>Work
@@ -236,6 +248,9 @@ Offsets</string>
                </property>
                <property name="page" stdset="0">
                 <number>4</number>
+               </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
               </widget>
              </item>
@@ -254,8 +269,8 @@ TABLE</string>
                <property name="page" stdset="0">
                 <number>3</number>
                </property>
-               <property name="buttonFont" stdset="0">
-                <string>16</string>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -277,8 +292,8 @@ VIEWER</string>
                <property name="page" stdset="0">
                 <number>1</number>
                </property>
-               <property name="buttonFont" stdset="0">
-                <string>16</string>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -302,8 +317,8 @@ VIEWER</string>
                <property name="page" stdset="0">
                 <number>0</number>
                </property>
-               <property name="buttonFont" stdset="0">
-                <string>16</string>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -382,8 +397,8 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -398,8 +413,8 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -414,8 +429,8 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -430,8 +445,8 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -446,8 +461,8 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -462,8 +477,8 @@ VIEWER</string>
                       <property name="autoExclusive">
                        <bool>false</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -472,8 +487,8 @@ VIEWER</string>
                       <property name="text">
                        <string>-</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -483,8 +498,8 @@ VIEWER</string>
                        <string>Center
 Plot</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -499,8 +514,8 @@ Plot</string>
                       <property name="checked">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -509,8 +524,8 @@ Plot</string>
                       <property name="text">
                        <string>Clear</string>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -523,8 +538,8 @@ EXTENT</string>
                       <property name="checkable">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -540,8 +555,8 @@ Extent</string>
                       <property name="checked">
                        <bool>true</bool>
                       </property>
-                      <property name="buttonFont" stdset="0">
-                       <string>16</string>
+                      <property name="plotNavBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -1043,7 +1058,7 @@ ALL</string>
 X0 Y0</string>
             </property>
             <property name="MDICommand" stdset="0">
-             <string>G0 X0 Y0</string>
+             <string>G0X0Y0</string>
             </property>
             <property name="buttonFont" stdset="0">
              <string>16</string>
@@ -1053,11 +1068,11 @@ X0 Y0</string>
           <item>
            <widget class="MDIButton" name="mdibutton_2">
             <property name="text">
-             <string>LOAD
-T1</string>
+             <string>Go
+Z0</string>
             </property>
             <property name="MDICommand" stdset="0">
-             <string>T1 M6</string>
+             <string>G0Z0</string>
             </property>
             <property name="buttonFont" stdset="0">
              <string>16</string>
@@ -1797,6 +1812,12 @@ CHANGED</string>
                  </property>
                  <item row="0" column="0">
                   <widget class="ActionButton" name="actionbutton">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>SPINDLE
 CWW</string>
@@ -1807,13 +1828,19 @@ CWW</string>
                    <property name="actionName" stdset="0">
                     <string>spindle.reverse</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="1">
                   <widget class="ActionButton" name="actionbutton_4">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>SPINDLE
 CW</string>
@@ -1824,13 +1851,19 @@ CW</string>
                    <property name="actionName" stdset="0">
                     <string>spindle.forward</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="1">
                   <widget class="ActionButton" name="actionbutton_14">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>SPINDLE
 FASTER</string>
@@ -1838,13 +1871,19 @@ FASTER</string>
                    <property name="actionName" stdset="0">
                     <string>spindle.faster</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
                   <widget class="ActionButton" name="actionbutton_9">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>SPINDLE
 SLOWER</string>
@@ -1852,13 +1891,19 @@ SLOWER</string>
                    <property name="actionName" stdset="0">
                     <string>spindle.slower</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item row="0" column="2">
                   <widget class="ActionButton" name="actionbutton_47">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>STOP</string>
                    </property>
@@ -1874,13 +1919,19 @@ SLOWER</string>
                    <property name="actionName" stdset="0">
                     <string>spindle.off</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="2">
                   <widget class="StatusLabel" name="targetSpindleSpeed">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>60</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>0.0</string>
                    </property>
@@ -1890,8 +1941,230 @@ SLOWER</string>
                    <property name="rules" stdset="0">
                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.speed?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Speed&quot;}]</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="spindleRPM" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_7">
+                <property name="title">
+                 <string>Mode</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_12">
+                 <item>
+                  <widget class="ActionButton" name="actionbutton_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Auto</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>false</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 2 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.mode.auto</string>
+                   </property>
+                   <property name="modeBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMode</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="ActionButton" name="actionbutton_27">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>MDI</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>false</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 3 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.mode.mdi</string>
+                   </property>
+                   <property name="modeBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMode</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="ActionButton" name="actionbutton_42">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Manual</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>false</bool>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 1 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.mode.manual</string>
+                   </property>
+                   <property name="modeBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpMode</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_8">
+                <property name="title">
+                 <string>Override</string>
+                </property>
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="1" column="2">
+                  <widget class="ActionSlider" name="actionslider_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.rapid-override.set</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="StatusLabel" name="statuslabel_6">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Feed
+%</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="StatusLabel" name="statuslabel_5">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Rapid
+%</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionSlider" name="actionslider_3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.feed-override.set</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="StatusLabel" name="statuslabel_13">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>Spindle
+%</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="ActionSlider" name="actionslider">
+                   <property name="minimumSize">
+                    <size>
+                     <width>60</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="invertedAppearance">
+                    <bool>false</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.override</string>
                    </property>
                   </widget>
                  </item>
@@ -1940,8 +2213,8 @@ SLOWER</string>
                    <property name="text">
                     <string>-</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -1953,8 +2226,8 @@ SLOWER</string>
                    <property name="text">
                     <string>3</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -1966,8 +2239,8 @@ SLOWER</string>
                    <property name="text">
                     <string>T</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -1979,8 +2252,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -1989,8 +2262,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2002,8 +2275,8 @@ SLOWER</string>
                    <property name="text">
                     <string>4</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2015,8 +2288,8 @@ SLOWER</string>
                    <property name="text">
                     <string>9</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2028,8 +2301,8 @@ SLOWER</string>
                    <property name="text">
                     <string>2</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2076,8 +2349,8 @@ SLOWER</string>
                    <property name="checkable">
                     <bool>false</bool>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="mdiBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2086,8 +2359,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2099,8 +2372,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2112,8 +2385,8 @@ SLOWER</string>
                    <property name="text">
                     <string>8</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2125,8 +2398,8 @@ SLOWER</string>
                    <property name="text">
                     <string>.</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2138,8 +2411,8 @@ SLOWER</string>
                    <property name="text">
                     <string>1</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2151,8 +2424,8 @@ SLOWER</string>
                    <property name="text">
                     <string>0</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2164,8 +2437,8 @@ SLOWER</string>
                    <property name="text">
                     <string>SEND</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="mdiBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2174,8 +2447,8 @@ SLOWER</string>
                    <property name="text">
                     <string>F</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2187,8 +2460,8 @@ SLOWER</string>
                    <property name="text">
                     <string>7</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2200,8 +2473,8 @@ SLOWER</string>
                    <property name="text">
                     <string>PARAMS</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="mdiBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2210,8 +2483,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2223,8 +2496,8 @@ SLOWER</string>
                    <property name="text">
                     <string>6</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2236,8 +2509,8 @@ SLOWER</string>
                    <property name="text">
                     <string>M</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2249,8 +2522,8 @@ SLOWER</string>
                    <property name="text">
                     <string>BKSP</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>16</string>
+                   <property name="mdiBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2259,8 +2532,8 @@ SLOWER</string>
                    <property name="text">
                     <string>5</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2272,8 +2545,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2285,8 +2558,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2298,8 +2571,8 @@ SLOWER</string>
                    <property name="text">
                     <string/>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2311,8 +2584,8 @@ SLOWER</string>
                    <property name="text">
                     <string>G</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="mdiKeyBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpMdi</string>
@@ -2362,51 +2635,6 @@ SLOWER</string>
                  <property name="spacing">
                   <number>5</number>
                  </property>
-                 <item row="3" column="2">
-                  <widget class="VCPSettingsLineEdit" name="manualXYoffset">
-                   <property name="maximumSize">
-                    <size>
-                     <width>90</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="settingName" stdset="0">
-                    <string>manual-touchoff.xy-offset</string>
-                   </property>
-                   <property name="textFormat" stdset="0">
-                    <string>{:10.3f}</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="MDIButton" name="mdibutton_17">
-                   <property name="minimumSize">
-                    <size>
-                     <width>54</width>
-                     <height>54</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>90</width>
-                     <height>90</height>
-                    </size>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>85</width>
-                     <height>85</height>
-                    </size>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G10L20P0Z#&lt;manualZoffset&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="0" column="1">
                   <widget class="MDIButton" name="mdibutton_20">
                    <property name="minimumSize">
@@ -2433,35 +2661,6 @@ SLOWER</string>
                    </property>
                    <property name="MDICommand" stdset="0">
                     <string>G10L20P0Y#&lt;manualXYoffset&gt;</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="2">
-                  <widget class="MDIButton" name="mdibutton_22">
-                   <property name="minimumSize">
-                    <size>
-                     <width>54</width>
-                     <height>54</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>90</width>
-                     <height>90</height>
-                    </size>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normaloff>../resources/images/x_minus.png</normaloff>../resources/images/x_minus.png</iconset>
-                   </property>
-                   <property name="iconSize">
-                    <size>
-                     <width>85</width>
-                     <height>85</height>
-                    </size>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G10L20P0X-#&lt;manualXYoffset&gt;</string>
                    </property>
                   </widget>
                  </item>
@@ -2494,6 +2693,65 @@ SLOWER</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="1" column="2">
+                  <widget class="MDIButton" name="mdibutton_22">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>54</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/x_minus.png</normaloff>../resources/images/x_minus.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0X#&lt;manualXYoffset&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="2">
+                  <widget class="VCPSettingsLineEdit" name="manualZoffset">
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="settingName" stdset="0">
+                    <string>manual-touchoff.z-offset</string>
+                   </property>
+                   <property name="textFormat" stdset="0">
+                    <string>{:0.3f}</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="StatusLabel" name="statuslabel_3">
+                   <property name="text">
+                    <string>Z Offset</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="StatusLabel" name="statuslabel_2">
+                   <property name="text">
+                    <string>X/Y Offset</string>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="1" column="0">
                   <widget class="MDIButton" name="mdibutton_21">
                    <property name="minimumSize">
@@ -2519,12 +2777,41 @@ SLOWER</string>
                     </size>
                    </property>
                    <property name="MDICommand" stdset="0">
-                    <string>G10L20P0X#&lt;manualXYoffset&gt;</string>
+                    <string>G10L20P0X-#&lt;manualXYoffset&gt;</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="2">
-                  <widget class="VCPSettingsLineEdit" name="manualZoffset">
+                 <item row="1" column="1">
+                  <widget class="MDIButton" name="mdibutton_17">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>54</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>90</width>
+                     <height>90</height>
+                    </size>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>85</width>
+                     <height>85</height>
+                    </size>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>G10L20P0Z#&lt;manualZoffset&gt;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="VCPSettingsLineEdit" name="manualXYoffset">
                    <property name="maximumSize">
                     <size>
                      <width>90</width>
@@ -2532,24 +2819,10 @@ SLOWER</string>
                     </size>
                    </property>
                    <property name="settingName" stdset="0">
-                    <string>manual-touchoff.z-offset</string>
+                    <string>manual-touchoff.xy-offset</string>
                    </property>
                    <property name="textFormat" stdset="0">
-                    <string>{:10.3f}</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="1">
-                  <widget class="StatusLabel" name="statuslabel_2">
-                   <property name="text">
-                    <string>X/Y Offset</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="4" column="1">
-                  <widget class="StatusLabel" name="statuslabel_3">
-                   <property name="text">
-                    <string>Z Offset</string>
+                    <string>{:0.3f}</string>
                    </property>
                   </widget>
                  </item>
@@ -2594,8 +2867,8 @@ SLOWER</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog-mode.continuous</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpContInc</string>
@@ -2630,8 +2903,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-increment:0.01</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpIncrements</string>
@@ -2652,8 +2925,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-increment:1</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpIncrements</string>
@@ -2668,8 +2941,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:z,pos</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2681,8 +2954,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:z,neg</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2700,8 +2973,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-increment:0.1</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpIncrements</string>
@@ -2716,8 +2989,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:x,pos</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2763,8 +3036,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog-mode.incremental</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                    <attribute name="buttonGroup">
                     <string notr="true">btngrpContInc</string>
@@ -2811,8 +3084,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:y,pos</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2824,8 +3097,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:x,neg</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2837,8 +3110,8 @@ N/A</string>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.axis:y,neg</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2910,8 +3183,8 @@ Not Homed</string>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.0</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>14</string>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2927,8 +3200,8 @@ Not Homed</string>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.1</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>14</string>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2944,8 +3217,8 @@ Y</string>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.1</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>14</string>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2961,8 +3234,8 @@ X</string>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.0</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>14</string>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2978,8 +3251,8 @@ Z</string>
                    <property name="actionName" stdset="0">
                     <string>machine.home.axis.2</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>14</string>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -2995,8 +3268,8 @@ Not Homed</string>
                    <property name="actionName" stdset="0">
                     <string>machine.unhome.axis.2</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>14</string>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3058,8 +3331,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G59.2</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3071,8 +3344,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G59</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3084,8 +3357,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G58</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3097,8 +3370,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G59.3</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3110,8 +3383,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G57</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3123,8 +3396,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G54</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3136,8 +3409,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G55</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3149,8 +3422,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G56</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3162,8 +3435,8 @@ Not Homed</string>
                    <property name="MDICommand" stdset="0">
                     <string>G59.1</string>
                    </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
+                   <property name="G5xBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -3255,8 +3528,8 @@ Not Homed</string>
                     <property name="text">
                      <string>6</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3268,8 +3541,8 @@ Not Homed</string>
                     <property name="text">
                      <string>1</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3281,8 +3554,8 @@ Not Homed</string>
                     <property name="text">
                      <string>9</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3294,8 +3567,8 @@ Not Homed</string>
                     <property name="text">
                      <string>CLEAR</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3304,8 +3577,8 @@ Not Homed</string>
                     <property name="text">
                      <string>BKSP</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3314,8 +3587,8 @@ Not Homed</string>
                     <property name="text">
                      <string>.</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3327,8 +3600,8 @@ Not Homed</string>
                     <property name="text">
                      <string>0</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3340,8 +3613,8 @@ Not Homed</string>
                     <property name="text">
                      <string>5</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3353,8 +3626,8 @@ Not Homed</string>
                     <property name="text">
                      <string>-</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3366,8 +3639,8 @@ Not Homed</string>
                     <property name="text">
                      <string>2</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3379,8 +3652,8 @@ Not Homed</string>
                     <property name="text">
                      <string>4</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3392,8 +3665,8 @@ Not Homed</string>
                     <property name="text">
                      <string>8</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3405,8 +3678,8 @@ Not Homed</string>
                     <property name="text">
                      <string>7</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3418,8 +3691,8 @@ Not Homed</string>
                     <property name="text">
                      <string>3</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>20</string>
+                    <property name="G5xOffsetKeyBtn" stdset="0">
+                     <string/>
                     </property>
                     <attribute name="buttonGroup">
                      <string notr="true">btngrpG5x</string>
@@ -3452,8 +3725,8 @@ G5x</string>
                     <property name="MDICommand" stdset="0">
                      <string>G10L2P1X0Y0Z0R0</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3466,8 +3739,8 @@ G5x</string>
                     <property name="MDICommand" stdset="0">
                      <string>G10L20P0X#&lt;g5xOffsetLbl&gt;Y#&lt;g5xOffsetLbl&gt;Z#&lt;g5xOffsetLbl&gt;</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3480,8 +3753,8 @@ X</string>
                     <property name="MDICommand" stdset="0">
                      <string>G10L20P0X#&lt;g5xOffsetLbl&gt;</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3494,8 +3767,8 @@ Y</string>
                     <property name="MDICommand" stdset="0">
                      <string>G10L20P0Y#&lt;g5xOffsetLbl&gt;</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3508,8 +3781,8 @@ Z</string>
                     <property name="MDICommand" stdset="0">
                      <string>G10L20P0Z#&lt;g5xOffsetLbl&gt;</string>
                     </property>
-                    <property name="buttonFont" stdset="0">
-                     <string>14</string>
+                    <property name="G5xOffsetBtn" stdset="0">
+                     <string/>
                     </property>
                    </widget>
                   </item>
@@ -3670,8 +3943,8 @@ LOAD</string>
          <property name="page" stdset="0">
           <number>7</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3696,8 +3969,8 @@ OFFSETS</string>
          <property name="page" stdset="0">
           <number>6</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3722,8 +3995,8 @@ OFFSETS</string>
          <property name="page" stdset="0">
           <number>5</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3745,8 +4018,8 @@ OFFSETS</string>
          <property name="page" stdset="0">
           <number>4</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3771,8 +4044,8 @@ COORD</string>
          <property name="page" stdset="0">
           <number>3</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3794,8 +4067,8 @@ Touch</string>
          <property name="page" stdset="0">
           <number>2</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3816,8 +4089,8 @@ Touch</string>
          <property name="page" stdset="0">
           <number>1</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3839,8 +4112,8 @@ MODES</string>
          <property name="page" stdset="0">
           <number>0</number>
          </property>
-         <property name="buttonFont" stdset="0">
-          <string>16</string>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
          </property>
          <attribute name="buttonGroup">
           <string notr="true">btngrpRightNav</string>
@@ -3902,6 +4175,11 @@ MODES</string>
    <class>MDIEntry</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
   </customwidget>
   <customwidget>
    <class>OffsetTable</class>
@@ -4414,11 +4692,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

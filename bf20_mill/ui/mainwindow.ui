@@ -348,7 +348,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>1</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -723,6 +723,17 @@ From</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="actionbutton_31">
+                      <property name="gcodeBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="btnSaveAs">
+                      <property name="text">
+                       <string>Save
+As</string>
+                      </property>
                       <property name="gcodeBtn" stdset="0">
                        <string/>
                       </property>
@@ -4912,7 +4923,23 @@ MODES</string>
     </hint>
     <hint type="destinationlabel">
      <x>451</x>
-     <y>438</y>
+     <y>437</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnSaveAs</sender>
+   <signal>clicked()</signal>
+   <receiver>gcodeeditor</receiver>
+   <slot>saveAs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>855</x>
+     <y>767</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>437</y>
     </hint>
    </hints>
   </connection>
@@ -4935,12 +4962,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

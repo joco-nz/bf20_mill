@@ -1,4 +1,5 @@
 from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
+from qtpyvcp.plugins import getPlugin
 ### Supports the @Slot decorator to solve property type issues.
 from qtpy.QtCore import Slot
 from qtpy.QtWidgets import QAbstractButton
@@ -109,3 +110,5 @@ class MyMainWindow(VCPMainWindow):
         if len(parent.mdiEntry.text()) > 0:
             text = parent.mdiEntry.text()[:-1]
             parent.mdiEntry.setText(text)
+
+

@@ -114,6 +114,10 @@ VCPSettingsSlider::handle:vertical, ActionSlider::handle:vertical {
 /**********************************************************************
  *                               Bottom Nav Bar                       *
  *********************************************************************/
+QPushButton[bottomNavBtn] {
+        font: 14pt "Bebas Kai";
+}
+
 ActionButton[actionName="machine.power.toggle"]:checked{
     color: black;
 }

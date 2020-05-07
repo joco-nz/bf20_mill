@@ -589,13 +589,69 @@ Extent</string>
                   <number>5</number>
                  </property>
                  <item>
-                  <widget class="GcodeEditor" name="gcodeeditor">
-                   <property name="font">
-                    <font>
-                     <family>Ubuntu Mono</family>
-                     <pointsize>14</pointsize>
-                    </font>
-                   </property>
+                  <widget class="VCPWidget" name="widget_17">
+                   <layout class="QVBoxLayout" name="verticalLayout_19">
+                    <item>
+                     <widget class="GcodeEditor" name="gcodeeditor"/>
+                    </item>
+                    <item>
+                     <widget class="VCPWidget" name="widget_18">
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <item>
+                        <widget class="QLabel" name="label_2">
+                         <property name="minimumSize">
+                          <size>
+                           <width>85</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>85</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>File Name:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="VCPLineEdit" name="editGcodeLoadedFile">
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                         <property name="rules" stdset="0">
+                          <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:file&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;loadedProg&quot;}]</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label">
+                         <property name="minimumSize">
+                          <size>
+                           <width>108</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>108</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string>Current Line:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="StatusLabel" name="lblGcodeLine"/>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                  <item>
@@ -631,6 +687,9 @@ Extent</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="actionbutton_29">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
                       <property name="minimumSize">
                        <size>
                         <width>54</width>
@@ -639,8 +698,7 @@ Extent</string>
                       </property>
                       <property name="text">
                        <string>Run
-From
-Line</string>
+From</string>
                       </property>
                       <property name="actionName" stdset="0">
                        <string>program.run:#&lt;currrentLineLbl&gt;</string>
@@ -652,6 +710,12 @@ Line</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="actionbutton_30">
+                      <property name="text">
+                       <string>Reload</string>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>program.reload</string>
+                      </property>
                       <property name="gcodeBtn" stdset="0">
                        <string/>
                       </property>
@@ -999,8 +1063,8 @@ LINE</string>
             <property name="text">
              <string>EXIT</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1021,8 +1085,8 @@ LINE</string>
             <property name="actionName" stdset="0">
              <string>machine.estop.toggle</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1037,8 +1101,8 @@ LINE</string>
             <property name="actionName" stdset="0">
              <string>machine.power.toggle</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1070,8 +1134,8 @@ ALL</string>
             <property name="actionName" stdset="0">
              <string>machine.home.all</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1084,8 +1148,8 @@ X0 Y0</string>
             <property name="MDICommand" stdset="0">
              <string>G0X0Y0</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1098,8 +1162,8 @@ Z0</string>
             <property name="MDICommand" stdset="0">
              <string>G0Z0</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1124,8 +1188,8 @@ Z0</string>
             <property name="actionName" stdset="0">
              <string>program.run</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1137,8 +1201,8 @@ Z0</string>
             <property name="actionName" stdset="0">
              <string>program.step</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1150,8 +1214,8 @@ Z0</string>
             <property name="actionName" stdset="0">
              <string>program.pause</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1163,8 +1227,8 @@ Z0</string>
             <property name="actionName" stdset="0">
              <string>program.resume</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -1176,8 +1240,42 @@ Z0</string>
             <property name="actionName" stdset="0">
              <string>program.abort</string>
             </property>
-            <property name="buttonFont" stdset="0">
-             <string>16</string>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_28">
+            <property name="text">
+             <string>Optional
+Stop</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.optional-stop.toggle</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_32">
+            <property name="text">
+             <string>Block
+Delete</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.block-delete.toggle </string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
             </property>
            </widget>
           </item>
@@ -4353,6 +4451,11 @@ MODES</string>
    <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
   </customwidget>
   <customwidget>
+   <class>VCPLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
    <class>ActionButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
@@ -4793,7 +4896,7 @@ MODES</string>
     </hint>
     <hint type="destinationlabel">
      <x>451</x>
-     <y>463</y>
+     <y>438</y>
     </hint>
    </hints>
   </connection>
@@ -4809,7 +4912,7 @@ MODES</string>
     </hint>
     <hint type="destinationlabel">
      <x>451</x>
-     <y>463</y>
+     <y>438</y>
     </hint>
    </hints>
   </connection>
@@ -4832,12 +4935,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

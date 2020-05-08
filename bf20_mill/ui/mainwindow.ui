@@ -348,7 +348,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>1</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -4303,6 +4303,9 @@ Touch</string>
          <property name="autoExclusive">
           <bool>true</bool>
          </property>
+         <property name="actionName" stdset="0">
+          <string>machine.mode.mdi</string>
+         </property>
          <property name="page" stdset="0">
           <number>1</number>
          </property>
@@ -4962,12 +4965,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

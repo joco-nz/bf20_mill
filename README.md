@@ -32,6 +32,6 @@ list statements that all summarise into "how does this work".
 
 [3] kcjengr https://github.com/kcjengr/probe_basic
 Used probe-basic to help understand how things work and also have made
-temp use of some probe icons. Plan being to replace them in some manner
-once I get enough done.
+temp use of some probe icons.Once I get more done I will assess if continued
+use is the best option or not.
 

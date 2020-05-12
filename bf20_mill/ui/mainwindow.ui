@@ -348,7 +348,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>1</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1151,34 +1151,6 @@ ALL</string>
            </widget>
           </item>
           <item>
-           <widget class="MDIButton" name="mdibutton">
-            <property name="text">
-             <string>G0
-X0 Y0</string>
-            </property>
-            <property name="MDICommand" stdset="0">
-             <string>G0X0Y0</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="MDIButton" name="mdibutton_2">
-            <property name="text">
-             <string>Go
-Z0</string>
-            </property>
-            <property name="MDICommand" stdset="0">
-             <string>G0Z0</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
            <spacer name="horizontalSpacer_2">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -1192,103 +1164,110 @@ Z0</string>
            </spacer>
           </item>
           <item>
-           <widget class="ActionButton" name="actionbutton_21">
+           <widget class="ActionButton" name="actionbutton_2">
+            <property name="minimumSize">
+             <size>
+              <width>54</width>
+              <height>54</height>
+             </size>
+            </property>
             <property name="text">
-             <string>RUN</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.run</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_19">
-            <property name="text">
-             <string>STEP</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.step</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_18">
-            <property name="text">
-             <string>PAUSE</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.pause</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_17">
-            <property name="text">
-             <string>RESUME</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.resume</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_16">
-            <property name="text">
-             <string>ABORT</string>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>program.abort</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="ActionButton" name="actionbutton_28">
-            <property name="text">
-             <string>Optional
-Stop</string>
+             <string>Auto</string>
             </property>
             <property name="checkable">
              <bool>true</bool>
             </property>
-            <property name="actionName" stdset="0">
-             <string>program.optional-stop.toggle</string>
+            <property name="autoExclusive">
+             <bool>false</bool>
             </property>
-            <property name="bottomNavBtn" stdset="0">
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 2 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.mode.auto</string>
+            </property>
+            <property name="modeBtn" stdset="0">
              <string/>
             </property>
+            <attribute name="buttonGroup">
+             <string notr="true">btngrpMode</string>
+            </attribute>
            </widget>
           </item>
           <item>
-           <widget class="ActionButton" name="actionbutton_32">
+           <widget class="ActionButton" name="actionbutton_27">
+            <property name="minimumSize">
+             <size>
+              <width>54</width>
+              <height>54</height>
+             </size>
+            </property>
             <property name="text">
-             <string>Block
-Delete</string>
+             <string>MDI</string>
             </property>
             <property name="checkable">
              <bool>true</bool>
             </property>
-            <property name="actionName" stdset="0">
-             <string>program.block-delete.toggle </string>
+            <property name="autoExclusive">
+             <bool>false</bool>
             </property>
-            <property name="bottomNavBtn" stdset="0">
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 3 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.mode.mdi</string>
+            </property>
+            <property name="modeBtn" stdset="0">
              <string/>
             </property>
+            <attribute name="buttonGroup">
+             <string notr="true">btngrpMode</string>
+            </attribute>
            </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_42">
+            <property name="minimumSize">
+             <size>
+              <width>54</width>
+              <height>54</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Manual</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="autoExclusive">
+             <bool>false</bool>
+            </property>
+            <property name="rules" stdset="0">
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 1 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.mode.manual</string>
+            </property>
+            <property name="modeBtn" stdset="0">
+             <string/>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">btngrpMode</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -1936,7 +1915,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>3</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -1971,7 +1950,7 @@ CHANGED</string>
                    </property>
                    <property name="text">
                     <string>SPINDLE
-CWW</string>
+CCW</string>
                    </property>
                    <property name="autoExclusive">
                     <bool>true</bool>
@@ -2103,100 +2082,134 @@ SLOWER</string>
               <item>
                <widget class="QGroupBox" name="groupBox_7">
                 <property name="title">
-                 <string>Mode</string>
+                 <string>Quick Actions</string>
                 </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_12">
-                 <item>
-                  <widget class="ActionButton" name="actionbutton_2">
-                   <property name="minimumSize">
-                    <size>
-                     <width>54</width>
-                     <height>54</height>
-                    </size>
-                   </property>
+                <layout class="QGridLayout" name="gridLayout_13">
+                 <item row="0" column="0">
+                  <widget class="MDIButton" name="mdibutton">
                    <property name="text">
-                    <string>Auto</string>
+                    <string>G0
+X0 Y0</string>
                    </property>
-                   <property name="checkable">
-                    <bool>true</bool>
+                   <property name="MDICommand" stdset="0">
+                    <string>G0X0Y0</string>
                    </property>
-                   <property name="autoExclusive">
-                    <bool>false</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 2 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.mode.auto</string>
-                   </property>
-                   <property name="modeBtn" stdset="0">
+                   <property name="bottomNavBtn" stdset="0">
                     <string/>
                    </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMode</string>
-                   </attribute>
                   </widget>
                  </item>
-                 <item>
-                  <widget class="ActionButton" name="actionbutton_27">
-                   <property name="minimumSize">
-                    <size>
-                     <width>54</width>
-                     <height>54</height>
-                    </size>
-                   </property>
+                 <item row="0" column="1">
+                  <widget class="MDIButton" name="mdibutton_2">
                    <property name="text">
-                    <string>MDI</string>
+                    <string>Go
+Z0</string>
                    </property>
-                   <property name="checkable">
-                    <bool>true</bool>
+                   <property name="MDICommand" stdset="0">
+                    <string>G0Z0</string>
                    </property>
-                   <property name="autoExclusive">
-                    <bool>false</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 3 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.mode.mdi</string>
-                   </property>
-                   <property name="modeBtn" stdset="0">
+                   <property name="bottomNavBtn" stdset="0">
                     <string/>
                    </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMode</string>
-                   </attribute>
                   </widget>
                  </item>
-                 <item>
-                  <widget class="ActionButton" name="actionbutton_42">
-                   <property name="minimumSize">
-                    <size>
-                     <width>54</width>
-                     <height>54</height>
-                    </size>
-                   </property>
+                 <item row="1" column="0">
+                  <widget class="ActionButton" name="actionbutton_21">
                    <property name="text">
-                    <string>Manual</string>
+                    <string>RUN</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>program.run</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="actionbutton_18">
+                   <property name="text">
+                    <string>PAUSE</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>program.pause</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="ActionButton" name="actionbutton_19">
+                   <property name="text">
+                    <string>STEP</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>program.step</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="3">
+                  <widget class="ActionButton" name="actionbutton_17">
+                   <property name="text">
+                    <string>RESUME</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>program.resume</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="ActionButton" name="actionbutton_16">
+                   <property name="text">
+                    <string>ABORT</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>program.abort</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="ActionButton" name="actionbutton_28">
+                   <property name="text">
+                    <string>Optional
+Stop</string>
                    </property>
                    <property name="checkable">
                     <bool>true</bool>
                    </property>
-                   <property name="autoExclusive">
-                    <bool>false</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:task_mode&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 1 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                   </property>
                    <property name="actionName" stdset="0">
-                    <string>machine.mode.manual</string>
+                    <string>program.optional-stop.toggle</string>
                    </property>
-                   <property name="modeBtn" stdset="0">
+                   <property name="bottomNavBtn" stdset="0">
                     <string/>
                    </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMode</string>
-                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="ActionButton" name="actionbutton_32">
+                   <property name="text">
+                    <string>Block
+Delete</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>program.block-delete.toggle </string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
                   </widget>
                  </item>
                 </layout>
@@ -2467,6 +2480,9 @@ SLOWER</string>
                    </property>
                    <property name="clearButtonEnabled">
                     <bool>false</bool>
+                   </property>
+                   <property name="mdi_history_size" stdset="0">
+                    <number>5</number>
                    </property>
                    <property name="labelFont" stdset="0">
                     <string>18</string>
@@ -4304,7 +4320,7 @@ Touch</string>
           <bool>true</bool>
          </property>
          <property name="actionName" stdset="0">
-          <string>machine.mode.mdi</string>
+          <string/>
          </property>
          <property name="page" stdset="0">
           <number>1</number>
@@ -4965,12 +4981,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

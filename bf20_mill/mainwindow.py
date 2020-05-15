@@ -96,7 +96,7 @@ class MyMainWindow(VCPMainWindow):
             #    self.lblGcodeHelp.setText(titles[text])
             #else:
             #    self.mdiClear()
-            self.lblGcodeHelp.setText(mdiText.gcode_descriptions(text))
+            #self.lblGcodeHelp.setText(mdiText.gcode_descriptions(text))
         else:
             self.mdiClear()
             print('No Match')

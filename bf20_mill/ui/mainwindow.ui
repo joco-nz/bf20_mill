@@ -2767,8 +2767,17 @@ Delete</string>
                      <height>90</height>
                     </size>
                    </property>
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                   <property name="selectionBehavior">
+                    <enum>QAbstractItemView::SelectRows</enum>
+                   </property>
                    <property name="mdi_entryline_name" stdset="0">
                     <string>mdiEntry</string>
+                   </property>
+                   <property name="MDIHistory" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -5031,12 +5040,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

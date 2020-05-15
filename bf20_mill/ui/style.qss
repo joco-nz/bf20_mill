@@ -368,7 +368,7 @@ QPushButton[G5xOffsetKeyBtn] {
 }
 
 /**********************************************************************
- *                               MDI Keys                             *
+ *                       MDI Keys and History                         *
  *********************************************************************/
 
 QPushButton[mdiKeyBtn] {
@@ -379,6 +379,13 @@ QPushButton[mdiBtn] {
     font: 16pt "Bebas Kai";
 }
 
+MDIHistory {
+    alternate-background-color: lightgray;
+}
+
+MDIHistory::item:hover {
+    color: red;
+}
 
 /**********************************************************************
  *                               Spindle                              *

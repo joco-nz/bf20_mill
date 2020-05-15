@@ -1257,7 +1257,7 @@ ALL</string>
            </widget>
           </item>
           <item>
-           <spacer name="horizontalSpacer_4">
+           <spacer name="horizontalSpacer_5">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
@@ -1915,7 +1915,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>1</number>
+             <number>3</number>
             </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -2681,19 +2681,6 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="9" column="0">
-                  <widget class="QPushButton" name="btnMdiSpace">
-                   <property name="text">
-                    <string>SPACE</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>false</bool>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="3" column="2">
                   <widget class="QPushButton" name="btnGcodeP3">
                    <property name="text">
@@ -2777,6 +2764,20 @@ Delete</string>
                     <string>mdiEntry</string>
                    </property>
                    <property name="MDIHistory" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="9" column="0">
+                  <widget class="ActionButton" name="btn_pause_mdi">
+                   <property name="text">
+                    <string>Pause
+MDI</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="mdiBtn" stdset="0">
                     <string/>
                    </property>
                   </widget>
@@ -5021,6 +5022,22 @@ MODES</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btn_pause_mdi</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>mdihistory</receiver>
+   <slot>toggle_queue(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>760</x>
+     <y>963</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1072</x>
+     <y>488</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -5041,11 +5058,11 @@ MODES</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

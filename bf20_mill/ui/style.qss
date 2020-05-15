@@ -411,7 +411,7 @@ QPushButton[jogBtn] {
  *                               Mode Buttons                          *
  *********************************************************************/
 ActionButton[modeBtn] {
-    font: 20pt "Bebas Kai";
+    font: 14pt "Bebas Kai";
 }
 
 

@@ -155,7 +155,7 @@ nostics</string>
                 <bool>true</bool>
                </property>
                <property name="page" stdset="0">
-                <number>5</number>
+                <number>6</number>
                </property>
                <property name="leftNavBtn" stdset="0">
                 <string/>
@@ -204,34 +204,6 @@ nostics</string>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="btnWorkOffsets">
-               <property name="enabled">
-                <bool>false</bool>
-               </property>
-               <property name="font">
-                <font>
-                 <family>BebasKai</family>
-                 <pointsize>16</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string/>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <property name="page" stdset="0">
-                <number>4</number>
-               </property>
-               <property name="leftNavBtn" stdset="0">
-                <string/>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="ActionButton" name="actionbutton_13">
                <property name="text">
                 <string>PROBE</string>
@@ -267,6 +239,37 @@ TABLE</string>
                </property>
                <property name="page" stdset="0">
                 <number>3</number>
+               </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnWorkOffsets">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="font">
+                <font>
+                 <family>BebasKai</family>
+                 <pointsize>16</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>MDI</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="page" stdset="0">
+                <number>5</number>
                </property>
                <property name="leftNavBtn" stdset="0">
                 <string/>
@@ -1030,7 +1033,1110 @@ LINE</string>
                  </item>
                 </layout>
                </widget>
-               <widget class="QWidget" name="diagnostics"/>
+               <widget class="QWidget" name="mdi_large">
+                <layout class="QVBoxLayout" name="verticalLayout_20">
+                 <item>
+                  <widget class="QWidget" name="widget_2" native="true">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <item>
+                     <widget class="VTKBackPlot" name="mdi_vtk">
+                      <property name="enableProgramTicks" stdset="0">
+                       <bool>false</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget_3" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>55</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>55</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_21">
+                       <property name="spacing">
+                        <number>5</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_p">
+                         <property name="text">
+                          <string>P</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_x">
+                         <property name="text">
+                          <string>X</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_y">
+                         <property name="text">
+                          <string>Y</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_z">
+                         <property name="text">
+                          <string>Z</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_clear">
+                         <property name="text">
+                          <string>Clear</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_6">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="widget_7" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>55</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>55</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_22">
+                       <property name="spacing">
+                        <number>5</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_in">
+                         <property name="text">
+                          <string>+</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btn_mdi_vtk_out">
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="verticalSpacer_5">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="StatusLabel" name="statuslabel_14">
+                      <property name="minimumSize">
+                       <size>
+                        <width>250</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Gcode Help</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_12">
+                    <item>
+                     <widget class="MDIHistory" name="mdihistory">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="alternatingRowColors">
+                       <bool>true</bool>
+                      </property>
+                      <property name="selectionBehavior">
+                       <enum>QAbstractItemView::SelectRows</enum>
+                      </property>
+                      <property name="mdi_entryline_name" stdset="0">
+                       <string>mdiEntry</string>
+                      </property>
+                      <property name="MDIHistory" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="VCPWidget" name="widget_12">
+                      <property name="minimumSize">
+                       <size>
+                        <width>400</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <layout class="QGridLayout" name="gridLayout_6">
+                       <property name="leftMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <property name="spacing">
+                        <number>5</number>
+                       </property>
+                       <item row="6" column="2">
+                        <widget class="QPushButton" name="pushButton_33">
+                         <property name="text">
+                          <string>4</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="5" column="4">
+                        <widget class="QPushButton" name="pushButton_32">
+                         <property name="text">
+                          <string>9</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="3">
+                        <widget class="QPushButton" name="pushButton_37">
+                         <property name="text">
+                          <string>2</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="2" column="1" colspan="4">
+                        <widget class="MDIEntry" name="mdiEntry">
+                         <property name="placeholderText">
+                          <string>MDI:</string>
+                         </property>
+                         <property name="clearButtonEnabled">
+                          <bool>false</bool>
+                         </property>
+                         <property name="mdi_history_size" stdset="0">
+                          <number>5</number>
+                         </property>
+                         <property name="labelFont" stdset="0">
+                          <string>18</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="3">
+                        <widget class="QPushButton" name="pushButton_31">
+                         <property name="text">
+                          <string>8</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="8" column="3">
+                        <widget class="QPushButton" name="pushButton_40">
+                         <property name="text">
+                          <string>.</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="2">
+                        <widget class="QPushButton" name="pushButton_36">
+                         <property name="text">
+                          <string>1</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="5" column="2">
+                        <widget class="QPushButton" name="pushButton_30">
+                         <property name="text">
+                          <string>7</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="2">
+                        <widget class="QPushButton" name="btnParams">
+                         <property name="text">
+                          <string>PARAMS</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="4">
+                        <widget class="QPushButton" name="pushButton_35">
+                         <property name="text">
+                          <string>6</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="3">
+                        <widget class="QPushButton" name="btnMdiBksp">
+                         <property name="text">
+                          <string>BKSP</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="8" column="2">
+                        <widget class="QPushButton" name="pushButton_39">
+                         <property name="text">
+                          <string>0</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="4">
+                        <widget class="QPushButton" name="btnMdiSend">
+                         <property name="text">
+                          <string>SEND</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="3">
+                        <widget class="QPushButton" name="pushButton_34">
+                         <property name="text">
+                          <string>5</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="8" column="4">
+                        <widget class="QPushButton" name="pushButton_41">
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="4">
+                        <widget class="QPushButton" name="pushButton_38">
+                         <property name="text">
+                          <string>3</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <spacer name="verticalSpacer_4">
+                         <property name="orientation">
+                          <enum>Qt::Vertical</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item row="3" column="0">
+                        <widget class="QPushButton" name="btnGcodeP1">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QPushButton" name="btnGcodeP2">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="2">
+                        <widget class="QPushButton" name="btnGcodeP3">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="3">
+                        <widget class="QPushButton" name="btnGcodeP4">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="3" column="4">
+                        <widget class="QPushButton" name="btnGcodeP5">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="0">
+                        <widget class="QPushButton" name="btnGcodeP6">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QPushButton" name="btnGcodeP7">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="4" column="2">
+                        <widget class="QPushButton" name="btnGcodeP8">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="4" column="3">
+                        <widget class="QPushButton" name="btnGcodeP9">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="4">
+                        <widget class="QPushButton" name="btnGcodeP10">
+                         <property name="text">
+                          <string/>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="8" column="1">
+                        <widget class="QPushButton" name="pushButton_25">
+                         <property name="text">
+                          <string>G</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="7" column="1">
+                        <widget class="QPushButton" name="pushButton_24">
+                         <property name="text">
+                          <string>M</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="6" column="1">
+                        <widget class="QPushButton" name="pushButton_23">
+                         <property name="text">
+                          <string>T</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="5" column="1">
+                        <widget class="QPushButton" name="pushButton_22">
+                         <property name="text">
+                          <string>F</string>
+                         </property>
+                         <property name="mdiKeyBtn" stdset="0">
+                          <string/>
+                         </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
+                        </widget>
+                       </item>
+                       <item row="9" column="0">
+                        <widget class="ActionButton" name="btn_pause_mdi">
+                         <property name="text">
+                          <string>Pause
+Queue</string>
+                         </property>
+                         <property name="checkable">
+                          <bool>true</bool>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="10" column="0">
+                        <widget class="QPushButton" name="btn_clear_queue">
+                         <property name="text">
+                          <string>Clear
+Queue</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="10" column="1">
+                        <widget class="QPushButton" name="btn_run_from_line">
+                         <property name="text">
+                          <string>From
+Line</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="diagnostics">
+                <layout class="QVBoxLayout" name="verticalLayout_23">
+                 <item>
+                  <widget class="QTabWidget" name="tabWidget">
+                   <property name="tabPosition">
+                    <enum>QTabWidget::East</enum>
+                   </property>
+                   <property name="tabShape">
+                    <enum>QTabWidget::Rounded</enum>
+                   </property>
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="tab">
+                    <attribute name="title">
+                     <string>Machine State</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_24">
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_9">
+                       <property name="minimumSize">
+                        <size>
+                         <width>300</width>
+                         <height>300</height>
+                        </size>
+                       </property>
+                       <property name="title">
+                        <string>GroupBox</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_14">
+                        <item row="4" column="1">
+                         <widget class="StatusLabel" name="cycle_time_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:cycle_time?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="StatusLabel" name="lbl_active_queue">
+                          <property name="text">
+                           <string>Active Queue</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="10" column="1">
+                         <widget class="StatusLabel" name="joint_1_backlash_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint.1.backlash?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="StatusLabel" name="call_level_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:call_level?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="StatusLabel" name="active_queue_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:active_queue?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="0">
+                         <widget class="StatusLabel" name="lbl_interp_state">
+                          <property name="text">
+                           <string>RS274NGC State</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="0">
+                         <widget class="StatusLabel" name="lbl_exec_state">
+                          <property name="text">
+                           <string>Task Execution</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="12" column="0">
+                         <widget class="StatusLabel" name="lbl_joint_3_backlash">
+                          <property name="text">
+                           <string>Joint 3 Backlash</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="StatusLabel" name="lbl_enabled">
+                          <property name="text">
+                           <string>Traj Planner On</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="StatusLabel" name="lbl_call_level">
+                          <property name="text">
+                           <string>O-Word Call Level</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="13" column="0">
+                         <widget class="StatusLabel" name="lbl_kinematics_type">
+                          <property name="text">
+                           <string>Kinematics Type</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="StatusLabel" name="lbl_cycle_time">
+                          <property name="text">
+                           <string>Thread Period</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="StatusLabel" name="lbl_current_line">
+                          <property name="text">
+                           <string>Executing Line</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="StatusLabel" name="current_line_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:current_line?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="StatusLabel" name="lbl_adaptive_feed">
+                          <property name="text">
+                           <string>Adaptive Feed</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="9" column="1">
+                         <widget class="StatusLabel" name="joint_0_backlash_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint.0.backlash?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1">
+                         <widget class="StatusLED" name="enabled_display">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>255</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="2">
+                         <widget class="StatusLabel" name="lbl_queue">
+                          <property name="text">
+                           <string>Traj Queue Size</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="1">
+                         <widget class="StatusLabel" name="interpreter_errcode_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:interpreter_errcode?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="10" column="0">
+                         <widget class="StatusLabel" name="lbl_joint_1_backlash">
+                          <property name="text">
+                           <string>Joint 1 Backlash</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="13" column="1">
+                         <widget class="StatusLabel" name="kinematics_type_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:kinematics_type?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="15" column="0">
+                         <widget class="StatusLabel" name="lbl_motion_type">
+                          <property name="text">
+                           <string>Motion Type</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="14" column="0">
+                         <widget class="StatusLabel" name="lbl_motion_mode">
+                          <property name="text">
+                           <string>Motion Mode</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="3">
+                         <widget class="StatusLED" name="queue_full_display">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>255</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="3">
+                         <widget class="StatusLabel" name="queue_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="2">
+                         <widget class="StatusLabel" name="lbl_queue_full">
+                          <property name="text">
+                           <string>Traj Queue Full</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="11" column="1">
+                         <widget class="StatusLabel" name="joint_2_backlash_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint.2.backlash?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;Value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="StatusLED" name="adaptive_feed_led">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>255</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="7" column="1">
+                         <widget class="StatusLabel" name="interp_state_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:interp_state?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="9" column="0">
+                         <widget class="StatusLabel" name="lbl_joint_0_backlash">
+                          <property name="text">
+                           <string>Joint 0 Backlash</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="12" column="1">
+                         <widget class="StatusLabel" name="joint_3_backlash_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:joint.3.backlash?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="6" column="1">
+                         <widget class="StatusLabel" name="exec_state_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:exec_state?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="8" column="0">
+                         <widget class="StatusLabel" name="lbl_interpreter_errcode">
+                          <property name="text">
+                           <string>RS274NGC Error</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="11" column="0">
+                         <widget class="StatusLabel" name="lbl_joint_2_backlash">
+                          <property name="text">
+                           <string>Joint 2 Backlash</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="15" column="1">
+                         <widget class="StatusLabel" name="motion_type_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:motion_type?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="14" column="1">
+                         <widget class="StatusLabel" name="motion_mode_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:motion_mode?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_10">
+                       <property name="title">
+                        <string>Tool Change and Probing</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_15">
+                        <item row="1" column="4">
+                         <widget class="StatusLED" name="probe_tripped_led">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>255</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_tripped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="4">
+                         <widget class="StatusLabel" name="probed_position_display">
+                          <property name="wordWrap">
+                           <bool>true</bool>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probed_position?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="StatusLabel" name="lbl_probe_value">
+                          <property name="text">
+                           <string>Probe Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="StatusLabel" name="lbl_probed_position">
+                          <property name="text">
+                           <string>Probed Position</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="StatusLabel" name="lbl_pocket_prepped">
+                          <property name="text">
+                           <string>Pocket Prepped</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="StatusLabel" name="lbl_probing">
+                          <property name="text">
+                           <string>Probing</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="StatusLabel" name="lbl_probe_tripped">
+                          <property name="text">
+                           <string>Probe Tripped</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="4">
+                         <widget class="StatusLabel" name="probe_value_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_val?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="4">
+                         <widget class="StatusLED" name="probing_led">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>255</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probing&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="StatusLabel" name="pocket_prepped_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="StatusLabel" name="lbl_tool_in_spindle">
+                          <property name="text">
+                           <string>Tool In Spindle</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="StatusLabel" name="tool_in_spindle_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="tab_2">
+                    <attribute name="title">
+                     <string>Hardware Monitoring</string>
+                    </attribute>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
               </widget>
              </item>
             </layout>
@@ -1904,6 +3010,9 @@ CHANGED</string>
             <property name="currentIndex">
              <number>3</number>
             </property>
+            <property name="rules" stdset="0">
+             <string>[]</string>
+            </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
               <item>
@@ -2341,450 +3450,6 @@ Delete</string>
               <property name="bottomMargin">
                <number>5</number>
               </property>
-              <item>
-               <widget class="VCPWidget" name="widget_12">
-                <layout class="QGridLayout" name="gridLayout_6">
-                 <property name="leftMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="spacing">
-                  <number>5</number>
-                 </property>
-                 <item row="3" column="0">
-                  <widget class="QPushButton" name="btnGcodeP5">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <widget class="QPushButton" name="btnGcodeP1">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="5" column="1">
-                  <widget class="QPushButton" name="pushButton_33">
-                   <property name="text">
-                    <string>4</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="4" column="3">
-                  <widget class="QPushButton" name="pushButton_32">
-                   <property name="text">
-                    <string>9</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="2">
-                  <widget class="QPushButton" name="pushButton_37">
-                   <property name="text">
-                    <string>2</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="1" column="0" colspan="4">
-                  <widget class="MDIEntry" name="mdiEntry">
-                   <property name="placeholderText">
-                    <string>MDI:</string>
-                   </property>
-                   <property name="clearButtonEnabled">
-                    <bool>false</bool>
-                   </property>
-                   <property name="mdi_history_size" stdset="0">
-                    <number>5</number>
-                   </property>
-                   <property name="labelFont" stdset="0">
-                    <string>18</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="2">
-                  <widget class="QPushButton" name="btnGcodeP3">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="3" column="1">
-                  <widget class="QPushButton" name="btnGcodeP6">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="4" column="2">
-                  <widget class="QPushButton" name="pushButton_31">
-                   <property name="text">
-                    <string>8</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="7" column="2">
-                  <widget class="QPushButton" name="pushButton_40">
-                   <property name="text">
-                    <string>.</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="1">
-                  <widget class="QPushButton" name="pushButton_36">
-                   <property name="text">
-                    <string>1</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="0" column="0" colspan="4">
-                  <widget class="MDIHistory" name="mdihistory">
-                   <property name="maximumSize">
-                    <size>
-                     <width>16777215</width>
-                     <height>90</height>
-                    </size>
-                   </property>
-                   <property name="alternatingRowColors">
-                    <bool>true</bool>
-                   </property>
-                   <property name="selectionBehavior">
-                    <enum>QAbstractItemView::SelectRows</enum>
-                   </property>
-                   <property name="mdi_entryline_name" stdset="0">
-                    <string>mdiEntry</string>
-                   </property>
-                   <property name="MDIHistory" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="4" column="1">
-                  <widget class="QPushButton" name="pushButton_30">
-                   <property name="text">
-                    <string>7</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="8" column="1">
-                  <widget class="QPushButton" name="btnParams">
-                   <property name="text">
-                    <string>PARAMS</string>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="5" column="3">
-                  <widget class="QPushButton" name="pushButton_35">
-                   <property name="text">
-                    <string>6</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="8" column="2">
-                  <widget class="QPushButton" name="btnMdiBksp">
-                   <property name="text">
-                    <string>BKSP</string>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="7" column="1">
-                  <widget class="QPushButton" name="pushButton_39">
-                   <property name="text">
-                    <string>0</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="8" column="3">
-                  <widget class="QPushButton" name="btnMdiSend">
-                   <property name="text">
-                    <string>SEND</string>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="5" column="2">
-                  <widget class="QPushButton" name="pushButton_34">
-                   <property name="text">
-                    <string>5</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="2" column="3">
-                  <widget class="QPushButton" name="btnGcodeP4">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="3" column="2">
-                  <widget class="QPushButton" name="btnGcodeP7">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="2" column="1">
-                  <widget class="QPushButton" name="btnGcodeP2">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="7" column="3">
-                  <widget class="QPushButton" name="pushButton_41">
-                   <property name="text">
-                    <string>-</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="3">
-                  <widget class="QPushButton" name="pushButton_38">
-                   <property name="text">
-                    <string>3</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="3" column="3">
-                  <widget class="QPushButton" name="btnGcodeP8">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="9" column="1">
-                  <widget class="QPushButton" name="btn_run_from_line">
-                   <property name="text">
-                    <string>From
-Line</string>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="9" column="0">
-                  <widget class="ActionButton" name="btn_pause_mdi">
-                   <property name="text">
-                    <string>Pause
-MDI</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="8" column="0">
-                  <widget class="QPushButton" name="pushButton_25">
-                   <property name="text">
-                    <string>G</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="7" column="0">
-                  <widget class="QPushButton" name="pushButton_24">
-                   <property name="text">
-                    <string>M</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="6" column="0">
-                  <widget class="QPushButton" name="pushButton_23">
-                   <property name="text">
-                    <string>T</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="5" column="0">
-                  <widget class="QPushButton" name="pushButton_22">
-                   <property name="text">
-                    <string>F</string>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpMdi</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="4" column="0">
-                  <widget class="QPushButton" name="btnGcodeP9">
-                   <property name="text">
-                    <string/>
-                   </property>
-                   <property name="mdiKeyBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="9" column="2">
-                  <widget class="QPushButton" name="btn_clear_queue">
-                   <property name="text">
-                    <string>Clear
-Queue</string>
-                   </property>
-                   <property name="mdiBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
              </layout>
             </widget>
             <widget class="QWidget" name="manual">
@@ -4142,7 +4807,7 @@ DIR</string>
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="right_name_layout" native="true">
+     <widget class="QWidget" name="right_nav_layout" native="true">
       <property name="minimumSize">
        <size>
         <width>75</width>
@@ -4332,31 +4997,6 @@ Touch</string>
         </widget>
        </item>
        <item>
-        <widget class="ActionButton" name="btnMdi">
-         <property name="text">
-          <string>MDI</string>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="autoExclusive">
-          <bool>true</bool>
-         </property>
-         <property name="actionName" stdset="0">
-          <string/>
-         </property>
-         <property name="page" stdset="0">
-          <number>1</number>
-         </property>
-         <property name="rightNavBtn" stdset="0">
-          <string/>
-         </property>
-         <attribute name="buttonGroup">
-          <string notr="true">btngrpRightNav</string>
-         </attribute>
-        </widget>
-       </item>
-       <item>
         <widget class="ActionButton" name="btnModesDro">
          <property name="text">
           <string>Spindle/
@@ -4466,6 +5106,11 @@ MODES</string>
    <extends>QStackedWidget</extends>
    <header>qtpyvcp.widgets.containers.stack</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>StatusLED</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_led</header>
   </customwidget>
   <customwidget>
    <class>VCPSettingsLineEdit</class>
@@ -5070,6 +5715,118 @@ MODES</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btn_mdi_vtk_p</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>setViewP()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mdi_vtk_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>clearLivePlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>318</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mdi_vtk_x</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>setViewX()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mdi_vtk_y</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>setViewY()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mdi_vtk_z</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>setViewZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>295</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mdi_vtk_in</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>566</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_mdi_vtk_out</sender>
+   <signal>clicked()</signal>
+   <receiver>mdi_vtk</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>566</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -5089,12 +5846,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

@@ -351,7 +351,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>6</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1535,6 +1535,9 @@ LINE</string>
                          <property name="mdiKeyBtn" stdset="0">
                           <string/>
                          </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
                         </widget>
                        </item>
                        <item row="4" column="0">
@@ -1584,6 +1587,9 @@ LINE</string>
                          <property name="mdiKeyBtn" stdset="0">
                           <string/>
                          </property>
+                         <attribute name="buttonGroup">
+                          <string notr="true">btngrpMdi</string>
+                         </attribute>
                         </widget>
                        </item>
                        <item row="4" column="4">
@@ -1687,6 +1693,14 @@ Line</string>
                          </property>
                         </widget>
                        </item>
+                       <item row="8" column="0">
+                        <widget class="QPushButton" name="btn_del_history_row">
+                         <property name="text">
+                          <string>Del
+Row</string>
+                         </property>
+                        </widget>
+                       </item>
                       </layout>
                      </widget>
                     </item>
@@ -1698,7 +1712,7 @@ Line</string>
                <widget class="QWidget" name="diagnostics">
                 <layout class="QVBoxLayout" name="verticalLayout_23">
                  <item>
-                  <widget class="QTabWidget" name="tabWidget">
+                  <widget class="QTabWidget" name="diagnostics_widget">
                    <property name="tabPosition">
                     <enum>QTabWidget::East</enum>
                    </property>
@@ -1706,9 +1720,9 @@ Line</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>1</number>
                    </property>
-                   <widget class="QWidget" name="tab">
+                   <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
                      <string>Machine State</string>
                     </attribute>
@@ -1847,7 +1861,7 @@ Line</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -1906,7 +1920,7 @@ Line</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -1944,7 +1958,7 @@ Line</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2026,7 +2040,7 @@ Line</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_tripped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2095,7 +2109,7 @@ Line</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probing&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2128,10 +2142,100 @@ Line</string>
                      </item>
                     </layout>
                    </widget>
-                   <widget class="QWidget" name="tab_2">
+                   <widget class="QWidget" name="tabHardware">
                     <attribute name="title">
                      <string>Hardware Monitoring</string>
                     </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_25">
+                     <item>
+                      <widget class="QGroupBox" name="grp_inpust">
+                       <property name="title">
+                        <string>Inputs</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_16">
+                        <item row="1" column="0">
+                         <widget class="StatusLabel" name="statuslabel_16"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="StatusLabel" name="statuslabel_22"/>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_4"/>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator"/>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_3"/>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="StatusLabel" name="statuslabel_18"/>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_2"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="StatusLabel" name="statuslabel_15"/>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="StatusLabel" name="statuslabel_17"/>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="StatusLabel" name="statuslabel_21"/>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_7"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="grp_outputs">
+                       <property name="title">
+                        <string>Outputs</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_17">
+                        <item row="0" column="2">
+                         <widget class="StatusLabel" name="statuslabel_23"/>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_5"/>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="StatusLabel" name="statuslabel_20"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="StatusLabel" name="statuslabel_19"/>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_6"/>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_8"/>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="StatusLabel" name="statuslabel_24"/>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_9"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_7">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
                    </widget>
                   </widget>
                  </item>
@@ -3011,7 +3115,7 @@ CHANGED</string>
              <number>3</number>
             </property>
             <property name="rules" stdset="0">
-             <string>[]</string>
+             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axes&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;currentIndex&quot;, &quot;expression&quot;: &quot;0&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
             </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -5846,12 +5950,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

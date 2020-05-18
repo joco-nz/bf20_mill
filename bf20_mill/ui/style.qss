@@ -2,7 +2,7 @@
  *                               Global                               *
  *********************************************************************/
 QMainWindow {
-    background: #2e3436
+    background: #2e3436;
 }
 
 QStatusBar {
@@ -551,7 +551,17 @@ QsciScintilla {
 }
 
 
+/**********************************************************************
+ *                           Diagnostics                              *
+ *********************************************************************/
 
+QWidget#tabMachine, QWidget#tabHardware {
+    background: #2e3436;
+}
+
+QTabBar::tab:!selected {
+    color: lightgray;
+}
 
 
 

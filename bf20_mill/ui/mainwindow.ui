@@ -351,7 +351,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>6</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1861,7 +1861,7 @@ Row</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignVCenter</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -1920,7 +1920,7 @@ Row</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignVCenter</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -1958,7 +1958,7 @@ Row</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignVCenter</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2040,7 +2040,7 @@ Row</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignBottom</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_tripped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2109,7 +2109,7 @@ Row</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignBottom</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probing&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -5950,12 +5950,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

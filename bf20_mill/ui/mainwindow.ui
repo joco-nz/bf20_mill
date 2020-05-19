@@ -351,7 +351,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>5</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -1685,8 +1685,8 @@ Queue</string>
                        <item row="10" column="1">
                         <widget class="QPushButton" name="btn_run_from_line">
                          <property name="text">
-                          <string>From
-Line</string>
+                          <string>Run
+From</string>
                          </property>
                          <property name="mdiBtn" stdset="0">
                           <string/>
@@ -1698,6 +1698,20 @@ Line</string>
                          <property name="text">
                           <string>Del
 Row</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="10" column="2">
+                        <widget class="QPushButton" name="pushButton_2">
+                         <property name="text">
+                          <string>Run
+Single</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
                          </property>
                         </widget>
                        </item>
@@ -1736,7 +1750,7 @@ Row</string>
                         </size>
                        </property>
                        <property name="title">
-                        <string>GroupBox</string>
+                        <string>Machine State</string>
                        </property>
                        <layout class="QGridLayout" name="gridLayout_14">
                         <item row="4" column="1">
@@ -1856,12 +1870,12 @@ Row</string>
                           <property name="color">
                            <color>
                             <red>0</red>
-                            <green>255</green>
+                            <green>220</green>
                             <blue>0</blue>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
+                           <set>Qt::AlignBottom|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -1915,12 +1929,12 @@ Row</string>
                           <property name="color">
                            <color>
                             <red>0</red>
-                            <green>255</green>
+                            <green>220</green>
                             <blue>0</blue>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
+                           <set>Qt::AlignBottom|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -1953,12 +1967,12 @@ Row</string>
                           <property name="color">
                            <color>
                             <red>0</red>
-                            <green>255</green>
+                            <green>220</green>
                             <blue>0</blue>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
+                           <set>Qt::AlignBottom|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2030,23 +2044,6 @@ Row</string>
                         <string>Tool Change and Probing</string>
                        </property>
                        <layout class="QGridLayout" name="gridLayout_15">
-                        <item row="1" column="4">
-                         <widget class="StatusLED" name="probe_tripped_led">
-                          <property name="color">
-                           <color>
-                            <red>0</red>
-                            <green>255</green>
-                            <blue>0</blue>
-                           </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
-                          </property>
-                          <property name="rules" stdset="0">
-                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_tripped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
-                          </property>
-                         </widget>
-                        </item>
                         <item row="3" column="4">
                          <widget class="StatusLabel" name="probed_position_display">
                           <property name="wordWrap">
@@ -2057,6 +2054,37 @@ Row</string>
                           </property>
                          </widget>
                         </item>
+                        <item row="1" column="2">
+                         <widget class="StatusLabel" name="tool_in_spindle_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="4">
+                         <widget class="StatusLED" name="probe_tripped_led">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignTop</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_tripped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="StatusLabel" name="pocket_prepped_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
                         <item row="2" column="3">
                          <widget class="StatusLabel" name="lbl_probe_value">
                           <property name="text">
@@ -2064,10 +2092,34 @@ Row</string>
                           </property>
                          </widget>
                         </item>
-                        <item row="3" column="3">
-                         <widget class="StatusLabel" name="lbl_probed_position">
+                        <item row="2" column="4">
+                         <widget class="StatusLabel" name="probe_value_display">
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_val?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="4">
+                         <widget class="StatusLED" name="probing_led">
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignTop</set>
+                          </property>
+                          <property name="rules" stdset="0">
+                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probing&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="StatusLabel" name="lbl_tool_in_spindle">
                           <property name="text">
-                           <string>Probed Position</string>
+                           <string>Tool In Spindle</string>
                           </property>
                          </widget>
                         </item>
@@ -2092,50 +2144,25 @@ Row</string>
                           </property>
                          </widget>
                         </item>
-                        <item row="2" column="4">
-                         <widget class="StatusLabel" name="probe_value_display">
-                          <property name="rules" stdset="0">
-                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_val?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="0" column="4">
-                         <widget class="StatusLED" name="probing_led">
-                          <property name="color">
-                           <color>
-                            <red>0</red>
-                            <green>255</green>
-                            <blue>0</blue>
-                           </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
-                          </property>
-                          <property name="rules" stdset="0">
-                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probing&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="0" column="2">
-                         <widget class="StatusLabel" name="pocket_prepped_display">
-                          <property name="rules" stdset="0">
-                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:pocket_prepped?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
-                          </property>
-                         </widget>
-                        </item>
-                        <item row="1" column="1">
-                         <widget class="StatusLabel" name="lbl_tool_in_spindle">
+                        <item row="3" column="3">
+                         <widget class="StatusLabel" name="lbl_probed_position">
                           <property name="text">
-                           <string>Tool In Spindle</string>
+                           <string>Probed Position</string>
                           </property>
                          </widget>
                         </item>
-                        <item row="1" column="2">
-                         <widget class="StatusLabel" name="tool_in_spindle_display">
-                          <property name="rules" stdset="0">
-                           <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:tool_in_spindle?string&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
+                        <item row="4" column="3">
+                         <spacer name="verticalSpacer_8">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
                           </property>
-                         </widget>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                         </spacer>
                         </item>
                        </layout>
                       </widget>
@@ -2153,38 +2180,593 @@ Row</string>
                         <string>Inputs</string>
                        </property>
                        <layout class="QGridLayout" name="gridLayout_16">
-                        <item row="1" column="0">
-                         <widget class="StatusLabel" name="statuslabel_16"/>
+                        <item row="2" column="5">
+                         <widget class="HalLedIndicator" name="in13">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
                         </item>
-                        <item row="0" column="2">
-                         <widget class="StatusLabel" name="statuslabel_22"/>
+                        <item row="1" column="3">
+                         <widget class="HalLedIndicator" name="in7">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
                         </item>
-                        <item row="3" column="1">
-                         <widget class="HalLedIndicator" name="halledindicator_4"/>
+                        <item row="2" column="3">
+                         <widget class="HalLedIndicator" name="in8">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
                         </item>
-                        <item row="0" column="1">
-                         <widget class="HalLedIndicator" name="halledindicator"/>
-                        </item>
-                        <item row="2" column="1">
-                         <widget class="HalLedIndicator" name="halledindicator_3"/>
-                        </item>
-                        <item row="3" column="0">
-                         <widget class="StatusLabel" name="statuslabel_18"/>
-                        </item>
-                        <item row="1" column="1">
-                         <widget class="HalLedIndicator" name="halledindicator_2"/>
-                        </item>
-                        <item row="0" column="0">
-                         <widget class="StatusLabel" name="statuslabel_15"/>
-                        </item>
-                        <item row="2" column="0">
-                         <widget class="StatusLabel" name="statuslabel_17"/>
-                        </item>
-                        <item row="4" column="0">
-                         <widget class="StatusLabel" name="statuslabel_21"/>
+                        <item row="4" column="1">
+                         <widget class="HalLedIndicator" name="in4">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
                         </item>
                         <item row="0" column="3">
-                         <widget class="HalLedIndicator" name="halledindicator_7"/>
+                         <widget class="HalLedIndicator" name="in6">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="0">
+                         <widget class="StatusLabel" name="lblin4">
+                          <property name="text">
+                           <string>In 4</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="StatusLabel" name="lblin1">
+                          <property name="text">
+                           <string>In 1</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="0">
+                         <widget class="StatusLabel" name="lblin3">
+                          <property name="text">
+                           <string>In 3</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="0">
+                         <widget class="StatusLabel" name="lblin5">
+                          <property name="text">
+                           <string>In 5</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="11">
+                         <widget class="HalLedIndicator" name="halledindicator_34">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="5">
+                         <widget class="HalLedIndicator" name="in12">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="2">
+                         <widget class="StatusLabel" name="lblin7">
+                          <property name="text">
+                           <string>In 7</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="8">
+                         <widget class="StatusLabel" name="lblin21">
+                          <property name="text">
+                           <string>In 21</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="4">
+                         <widget class="StatusLabel" name="lblin15">
+                          <property name="text">
+                           <string>In 15</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="6">
+                         <widget class="StatusLabel" name="lblin16">
+                          <property name="text">
+                           <string>In 16</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="6">
+                         <widget class="StatusLabel" name="lblin17">
+                          <property name="text">
+                           <string>In 17</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="2">
+                         <widget class="StatusLabel" name="lblin9">
+                          <property name="text">
+                           <string>In 9</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="StatusLabel" name="lblin8">
+                          <property name="text">
+                           <string>In 8</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="HalLedIndicator" name="in1">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="HalLedIndicator" name="in3">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_33">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="HalLedIndicator" name="in2">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="0">
+                         <widget class="StatusLabel" name="lblin2">
+                          <property name="text">
+                           <string>In 2</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="StatusLabel" name="lblin6">
+                          <property name="text">
+                           <string>In 6</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="12">
+                         <widget class="StatusLabel" name="lblin31">
+                          <property name="text">
+                           <string>In 31</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="11">
+                         <widget class="HalLedIndicator" name="halledindicator_21">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="10">
+                         <widget class="StatusLabel" name="lblin30">
+                          <property name="text">
+                           <string>In 30</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="4">
+                         <widget class="StatusLabel" name="lblin14">
+                          <property name="text">
+                           <string>In 14</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_30">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="11">
+                         <widget class="HalLedIndicator" name="halledindicator_15">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_31">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="10">
+                         <widget class="StatusLabel" name="lblin27">
+                          <property name="text">
+                           <string>In 27</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="10">
+                         <widget class="StatusLabel" name="lblin28">
+                          <property name="text">
+                           <string>In 28</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="5">
+                         <widget class="HalLedIndicator" name="in14">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="9">
+                         <widget class="HalLedIndicator" name="halledindicator_36">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="5">
+                         <widget class="HalLedIndicator" name="halledindicator_26">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_11">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="9">
+                         <widget class="HalLedIndicator" name="halledindicator_28">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="9">
+                         <widget class="HalLedIndicator" name="halledindicator_22">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="8">
+                         <widget class="StatusLabel" name="lblin25">
+                          <property name="text">
+                           <string>In 25</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="8">
+                         <widget class="StatusLabel" name="lblin24">
+                          <property name="text">
+                           <string>In 24</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="11">
+                         <widget class="HalLedIndicator" name="halledindicator_14">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_32">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="3">
+                         <widget class="HalLedIndicator" name="in10">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="10">
+                         <widget class="StatusLabel" name="lblin29">
+                          <property name="text">
+                           <string>In 29</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="3">
+                         <widget class="HalLedIndicator" name="in9">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="9">
+                         <widget class="HalLedIndicator" name="halledindicator_29">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="5">
+                         <widget class="HalLedIndicator" name="in11">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="4">
+                         <widget class="StatusLabel" name="lblin11">
+                          <property name="text">
+                           <string>In 11</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="4" column="6">
+                         <widget class="StatusLabel" name="lblin19">
+                          <property name="text">
+                           <string>In 19</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="9">
+                         <widget class="HalLedIndicator" name="halledindicator_35">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="11">
+                         <widget class="HalLedIndicator" name="halledindicator_27">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="1">
+                         <widget class="HalLedIndicator" name="in5">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="color">
+                           <color>
+                            <red>0</red>
+                            <green>220</green>
+                            <blue>0</blue>
+                           </color>
+                          </property>
+                          <property name="state">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="2">
+                         <widget class="StatusLabel" name="lblin10">
+                          <property name="text">
+                           <string>In 10</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="4">
+                         <widget class="StatusLabel" name="lblin13">
+                          <property name="text">
+                           <string>In 13</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="6">
+                         <widget class="StatusLabel" name="lblin18">
+                          <property name="text">
+                           <string>In 18</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="8">
+                         <widget class="StatusLabel" name="lblin22">
+                          <property name="text">
+                           <string>In 22</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="5" column="6">
+                         <widget class="StatusLabel" name="lblin20">
+                          <property name="text">
+                           <string>In 20</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="4">
+                         <widget class="StatusLabel" name="lblin12">
+                          <property name="text">
+                           <string>In 12</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="10">
+                         <widget class="StatusLabel" name="lblin26">
+                          <property name="text">
+                           <string>In 26</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="8">
+                         <widget class="StatusLabel" name="lblin23">
+                          <property name="text">
+                           <string>In 23</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="13">
+                         <widget class="HalLedIndicator" name="halledindicator_20">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="12">
+                         <widget class="StatusLabel" name="lblin32">
+                          <property name="text">
+                           <string>In 32</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="13">
+                         <widget class="HalLedIndicator" name="halledindicator_13">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                         </widget>
                         </item>
                        </layout>
                       </widget>
@@ -2195,11 +2777,67 @@ Row</string>
                         <string>Outputs</string>
                        </property>
                        <layout class="QGridLayout" name="gridLayout_17">
+                        <item row="1" column="2">
+                         <widget class="StatusLabel" name="statuslabel_24"/>
+                        </item>
+                        <item row="1" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_9">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_6">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_8">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
                         <item row="0" column="2">
                          <widget class="StatusLabel" name="statuslabel_23"/>
                         </item>
-                        <item row="0" column="1">
-                         <widget class="HalLedIndicator" name="halledindicator_5"/>
+                        <item row="0" column="8">
+                         <spacer name="horizontalSpacer_6">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>40</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item row="0" column="5">
+                         <widget class="HalLedIndicator" name="halledindicator_37">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="4">
+                         <widget class="StatusLabel" name="statuslabel_51"/>
                         </item>
                         <item row="1" column="0">
                          <widget class="StatusLabel" name="statuslabel_20"/>
@@ -2207,17 +2845,158 @@ Row</string>
                         <item row="0" column="0">
                          <widget class="StatusLabel" name="statuslabel_19"/>
                         </item>
-                        <item row="1" column="1">
-                         <widget class="HalLedIndicator" name="halledindicator_6"/>
+                        <item row="0" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_5">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
                         </item>
-                        <item row="0" column="3">
-                         <widget class="HalLedIndicator" name="halledindicator_8"/>
+                        <item row="0" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_39">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
                         </item>
-                        <item row="1" column="2">
-                         <widget class="StatusLabel" name="statuslabel_24"/>
+                        <item row="1" column="4">
+                         <widget class="StatusLabel" name="statuslabel_52"/>
                         </item>
-                        <item row="1" column="3">
-                         <widget class="HalLedIndicator" name="halledindicator_9"/>
+                        <item row="2" column="0">
+                         <widget class="StatusLabel" name="statuslabel_55"/>
+                        </item>
+                        <item row="0" column="6">
+                         <widget class="StatusLabel" name="statuslabel_53"/>
+                        </item>
+                        <item row="1" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_40">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="5">
+                         <widget class="HalLedIndicator" name="halledindicator_38">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="1" column="6">
+                         <widget class="StatusLabel" name="statuslabel_54"/>
+                        </item>
+                        <item row="3" column="0">
+                         <widget class="StatusLabel" name="statuslabel_56"/>
+                        </item>
+                        <item row="2" column="2">
+                         <widget class="StatusLabel" name="statuslabel_57"/>
+                        </item>
+                        <item row="3" column="2">
+                         <widget class="StatusLabel" name="statuslabel_58"/>
+                        </item>
+                        <item row="2" column="4">
+                         <widget class="StatusLabel" name="statuslabel_59"/>
+                        </item>
+                        <item row="3" column="4">
+                         <widget class="StatusLabel" name="statuslabel_60"/>
+                        </item>
+                        <item row="2" column="6">
+                         <widget class="StatusLabel" name="statuslabel_61"/>
+                        </item>
+                        <item row="3" column="6">
+                         <widget class="StatusLabel" name="statuslabel_62"/>
+                        </item>
+                        <item row="2" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_41">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="1">
+                         <widget class="HalLedIndicator" name="halledindicator_42">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_43">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="3">
+                         <widget class="HalLedIndicator" name="halledindicator_44">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="5">
+                         <widget class="HalLedIndicator" name="halledindicator_45">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="5">
+                         <widget class="HalLedIndicator" name="halledindicator_46">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="2" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_47">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="3" column="7">
+                         <widget class="HalLedIndicator" name="halledindicator_48">
+                          <property name="diameter">
+                           <number>20</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignVCenter</set>
+                          </property>
+                         </widget>
                         </item>
                        </layout>
                       </widget>
@@ -2241,6 +3020,7 @@ Row</string>
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="page_2"/>
               </widget>
              </item>
             </layout>
@@ -2945,22 +3725,25 @@ ALL</string>
            </layout>
           </item>
           <item>
-           <widget class="QWidget" name="widget_15" native="true">
+           <widget class="HalGroupBox" name="hal_tool_change">
+            <property name="title">
+             <string>Tool Change</string>
+            </property>
             <layout class="QHBoxLayout" name="horizontalLayout_10">
              <property name="spacing">
               <number>5</number>
              </property>
              <property name="leftMargin">
-              <number>5</number>
+              <number>0</number>
              </property>
              <property name="topMargin">
-              <number>5</number>
+              <number>0</number>
              </property>
              <property name="rightMargin">
-              <number>5</number>
+              <number>0</number>
              </property>
              <property name="bottomMargin">
-              <number>5</number>
+              <number>0</number>
              </property>
              <item>
               <widget class="StatusLabel" name="lblToolLoading">
@@ -5175,6 +5958,12 @@ MODES</string>
    <header>qtpyvcp.widgets.input_widgets.file_system</header>
   </customwidget>
   <customwidget>
+   <class>HalGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_groupbox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>MDIEntry</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
@@ -5950,12 +6739,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

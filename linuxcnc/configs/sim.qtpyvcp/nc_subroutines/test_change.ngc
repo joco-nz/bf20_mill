@@ -11,6 +11,9 @@ o10 else
     #<_ReferenceTool>=0
 o10 endif
 
+; activate the tool change panel
+M64 P #<_ini[pins]change>
+
 ; move to toolchange position: z, then xy
 g53 g0 Z #<_ini[change_position]z>
 g53 g0 X #<_ini[change_position]x> Y #<_ini[change_position]y>
@@ -42,6 +45,7 @@ G90 (absolute)
 ; Test if we are using Tool 0 which is Tool Unload
 O200 if [#<_selected_tool> EQ 0]   ; an unload.
     (DEBUG, Tool 0 - TOOL UNLOAD. Restore and exit macro)
+    M65 P #<_ini[pins]change>
     O<restore> call [#<metric>] [#<absolute>] [#<feed>]
 O200    return [1] ; indicate success
 O200 endif
@@ -69,6 +73,8 @@ G38.3 Z -3.5
 (DEBUG, Prode contacted 2: Z = #5063, X = #5061, Y = #5062)
 ; turn off probing led
 M65 P #<_ini[pins]probing>
+; Turn off tool change panel
+M65 P #<_ini[pins]change>
 
 M65 P0
 ; Test for if this is the reference tool (#<_ReferenceTool> == 0),

@@ -6,6 +6,7 @@
 # CHANGE = 0
 #net guiDoToolChange     motion.digital-out-00 => qtpyvcp.halToolReady.enable
 net tool-change-request     => qtpyvcp.halToolReady.enable
+net tool-change-inflight    <= motion.digital-out-00 => qtpyvcp.hal-tool-change.visible
 
 # motion.digital-out-01
 # PROBING = 1

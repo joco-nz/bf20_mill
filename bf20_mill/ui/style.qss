@@ -116,6 +116,7 @@ VCPSettingsSlider::handle:vertical, ActionSlider::handle:vertical {
  *********************************************************************/
 QPushButton[bottomNavBtn] {
         font: 14pt "Bebas Kai";
+        min-width: 74px;
 }
 
 ActionButton[actionName="machine.power.toggle"]:checked{
@@ -381,6 +382,8 @@ QPushButton[mdiBtn] {
 
 QPushButton[mdiHistoryBtn] {
     font: 14pt "Bebas Kai";
+    min-width: 64px;
+    max-width: 64px;
 }
 
 
@@ -390,6 +393,7 @@ SubCallButton[mdiMacro] {
 
 QLabel[mdiHelp] {
     font: 10pt "Bebas Kai";
+    max-height: 408px;
 }
 
 MDIHistory {
@@ -425,6 +429,7 @@ QPushButton[jogBtn] {
  *********************************************************************/
 ActionButton[modeBtn] {
     font: 14pt "Bebas Kai";
+    min-width: 74px;
 }
 
 

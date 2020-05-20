@@ -773,20 +773,14 @@ The G73 cycle is drilling or milling with chip
 breaking. This cycle takes a Q number which
 represents a delta increment along the Z axis.
 
-Motion Sequence
-
-If the current Z position is below the R position,
+Motion Sequence:  If the current Z position is below the R position,
 The Z axis does a rapid move to the R position.
 
-Move to the X Y coordinates.
-
-Move the Z-axis only at the current feed rate
+Move to the X Y coordinates:  Move the Z-axis only at the current feed rate
 downward by delta or to the Z position, whichever
 is less deep.
 
-Rapid up a bit.
-
-Repeat steps 2 and 3 until the Z position is
+Rapid up a bit:  Repeat steps 2 and 3 until the Z position is
 reached at step 2.
 
 The Z axis does a rapid move to the R position.

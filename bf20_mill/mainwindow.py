@@ -91,12 +91,12 @@ class MyMainWindow(VCPMainWindow):
                     getattr(self, 'btnGcodeP' + str(index)).setText(value)
             else:
                 self.mdiClear()
-            #titles = mdiText.gcode_titles()
-            #if text in titles:
-            #    self.lblGcodeHelp.setText(titles[text])
-            #else:
-            #    self.mdiClear()
-            #self.lblGcodeHelp.setText(mdiText.gcode_descriptions(text))
+            titles = mdiText.gcode_titles()
+            if text in titles:
+                self.lblGcodeHelp.setText(titles[text])
+            else:
+                self.mdiClear()
+            self.lblGcodeHelp.setText(mdiText.gcode_descriptions(text))
         else:
             self.mdiClear()
             print('No Match')

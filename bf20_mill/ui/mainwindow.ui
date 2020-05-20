@@ -2215,7 +2215,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2274,7 +2274,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2312,7 +2312,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline|Qt::AlignTop</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2411,7 +2411,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignTop</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probe_tripped&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2449,7 +2449,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignTop</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:probing&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -3317,7 +3317,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3337,7 +3337,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3357,7 +3357,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3397,7 +3397,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3438,7 +3438,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3458,7 +3458,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3499,7 +3499,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3519,7 +3519,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3595,7 +3595,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3615,7 +3615,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3635,7 +3635,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3655,7 +3655,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3675,7 +3675,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3695,7 +3695,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3715,7 +3715,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3735,7 +3735,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignTop|Qt::AlignVCenter</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -6810,11 +6810,6 @@ MODES</string>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>MDIHistory</class>
-   <extends>QListWidget</extends>
-   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
-  </customwidget>
-  <customwidget>
    <class>VTKBackPlot</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
@@ -6833,6 +6828,11 @@ MODES</string>
    <class>NotificationWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.notification_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIHistory</class>
+   <extends>QListWidget</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
   </customwidget>
  </customwidgets>
  <resources/>
@@ -7544,12 +7544,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

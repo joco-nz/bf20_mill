@@ -379,6 +379,19 @@ QPushButton[mdiBtn] {
     font: 16pt "Bebas Kai";
 }
 
+QPushButton[mdiHistoryBtn] {
+    font: 14pt "Bebas Kai";
+}
+
+
+SubCallButton[mdiMacro] {
+    font: 14pt "Bebas Kai";
+}
+
+QLabel[mdiHelp] {
+    font: 10pt "Bebas Kai";
+}
+
 MDIHistory {
     alternate-background-color: lightgray;
 }
@@ -563,6 +576,14 @@ QTabBar::tab:!selected {
     color: lightgray;
 }
 
+QTabBar {
+/*    border-left: 2px solid lightgray;   */
+}
+
+QTabWidget::pane {
+    border: #2e3436;
+    border-right: 2px solid lightgray;
+}
 
 
 

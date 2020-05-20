@@ -124,19 +124,6 @@
               <number>5</number>
              </property>
              <item>
-              <spacer name="verticalSpacer_9">
-               <property name="orientation">
-                <enum>Qt::Vertical</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>20</width>
-                 <height>40</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
               <widget class="QPushButton" name="actionbutton_12">
                <property name="text">
                 <string>ALERTS</string>
@@ -174,7 +161,7 @@ nostics</string>
                 <bool>true</bool>
                </property>
                <property name="page" stdset="0">
-                <number>6</number>
+                <number>7</number>
                </property>
                <property name="leftNavBtn" stdset="0">
                 <string/>
@@ -185,9 +172,12 @@ nostics</string>
               </widget>
              </item>
              <item>
-              <widget class="ActionButton" name="actionbutton_15">
+              <widget class="ActionButton" name="btn_settings">
                <property name="enabled">
-                <bool>false</bool>
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>Settings</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -198,10 +188,26 @@ nostics</string>
                <property name="leftNavBtn" stdset="0">
                 <string/>
                </property>
+               <property name="page" stdset="0">
+                <number>6</number>
+               </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
                </attribute>
               </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
              </item>
              <item>
               <widget class="ActionButton" name="actionbutton_20">
@@ -271,12 +277,6 @@ TABLE</string>
               <widget class="QPushButton" name="btnWorkOffsets">
                <property name="enabled">
                 <bool>true</bool>
-               </property>
-               <property name="font">
-                <font>
-                 <family>BebasKai</family>
-                 <pointsize>16</pointsize>
-                </font>
                </property>
                <property name="text">
                 <string>MDI</string>
@@ -1179,6 +1179,12 @@ LINE</string>
                          <property name="text">
                           <string>P</string>
                          </property>
+                         <property name="checkable">
+                          <bool>false</bool>
+                         </property>
+                         <property name="checked">
+                          <bool>false</bool>
+                         </property>
                         </widget>
                        </item>
                        <item>
@@ -2004,6 +2010,530 @@ Single</string>
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="settings">
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <item>
+                  <widget class="QTabWidget" name="settings_tab">
+                   <property name="tabPosition">
+                    <enum>QTabWidget::East</enum>
+                   </property>
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="tab">
+                    <attribute name="title">
+                     <string>Tab 1</string>
+                    </attribute>
+                   </widget>
+                   <widget class="QWidget" name="tab_mdi_macros">
+                    <attribute name="title">
+                     <string>MDI Macros</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_22">
+                     <property name="spacing">
+                      <number>5</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>10</number>
+                     </property>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_11">
+                       <property name="title">
+                        <string>Macro 1</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_18">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_3">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_4">
+                          <property name="text">
+                           <string>NGC Sub to call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_2"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_12">
+                       <property name="title">
+                        <string>Macro 2</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_19">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_5">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_3"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_6">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_4"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_13">
+                       <property name="title">
+                        <string>Macro 3</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_20">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_5"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_15">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_7">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_6"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_14">
+                       <property name="title">
+                        <string>Macro 4</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_21">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_16">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_7"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_8">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_10"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_15">
+                       <property name="title">
+                        <string>Macro 5</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_22">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_8"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_9">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_17">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_9"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_16">
+                       <property name="title">
+                        <string>Macro 6</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_23">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_18">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_10">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_11"/>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_12"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_17">
+                       <property name="title">
+                        <string>GroupBox</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_24">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_11">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_13"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_19">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_14"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_18">
+                       <property name="title">
+                        <string>Macro 8</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_25">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_15"/>
+                        </item>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_12">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_20">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_16"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_19">
+                       <property name="title">
+                        <string>Macro 9</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_26">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_13">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_17"/>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_21">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_18"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_20">
+                       <property name="title">
+                        <string>Macro 10</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_27">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="horizontalSpacing">
+                         <number>5</number>
+                        </property>
+                        <property name="verticalSpacing">
+                         <number>2</number>
+                        </property>
+                        <item row="0" column="0">
+                         <widget class="QLabel" name="label_14">
+                          <property name="text">
+                           <string>Display Name</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="2">
+                         <widget class="QLabel" name="label_22">
+                          <property name="text">
+                           <string>NGC Sub to Call</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="VCPLineEdit" name="lineedit_19"/>
+                        </item>
+                        <item row="0" column="3">
+                         <widget class="VCPLineEdit" name="lineedit_20"/>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <spacer name="verticalSpacer_6">
+                       <property name="orientation">
+                        <enum>Qt::Vertical</enum>
+                       </property>
+                       <property name="sizeHint" stdset="0">
+                        <size>
+                         <width>20</width>
+                         <height>40</height>
+                        </size>
+                       </property>
+                      </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
                <widget class="QWidget" name="diagnostics">
                 <layout class="QVBoxLayout" name="verticalLayout_23">
                  <property name="spacing">
@@ -2171,7 +2701,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2230,7 +2760,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -2268,7 +2798,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
+                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -3267,7 +3797,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3287,7 +3817,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3307,7 +3837,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3347,7 +3877,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3388,7 +3918,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3408,7 +3938,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3449,7 +3979,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3469,7 +3999,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3545,7 +4075,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3565,7 +4095,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3585,7 +4115,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3605,7 +4135,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3625,7 +4155,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3645,7 +4175,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3665,7 +4195,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3685,7 +4215,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignTop</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -7506,12 +8036,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

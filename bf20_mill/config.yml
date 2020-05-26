@@ -7,7 +7,7 @@ qtdesigner:
 
 vcp:
   name: bf20_mill
-  version: v0.0.1
+  version: v0.1.0
   author: James Walker
   description: >
     Put a short description of your VCP here. This will be
@@ -59,6 +59,8 @@ application:
     stylesheet: {{ file.dir }}/ui/style.qss
     custom_fonts:
         - {{ file.dir }}/resources/fonts/BebasKai.ttf
+        - {{ file.dir }}/resources/fonts/3270-Regular.ttf
+        - {{ file.dir }}/resources/fonts/SourceCodePro-Regular.ttf
 
 settings:
     manual-touchoff.xy-offset:

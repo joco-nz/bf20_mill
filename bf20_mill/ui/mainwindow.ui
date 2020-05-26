@@ -370,7 +370,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>4</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -614,7 +614,14 @@ Extent</string>
                   <widget class="VCPWidget" name="widget_17">
                    <layout class="QVBoxLayout" name="verticalLayout_19">
                     <item>
-                     <widget class="GcodeEditor" name="gcodeeditor"/>
+                     <widget class="GcodeEditor" name="gcodeeditor">
+                      <property name="activeLineBackgroundColor" stdset="0">
+                       <string>lightslategrey</string>
+                      </property>
+                      <property name="editorDefaultFont" stdset="0">
+                       <string>IBM 3270</string>
+                      </property>
+                     </widget>
                     </item>
                     <item>
                      <widget class="VCPWidget" name="widget_18">
@@ -668,7 +675,17 @@ Extent</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="StatusLabel" name="lblGcodeLine"/>
+                        <widget class="StatusLabel" name="lblGcodeLine">
+                         <property name="minimumSize">
+                          <size>
+                           <width>70</width>
+                           <height>0</height>
+                          </size>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
                        </item>
                       </layout>
                      </widget>
@@ -830,6 +847,9 @@ As</string>
                  </property>
                  <item>
                   <widget class="ToolTable" name="toolTbl">
+                   <property name="displayColumns" stdset="0">
+                    <string>TPXYZADR</string>
+                   </property>
                    <property name="confirmActions" stdset="0">
                     <bool>true</bool>
                    </property>
@@ -847,6 +867,12 @@ As</string>
                      <blue>0</blue>
                     </color>
                    </property>
+                   <attribute name="horizontalHeaderDefaultSectionSize">
+                    <number>80</number>
+                   </attribute>
+                   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                    <bool>false</bool>
+                   </attribute>
                    <attribute name="verticalHeaderDefaultSectionSize">
                     <number>55</number>
                    </attribute>
@@ -1031,6 +1057,9 @@ LINE</string>
                 <layout class="QVBoxLayout" name="verticalLayout_16">
                  <item>
                   <widget class="VCPWidget" name="widget_9">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
                    <widget class="VCPWidget" name="widget_10">
                     <property name="geometry">
                      <rect>
@@ -1042,13 +1071,46 @@ LINE</string>
                     </property>
                     <layout class="QGridLayout" name="gridLayout_10">
                      <item row="2" column="0">
-                      <widget class="SubCallButton" name="subcallbutton_5"/>
+                      <widget class="SubCallButton" name="subcallbutton_5">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/front_left_outside_corner.png</normaloff>../resources/images/front_left_outside_corner.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="1">
-                      <widget class="SubCallButton" name="subcallbutton_4"/>
+                      <widget class="SubCallButton" name="subcallbutton_4">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                      <item row="0" column="1">
-                      <widget class="SubCallButton" name="subcallbutton_2"/>
+                      <widget class="SubCallButton" name="subcallbutton_2">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/back_middle_outside_edge.png</normaloff>../resources/images/back_middle_outside_edge.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                      <item row="0" column="0">
                       <widget class="SubCallButton" name="subcallbutton">
@@ -1068,7 +1130,7 @@ LINE</string>
                       <widget class="SubCallButton" name="subcallbutton_3">
                        <property name="icon">
                         <iconset>
-                         <normaloff>../resources/images/x_plus.png</normaloff>../resources/images/x_plus.png</iconset>
+                         <normaloff>../resources/images/left_side_edge.png</normaloff>../resources/images/left_side_edge.png</iconset>
                        </property>
                        <property name="iconSize">
                         <size>
@@ -1079,16 +1141,60 @@ LINE</string>
                       </widget>
                      </item>
                      <item row="2" column="1">
-                      <widget class="SubCallButton" name="subcallbutton_6"/>
+                      <widget class="SubCallButton" name="subcallbutton_6">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/front_middle_edge.png</normaloff>../resources/images/front_middle_edge.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                      <item row="0" column="2">
-                      <widget class="SubCallButton" name="subcallbutton_7"/>
+                      <widget class="SubCallButton" name="subcallbutton_7">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/back_right_outside_corner.png</normaloff>../resources/images/back_right_outside_corner.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                      <item row="1" column="2">
-                      <widget class="SubCallButton" name="subcallbutton_8"/>
+                      <widget class="SubCallButton" name="subcallbutton_8">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/right_side_edge.png</normaloff>../resources/images/right_side_edge.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                      <item row="2" column="2">
-                      <widget class="SubCallButton" name="subcallbutton_9"/>
+                      <widget class="SubCallButton" name="subcallbutton_9">
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>../resources/images/front_right_outside_corner.png</normaloff>../resources/images/front_right_outside_corner.png</iconset>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>50</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </widget>
@@ -1304,7 +1410,7 @@ LINE</string>
                       <property name="selectionBehavior">
                        <enum>QAbstractItemView::SelectRows</enum>
                       </property>
-                      <property name="mdi_entryline_name" stdset="0">
+                      <property name="mdiEntrylineName" stdset="0">
                        <string>mdiEntry</string>
                       </property>
                       <property name="MDIHistory" stdset="0">
@@ -2700,9 +2806,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBottom|Qt::AlignVCenter</set>
-                          </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
                           </property>
@@ -2759,9 +2862,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBottom|Qt::AlignVCenter</set>
-                          </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:queue_full&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
                           </property>
@@ -2796,9 +2896,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBottom|Qt::AlignVCenter</set>
                           </property>
                           <property name="rules" stdset="0">
                            <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:adaptive_feed_enabled&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;On&quot;, &quot;expression&quot;: &quot;ch[0]&quot;, &quot;name&quot;: &quot;value&quot;}]</string>
@@ -3797,7 +3894,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3817,7 +3914,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3837,7 +3934,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3877,7 +3974,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3918,7 +4015,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3938,7 +4035,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3979,7 +4076,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3999,7 +4096,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4075,7 +4172,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4095,7 +4192,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4115,7 +4212,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4135,7 +4232,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4155,7 +4252,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4175,7 +4272,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4195,7 +4292,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4215,7 +4312,7 @@ Single</string>
                            </color>
                           </property>
                           <property name="alignment">
-                           <set>Qt::AlignAbsolute|Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop</set>
+                           <set>Qt::AlignBaseline|Qt::AlignBottom|Qt::AlignTop|Qt::AlignVCenter|Qt::AlignVertical_Mask</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -5158,7 +5255,7 @@ CHANGED</string>
              <number>3</number>
             </property>
             <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axes&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;currentIndex&quot;, &quot;expression&quot;: &quot;0&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+             <string>[]</string>
             </property>
             <widget class="QWidget" name="modesdro">
              <layout class="QVBoxLayout" name="verticalLayout_18">
@@ -5464,7 +5561,7 @@ Delete</string>
                  <string>Override</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_12">
-                 <item row="1" column="2">
+                 <item row="1" column="4">
                   <widget class="ActionSlider" name="actionslider_2">
                    <property name="minimumSize">
                     <size>
@@ -5483,41 +5580,7 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="1">
-                  <widget class="StatusLabel" name="statuslabel_6">
-                   <property name="minimumSize">
-                    <size>
-                     <width>60</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>Feed
-%</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="2">
-                  <widget class="StatusLabel" name="statuslabel_5">
-                   <property name="minimumSize">
-                    <size>
-                     <width>60</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>Rapid
-%</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
+                 <item row="1" column="3">
                   <widget class="ActionSlider" name="actionslider_3">
                    <property name="minimumSize">
                     <size>
@@ -5536,24 +5599,7 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="0">
-                  <widget class="StatusLabel" name="statuslabel_13">
-                   <property name="minimumSize">
-                    <size>
-                     <width>60</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>Spindle
-%</string>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
+                 <item row="1" column="2">
                   <widget class="ActionSlider" name="actionslider">
                    <property name="minimumSize">
                     <size>
@@ -5572,6 +5618,39 @@ Delete</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>spindle.override</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="ActionButton" name="actionbutton_15">
+                   <property name="text">
+                    <string>Spindle
+Reset</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.override.reset</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="ActionButton" name="actionbutton_43">
+                   <property name="text">
+                    <string>Feed
+Reset</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.feed_override.reset</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="ActionButton" name="actionbutton_44">
+                   <property name="text">
+                    <string>Rapid
+Reset</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.rapid_override.reset</string>
                    </property>
                   </widget>
                  </item>
@@ -7829,7 +7908,7 @@ MODES</string>
    <sender>btn_pause_mdi</sender>
    <signal>toggled(bool)</signal>
    <receiver>mdihistory</receiver>
-   <slot>toggle_queue(bool)</slot>
+   <slot>toggleQueue(bool)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>760</x>
@@ -7845,7 +7924,7 @@ MODES</string>
    <sender>btn_run_from_line</sender>
    <signal>clicked()</signal>
    <receiver>mdihistory</receiver>
-   <slot>run_from_selection()</slot>
+   <slot>runFromSelection()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1194</x>
@@ -7861,7 +7940,7 @@ MODES</string>
    <sender>btn_clear_queue</sender>
    <signal>clicked()</signal>
    <receiver>mdihistory</receiver>
-   <slot>clear_queue()</slot>
+   <slot>clearQueue()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>1113</x>
@@ -7989,7 +8068,7 @@ MODES</string>
    <sender>btn_run_line</sender>
    <signal>clicked()</signal>
    <receiver>mdihistory</receiver>
-   <slot>run_selection()</slot>
+   <slot>runSelection()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>674</x>
@@ -8005,7 +8084,7 @@ MODES</string>
    <sender>btn_del_history_row</sender>
    <signal>clicked()</signal>
    <receiver>mdihistory</receiver>
-   <slot>clear_selection()</slot>
+   <slot>removeSelectedItem()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>516</x>
@@ -8036,12 +8115,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

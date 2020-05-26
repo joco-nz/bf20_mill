@@ -5,6 +5,11 @@ QMainWindow {
     background: #2e3436;
 }
 
+QFileDialog {
+    color: black;
+    background: lightgray;
+}
+
 QStatusBar {
     color: white;
     font-family: "Bebas Kai";
@@ -300,9 +305,9 @@ QPushButton[buttonFont="30"] {
     font: 30pt "Bebas Kai";
 }
 
-
-QPushButton, QComboBox[editable="false"],
-QComboBox[editable="true"]::drop-down {
+/* QComboBox[editable="false"],
+QComboBox[editable="true"]::drop-down */
+QPushButton  {
     color: white;
     border-color: black;
     border-style: solid;
@@ -447,7 +452,9 @@ QHeaderView {
 
 QPushButton[ToolTblBtn] {
     font: 14pt "Bebas Kai";
+    min-width: 64px;
 }
+
 
 /**********************************************************************
  *                               File Loading                         *
@@ -564,7 +571,11 @@ QPushButton[gcodeBtn] {
 }
 
 QsciScintilla {
-    qproperty-backgroundcolor: #D9DADB;
+/*
+ * qproperty-backgroundcolor: #303030;
+ * qproperty-marginbackgroundcolor: #D9DADB;
+ */
+    qproperty-backgroundcolor: #303030;
     qproperty-marginbackgroundcolor: #D9DADB;
 }
 

@@ -619,7 +619,7 @@ Extent</string>
                        <string>lightslategrey</string>
                       </property>
                       <property name="editorDefaultFont" stdset="0">
-                       <string>IBM 3270</string>
+                       <string>Ubuntu Mono</string>
                       </property>
                      </widget>
                     </item>
@@ -749,6 +749,12 @@ From</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="actionbutton_30">
+                      <property name="minimumSize">
+                       <size>
+                        <width>54</width>
+                        <height>54</height>
+                       </size>
+                      </property>
                       <property name="text">
                        <string>Reload</string>
                       </property>
@@ -762,6 +768,12 @@ From</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="actionbutton_31">
+                      <property name="minimumSize">
+                       <size>
+                        <width>54</width>
+                        <height>54</height>
+                       </size>
+                      </property>
                       <property name="gcodeBtn" stdset="0">
                        <string/>
                       </property>
@@ -769,6 +781,12 @@ From</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="btnSaveAs">
+                      <property name="minimumSize">
+                       <size>
+                        <width>54</width>
+                        <height>54</height>
+                       </size>
+                      </property>
                       <property name="text">
                        <string>Save
 As</string>
@@ -780,6 +798,12 @@ As</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="btnSaveGcode">
+                      <property name="minimumSize">
+                       <size>
+                        <width>54</width>
+                        <height>54</height>
+                       </size>
+                      </property>
                       <property name="text">
                        <string>Save</string>
                       </property>
@@ -790,6 +814,12 @@ As</string>
                     </item>
                     <item>
                      <widget class="ActionButton" name="btnEditGcode">
+                      <property name="minimumSize">
+                       <size>
+                        <width>54</width>
+                        <height>54</height>
+                       </size>
+                      </property>
                       <property name="text">
                        <string>Edit</string>
                       </property>
@@ -1060,139 +1090,2955 @@ LINE</string>
                    <property name="enabled">
                     <bool>true</bool>
                    </property>
-                   <widget class="VCPWidget" name="widget_10">
+                   <widget class="QTabWidget" name="tabWidget">
                     <property name="geometry">
                      <rect>
-                      <x>300</x>
-                      <y>385</y>
-                      <width>246</width>
-                      <height>181</height>
+                      <x>440</x>
+                      <y>5</y>
+                      <width>310</width>
+                      <height>491</height>
                      </rect>
                     </property>
-                    <layout class="QGridLayout" name="gridLayout_10">
-                     <item row="2" column="0">
-                      <widget class="SubCallButton" name="subcallbutton_5">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/front_left_outside_corner.png</normaloff>../resources/images/front_left_outside_corner.png</iconset>
+                    <property name="minimumSize">
+                     <size>
+                      <width>310</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>310</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="tabPosition">
+                     <enum>QTabWidget::East</enum>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <widget class="QWidget" name="tab_outside">
+                     <attribute name="title">
+                      <string>Outside</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_27">
+                      <item>
+                       <widget class="VCPWidget" name="widget_10">
+                        <property name="minimumSize">
+                         <size>
+                          <width>268</width>
+                          <height>268</height>
+                         </size>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_10">
+                         <property name="spacing">
+                          <number>5</number>
+                         </property>
+                         <item row="2" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_5">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/front_left_outside_corner.png</normaloff>../resources/images/front_left_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_4">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_2">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/back_middle_outside_edge.png</normaloff>../resources/images/back_middle_outside_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="SubCallButton" name="subcallbutton">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/back_left_outside_corner.png</normaloff>../resources/images/back_left_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_3">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/left_side_edge.png</normaloff>../resources/images/left_side_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_6">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/front_middle_edge.png</normaloff>../resources/images/front_middle_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_7">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/back_right_outside_corner.png</normaloff>../resources/images/back_right_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_8">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/right_side_edge.png</normaloff>../resources/images/right_side_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_9">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/front_right_outside_corner.png</normaloff>../resources/images/front_right_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="VCPWidget" name="widget_19">
+                        <property name="maximumSize">
+                         <size>
+                          <width>183</width>
+                          <height>183</height>
+                         </size>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_30">
+                         <item row="0" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_35">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_x_ridge.png</normaloff>../resources/images/probe_x_ridge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_36">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_y_ridge.png</normaloff>../resources/images/probe_y_ridge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_29">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_square_boss.png</normaloff>../resources/images/probe_cal_square_boss.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_32">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_round_boss.png</normaloff>../resources/images/probe_cal_round_boss.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="tab_inside">
+                     <attribute name="title">
+                      <string>Inside</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_26">
+                      <item>
+                       <widget class="VCPWidget" name="widget_7">
+                        <property name="minimumSize">
+                         <size>
+                          <width>268</width>
+                          <height>268</height>
+                         </size>
+                        </property>
+                        <property name="maximumSize">
+                         <size>
+                          <width>268</width>
+                          <height>268</height>
+                         </size>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_28">
+                         <item row="0" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_23">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/inside_back_right_corner.png</normaloff>../resources/images/inside_back_right_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_21">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/x_plus.png</normaloff>../resources/images/x_plus.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_24">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/y_plus.png</normaloff>../resources/images/y_plus.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_22">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/inside_back_left_corner.png</normaloff>../resources/images/inside_back_left_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_28">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/inside_front_right_corner.png</normaloff>../resources/images/inside_front_right_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_26">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/inside_front_left_corner.png</normaloff>../resources/images/inside_front_left_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_27">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/y_minus.png</normaloff>../resources/images/y_minus.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_31">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_20">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/x_minus.png</normaloff>../resources/images/x_minus.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="VCPWidget" name="widget_16">
+                        <property name="maximumSize">
+                         <size>
+                          <width>183</width>
+                          <height>183</height>
+                         </size>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_29">
+                         <item row="0" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_25">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_square_pocket.png</normaloff>../resources/images/probe_cal_square_pocket.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_33">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_x_valley.png</normaloff>../resources/images/probe_x_valley.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_34">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_y_valley.png</normaloff>../resources/images/probe_y_valley.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_30">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_round_pocket.png</normaloff>../resources/images/probe_cal_round_pocket.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                   <widget class="QWidget" name="widget_44" native="true">
+                    <property name="geometry">
+                     <rect>
+                      <x>-10</x>
+                      <y>95</y>
+                      <width>540</width>
+                      <height>780</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                      <horstretch>1</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>530</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>540</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true"/>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_41">
+                     <property name="topMargin">
+                      <number>6</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>6</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>9</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_82">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
                        </property>
-                       <property name="iconSize">
+                       <property name="minimumSize">
                         <size>
-                         <width>50</width>
-                         <height>50</height>
+                         <width>0</width>
+                         <height>27</height>
                         </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>27</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Bebas Kai</family>
+                         <pointsize>14</pointsize>
+                         <weight>50</weight>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QLabel{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    color: rgb(238, 238, 236);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                       </property>
+                       <property name="text">
+                        <string> Probing Parameters</string>
                        </property>
                       </widget>
                      </item>
-                     <item row="1" column="1">
-                      <widget class="SubCallButton" name="subcallbutton_4">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_28">
+                       <property name="spacing">
+                        <number>6</number>
                        </property>
-                       <property name="iconSize">
+                       <property name="topMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>9</number>
+                       </property>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_154">
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="ref_coilumn_header_19">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_83">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>150</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Probe Tool #:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="probe_tool_number">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.probe-tool-number</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_84">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="baseSize">
+                            <size>
+                             <width>140</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Step Off Width:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="step_off_width">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.step-off-width</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_155">
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="ref_coilumn_header_20">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_85">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>150</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>PROBE FAST FDRATE:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="probe_fast_fr">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.probe-fast-fr</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_86">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="baseSize">
+                            <size>
+                             <width>140</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>PROBE SLOW FDRATE:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="probe_slow_fr">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.probe-slow-fr</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_156">
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="ref_coilumn_header_21">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_87">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>150</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Max X/Y Distance:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="max_xy_distance">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.max-xy-distance</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_88">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="baseSize">
+                            <size>
+                             <width>140</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>X/Y Clearance:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="xy_clearance">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.xy-clearance</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_157">
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="ref_coilumn_header_22">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_90">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>150</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Max Z Distance:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="max_z_distance">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.max-z-distance</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_91">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="baseSize">
+                            <size>
+                             <width>140</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Z Clearance:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="z_clearance">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.z-clearance</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_158">
+                         <property name="leftMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="ref_coilumn_header_23">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_92">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>150</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Extra Probe Depth:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="extra_probe_depth">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.extra-probe-depth</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_94">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="baseSize">
+                            <size>
+                             <width>140</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>EDGE WIDTH:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="edge_width">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>probe-parameters.edge-width</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_20" native="true">
+                       <property name="sizePolicy">
+                        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                         <horstretch>0</horstretch>
+                         <verstretch>0</verstretch>
+                        </sizepolicy>
+                       </property>
+                       <property name="minimumSize">
                         <size>
-                         <width>50</width>
-                         <height>50</height>
+                         <width>0</width>
+                         <height>33</height>
                         </size>
                        </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>33</height>
+                        </size>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_57">
+                        <property name="spacing">
+                         <number>1</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QLabel" name="label_95">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>27</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>27</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Bebas Kai</family>
+                            <pointsize>14</pointsize>
+                            <weight>50</weight>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QLabel{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: rgb(238, 238, 236);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                          </property>
+                          <property name="text">
+                           <string> Probe Results</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="SubCallButton" name="reset_all_data">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>54</width>
+                            <height>54</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>120</width>
+                            <height>27</height>
+                           </size>
+                          </property>
+                          <property name="focusPolicy">
+                           <enum>Qt::NoFocus</enum>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">.SubCallButton{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+	font: 14pt &quot;Bebas Kai&quot;;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+}
+
+.SubCallButton:disabled {
+    border-color: gray;
+}
+
+.SubCallButton:hover {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #A19E9E, stop: 1.0 #5C5959);
+}
+
+.SubCallButton:pressed {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked[option=&quot;true&quot;] {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>RESET ALL DATA</string>
+                          </property>
+                          <property name="filename" stdset="0">
+                           <string>reset_all_data.ngc</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="SubCallButton" name="x_data_reset1">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>54</width>
+                            <height>54</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>110</width>
+                            <height>27</height>
+                           </size>
+                          </property>
+                          <property name="focusPolicy">
+                           <enum>Qt::NoFocus</enum>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">.SubCallButton{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+	font: 14pt &quot;Bebas Kai&quot;;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+}
+
+.SubCallButton:disabled {
+    border-color: gray;
+}
+
+.SubCallButton:hover {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #A19E9E, stop: 1.0 #5C5959);
+}
+
+.SubCallButton:pressed {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked[option=&quot;true&quot;] {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>X DATA RESET</string>
+                          </property>
+                          <property name="filename" stdset="0">
+                           <string>x_data_reset.ngc</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="SubCallButton" name="y_data_reset1">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="minimumSize">
+                           <size>
+                            <width>54</width>
+                            <height>54</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>110</width>
+                            <height>27</height>
+                           </size>
+                          </property>
+                          <property name="focusPolicy">
+                           <enum>Qt::NoFocus</enum>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">SubCallButton{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	font: 14pt &quot;Bebas Kai&quot;;
+  	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+}
+
+.SubCallButton:disabled {
+    border-color: gray;
+}
+
+.SubCallButton:hover {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #A19E9E, stop: 1.0 #5C5959);
+}
+
+.SubCallButton:pressed {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked[option=&quot;true&quot;] {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Y DATA RESET</string>
+                          </property>
+                          <property name="filename" stdset="0">
+                           <string>y_data_reset.ngc</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
                       </widget>
                      </item>
-                     <item row="0" column="1">
-                      <widget class="SubCallButton" name="subcallbutton_2">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/back_middle_outside_edge.png</normaloff>../resources/images/back_middle_outside_edge.png</iconset>
+                     <item>
+                      <layout class="QVBoxLayout" name="verticalLayout_42">
+                       <property name="spacing">
+                        <number>6</number>
                        </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>50</width>
-                         <height>50</height>
-                        </size>
+                       <property name="topMargin">
+                        <number>0</number>
                        </property>
-                      </widget>
+                       <property name="rightMargin">
+                        <number>9</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>3</number>
+                       </property>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_160">
+                         <property name="leftMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_108">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::NoFrame</enum>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>X- PROBED:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="x_minus_probed_position">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_98">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="frameShape">
+                            <enum>QFrame::NoFrame</enum>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>X+ PROBED:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="x_plus_probed_position">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_97">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>X WIDTH:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="x_probed_width">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_29">
+                         <property name="leftMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_109">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Y- PROBED:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="y_minus_probed_position">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_101">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Y+ PROBED:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="y_plus_probed_position">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_100">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Y WIDTH:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="y_probed_width">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_161">
+                         <property name="leftMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_110">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Z- PROBED:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="z_minus_probed_position">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="margin">
+                            <number>2</number>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_102">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>DIAM:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="averaged_diam">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_113">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>X CENTER:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="x_center_probed">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="margin">
+                            <number>2</number>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_162">
+                         <property name="leftMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_99">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;EDGE DELTA:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="edge_delta">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_96">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>EDGE ANGLE:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="edge_angle">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="mouseTracking">
+                            <bool>true</bool>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="textFormat">
+                            <enum>Qt::RichText</enum>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                           <property name="expression" stdset="0">
+                            <string>val</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="label_114">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 75 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>Y CENTER:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="StatusLabel" name="y_center_probed">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>80</width>
+                             <height>31</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>0.0000</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="margin">
+                            <number>2</number>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="format" stdset="0">
+                            <string>{:6.4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
                      </item>
-                     <item row="0" column="0">
-                      <widget class="SubCallButton" name="subcallbutton">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/back_left_outside_corner.png</normaloff>../resources/images/back_left_outside_corner.png</iconset>
-                       </property>
-                       <property name="iconSize">
+                     <item>
+                      <widget class="MDIEntry" name="mdi_entry_box_5">
+                       <property name="minimumSize">
                         <size>
-                         <width>50</width>
-                         <height>50</height>
+                         <width>0</width>
+                         <height>42</height>
                         </size>
                        </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="0">
-                      <widget class="SubCallButton" name="subcallbutton_3">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/left_side_edge.png</normaloff>../resources/images/left_side_edge.png</iconset>
-                       </property>
-                       <property name="iconSize">
+                       <property name="maximumSize">
                         <size>
-                         <width>50</width>
-                         <height>50</height>
+                         <width>16777215</width>
+                         <height>42</height>
                         </size>
                        </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="1">
-                      <widget class="SubCallButton" name="subcallbutton_6">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/front_middle_edge.png</normaloff>../resources/images/front_middle_edge.png</iconset>
+                       <property name="font">
+                        <font>
+                         <family>Bebas Kai</family>
+                         <pointsize>15</pointsize>
+                         <weight>50</weight>
+                         <italic>false</italic>
+                         <bold>false</bold>
+                        </font>
                        </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>50</width>
-                         <height>50</height>
-                        </size>
+                       <property name="focusPolicy">
+                        <enum>Qt::ClickFocus</enum>
                        </property>
-                      </widget>
-                     </item>
-                     <item row="0" column="2">
-                      <widget class="SubCallButton" name="subcallbutton_7">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/back_right_outside_corner.png</normaloff>../resources/images/back_right_outside_corner.png</iconset>
-                       </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>50</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="1" column="2">
-                      <widget class="SubCallButton" name="subcallbutton_8">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/right_side_edge.png</normaloff>../resources/images/right_side_edge.png</iconset>
-                       </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>50</width>
-                         <height>50</height>
-                        </size>
-                       </property>
-                      </widget>
-                     </item>
-                     <item row="2" column="2">
-                      <widget class="SubCallButton" name="subcallbutton_9">
-                       <property name="icon">
-                        <iconset>
-                         <normaloff>../resources/images/front_right_outside_corner.png</normaloff>../resources/images/front_right_outside_corner.png</iconset>
-                       </property>
-                       <property name="iconSize">
-                        <size>
-                         <width>50</width>
-                         <height>50</height>
-                        </size>
+                       <property name="placeholderText">
+                        <string>MDI</string>
                        </property>
                       </widget>
                      </item>
@@ -2124,7 +4970,7 @@ Single</string>
                     <enum>QTabWidget::East</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>1</number>
                    </property>
                    <widget class="QWidget" name="tab">
                     <attribute name="title">
@@ -2666,7 +5512,7 @@ Single</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>1</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -3893,9 +6739,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -3913,9 +6756,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -3932,9 +6772,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -3972,9 +6809,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4014,9 +6848,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -4033,9 +6864,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4075,9 +6903,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -4094,9 +6919,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4171,9 +6993,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -4190,9 +7009,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4211,9 +7027,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -4230,9 +7043,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4251,9 +7061,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -4270,9 +7077,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -4291,9 +7095,6 @@ Single</string>
                             <blue>0</blue>
                            </color>
                           </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
-                          </property>
                           <property name="state">
                            <bool>false</bool>
                           </property>
@@ -4310,9 +7111,6 @@ Single</string>
                             <green>220</green>
                             <blue>0</blue>
                            </color>
-                          </property>
-                          <property name="alignment">
-                           <set>Qt::AlignBaseline</set>
                           </property>
                           <property name="state">
                            <bool>false</bool>
@@ -5427,6 +8225,12 @@ SLOWER</string>
                 <layout class="QGridLayout" name="gridLayout_13">
                  <item row="0" column="0">
                   <widget class="MDIButton" name="mdibutton">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>G0
 X0 Y0</string>
@@ -5441,12 +8245,17 @@ X0 Y0</string>
                  </item>
                  <item row="0" column="1">
                   <widget class="MDIButton" name="mdibutton_2">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
-                    <string>Go
-Z0</string>
+                    <string>Go Z</string>
                    </property>
                    <property name="MDICommand" stdset="0">
-                    <string>G0Z0</string>
+                    <string>G0Z#&lt;settingsGoToZaddition&gt;</string>
                    </property>
                    <property name="bottomNavBtn" stdset="0">
                     <string/>
@@ -5455,6 +8264,12 @@ Z0</string>
                  </item>
                  <item row="1" column="0">
                   <widget class="ActionButton" name="actionbutton_21">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>RUN</string>
                    </property>
@@ -5468,6 +8283,12 @@ Z0</string>
                  </item>
                  <item row="1" column="1">
                   <widget class="ActionButton" name="actionbutton_18">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>PAUSE</string>
                    </property>
@@ -5481,6 +8302,12 @@ Z0</string>
                  </item>
                  <item row="1" column="2">
                   <widget class="ActionButton" name="actionbutton_19">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>STEP</string>
                    </property>
@@ -5494,6 +8321,12 @@ Z0</string>
                  </item>
                  <item row="1" column="3">
                   <widget class="ActionButton" name="actionbutton_17">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>RESUME</string>
                    </property>
@@ -5507,6 +8340,12 @@ Z0</string>
                  </item>
                  <item row="2" column="0">
                   <widget class="ActionButton" name="actionbutton_16">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>ABORT</string>
                    </property>
@@ -5520,6 +8359,12 @@ Z0</string>
                  </item>
                  <item row="2" column="1">
                   <widget class="ActionButton" name="actionbutton_28">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>Optional
 Stop</string>
@@ -5537,6 +8382,12 @@ Stop</string>
                  </item>
                  <item row="2" column="2">
                   <widget class="ActionButton" name="actionbutton_32">
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="text">
                     <string>Block
 Delete</string>
@@ -5549,6 +8400,31 @@ Delete</string>
                    </property>
                    <property name="bottomNavBtn" stdset="0">
                     <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <widget class="VCPSettingsLineEdit" name="settingsGoToZaddition">
+                   <property name="minimumSize">
+                    <size>
+                     <width>70</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>70</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="settingName" stdset="0">
+                    <string>go-to-z.addition</string>
+                   </property>
+                   <property name="textFormat" stdset="0">
+                    <string>{:4.2f}</string>
                    </property>
                   </widget>
                  </item>
@@ -5698,7 +8574,7 @@ Reset</string>
               <item>
                <widget class="QGroupBox" name="groupBox_6">
                 <property name="title">
-                 <string>Work Touch Off</string>
+                 <string>Manual Work Touch Off</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_11">
                  <property name="leftMargin">
@@ -6075,34 +8951,6 @@ N/A</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="0" colspan="3">
-                  <widget class="VCPSettingsSlider" name="settings_slider">
-                   <property name="maximum">
-                    <number>2000</number>
-                   </property>
-                   <property name="singleStep">
-                    <number>100</number>
-                   </property>
-                   <property name="pageStep">
-                    <number>500</number>
-                   </property>
-                   <property name="sliderPosition">
-                    <number>400</number>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="tickPosition">
-                    <enum>QSlider::TicksBothSides</enum>
-                   </property>
-                   <property name="tickInterval">
-                    <number>100</number>
-                   </property>
-                   <property name="settingName" stdset="0">
-                    <string>machine.jog.linear-speed</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="0" column="1">
                   <widget class="ActionButton" name="actionbutton_26">
                    <property name="text">
@@ -6193,6 +9041,22 @@ N/A</string>
                    </property>
                    <property name="jogBtn" stdset="0">
                     <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="3">
+                  <widget class="ActionSlider" name="actionslider_4">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>100</number>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.feed-override.set</string>
                    </property>
                   </widget>
                  </item>
@@ -7226,7 +10090,7 @@ Touch</string>
         <widget class="ActionButton" name="btnModesDro">
          <property name="text">
           <string>Spindle/
-MODES</string>
+Run</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -7358,11 +10222,6 @@ MODES</string>
    <class>SubCallButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.subcall_button</header>
-  </customwidget>
-  <customwidget>
-   <class>VCPSettingsSlider</class>
-   <extends>QSlider</extends>
-   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
   </customwidget>
   <customwidget>
    <class>ToolTable</class>
@@ -8115,12 +10974,12 @@ MODES</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

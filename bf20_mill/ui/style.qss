@@ -455,6 +455,14 @@ QPushButton[ToolTblBtn] {
     min-width: 64px;
 }
 
+/**********************************************************************
+ *                                Probe                               *
+ *********************************************************************/
+QLabel {
+    font: 14pt "Bebas Kai";
+    color: black;
+}
+
 
 /**********************************************************************
  *                               File Loading                         *
@@ -570,13 +578,18 @@ QPushButton[gcodeBtn] {
         font: 16pt "Bebas Kai";
 }
 
-QsciScintilla {
+/* QsciScintilla
+ *  GcodeEditor
+ */
+
+GcodeEditor {
 /*
  * qproperty-backgroundcolor: #303030;
  * qproperty-marginbackgroundcolor: #D9DADB;
  */
     qproperty-backgroundcolor: #303030;
     qproperty-marginbackgroundcolor: #D9DADB;
+    qproperty-qssTest: 3;
 }
 
 

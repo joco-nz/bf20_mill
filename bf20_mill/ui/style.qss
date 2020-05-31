@@ -589,6 +589,7 @@ GcodeEditor {
  */
     qproperty-backgroundcolor: #303030;
     qproperty-marginbackgroundcolor: #D9DADB;
+    qproperty-editorDefaultFont: "Ubuntu Mono";
     qproperty-qssTest: 3;
 }
 

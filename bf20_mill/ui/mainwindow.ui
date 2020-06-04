@@ -615,6 +615,9 @@ Extent</string>
                    <layout class="QVBoxLayout" name="verticalLayout_19">
                     <item>
                      <widget class="GcodeEditor" name="gcodeeditor">
+                      <property name="backgroundColor" stdset="0">
+                       <string>#2e3436</string>
+                      </property>
                       <property name="activeLineBackgroundColor" stdset="0">
                        <string>darkgray</string>
                       </property>
@@ -7955,7 +7958,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>2</number>
+             <number>3</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -10887,12 +10890,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

@@ -584,15 +584,41 @@ QPushButton[gcodeBtn] {
 
 GcodeEditor {
 /*
- * qproperty-backgroundcolor: #303030;
- * qproperty-marginbackgroundcolor: #D9DADB;
+    Default Values for exposed QSS properties
+    qproperty-backgroundColor: #303030;
+    qproperty-marginBackgroundColor: #D9DADB;
+    qproperty-activeLineBackgroundColor: darkgray;
+    qproperty-editorDefaultFont: "Courier";
+    qproperty-syntaxColorDefault: #EFFBEF;
+    qproperty-syntaxColorComment: #fcf803;
+    qproperty-syntaxColorKey: #52ceff;
+    qproperty-syntaxColorAssignment: #fa5f5f;
+    qproperty-syntaxColorValue: #00CC00;
+    qproperty-syntaxColorMcode: #f736d7;
+    qproperty-syntaxColorMsg: #03fc20;
+    qproperty-syntaxColorScode: #03fcc2;
+    qproperty-syntaxColorPcode: #be4dff;
+    qproperty-syntaxColorTcode: #ff8fdb;
+    qproperty-syntaxColorHcode: #87b3ff; 
  */
-    qproperty-backgroundcolor: #303030;
-    qproperty-marginbackgroundcolor: #D9DADB;
-    qproperty-editorDefaultFont: "Ubuntu Mono";
-    qproperty-qssTest: 3;
-}
+    qproperty-backgroundColor:          #303030;
+    qproperty-marginBackgroundColor:    #D9DADB;
+    qproperty-activeLineBackgroundColor: darkgray;
+    qproperty-editorDefaultFont:        "Ubuntu Mono";
 
+    qproperty-syntaxColorDefault:       #EFFBEF;
+    qproperty-syntaxColorComment:       #fcf803;
+    qproperty-syntaxColorKey:           #52ceff;
+    qproperty-syntaxColorAssignment:    #fa5f5f;
+    qproperty-syntaxColorValue:         #00CC00;
+    qproperty-syntaxColorMcode:         #f736d7;
+    qproperty-syntaxColorMsg:           #03fc20;
+    qproperty-syntaxColorScode:         #03fcc2;
+    qproperty-syntaxColorPcode:         #be4dff;
+    qproperty-syntaxColorTcode:         #ff8fdb;
+    qproperty-syntaxColorHcode:         #87b3ff;
+
+}
 
 /**********************************************************************
  *                           Diagnostics                              *

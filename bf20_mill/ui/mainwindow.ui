@@ -616,7 +616,7 @@ Extent</string>
                     <item>
                      <widget class="GcodeEditor" name="gcodeeditor">
                       <property name="activeLineBackgroundColor" stdset="0">
-                       <string>lightslategrey</string>
+                       <string>darkgray</string>
                       </property>
                       <property name="editorDefaultFont" stdset="0">
                        <string>Ubuntu Mono</string>
@@ -1093,10 +1093,10 @@ LINE</string>
                    <widget class="QTabWidget" name="tabWidget">
                     <property name="geometry">
                      <rect>
-                      <x>440</x>
-                      <y>5</y>
-                      <width>310</width>
-                      <height>491</height>
+                      <x>220</x>
+                      <y>0</y>
+                      <width>532</width>
+                      <height>286</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -1107,7 +1107,7 @@ LINE</string>
                     </property>
                     <property name="maximumSize">
                      <size>
-                      <width>310</width>
+                      <width>1000</width>
                       <height>16777215</height>
                      </size>
                     </property>
@@ -1121,148 +1121,7 @@ LINE</string>
                      <attribute name="title">
                       <string>Outside</string>
                      </attribute>
-                     <layout class="QVBoxLayout" name="verticalLayout_27">
-                      <item>
-                       <widget class="VCPWidget" name="widget_10">
-                        <property name="minimumSize">
-                         <size>
-                          <width>268</width>
-                          <height>268</height>
-                         </size>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_10">
-                         <property name="spacing">
-                          <number>5</number>
-                         </property>
-                         <item row="2" column="0">
-                          <widget class="SubCallButton" name="subcallbutton_5">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/front_left_outside_corner.png</normaloff>../resources/images/front_left_outside_corner.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="1" column="1">
-                          <widget class="SubCallButton" name="subcallbutton_4">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="1">
-                          <widget class="SubCallButton" name="subcallbutton_2">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/back_middle_outside_edge.png</normaloff>../resources/images/back_middle_outside_edge.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="0">
-                          <widget class="SubCallButton" name="subcallbutton">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/back_left_outside_corner.png</normaloff>../resources/images/back_left_outside_corner.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="1" column="0">
-                          <widget class="SubCallButton" name="subcallbutton_3">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/left_side_edge.png</normaloff>../resources/images/left_side_edge.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="2" column="1">
-                          <widget class="SubCallButton" name="subcallbutton_6">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/front_middle_edge.png</normaloff>../resources/images/front_middle_edge.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="2">
-                          <widget class="SubCallButton" name="subcallbutton_7">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/back_right_outside_corner.png</normaloff>../resources/images/back_right_outside_corner.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="1" column="2">
-                          <widget class="SubCallButton" name="subcallbutton_8">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/right_side_edge.png</normaloff>../resources/images/right_side_edge.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="2" column="2">
-                          <widget class="SubCallButton" name="subcallbutton_9">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/front_right_outside_corner.png</normaloff>../resources/images/front_right_outside_corner.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
+                     <layout class="QHBoxLayout" name="horizontalLayout_17">
                       <item>
                        <widget class="VCPWidget" name="widget_19">
                         <property name="maximumSize">
@@ -1334,13 +1193,228 @@ LINE</string>
                         </layout>
                        </widget>
                       </item>
+                      <item>
+                       <widget class="VCPWidget" name="widget_10">
+                        <property name="minimumSize">
+                         <size>
+                          <width>268</width>
+                          <height>268</height>
+                         </size>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_10">
+                         <property name="spacing">
+                          <number>5</number>
+                         </property>
+                         <item row="0" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_2">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/back_middle_outside_edge.png</normaloff>../resources/images/back_middle_outside_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_4">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_3">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/left_side_edge.png</normaloff>../resources/images/left_side_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <widget class="SubCallButton" name="subcallbutton_6">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/front_middle_edge.png</normaloff>../resources/images/front_middle_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="0">
+                          <widget class="SubCallButton" name="subcallbutton">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/back_left_outside_corner.png</normaloff>../resources/images/back_left_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_7">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/back_right_outside_corner.png</normaloff>../resources/images/back_right_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_8">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/right_side_edge.png</normaloff>../resources/images/right_side_edge.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_9">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/front_right_outside_corner.png</normaloff>../resources/images/front_right_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_5">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/front_left_outside_corner.png</normaloff>../resources/images/front_left_outside_corner.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
                      </layout>
                     </widget>
                     <widget class="QWidget" name="tab_inside">
                      <attribute name="title">
                       <string>Inside</string>
                      </attribute>
-                     <layout class="QVBoxLayout" name="verticalLayout_26">
+                     <layout class="QHBoxLayout" name="horizontalLayout_16">
+                      <item>
+                       <widget class="VCPWidget" name="widget_16">
+                        <property name="maximumSize">
+                         <size>
+                          <width>183</width>
+                          <height>183</height>
+                         </size>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_29">
+                         <item row="0" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_25">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_square_pocket.png</normaloff>../resources/images/probe_cal_square_pocket.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_33">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_x_valley.png</normaloff>../resources/images/probe_x_valley.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="2">
+                          <widget class="SubCallButton" name="subcallbutton_34">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_y_valley.png</normaloff>../resources/images/probe_y_valley.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="SubCallButton" name="subcallbutton_30">
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_round_pocket.png</normaloff>../resources/images/probe_cal_round_pocket.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>80</width>
+                             <height>80</height>
+                            </size>
+                           </property>
+                           <property name="shortcut">
+                            <string>Return</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
                       <item>
                        <widget class="VCPWidget" name="widget_7">
                         <property name="minimumSize">
@@ -1488,90 +1562,16 @@ LINE</string>
                         </layout>
                        </widget>
                       </item>
-                      <item>
-                       <widget class="VCPWidget" name="widget_16">
-                        <property name="maximumSize">
-                         <size>
-                          <width>183</width>
-                          <height>183</height>
-                         </size>
-                        </property>
-                        <layout class="QGridLayout" name="gridLayout_29">
-                         <item row="0" column="0">
-                          <widget class="SubCallButton" name="subcallbutton_25">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/probe_cal_square_pocket.png</normaloff>../resources/images/probe_cal_square_pocket.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                           <property name="shortcut">
-                            <string>Return</string>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="1" column="2">
-                          <widget class="SubCallButton" name="subcallbutton_33">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/probe_x_valley.png</normaloff>../resources/images/probe_x_valley.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="0" column="2">
-                          <widget class="SubCallButton" name="subcallbutton_34">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/probe_y_valley.png</normaloff>../resources/images/probe_y_valley.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                          </widget>
-                         </item>
-                         <item row="1" column="0">
-                          <widget class="SubCallButton" name="subcallbutton_30">
-                           <property name="icon">
-                            <iconset>
-                             <normaloff>../resources/images/probe_cal_round_pocket.png</normaloff>../resources/images/probe_cal_round_pocket.png</iconset>
-                           </property>
-                           <property name="iconSize">
-                            <size>
-                             <width>80</width>
-                             <height>80</height>
-                            </size>
-                           </property>
-                           <property name="shortcut">
-                            <string>Return</string>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
                      </layout>
                     </widget>
                    </widget>
                    <widget class="QWidget" name="widget_44" native="true">
                     <property name="geometry">
                      <rect>
-                      <x>-10</x>
-                      <y>95</y>
-                      <width>540</width>
-                      <height>780</height>
+                      <x>205</x>
+                      <y>290</y>
+                      <width>530</width>
+                      <height>556</height>
                      </rect>
                     </property>
                     <property name="sizePolicy">
@@ -1669,25 +1669,6 @@ LINE</string>
                          <property name="bottomMargin">
                           <number>1</number>
                          </property>
-                         <item>
-                          <widget class="QLabel" name="ref_coilumn_header_19">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true"/>
-                           </property>
-                           <property name="text">
-                            <string/>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignCenter</set>
-                           </property>
-                          </widget>
-                         </item>
                          <item>
                           <widget class="QLabel" name="label_83">
                            <property name="sizePolicy">
@@ -1859,25 +1840,6 @@ color: white;
                           <number>1</number>
                          </property>
                          <item>
-                          <widget class="QLabel" name="ref_coilumn_header_20">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true"/>
-                           </property>
-                           <property name="text">
-                            <string/>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignCenter</set>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
                           <widget class="QLabel" name="label_85">
                            <property name="sizePolicy">
                             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -2048,25 +2010,6 @@ color: white;
                           <number>1</number>
                          </property>
                          <item>
-                          <widget class="QLabel" name="ref_coilumn_header_21">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true"/>
-                           </property>
-                           <property name="text">
-                            <string/>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignCenter</set>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
                           <widget class="QLabel" name="label_87">
                            <property name="sizePolicy">
                             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -2236,25 +2179,6 @@ color: white;
                          <property name="bottomMargin">
                           <number>1</number>
                          </property>
-                         <item>
-                          <widget class="QLabel" name="ref_coilumn_header_22">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true"/>
-                           </property>
-                           <property name="text">
-                            <string/>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignCenter</set>
-                           </property>
-                          </widget>
-                         </item>
                          <item>
                           <widget class="QLabel" name="label_90">
                            <property name="sizePolicy">
@@ -2431,25 +2355,6 @@ color: white;
                          <property name="bottomMargin">
                           <number>1</number>
                          </property>
-                         <item>
-                          <widget class="QLabel" name="ref_coilumn_header_23">
-                           <property name="sizePolicy">
-                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                             <horstretch>0</horstretch>
-                             <verstretch>0</verstretch>
-                            </sizepolicy>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true"/>
-                           </property>
-                           <property name="text">
-                            <string/>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignCenter</set>
-                           </property>
-                          </widget>
-                         </item>
                          <item>
                           <widget class="QLabel" name="label_92">
                            <property name="sizePolicy">
@@ -8050,7 +7955,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -8437,71 +8342,26 @@ Delete</string>
                  <string>Override</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_12">
-                 <item row="1" column="4">
-                  <widget class="ActionSlider" name="actionslider_2">
-                   <property name="minimumSize">
-                    <size>
-                     <width>50</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="maximum">
-                    <number>100</number>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.rapid-override.set</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="3">
-                  <widget class="ActionSlider" name="actionslider_3">
-                   <property name="minimumSize">
-                    <size>
-                     <width>50</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="maximum">
-                    <number>100</number>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.feed-override.set</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="2">
-                  <widget class="ActionSlider" name="actionslider">
-                   <property name="minimumSize">
-                    <size>
-                     <width>50</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="maximum">
-                    <number>100</number>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Vertical</enum>
-                   </property>
-                   <property name="invertedAppearance">
-                    <bool>false</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.override</string>
-                   </property>
-                  </widget>
-                 </item>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
                  <item row="0" column="2">
                   <widget class="ActionButton" name="actionbutton_15">
                    <property name="text">
                     <string>Spindle
-Reset</string>
+100%</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>spindle.override.reset</string>
@@ -8512,7 +8372,7 @@ Reset</string>
                   <widget class="ActionButton" name="actionbutton_43">
                    <property name="text">
                     <string>Feed
-Reset</string>
+100%</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.feed_override.reset</string>
@@ -8523,12 +8383,72 @@ Reset</string>
                   <widget class="ActionButton" name="actionbutton_44">
                    <property name="text">
                     <string>Rapid
-Reset</string>
+100%</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.rapid_override.reset</string>
                    </property>
                   </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="StatusLabel" name="statuslabel_5">
+                   <property name="rules" stdset="0">
+                    <string>[]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="3">
+                  <widget class="StatusLabel" name="statuslabel_6">
+                   <property name="rules" stdset="0">
+                    <string>[]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="4">
+                  <widget class="StatusLabel" name="statuslabel_13">
+                   <property name="rules" stdset="0">
+                    <string>[]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <spacer name="verticalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="0">
+                  <spacer name="verticalSpacer_10">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="2" column="0">
+                  <spacer name="verticalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
@@ -8835,14 +8755,13 @@ Reset</string>
                  <item row="4" column="4">
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
-                    <string>180.0
-N/A</string>
+                    <string>0.0%</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;settings:machine.jog.linear-speed&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;status:linear_units?string&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{}\\n{}'.format(ch[0], ch[1])&quot;, &quot;name&quot;: &quot;JogSpeed&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{}%'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                    </property>
                   </widget>
                  </item>
@@ -9045,18 +8964,12 @@ N/A</string>
                   </widget>
                  </item>
                  <item row="4" column="0" colspan="3">
-                  <widget class="ActionSlider" name="actionslider_4">
+                  <widget class="ActionSlider" name="actionslider">
                    <property name="orientation">
                     <enum>Qt::Horizontal</enum>
                    </property>
-                   <property name="tickPosition">
-                    <enum>QSlider::TicksBothSides</enum>
-                   </property>
-                   <property name="tickInterval">
-                    <number>100</number>
-                   </property>
                    <property name="actionName" stdset="0">
-                    <string>machine.feed-override.set</string>
+                    <string>machine.jog.set-linear-speed</string>
                    </property>
                   </widget>
                  </item>
@@ -10974,12 +10887,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

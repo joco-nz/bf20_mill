@@ -599,9 +599,9 @@ GcodeEditor {
     qproperty-syntaxColorScode: #03fcc2;
     qproperty-syntaxColorPcode: #be4dff;
     qproperty-syntaxColorTcode: #ff8fdb;
-    qproperty-syntaxColorHcode: #87b3ff; 
+    qproperty-syntaxColorHcode: #87b3ff;
  */
-    qproperty-backgroundColor:          #303030;
+    qproperty-backgroundColor:          #2e3436;
     qproperty-marginBackgroundColor:    #D9DADB;
     qproperty-activeLineBackgroundColor: darkgray;
     qproperty-editorDefaultFont:        "Ubuntu Mono";

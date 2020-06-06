@@ -25,6 +25,7 @@ class MyMainWindow(VCPMainWindow):
         self.btnParams.clicked.connect(self.btnParams_clicked)
         self.btnMdiBksp.clicked.connect(self.mdiBackSpace_clicked)
 
+
     # add any custom methods here
 
     def on_btnExit_clicked(self):

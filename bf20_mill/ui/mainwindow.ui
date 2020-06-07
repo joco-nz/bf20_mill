@@ -8728,13 +8728,13 @@ Delete</string>
                  <item row="4" column="4">
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
-                    <string>0.0%</string>
+                    <string>0%</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{}%'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                    </property>
                   </widget>
                  </item>
@@ -8938,6 +8938,15 @@ Delete</string>
                  </item>
                  <item row="4" column="0" colspan="3">
                   <widget class="ActionSlider" name="actionslider">
+                   <property name="maximum">
+                    <number>200</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>5</number>
+                   </property>
+                   <property name="value">
+                    <number>100</number>
+                   </property>
                    <property name="orientation">
                     <enum>Qt::Horizontal</enum>
                    </property>
@@ -8953,6 +8962,9 @@ Delete</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-increment:0.0025</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -10870,12 +10882,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

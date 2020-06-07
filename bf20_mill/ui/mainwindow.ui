@@ -8395,33 +8395,75 @@ Delete</string>
                  </item>
                  <item row="2" column="1">
                   <widget class="StatusLabel" name="statuslabel_5">
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
                    <property name="rules" stdset="0">
-                    <string>[]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle&quot;}]</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="2">
                   <widget class="StatusLabel" name="statuslabel_6">
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
                    <property name="rules" stdset="0">
-                    <string>[]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:feedrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;feed&quot;}]</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="3">
                   <widget class="StatusLabel" name="statuslabel_13">
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
                    <property name="rules" stdset="0">
-                    <string>[]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;rapid&quot;}]</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="3">
-                  <widget class="ActionSlider" name="actionslider_4"/>
+                  <widget class="ActionSlider" name="actionslider_4">
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>5</number>
+                   </property>
+                   <property name="value">
+                    <number>100</number>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.rapid-override.set</string>
+                   </property>
+                  </widget>
                  </item>
                  <item row="1" column="1">
-                  <widget class="ActionSlider" name="actionslider_2"/>
+                  <widget class="ActionSlider" name="actionslider_2">
+                   <property name="pageStep">
+                    <number>5</number>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.override</string>
+                   </property>
+                  </widget>
                  </item>
                  <item row="1" column="2">
-                  <widget class="ActionSlider" name="actionslider_3"/>
+                  <widget class="ActionSlider" name="actionslider_3">
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>5</number>
+                   </property>
+                   <property name="value">
+                    <number>100</number>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.feed-override.set</string>
+                   </property>
+                  </widget>
                  </item>
                 </layout>
                </widget>
@@ -10883,11 +10925,11 @@ Run</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

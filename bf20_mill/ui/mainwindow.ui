@@ -7718,8 +7718,8 @@ ALL</string>
                 <property name="rules" stdset="0">
                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;ActiveAxis&quot;}]</string>
                 </property>
-                <property name="labelFont" stdset="0">
-                 <string>16</string>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -7958,7 +7958,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -8441,6 +8441,9 @@ Delete</string>
                  </item>
                  <item row="1" column="1">
                   <widget class="ActionSlider" name="actionslider_2">
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
                    <property name="pageStep">
                     <number>5</number>
                    </property>
@@ -8614,7 +8617,7 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="2">
+                 <item row="5" column="2">
                   <widget class="VCPSettingsLineEdit" name="manualZoffset">
                    <property name="maximumSize">
                     <size>
@@ -8630,7 +8633,7 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="1">
+                 <item row="5" column="1">
                   <widget class="StatusLabel" name="statuslabel_3">
                    <property name="text">
                     <string>Z Offset</string>
@@ -8718,6 +8721,44 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="3" column="0">
+                  <widget class="MDIButton" name="mdibutton_18">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>1/2 X</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="5" column="0">
+                  <widget class="MDIButton" name="mdibutton_23">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>35</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>1/2 Y</string>
+                   </property>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -8742,6 +8783,19 @@ Delete</string>
                  <property name="spacing">
                   <number>5</number>
                  </property>
+                 <item row="3" column="4">
+                  <widget class="ActionButton" name="actionbutton_45">
+                   <property name="text">
+                    <string>0.0025</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:0.0025</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="0" column="0">
                   <widget class="ActionButton" name="actionbutton_25">
                    <property name="text">
@@ -8994,19 +9048,6 @@ Delete</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-linear-speed</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="4">
-                  <widget class="ActionButton" name="actionbutton_45">
-                   <property name="text">
-                    <string>0.0025</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.set-increment:0.0025</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -10924,12 +10965,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

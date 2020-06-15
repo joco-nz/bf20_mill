@@ -7958,7 +7958,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>2</number>
+             <number>3</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -8721,41 +8721,47 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="3" column="0">
-                  <widget class="MDIButton" name="mdibutton_18">
+                 <item row="2" column="0">
+                  <widget class="SubCallButton" name="subcallbutton_37">
                    <property name="minimumSize">
                     <size>
                      <width>54</width>
-                     <height>35</height>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="maximumSize">
                     <size>
-                     <width>16777215</width>
-                     <height>35</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
                     <string>1/2 X</string>
                    </property>
+                   <property name="filename" stdset="0">
+                    <string>halfxdro.ngc</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
                   </widget>
                  </item>
-                 <item row="5" column="0">
-                  <widget class="MDIButton" name="mdibutton_23">
-                   <property name="minimumSize">
-                    <size>
-                     <width>54</width>
-                     <height>35</height>
-                    </size>
-                   </property>
+                 <item row="2" column="2">
+                  <widget class="SubCallButton" name="subcallbutton_38">
                    <property name="maximumSize">
                     <size>
-                     <width>16777215</width>
-                     <height>35</height>
+                     <width>54</width>
+                     <height>54</height>
                     </size>
                    </property>
                    <property name="text">
                     <string>1/2 Y</string>
+                   </property>
+                   <property name="filename" stdset="0">
+                    <string>halfydro.ngc</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -10965,12 +10971,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

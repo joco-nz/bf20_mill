@@ -8721,6 +8721,25 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="2" column="2">
+                  <widget class="SubCallButton" name="subcallbutton_38">
+                   <property name="maximumSize">
+                    <size>
+                     <width>54</width>
+                     <height>54</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>1/2 Y</string>
+                   </property>
+                   <property name="filename" stdset="0">
+                    <string>halfydro.ngc</string>
+                   </property>
+                   <property name="bottomNavBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="2" column="0">
                   <widget class="SubCallButton" name="subcallbutton_37">
                    <property name="minimumSize">
@@ -8740,25 +8759,6 @@ Delete</string>
                    </property>
                    <property name="filename" stdset="0">
                     <string>halfxdro.ngc</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="2">
-                  <widget class="SubCallButton" name="subcallbutton_38">
-                   <property name="maximumSize">
-                    <size>
-                     <width>54</width>
-                     <height>54</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>1/2 Y</string>
-                   </property>
-                   <property name="filename" stdset="0">
-                    <string>halfydro.ngc</string>
                    </property>
                    <property name="bottomNavBtn" stdset="0">
                     <string/>
@@ -8794,12 +8794,21 @@ Delete</string>
                    <property name="text">
                     <string>0.0025</string>
                    </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-increment:0.0025</string>
                    </property>
                    <property name="jogBtn" stdset="0">
                     <string/>
                    </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
                   </widget>
                  </item>
                  <item row="0" column="0">
@@ -10971,12 +10980,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

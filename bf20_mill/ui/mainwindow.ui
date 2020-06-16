@@ -370,7 +370,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>0</number>
+                <number>5</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -4756,6 +4756,28 @@ Single</string>
                      </widget>
                     </item>
                     <item>
+                     <widget class="QPushButton" name="btnMdiRowUp">
+                      <property name="text">
+                       <string>Row
+Up</string>
+                      </property>
+                      <property name="mdiHistoryBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="btnMdiRowDown">
+                      <property name="text">
+                       <string>Row
+Down</string>
+                      </property>
+                      <property name="mdiHistoryBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
                      <widget class="SubCallButton" name="subcallbutton_14">
                       <property name="minimumSize">
                        <size>
@@ -4815,50 +4837,6 @@ Single</string>
                       </property>
                       <property name="text">
                        <string>Macro 8</string>
-                      </property>
-                      <property name="mdiMacro" stdset="0">
-                       <string/>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="SubCallButton" name="subcallbutton_11">
-                      <property name="minimumSize">
-                       <size>
-                        <width>54</width>
-                        <height>54</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>74</width>
-                        <height>16777215</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Macro 9</string>
-                      </property>
-                      <property name="mdiMacro" stdset="0">
-                       <string/>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="SubCallButton" name="subcallbutton_10">
-                      <property name="minimumSize">
-                       <size>
-                        <width>54</width>
-                        <height>54</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>74</width>
-                        <height>16777215</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Macro 10</string>
                       </property>
                       <property name="mdiMacro" stdset="0">
                        <string/>
@@ -10961,6 +10939,38 @@ Run</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnMdiRowDown</sender>
+   <signal>clicked()</signal>
+   <receiver>mdihistory</receiver>
+   <slot>moveRowItemDown()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>895</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>642</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMdiRowUp</sender>
+   <signal>clicked()</signal>
+   <receiver>mdihistory</receiver>
+   <slot>moveRowItemUp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>500</x>
+     <y>895</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>642</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -10980,12 +10990,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

@@ -7497,7 +7497,7 @@ ALL</string>
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="rules" stdset="0">
-                 <string>[]</string>
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                 </property>
                 <property name="DROHeading" stdset="0">
                  <string/>
@@ -7731,6 +7731,9 @@ ALL</string>
               </item>
               <item row="5" column="1">
                <widget class="DROLabel" name="a_abs">
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>0</number>
                 </property>
@@ -7756,6 +7759,9 @@ ALL</string>
               </item>
               <item row="5" column="5">
                <widget class="DROLabel" name="a_dtg">
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>2</number>
                 </property>
@@ -7781,6 +7787,9 @@ ALL</string>
               </item>
               <item row="5" column="3">
                <widget class="DROLineEdit" name="a_rel">
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>1</number>
                 </property>
@@ -11114,12 +11123,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

@@ -370,7 +370,7 @@ VIEWER</string>
              <item>
               <widget class="VCPStackedWidget" name="stwLeft">
                <property name="currentIndex">
-                <number>5</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="plot">
                 <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -4161,6 +4161,9 @@ color: white;
                       <property name="alternatingRowColors">
                        <bool>true</bool>
                       </property>
+                      <property name="selectionMode">
+                       <enum>QAbstractItemView::ContiguousSelection</enum>
+                      </property>
                       <property name="selectionBehavior">
                        <enum>QAbstractItemView::SelectRows</enum>
                       </property>
@@ -4778,6 +4781,14 @@ Down</string>
                      </widget>
                     </item>
                     <item>
+                     <widget class="QPushButton" name="btnCopyToEditor">
+                      <property name="text">
+                       <string>To
+Editor</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
                      <widget class="SubCallButton" name="subcallbutton_14">
                       <property name="minimumSize">
                        <size>
@@ -4815,28 +4826,6 @@ Down</string>
                       </property>
                       <property name="text">
                        <string>Macro 7</string>
-                      </property>
-                      <property name="mdiMacro" stdset="0">
-                       <string/>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="SubCallButton" name="subcallbutton_12">
-                      <property name="minimumSize">
-                       <size>
-                        <width>54</width>
-                        <height>54</height>
-                       </size>
-                      </property>
-                      <property name="maximumSize">
-                       <size>
-                        <width>74</width>
-                        <height>16777215</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Macro 8</string>
                       </property>
                       <property name="mdiMacro" stdset="0">
                        <string/>
@@ -7376,19 +7365,6 @@ ALL</string>
               <property name="spacing">
                <number>5</number>
               </property>
-              <item row="4" column="1">
-               <widget class="DROWidget" name="z_abs">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::Z</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
               <item row="2" column="0">
                <widget class="StatusLabel" name="lblAxisX">
                 <property name="minimumSize">
@@ -7411,38 +7387,6 @@ ALL</string>
                 </property>
                 <property name="DROHeading" stdset="0">
                  <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="DROWidget" name="x_abs">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::Absolute</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::X</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="2">
-               <widget class="DROWidget" name="z_rel">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::Relative</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::Z</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -7471,7 +7415,7 @@ ALL</string>
                 </property>
                </widget>
               </item>
-              <item row="1" column="2">
+              <item row="1" column="3">
                <widget class="StatusLabel" name="statuslabel_8">
                 <property name="text">
                  <string>G53</string>
@@ -7487,20 +7431,7 @@ ALL</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="1">
-               <widget class="DROWidget" name="y_abs">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::Y</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="3">
+              <item row="1" column="5">
                <widget class="StatusLabel" name="statuslabel_9">
                 <property name="text">
                  <string>DTG</string>
@@ -7510,51 +7441,6 @@ ALL</string>
                 </property>
                 <property name="DROHeading" stdset="0">
                  <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="3">
-               <widget class="DROWidget" name="x_dtg">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::DistanceToGo</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="3">
-               <widget class="DROWidget" name="y_dtg">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::DistanceToGo</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::Y</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="3">
-               <widget class="DROWidget" name="z_dtg">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::DistanceToGo</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::Z</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
                 </property>
                </widget>
               </item>
@@ -7596,89 +7482,6 @@ ALL</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="2">
-               <widget class="DROWidget" name="y_rel">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::Relative</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::Y</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="2">
-               <widget class="DROWidget" name="x_rel">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::Relative</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="1">
-               <widget class="DROWidget" name="a_abs">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExist&quot;}]</string>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::A</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="2">
-               <widget class="DROWidget" name="a_rel">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::Relative</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::A</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="3">
-               <widget class="DROWidget" name="a_dtg">
-                <property name="alignment">
-                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                </property>
-                <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
-                </property>
-                <property name="referenceType" stdset="0">
-                 <enum>DROWidget::DistanceToGo</enum>
-                </property>
-                <property name="axis" stdset="0">
-                 <enum>DROWidget::A</enum>
-                </property>
-                <property name="labelFont" stdset="0">
-                 <string>20</string>
-                </property>
-               </widget>
-              </item>
               <item row="5" column="0">
                <widget class="StatusLabel" name="lblAxisA">
                 <property name="maximumSize">
@@ -7694,10 +7497,310 @@ ALL</string>
                  <set>Qt::AlignCenter</set>
                 </property>
                 <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;ActiveAxis&quot;}]</string>
+                 <string>[]</string>
                 </property>
                 <property name="DROHeading" stdset="0">
                  <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="DROLabel" name="x_abs">
+                <property name="referenceType" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="DROLabel" name="z_abs">
+                <property name="referenceType" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="DROLabel" name="y_abs">
+                <property name="referenceType" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3">
+               <widget class="DROLineEdit" name="x_rel">
+                <property name="referenceType" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="3">
+               <widget class="DROLineEdit" name="y_rel">
+                <property name="referenceType" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="3">
+               <widget class="DROLineEdit" name="z_rel">
+                <property name="referenceType" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="5">
+               <widget class="DROLabel" name="x_dtg">
+                <property name="referenceType" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="5">
+               <widget class="DROLabel" name="y_dtg">
+                <property name="referenceType" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="5">
+               <widget class="DROLabel" name="z_dtg">
+                <property name="referenceType" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="DROLabel" name="a_abs">
+                <property name="referenceType" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>3</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="5">
+               <widget class="DROLabel" name="a_dtg">
+                <property name="referenceType" stdset="0">
+                 <number>2</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>3</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="3">
+               <widget class="DROLineEdit" name="a_rel">
+                <property name="referenceType" stdset="0">
+                 <number>1</number>
+                </property>
+                <property name="axisNumber" stdset="0">
+                 <number>3</number>
+                </property>
+                <property name="inchFormat" stdset="0">
+                 <string>%9.4f</string>
+                </property>
+                <property name="millimeterFormat" stdset="0">
+                 <string>%10.3f</string>
+                </property>
+                <property name="degreeFormat" stdset="0">
+                 <string>%10.2f</string>
+                </property>
+                <property name="latheMode" stdset="0">
+                 <number>0</number>
+                </property>
+                <property name="labelFont" stdset="0">
+                 <number>20</number>
                 </property>
                </widget>
               </item>
@@ -10172,9 +10275,9 @@ Run</string>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>DROWidget</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.dro_widget</header>
+   <class>DROLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
   </customwidget>
   <customwidget>
    <class>StatusLabel</class>
@@ -10237,6 +10340,11 @@ Run</string>
    <class>VCPLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>DROLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
   </customwidget>
   <customwidget>
    <class>ActionButton</class>
@@ -10971,6 +11079,22 @@ Run</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnCopyToEditor</sender>
+   <signal>clicked()</signal>
+   <receiver>mdihistory</receiver>
+   <slot>copySelectionToGcodeEditor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>652</x>
+     <y>895</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>642</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -10990,12 +11114,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

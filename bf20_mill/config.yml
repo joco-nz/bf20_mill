@@ -34,6 +34,9 @@ data_plugins:
     clock:
         provider: qtpyvcp.plugins.clock:Clock
 
+    exportedhal:
+        provider: qtpyvcp.plugins.exported_hal:ExportedHal
+
 windows:
 
   mainwindow:

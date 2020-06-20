@@ -487,7 +487,7 @@ QHeaderView#tblOffsets {
 /**********************************************************************
  *                               DRO                                  *
  *********************************************************************/
-DROWidget {
+DROLineEdit, DROLabel {
     color: black;
     border-color: black;
     border-style: solid;
@@ -497,27 +497,27 @@ DROWidget {
 }
 
 /* DROWidgets */
-DROWidget[labelFont="10"] {
+DROLabel[labelFont="10"] {
     font: 10pt "Bebas Kai";
 }
 
-DROWidget[labelFont="20"] {
+DROLabel[labelFont="20"] {
     font: 20pt "Bebas Kai";
 }
 
-DROWidget[labelFont="18"] {
+DROLabel[labelFont="18"] {
     font: 18pt "Bebas Kai";
 }
 
-DROWidget[labelFont="16"] {
+DROLabel[labelFont="16"] {
     font: 16pt "Bebas Kai";
 }
 
-DROWidget[labelFont="14"] {
+DROLabel[labelFont="14"] {
     font: 14pt "Bebas Kai";
 }
 
-DROWidget[labelFont="12"] {
+DROLabel[labelFont="12"] {
     font: 12pt "Bebas Kai";
 }
 

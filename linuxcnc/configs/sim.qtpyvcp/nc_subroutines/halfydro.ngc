@@ -1,0 +1,17 @@
+; DRO 1/2 Function for Y axis
+o<halfydro> sub
+
+#<manualXYoffset> = #1 (=0)
+
+o10 if [#<_y> LT 0]
+    #<direction> = -1
+o10 else
+    #<direction> = 1
+o10 endif
+
+#<shift> = [[[[ABS[#<_y>] - #<manualXYoffset>]/2] + #<manualXYoffset>] * #<direction>]
+(debug, #<shift>)
+
+G10 L20 P0 Y#<shift>
+
+o<halfydro> endsub

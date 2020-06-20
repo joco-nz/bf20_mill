@@ -1,0 +1,16 @@
+; DRO 1/2 Function for X axis
+o<halfxdro> sub
+
+#<manualXYoffset> = #1 (=0)
+
+o10 if [#<_x> LT 0]
+    #<direction> = -1
+o10 else
+    #<direction> = 1
+o10 endif
+
+#<shift> = [[[[ABS[#<_x>] - #<manualXYoffset>]/2] + #<manualXYoffset>] * #<direction>]
+
+G10 L20 P0 X#<shift>
+
+o<halfxdro> endsub

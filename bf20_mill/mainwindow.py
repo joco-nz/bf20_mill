@@ -34,6 +34,8 @@ class MyMainWindow(VCPMainWindow):
     @Slot(QAbstractButton)
     def on_btngrpLeftNav_buttonClicked(self, button):
         self.stwLeft.setCurrentIndex(button.property('page'))
+        color = self.gcodeeditor.backgroundColor
+        self.gcodeeditor.backgroundColor = color
 
     @Slot(QAbstractButton)
     def on_btngrpRightNav_buttonClicked(self, button):

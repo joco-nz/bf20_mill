@@ -678,15 +678,12 @@ Extent</string>
                         </widget>
                        </item>
                        <item>
-                        <widget class="StatusLabel" name="lblGcodeLine">
-                         <property name="minimumSize">
+                        <widget class="VCPLineEdit" name="lblGcodeLine">
+                         <property name="maximumSize">
                           <size>
-                           <width>70</width>
-                           <height>0</height>
+                           <width>100</width>
+                           <height>16777215</height>
                           </size>
-                         </property>
-                         <property name="text">
-                          <string/>
                          </property>
                         </widget>
                        </item>
@@ -730,7 +727,7 @@ Extent</string>
                     <item>
                      <widget class="ActionButton" name="actionbutton_29">
                       <property name="enabled">
-                       <bool>false</bool>
+                       <bool>true</bool>
                       </property>
                       <property name="minimumSize">
                        <size>
@@ -743,7 +740,7 @@ Extent</string>
 From</string>
                       </property>
                       <property name="actionName" stdset="0">
-                       <string>program.run:#&lt;currrentLineLbl&gt;</string>
+                       <string>program.run:16</string>
                       </property>
                       <property name="gcodeBtn" stdset="0">
                        <string/>
@@ -4785,6 +4782,9 @@ Down</string>
                       <property name="text">
                        <string>To
 Editor</string>
+                      </property>
+                      <property name="mdiHistoryBtn" stdset="0">
+                       <string/>
                       </property>
                      </widget>
                     </item>
@@ -8929,13 +8929,13 @@ Delete</string>
                  <item row="4" column="4">
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
-                    <string>0%</string>
+                    <string>0</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0f}'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                    </property>
                   </widget>
                  </item>
@@ -9138,18 +9138,27 @@ Delete</string>
                   </widget>
                  </item>
                  <item row="4" column="0" colspan="3">
-                  <widget class="ActionSlider" name="actionslider">
+                  <widget class="ActionSlider" name="jogFeedRateSlider">
                    <property name="maximum">
-                    <number>200</number>
+                    <number>1600</number>
                    </property>
                    <property name="pageStep">
                     <number>5</number>
                    </property>
                    <property name="value">
-                    <number>100</number>
+                    <number>600</number>
+                   </property>
+                   <property name="sliderPosition">
+                    <number>600</number>
                    </property>
                    <property name="orientation">
                     <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>50</number>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.jog.set-linear-speed</string>
@@ -11123,11 +11132,11 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
  </buttongroups>

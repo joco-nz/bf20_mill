@@ -7007,6 +7007,13 @@ Editor</string>
                         <string>Utility Functions</string>
                        </property>
                        <layout class="QGridLayout" name="gridLayout_31">
+                        <item row="0" column="1">
+                         <widget class="HalButton" name="halbtn_resetEnc1">
+                          <property name="text">
+                           <string>Reset MPG Ecnoder 1</string>
+                          </property>
+                         </widget>
+                        </item>
                         <item row="0" column="0">
                          <widget class="HalButton" name="halbtn_resetEnc0">
                           <property name="text">
@@ -7014,11 +7021,131 @@ Editor</string>
                           </property>
                          </widget>
                         </item>
-                        <item row="0" column="1">
-                         <widget class="HalButton" name="halbtn_resetEnc1">
-                          <property name="text">
-                           <string>Reset MPG Ecnoder 1</string>
+                        <item row="1" column="0">
+                         <widget class="QWidget" name="widget_21" native="true">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>20</height>
+                           </size>
                           </property>
+                          <layout class="QGridLayout" name="gridLayout_32">
+                           <item row="1" column="1">
+                            <widget class="HalLabel" name="enc0_counts">
+                             <property name="textFormat" stdset="0">
+                              <string>%.3f</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="0">
+                            <widget class="QLabel" name="label_25">
+                             <property name="text">
+                              <string>ENC-0 Raw Counts</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_23">
+                             <property name="text">
+                              <string>Enc-0 Position</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="HalLabel" name="enc0_position">
+                             <property name="textFormat" stdset="0">
+                              <string>%.3f</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_24">
+                             <property name="text">
+                              <string>Enc-0 Counts</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="4" column="1">
+                            <widget class="DROLabel" name="drolabel_2">
+                             <property name="referenceType" stdset="0">
+                              <number>0</number>
+                             </property>
+                             <property name="axisNumber" stdset="0">
+                              <number>1</number>
+                             </property>
+                             <property name="inchFormat" stdset="0">
+                              <string>%9.4f</string>
+                             </property>
+                             <property name="millimeterFormat" stdset="0">
+                              <string>%10.3f</string>
+                             </property>
+                             <property name="degreeFormat" stdset="0">
+                              <string>%10.2f</string>
+                             </property>
+                             <property name="latheMode" stdset="0">
+                              <number>0</number>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="3" column="1">
+                            <widget class="DROLabel" name="drolabel">
+                             <property name="referenceType" stdset="0">
+                              <number>0</number>
+                             </property>
+                             <property name="axisNumber" stdset="0">
+                              <number>0</number>
+                             </property>
+                             <property name="inchFormat" stdset="0">
+                              <string>%9.4f</string>
+                             </property>
+                             <property name="millimeterFormat" stdset="0">
+                              <string>%10.3f</string>
+                             </property>
+                             <property name="degreeFormat" stdset="0">
+                              <string>%10.2f</string>
+                             </property>
+                             <property name="latheMode" stdset="0">
+                              <number>0</number>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="2" column="1">
+                            <widget class="HalLabel" name="enc0_raw_counts">
+                             <property name="textFormat" stdset="0">
+                              <string>%.3f</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="3" column="0">
+                            <widget class="QLabel" name="label_26">
+                             <property name="text">
+                              <string>G53 X, Y, Z Position</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="5" column="1">
+                            <widget class="DROLabel" name="drolabel_3">
+                             <property name="referenceType" stdset="0">
+                              <number>0</number>
+                             </property>
+                             <property name="axisNumber" stdset="0">
+                              <number>2</number>
+                             </property>
+                             <property name="inchFormat" stdset="0">
+                              <string>%9.4f</string>
+                             </property>
+                             <property name="millimeterFormat" stdset="0">
+                              <string>%10.3f</string>
+                             </property>
+                             <property name="degreeFormat" stdset="0">
+                              <string>%10.2f</string>
+                             </property>
+                             <property name="latheMode" stdset="0">
+                              <number>0</number>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
                          </widget>
                         </item>
                        </layout>
@@ -8958,7 +9085,7 @@ Delete</string>
                  <item row="4" column="4">
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
-                    <string>100%</string>
+                    <string>30%</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
@@ -10399,6 +10526,11 @@ Run</string>
    <header>qtpyvcp.widgets.button_widgets.action_button</header>
   </customwidget>
   <customwidget>
+   <class>HalLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_label</header>
+  </customwidget>
+  <customwidget>
    <class>NotificationWidget</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.notification_widget</header>
@@ -11161,12 +11293,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

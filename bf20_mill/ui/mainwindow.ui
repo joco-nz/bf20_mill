@@ -5387,7 +5387,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>1</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7033,7 +7033,10 @@ Editor</string>
                            <item row="1" column="1">
                             <widget class="HalLabel" name="enc0_counts">
                              <property name="textFormat" stdset="0">
-                              <string>%.3f</string>
+                              <string>%d</string>
+                             </property>
+                             <property name="pinType" stdset="0">
+                              <enum>HalLabel::s32</enum>
                              </property>
                             </widget>
                            </item>
@@ -7112,7 +7115,10 @@ Editor</string>
                            <item row="2" column="1">
                             <widget class="HalLabel" name="enc0_raw_counts">
                              <property name="textFormat" stdset="0">
-                              <string>%.3f</string>
+                              <string>%d</string>
+                             </property>
+                             <property name="pinType" stdset="0">
+                              <enum>HalLabel::s32</enum>
                              </property>
                             </widget>
                            </item>
@@ -11293,12 +11299,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

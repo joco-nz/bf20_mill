@@ -5387,7 +5387,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>1</number>
+                    <number>0</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -6989,6 +6989,35 @@ Editor</string>
                           </property>
                           <property name="state">
                            <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QGroupBox" name="groupBox_21">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="title">
+                        <string>Utility Functions</string>
+                       </property>
+                       <layout class="QGridLayout" name="gridLayout_31">
+                        <item row="0" column="0">
+                         <widget class="HalButton" name="halbtn_resetEnc0">
+                          <property name="text">
+                           <string>Reset MPG Ecnoder 0</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item row="0" column="1">
+                         <widget class="HalButton" name="halbtn_resetEnc1">
+                          <property name="text">
+                           <string>Reset MPG Ecnoder 1</string>
                           </property>
                          </widget>
                         </item>
@@ -8929,13 +8958,13 @@ Delete</string>
                  <item row="4" column="4">
                   <widget class="StatusLabel" name="statuslabel">
                    <property name="text">
-                    <string>0</string>
+                    <string>30%</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0f}'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;settings:machine.jog.linear-speed-percentage&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:0}%'.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                    </property>
                   </widget>
                  </item>
@@ -9161,7 +9190,7 @@ Delete</string>
                     <number>50</number>
                    </property>
                    <property name="actionName" stdset="0">
-                    <string>machine.jog.set-linear-speed</string>
+                    <string>machine.jog.linear-speed-percentage</string>
                    </property>
                   </widget>
                  </item>
@@ -11132,12 +11161,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

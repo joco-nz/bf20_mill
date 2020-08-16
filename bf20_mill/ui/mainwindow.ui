@@ -5387,7 +5387,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>1</number>
+                    <number>2</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7068,50 +7068,6 @@ Editor</string>
                              </property>
                             </widget>
                            </item>
-                           <item row="4" column="1">
-                            <widget class="DROLabel" name="drolabel_2">
-                             <property name="referenceType" stdset="0">
-                              <number>0</number>
-                             </property>
-                             <property name="axisNumber" stdset="0">
-                              <number>1</number>
-                             </property>
-                             <property name="inchFormat" stdset="0">
-                              <string>%9.4f</string>
-                             </property>
-                             <property name="millimeterFormat" stdset="0">
-                              <string>%10.3f</string>
-                             </property>
-                             <property name="degreeFormat" stdset="0">
-                              <string>%10.2f</string>
-                             </property>
-                             <property name="latheMode" stdset="0">
-                              <number>0</number>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="3" column="1">
-                            <widget class="DROLabel" name="drolabel">
-                             <property name="referenceType" stdset="0">
-                              <number>0</number>
-                             </property>
-                             <property name="axisNumber" stdset="0">
-                              <number>0</number>
-                             </property>
-                             <property name="inchFormat" stdset="0">
-                              <string>%9.4f</string>
-                             </property>
-                             <property name="millimeterFormat" stdset="0">
-                              <string>%10.3f</string>
-                             </property>
-                             <property name="degreeFormat" stdset="0">
-                              <string>%10.2f</string>
-                             </property>
-                             <property name="latheMode" stdset="0">
-                              <number>0</number>
-                             </property>
-                            </widget>
-                           </item>
                            <item row="2" column="1">
                             <widget class="HalLabel" name="enc0_raw_counts">
                              <property name="textFormat" stdset="0">
@@ -7119,35 +7075,6 @@ Editor</string>
                              </property>
                              <property name="pinType" stdset="0">
                               <enum>HalLabel::s32</enum>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="3" column="0">
-                            <widget class="QLabel" name="label_26">
-                             <property name="text">
-                              <string>G53 X, Y, Z Position</string>
-                             </property>
-                            </widget>
-                           </item>
-                           <item row="5" column="1">
-                            <widget class="DROLabel" name="drolabel_3">
-                             <property name="referenceType" stdset="0">
-                              <number>0</number>
-                             </property>
-                             <property name="axisNumber" stdset="0">
-                              <number>2</number>
-                             </property>
-                             <property name="inchFormat" stdset="0">
-                              <string>%9.4f</string>
-                             </property>
-                             <property name="millimeterFormat" stdset="0">
-                              <string>%10.3f</string>
-                             </property>
-                             <property name="degreeFormat" stdset="0">
-                              <string>%10.2f</string>
-                             </property>
-                             <property name="latheMode" stdset="0">
-                              <number>0</number>
                              </property>
                             </widget>
                            </item>
@@ -7169,6 +7096,57 @@ Editor</string>
                         </size>
                        </property>
                       </spacer>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="tabCL">
+                    <attribute name="title">
+                     <string>Closed Loop</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_26">
+                     <item>
+                      <widget class="HalPlot" name="plot_x_cl">
+                       <property name="yAxisLabel" stdset="0">
+                        <string>Follow Error</string>
+                       </property>
+                       <property name="yAxisUnits" stdset="0">
+                        <string>mm</string>
+                       </property>
+                       <property name="minYRange" stdset="0">
+                        <double>-0.100000000000000</double>
+                       </property>
+                       <property name="maxYRange" stdset="0">
+                        <double>0.100000000000000</double>
+                       </property>
+                       <property name="series1enable" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="series1name" stdset="0">
+                        <string>FERROR</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="HalPlot" name="plot_y_cl">
+                       <property name="yAxisLabel" stdset="0">
+                        <string>Follow Error</string>
+                       </property>
+                       <property name="yAxisUnits" stdset="0">
+                        <string>mm</string>
+                       </property>
+                       <property name="minYRange" stdset="0">
+                        <double>-0.100000000000000</double>
+                       </property>
+                       <property name="maxYRange" stdset="0">
+                        <double>0.100000000000000</double>
+                       </property>
+                       <property name="legendenable" stdset="0">
+                        <bool>false</bool>
+                       </property>
+                       <property name="series1enable" stdset="0">
+                        <bool>false</bool>
+                       </property>
+                      </widget>
                      </item>
                     </layout>
                    </widget>
@@ -10423,6 +10401,11 @@ Run</string>
    <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
   </customwidget>
   <customwidget>
+   <class>HalPlot</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_plot</header>
+  </customwidget>
+  <customwidget>
    <class>FileSystemTable</class>
    <extends>QTableView</extends>
    <header>qtpyvcp.widgets.input_widgets.file_system</header>
@@ -11299,12 +11282,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

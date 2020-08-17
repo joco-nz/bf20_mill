@@ -7144,7 +7144,10 @@ Editor</string>
                         <bool>false</bool>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
+                       </property>
+                       <property name="series1name" stdset="0">
+                        <string>FERROR</string>
                        </property>
                       </widget>
                      </item>
@@ -11282,12 +11285,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

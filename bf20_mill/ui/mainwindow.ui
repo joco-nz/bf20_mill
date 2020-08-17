@@ -11286,11 +11286,11 @@ Run</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

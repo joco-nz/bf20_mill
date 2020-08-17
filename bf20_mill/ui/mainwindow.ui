@@ -7113,10 +7113,10 @@ Editor</string>
                         <string>mm</string>
                        </property>
                        <property name="minYRange" stdset="0">
-                        <double>-0.100000000000000</double>
+                        <double>-0.060000000000000</double>
                        </property>
                        <property name="maxYRange" stdset="0">
-                        <double>0.100000000000000</double>
+                        <double>0.060000000000000</double>
                        </property>
                        <property name="series1enable" stdset="0">
                         <bool>true</bool>
@@ -7135,10 +7135,10 @@ Editor</string>
                         <string>mm</string>
                        </property>
                        <property name="minYRange" stdset="0">
-                        <double>-0.100000000000000</double>
+                        <double>-0.060000000000000</double>
                        </property>
                        <property name="maxYRange" stdset="0">
-                        <double>0.100000000000000</double>
+                        <double>0.060000000000000</double>
                        </property>
                        <property name="legendenable" stdset="0">
                         <bool>false</bool>
@@ -11285,12 +11285,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

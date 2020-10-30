@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1280</width>
-    <height>1024</height>
+    <width>1500</width>
+    <height>1042</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,8 +18,8 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>1280</width>
-    <height>1024</height>
+    <width>1500</width>
+    <height>900</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -212,7 +212,10 @@ nostics</string>
              <item>
               <widget class="ActionButton" name="actionbutton_20">
                <property name="enabled">
-                <bool>false</bool>
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>CONV</string>
                </property>
                <property name="checkable">
                 <bool>true</bool>
@@ -222,6 +225,9 @@ nostics</string>
                </property>
                <property name="leftNavBtn" stdset="0">
                 <string/>
+               </property>
+               <property name="page" stdset="0">
+                <number>8</number>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -574,7 +580,7 @@ Extent</string>
                        <bool>true</bool>
                       </property>
                       <property name="checked">
-                       <bool>true</bool>
+                       <bool>false</bool>
                       </property>
                       <property name="plotNavBtn" stdset="0">
                        <string/>
@@ -614,17 +620,7 @@ Extent</string>
                   <widget class="VCPWidget" name="widget_17">
                    <layout class="QVBoxLayout" name="verticalLayout_19">
                     <item>
-                     <widget class="GcodeEditor" name="gcodeeditor">
-                      <property name="backgroundColor" stdset="0">
-                       <string>#2e3436</string>
-                      </property>
-                      <property name="activeLineBackgroundColor" stdset="0">
-                       <string>darkgray</string>
-                      </property>
-                      <property name="editorDefaultFont" stdset="0">
-                       <string>Ubuntu Mono</string>
-                      </property>
-                     </widget>
+                     <widget class="GcodeTextEdit" name="gcodetextedit"/>
                     </item>
                     <item>
                      <widget class="VCPWidget" name="widget_18">
@@ -5387,7 +5383,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>2</number>
+                    <number>0</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7105,6 +7101,13 @@ Editor</string>
                     </attribute>
                     <layout class="QVBoxLayout" name="verticalLayout_26">
                      <item>
+                      <widget class="QLabel" name="label_26">
+                       <property name="text">
+                        <string>X-Axis</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
                       <widget class="HalPlot" name="plot_x_cl">
                        <property name="yAxisLabel" stdset="0">
                         <string>Follow Error</string>
@@ -7113,16 +7116,23 @@ Editor</string>
                         <string>mm</string>
                        </property>
                        <property name="minYRange" stdset="0">
-                        <double>-0.060000000000000</double>
+                        <double>-0.050000000000000</double>
                        </property>
                        <property name="maxYRange" stdset="0">
-                        <double>0.060000000000000</double>
+                        <double>0.050000000000000</double>
                        </property>
                        <property name="series1enable" stdset="0">
                         <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_27">
+                       <property name="text">
+                        <string>Y-Axis</string>
                        </property>
                       </widget>
                      </item>
@@ -7135,10 +7145,10 @@ Editor</string>
                         <string>mm</string>
                        </property>
                        <property name="minYRange" stdset="0">
-                        <double>-0.060000000000000</double>
+                        <double>-0.050000000000000</double>
                        </property>
                        <property name="maxYRange" stdset="0">
-                        <double>0.060000000000000</double>
+                        <double>0.050000000000000</double>
                        </property>
                        <property name="legendenable" stdset="0">
                         <bool>false</bool>
@@ -7151,13 +7161,45 @@ Editor</string>
                        </property>
                       </widget>
                      </item>
+                     <item>
+                      <widget class="QLabel" name="label_28">
+                       <property name="text">
+                        <string>Z-Axis</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="HalPlot" name="plot_z_cl">
+                       <property name="yAxisLabel" stdset="0">
+                        <string>Follow Error</string>
+                       </property>
+                       <property name="yAxisUnits" stdset="0">
+                        <string>mm</string>
+                       </property>
+                       <property name="minYRange" stdset="0">
+                        <double>-0.050000000000000</double>
+                       </property>
+                       <property name="maxYRange" stdset="0">
+                        <double>0.050000000000000</double>
+                       </property>
+                       <property name="series1enable" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="series1name" stdset="0">
+                        <string>FERROR</string>
+                       </property>
+                       <property name="series1style" stdset="0">
+                        <enum>Qt::SolidLine</enum>
+                       </property>
+                      </widget>
+                     </item>
                     </layout>
                    </widget>
                   </widget>
                  </item>
                 </layout>
                </widget>
-               <widget class="QWidget" name="page_2"/>
+               <widget class="QWidget" name="conv"/>
               </widget>
              </item>
             </layout>
@@ -7197,21 +7239,21 @@ Editor</string>
            <number>5</number>
           </property>
           <item>
-           <widget class="QPushButton" name="btnExit">
+           <widget class="ActionButton" name="actionbutton_23">
             <property name="minimumSize">
              <size>
               <width>54</width>
               <height>54</height>
              </size>
             </property>
-            <property name="maximumSize">
-             <size>
-              <width>74</width>
-              <height>16777215</height>
-             </size>
-            </property>
             <property name="text">
-             <string>Exit</string>
+             <string>POWER</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>machine.power.toggle</string>
             </property>
             <property name="bottomNavBtn" stdset="0">
              <string/>
@@ -7219,16 +7261,29 @@ Editor</string>
            </widget>
           </item>
           <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
            <widget class="ActionButton" name="actionbutton_24">
             <property name="minimumSize">
              <size>
-              <width>54</width>
+              <width>84</width>
               <height>54</height>
              </size>
             </property>
             <property name="maximumSize">
              <size>
-              <width>74</width>
+              <width>84</width>
               <height>16777215</height>
              </size>
             </property>
@@ -7253,28 +7308,6 @@ Editor</string>
            </widget>
           </item>
           <item>
-           <widget class="ActionButton" name="actionbutton_23">
-            <property name="minimumSize">
-             <size>
-              <width>54</width>
-              <height>54</height>
-             </size>
-            </property>
-            <property name="text">
-             <string>POWER</string>
-            </property>
-            <property name="checkable">
-             <bool>true</bool>
-            </property>
-            <property name="actionName" stdset="0">
-             <string>machine.power.toggle</string>
-            </property>
-            <property name="bottomNavBtn" stdset="0">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
            <spacer name="horizontalSpacer">
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -7288,25 +7321,140 @@ Editor</string>
            </spacer>
           </item>
           <item>
-           <widget class="ActionButton" name="actionbutton_22">
-            <property name="minimumSize">
+           <widget class="ActionButton" name="actionbutton_21">
+            <property name="maximumSize">
              <size>
-              <width>54</width>
-              <height>54</height>
+              <width>70</width>
+              <height>16777215</height>
              </size>
             </property>
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
             <property name="text">
-             <string>HOME
-ALL</string>
-            </property>
-            <property name="rules" stdset="0">
-             <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;CSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
+             <string>RUN</string>
             </property>
             <property name="actionName" stdset="0">
-             <string>machine.home.all</string>
+             <string>program.run</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_18">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>PAUSE</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.pause</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_19">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>STEP</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.step</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_17">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>RESUME</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.resume</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_16">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>ABORT</string>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.abort</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_28">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Optional
+Stop</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.optional-stop.toggle</string>
+            </property>
+            <property name="bottomNavBtn" stdset="0">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="ActionButton" name="actionbutton_32">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Block
+Delete</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="actionName" stdset="0">
+             <string>program.block-delete.toggle </string>
             </property>
             <property name="bottomNavBtn" stdset="0">
              <string/>
@@ -7419,19 +7567,6 @@ ALL</string>
             </attribute>
            </widget>
           </item>
-          <item>
-           <spacer name="horizontalSpacer_5">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
          </layout>
         </widget>
        </item>
@@ -7442,13 +7577,13 @@ ALL</string>
      <widget class="QWidget" name="right_panel" native="true">
       <property name="minimumSize">
        <size>
-        <width>350</width>
+        <width>550</width>
         <height>0</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>350</width>
+        <width>550</width>
         <height>16777215</height>
        </size>
       </property>
@@ -7649,6 +7784,24 @@ ALL</string>
               </item>
               <item row="2" column="1">
                <widget class="DROLabel" name="x_abs">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>100</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>0</number>
                 </property>
@@ -7668,7 +7821,7 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -7693,7 +7846,7 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -7718,12 +7871,24 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
               <item row="2" column="3">
                <widget class="DROLineEdit" name="x_rel">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>1</number>
                 </property>
@@ -7743,12 +7908,18 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
               <item row="3" column="3">
                <widget class="DROLineEdit" name="y_rel">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>1</number>
                 </property>
@@ -7768,12 +7939,18 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
               <item row="4" column="3">
                <widget class="DROLineEdit" name="z_rel">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>1</number>
                 </property>
@@ -7793,12 +7970,24 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
               <item row="2" column="5">
                <widget class="DROLabel" name="x_dtg">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>90</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
                 <property name="referenceType" stdset="0">
                  <number>2</number>
                 </property>
@@ -7818,7 +8007,7 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -7843,7 +8032,7 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -7868,7 +8057,7 @@ ALL</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -8191,7 +8380,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>3</number>
+             <number>2</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -8352,220 +8541,6 @@ SLOWER</string>
                    </property>
                    <property name="spindleRPM" stdset="0">
                     <string/>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QGroupBox" name="groupBox_7">
-                <property name="title">
-                 <string>Quick Actions</string>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_13">
-                 <item row="0" column="0">
-                  <widget class="MDIButton" name="mdibutton">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>G0
-X0 Y0</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G0X0Y0</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="1">
-                  <widget class="MDIButton" name="mdibutton_2">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>Go Z</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G0Z#&lt;settingsGoToZaddition&gt;</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="ActionButton" name="actionbutton_21">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>RUN</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.run</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="ActionButton" name="actionbutton_18">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>PAUSE</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.pause</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="2">
-                  <widget class="ActionButton" name="actionbutton_19">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>STEP</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.step</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="3">
-                  <widget class="ActionButton" name="actionbutton_17">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>RESUME</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.resume</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <widget class="ActionButton" name="actionbutton_16">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>ABORT</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.abort</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="1">
-                  <widget class="ActionButton" name="actionbutton_28">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>Optional
-Stop</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.optional-stop.toggle</string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="2">
-                  <widget class="ActionButton" name="actionbutton_32">
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="text">
-                    <string>Block
-Delete</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>program.block-delete.toggle </string>
-                   </property>
-                   <property name="bottomNavBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="2">
-                  <widget class="VCPSettingsLineEdit" name="settingsGoToZaddition">
-                   <property name="minimumSize">
-                    <size>
-                     <width>70</width>
-                     <height>0</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>16777215</height>
-                    </size>
-                   </property>
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="settingName" stdset="0">
-                    <string>go-to-z.addition</string>
-                   </property>
-                   <property name="textFormat" stdset="0">
-                    <string>{:4.2f}</string>
                    </property>
                   </widget>
                  </item>
@@ -8973,6 +8948,79 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="2" column="3" rowspan="4">
+                  <widget class="QGroupBox" name="groupBox_7">
+                   <property name="title">
+                    <string>Quick Actions</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_13">
+                    <item row="1" column="2">
+                     <widget class="VCPSettingsLineEdit" name="settingsGoToZaddition">
+                      <property name="minimumSize">
+                       <size>
+                        <width>70</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>70</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="settingName" stdset="0">
+                       <string>go-to-z.addition</string>
+                      </property>
+                      <property name="textFormat" stdset="0">
+                       <string>{:4.2f}</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="MDIButton" name="mdibutton_2">
+                      <property name="maximumSize">
+                       <size>
+                        <width>70</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Go Z</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G0Z#&lt;settingsGoToZaddition&gt;</string>
+                      </property>
+                      <property name="bottomNavBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="MDIButton" name="mdibutton">
+                      <property name="maximumSize">
+                       <size>
+                        <width>70</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>G0
+X0 Y0</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G0X0Y0</string>
+                      </property>
+                      <property name="bottomNavBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
                  <item row="2" column="0">
                   <widget class="SubCallButton" name="subcallbutton_37">
                    <property name="minimumSize">
@@ -9025,7 +9073,7 @@ Delete</string>
                  <item row="3" column="4">
                   <widget class="ActionButton" name="actionbutton_45">
                    <property name="text">
-                    <string>0.0025</string>
+                    <string>0.005</string>
                    </property>
                    <property name="checkable">
                     <bool>true</bool>
@@ -9034,7 +9082,7 @@ Delete</string>
                     <bool>true</bool>
                    </property>
                    <property name="actionName" stdset="0">
-                    <string>machine.jog.set-increment:0.0025</string>
+                    <string>machine.jog.set-increment:0.005</string>
                    </property>
                    <property name="jogBtn" stdset="0">
                     <string/>
@@ -9045,7 +9093,7 @@ Delete</string>
                   </widget>
                  </item>
                  <item row="0" column="0">
-                  <widget class="ActionButton" name="actionbutton_25">
+                  <widget class="ActionButton" name="btn_jog_cont">
                    <property name="text">
                     <string>CONT</string>
                    </property>
@@ -9188,7 +9236,7 @@ Delete</string>
                   </widget>
                  </item>
                  <item row="0" column="1">
-                  <widget class="ActionButton" name="actionbutton_26">
+                  <widget class="ActionButton" name="btn_jog_inc">
                    <property name="text">
                     <string>INC</string>
                    </property>
@@ -9308,6 +9356,201 @@ Delete</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="0" column="5" rowspan="4">
+                  <widget class="QGroupBox" name="groupBox_4">
+                   <property name="title">
+                    <string>Coordinate Systems</string>
+                   </property>
+                   <layout class="QGridLayout" name="gridLayout_4">
+                    <property name="leftMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>5</number>
+                    </property>
+                    <property name="spacing">
+                     <number>5</number>
+                    </property>
+                    <item row="0" column="1">
+                     <widget class="MDIButton" name="mdibutton_4">
+                      <property name="text">
+                       <string>G59.2</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 8 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G59.2</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="2">
+                     <widget class="MDIButton" name="mdibutton_8">
+                      <property name="text">
+                       <string>G59</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 6 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G59</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="MDIButton" name="mdibutton_7">
+                      <property name="text">
+                       <string>G58</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 5 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G58</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="2">
+                     <widget class="MDIButton" name="mdibutton_5">
+                      <property name="text">
+                       <string>G59.3</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 9 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G59.3</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="MDIButton" name="mdibutton_6">
+                      <property name="text">
+                       <string>G57</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 4 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G57</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="MDIButton" name="mdibutton_9">
+                      <property name="text">
+                       <string>G54</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 1 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G54</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="MDIButton" name="mdibutton_10">
+                      <property name="text">
+                       <string>G55</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 2 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G55</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="2">
+                     <widget class="MDIButton" name="mdibutton_11">
+                      <property name="text">
+                       <string>G56</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 3 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G56</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="0">
+                     <widget class="MDIButton" name="mdibutton_3">
+                      <property name="text">
+                       <string>G59.1</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="rules" stdset="0">
+                       <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 7 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>G59.1</string>
+                      </property>
+                      <property name="G5xBtn" stdset="0">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -9331,19 +9574,6 @@ Delete</string>
                <number>5</number>
               </property>
               <item>
-               <spacer name="verticalSpacer_3">
-                <property name="orientation">
-                 <enum>Qt::Vertical</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>20</width>
-                  <height>40</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
                <widget class="QGroupBox" name="groupBox_3">
                 <property name="title">
                  <string>Homing Options</string>
@@ -9364,24 +9594,7 @@ Delete</string>
                  <property name="spacing">
                   <number>5</number>
                  </property>
-                 <item row="0" column="1">
-                  <widget class="ActionButton" name="unhome_x">
-                   <property name="text">
-                    <string>X
-Not Homed</string>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nX' if ch[0] else 'X\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.unhome.axis.0</string>
-                   </property>
-                   <property name="homeAxisBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
+                 <item row="2" column="1">
                   <widget class="ActionButton" name="unhome_y">
                    <property name="text">
                     <string>Y
@@ -9398,7 +9611,24 @@ Not Homed</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="0">
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="unhome_x">
+                   <property name="text">
+                    <string>X
+Not Homed</string>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nX' if ch[0] else 'X\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?0&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;IsHomedCSS&quot;}]</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.unhome.axis.0</string>
+                   </property>
+                   <property name="homeAxisBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
                   <widget class="ActionButton" name="home_y">
                    <property name="text">
                     <string>Home
@@ -9415,7 +9645,7 @@ Y</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="0" column="0">
+                 <item row="1" column="0">
                   <widget class="ActionButton" name="home_x">
                    <property name="text">
                     <string>Home
@@ -9432,7 +9662,7 @@ X</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="0">
+                 <item row="3" column="0">
                   <widget class="ActionButton" name="home_z">
                    <property name="text">
                     <string>Home
@@ -9449,7 +9679,7 @@ Z</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="1">
+                 <item row="3" column="1">
                   <widget class="ActionButton" name="unhome_z">
                    <property name="text">
                     <string>Z
@@ -9466,7 +9696,7 @@ Not Homed</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="3" column="0">
+                 <item row="5" column="0">
                   <widget class="ActionButton" name="home_a">
                    <property name="rules" stdset="0">
                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'A\\nHomed' if ch[0] else 'Home\\nA'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
@@ -9479,7 +9709,7 @@ Not Homed</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="3" column="1">
+                 <item row="5" column="1">
                   <widget class="ActionButton" name="unhome_a">
                    <property name="rules" stdset="0">
                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'Unhome\\nA' if ch[0] else 'A\\nNot Homed'&quot;, &quot;name&quot;: &quot;IsHomed&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:homed?3&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'unhome' if ch[0] else ''&quot;, &quot;name&quot;: &quot;HomedCSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
@@ -9492,200 +9722,44 @@ Not Homed</string>
                    </property>
                   </widget>
                  </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QGroupBox" name="groupBox_4">
-                <property name="title">
-                 <string>Coordinate Systems</string>
-                </property>
-                <layout class="QGridLayout" name="gridLayout_4">
-                 <property name="leftMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>5</number>
-                 </property>
-                 <property name="spacing">
-                  <number>5</number>
-                 </property>
-                 <item row="0" column="1">
-                  <widget class="MDIButton" name="mdibutton_4">
-                   <property name="text">
-                    <string>G59.2</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 8 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G59.2</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="2">
-                  <widget class="MDIButton" name="mdibutton_8">
-                   <property name="text">
-                    <string>G59</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 6 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G59</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="MDIButton" name="mdibutton_7">
-                   <property name="text">
-                    <string>G58</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 5 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G58</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="2">
-                  <widget class="MDIButton" name="mdibutton_5">
-                   <property name="text">
-                    <string>G59.3</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 9 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G59.3</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="MDIButton" name="mdibutton_6">
-                   <property name="text">
-                    <string>G57</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 4 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G57</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <widget class="MDIButton" name="mdibutton_9">
-                   <property name="text">
-                    <string>G54</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 1 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G54</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="1">
-                  <widget class="MDIButton" name="mdibutton_10">
-                   <property name="text">
-                    <string>G55</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 2 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G55</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="2">
-                  <widget class="MDIButton" name="mdibutton_11">
-                   <property name="text">
-                    <string>G56</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 3 else False&quot;, &quot;name&quot;: &quot;State&quot;}]</string>
-                   </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G56</string>
-                   </property>
-                   <property name="G5xBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="0" column="0">
-                  <widget class="MDIButton" name="mdibutton_3">
-                   <property name="text">
-                    <string>G59.1</string>
+                  <widget class="ActionButton" name="actionbutton_22">
+                   <property name="minimumSize">
+                    <size>
+                     <width>54</width>
+                     <height>54</height>
+                    </size>
                    </property>
-                   <property name="checkable">
-                    <bool>true</bool>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string>HOME
+ALL</string>
                    </property>
                    <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:g5x_index&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Checked&quot;, &quot;expression&quot;: &quot;True if ch[0] == 7 else False&quot;, &quot;name&quot;: &quot;Status&quot;}]</string>
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'homed' if ch[0] else ''&quot;, &quot;name&quot;: &quot;CSS&quot;}, {&quot;channels&quot;: [{&quot;url&quot;: &quot;status:all_axes_homed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'HOMED' if ch[0] else 'HOME\\nALL'&quot;, &quot;name&quot;: &quot;Text Update&quot;}]</string>
                    </property>
-                   <property name="MDICommand" stdset="0">
-                    <string>G59.1</string>
+                   <property name="actionName" stdset="0">
+                    <string>machine.home.all</string>
                    </property>
-                   <property name="G5xBtn" stdset="0">
+                   <property name="bottomNavBtn" stdset="0">
                     <string/>
                    </property>
                   </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <spacer name="verticalSpacer_3">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
                  </item>
                 </layout>
                </widget>
@@ -10175,6 +10249,28 @@ DIR</string>
         <number>5</number>
        </property>
        <item>
+        <widget class="QPushButton" name="btnExit">
+         <property name="minimumSize">
+          <size>
+           <width>54</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Exit</string>
+         </property>
+         <property name="rightNavBtn" stdset="0">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -10190,8 +10286,8 @@ DIR</string>
        <item>
         <widget class="ActionButton" name="actionbutton_3">
          <property name="text">
-          <string>FILE
-LOAD</string>
+          <string>File
+Load</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -10266,7 +10362,7 @@ OFFSETS</string>
         <widget class="ActionButton" name="actionbutton_8">
          <property name="text">
           <string>G5x
-OFFSETS</string>
+Offsets</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -10288,14 +10384,13 @@ OFFSETS</string>
        <item>
         <widget class="ActionButton" name="actionbutton_6">
          <property name="text">
-          <string>HOMING/
-COORD</string>
+          <string>Homing</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
          </property>
          <property name="checked">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="autoExclusive">
           <bool>true</bool>
@@ -10320,6 +10415,9 @@ Touch</string>
          <property name="checkable">
           <bool>true</bool>
          </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
          <property name="autoExclusive">
           <bool>true</bool>
          </property>
@@ -10338,7 +10436,7 @@ Touch</string>
         <widget class="ActionButton" name="btnModesDro">
          <property name="text">
           <string>Spindle/
-Run</string>
+Override</string>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -10487,10 +10585,9 @@ Run</string>
    <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
   </customwidget>
   <customwidget>
-   <class>GcodeEditor</class>
-   <extends>QFrame</extends>
-   <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
-   <container>1</container>
+   <class>GcodeTextEdit</class>
+   <extends>QPlainTextEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
   </customwidget>
   <customwidget>
    <class>MDIHistory</class>
@@ -10931,54 +11028,6 @@ Run</string>
    </hints>
   </connection>
   <connection>
-   <sender>btnEditGcode</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>gcodeeditor</receiver>
-   <slot>setEditable(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>855</x>
-     <y>885</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>451</x>
-     <y>438</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btnSaveGcode</sender>
-   <signal>clicked()</signal>
-   <receiver>gcodeeditor</receiver>
-   <slot>save()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>855</x>
-     <y>826</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>451</x>
-     <y>437</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>btnSaveAs</sender>
-   <signal>clicked()</signal>
-   <receiver>gcodeeditor</receiver>
-   <slot>saveAs()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>855</x>
-     <y>767</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>451</x>
-     <y>437</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>mdihistory</sender>
    <signal>itemClicked(QListWidgetItem*)</signal>
    <receiver>mdiEntry</receiver>
@@ -11285,12 +11334,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

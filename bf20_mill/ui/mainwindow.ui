@@ -4629,6 +4629,16 @@ color: white;
                          </property>
                         </widget>
                        </item>
+                       <item row="8" column="1">
+                        <widget class="QPushButton" name="btnMdiSpace">
+                         <property name="text">
+                          <string>SPACE</string>
+                         </property>
+                         <property name="mdiBtn" stdset="0">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
                       </layout>
                      </widget>
                     </item>
@@ -11421,13 +11431,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

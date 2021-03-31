@@ -29,6 +29,7 @@ class MyMainWindow(VCPMainWindow):
         self.btnG5xBackSpace.clicked.connect(self.btnG5xBackSpace_clicked)
         self.btnParams.clicked.connect(self.btnParams_clicked)
         self.btnMdiBksp.clicked.connect(self.mdiBackSpace_clicked)
+        self.btnMdiSpace.clicked.connect(self.mdiSpace_clicked)
 
 
     # add any custom methods here
@@ -120,4 +121,9 @@ class MyMainWindow(VCPMainWindow):
             text = parent.mdiEntry.text()[:-1]
             parent.mdiEntry.setText(text)
 
-
+    def mdiSpace_clicked(parent):
+        text = parent.mdiEntry.text() or 'null'
+        # if no text then do not add a space
+        if text != 'null':
+            text += ' '
+            parent.mdiEntry.setText(text)

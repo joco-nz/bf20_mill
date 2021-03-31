@@ -565,7 +565,7 @@ QPushButton[plotNavBtn] {
 /**********************************************************************
  *                               G-Code Editor                        *
  *********************************************************************/
-GcodeEditor {
+GcodeTextEdit {
     background-color: white;
     border-color: black;
     border-style: solid;
@@ -578,11 +578,7 @@ QPushButton[gcodeBtn] {
         font: 16pt "Bebas Kai";
 }
 
-/* QsciScintilla
- *  GcodeEditor
- */
 
-GcodeEditor {
 /*
     Default Values for exposed QSS properties
     qproperty-backgroundColor: #303030;
@@ -600,14 +596,16 @@ GcodeEditor {
     qproperty-syntaxColorPcode: #be4dff;
     qproperty-syntaxColorTcode: #ff8fdb;
     qproperty-syntaxColorHcode: #87b3ff;
- */
+
+
     qproperty-backgroundColor:          #2e3436;
     qproperty-marginBackgroundColor:    #D9DADB;
     qproperty-activeLineBackgroundColor: darkgray;
     qproperty-editorDefaultFont:        "Ubuntu Mono";
 
     qproperty-syntaxColorDefault:       #EFFBEF;
-    qproperty-syntaxColorComment:       #fcf803;
+    qproperty-comments:                 #fcf803;
+    qproperty-yAxisLetter               red;
     qproperty-syntaxColorKey:           #52ceff;
     qproperty-syntaxColorAssignment:    #fa5f5f;
     qproperty-syntaxColorValue:         #00CC00;
@@ -618,6 +616,10 @@ GcodeEditor {
     qproperty-syntaxColorTcode:         #ff8fdb;
     qproperty-syntaxColorHcode:         #87b3ff;
 
+ */
+
+GcodeTextEdit {
+    qproperty-yAxisLetter               red;
 }
 
 /**********************************************************************

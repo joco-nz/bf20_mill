@@ -1,5 +1,6 @@
 from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
 from qtpyvcp.plugins import getPlugin
+from qtpyvcp.actions.machine_actions import jog
 ### Supports the @Slot decorator to solve property type issues.
 from qtpy.QtCore import Slot
 from qtpy.QtWidgets import QAbstractButton
@@ -16,11 +17,15 @@ class MyMainWindow(VCPMainWindow):
     """Main window class for the VCP."""
     def __init__(self, *args, **kwargs):
         super(MyMainWindow, self).__init__(*args, **kwargs)
+        # setup some widgets
         self.btnPlotRollPan.clicked.connect(self.toggleRollPan)
         self.vtk.enable_panning(True)
         self.mdi_vtk.enable_panning(True)
         self.vtk.setViewP()
         self.mdi_vtk.setViewP()
+        jog.set_jog_continuous(True)
+        
+        # signal connectoins
         self.btnG5xBackSpace.clicked.connect(self.btnG5xBackSpace_clicked)
         self.btnParams.clicked.connect(self.btnParams_clicked)
         self.btnMdiBksp.clicked.connect(self.mdiBackSpace_clicked)
@@ -34,8 +39,6 @@ class MyMainWindow(VCPMainWindow):
     @Slot(QAbstractButton)
     def on_btngrpLeftNav_buttonClicked(self, button):
         self.stwLeft.setCurrentIndex(button.property('page'))
-        #color = self.gcodeeditor.backgroundColor
-        #self.gcodeeditor.backgroundColor = color
 
     @Slot(QAbstractButton)
     def on_btngrpRightNav_buttonClicked(self, button):

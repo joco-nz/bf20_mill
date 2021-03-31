@@ -615,14 +615,14 @@ Extent</string>
                    <layout class="QVBoxLayout" name="verticalLayout_19">
                     <item>
                      <widget class="GcodeEditor" name="gcodeeditor">
-                      <property name="backgroundColor" stdset="0">
-                       <string>#2e3436</string>
-                      </property>
                       <property name="activeLineBackgroundColor" stdset="0">
                        <string>darkgray</string>
                       </property>
                       <property name="editorDefaultFont" stdset="0">
                        <string>Ubuntu Mono</string>
+                      </property>
+                      <property name="backgroundColor" stdset="0">
+                       <string>#2e3436</string>
                       </property>
                      </widget>
                     </item>
@@ -4167,6 +4167,9 @@ color: white;
                       <property name="mdiEntrylineName" stdset="0">
                        <string>mdiEntry</string>
                       </property>
+                      <property name="mdiListOrderNatural" stdset="0">
+                       <bool>true</bool>
+                      </property>
                       <property name="MDIHistory" stdset="0">
                        <string/>
                       </property>
@@ -7119,7 +7122,7 @@ Editor</string>
                         <double>0.060000000000000</double>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>true</bool>
+                        <bool>false</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
@@ -7144,7 +7147,7 @@ Editor</string>
                         <bool>false</bool>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>true</bool>
+                        <bool>false</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
@@ -10501,6 +10504,7 @@ Run</string>
    <class>VTKBackPlot</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>VCPLineEdit</class>
@@ -11266,6 +11270,22 @@ Run</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>mdiEntry</sender>
+   <signal>returnPressed()</signal>
+   <receiver>mdihistory</receiver>
+   <slot>submit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>644</x>
+     <y>439</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>642</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -11285,12 +11305,12 @@ Run</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

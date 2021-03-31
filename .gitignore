@@ -25,3 +25,7 @@ sim/*.old
 *.pickle
 bf20_mill/.pydevproject
 bf20_mill/.project
+
+.project
+
+.pydevproject

@@ -34,8 +34,8 @@ class MyMainWindow(VCPMainWindow):
     @Slot(QAbstractButton)
     def on_btngrpLeftNav_buttonClicked(self, button):
         self.stwLeft.setCurrentIndex(button.property('page'))
-        color = self.gcodeeditor.backgroundColor
-        self.gcodeeditor.backgroundColor = color
+        #color = self.gcodeeditor.backgroundColor
+        #self.gcodeeditor.backgroundColor = color
 
     @Slot(QAbstractButton)
     def on_btngrpRightNav_buttonClicked(self, button):
@@ -108,7 +108,7 @@ class MyMainWindow(VCPMainWindow):
             print('No Match')
 
     def mdiClear(self):
-        for index in range(1,8):
+        for index in range(1,11):
             getattr(self, 'btnGcodeP' + str(index)).setText('')
         self.lblGcodeHelp.setText('')
 

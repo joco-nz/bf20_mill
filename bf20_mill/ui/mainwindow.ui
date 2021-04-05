@@ -7135,7 +7135,7 @@ Editor</string>
                         <double>0.050000000000000</double>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
@@ -7167,7 +7167,7 @@ Editor</string>
                         <bool>false</bool>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
@@ -7196,7 +7196,7 @@ Editor</string>
                         <double>0.050000000000000</double>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>true</bool>
+                        <bool>false</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
@@ -11431,12 +11431,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

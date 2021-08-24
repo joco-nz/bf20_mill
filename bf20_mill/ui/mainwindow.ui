@@ -4624,6 +4624,9 @@ color: white;
                          <property name="mdi_history_size" stdset="0">
                           <number>5</number>
                          </property>
+                         <property name="completerEnabled" stdset="0">
+                          <bool>false</bool>
+                         </property>
                          <property name="labelFont" stdset="0">
                           <string>18</string>
                          </property>
@@ -5396,7 +5399,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>2</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7196,7 +7199,7 @@ Editor</string>
                         <double>0.050000000000000</double>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>FERROR</string>
@@ -11431,12 +11434,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

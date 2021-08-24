@@ -54,6 +54,8 @@ windows:
       stylesheet: null
       # Set the window title from from the date in the vcp section above.
       title: ( vcp.name ) ( vcp.version)
+      # VCP Directory
+      # vcp_dir: {{ file.dir }}
 
 
 application:

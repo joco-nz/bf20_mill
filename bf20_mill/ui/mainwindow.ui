@@ -8627,6 +8627,39 @@ SLOWER</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="2" column="2">
+                  <widget class="HalLabel" name="hallabel">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="pinBaseName" stdset="0">
+                    <string>spindleRPM</string>
+                   </property>
+                   <property name="textFormat" stdset="0">
+                    <string>%.1f</string>
+                   </property>
+                   <property name="spindleRPM" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QLabel" name="label_29">
+                   <property name="text">
+                    <string>Measured Spindle
+Speed</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -11435,11 +11468,11 @@ Override</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

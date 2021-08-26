@@ -37,7 +37,7 @@ QPushButton:disabled {
     color: gray;
 }
 
-StatusLabel {
+StatusLabel, HalLabel {
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
@@ -418,6 +418,10 @@ QPushButton[spindleBtn] {
 }
 
 StatusLabel[spindleRPM] {
+    font: 20pt "Bebas Kai";
+}
+
+HalLabel[spindleRPM] {
     font: 20pt "Bebas Kai";
 }
 

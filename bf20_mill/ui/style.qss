@@ -426,6 +426,16 @@ HalLabel[spindleRPM] {
 }
 
 
+HalLabel[style='atSpeed'] {
+    color: black;
+    background: rgba(92, 243, 81, 255);
+}
+
+HalLabel[style='notAtSpeed'] {
+    background: rgba(225, 67, 67, 255);
+}
+
+
 /**********************************************************************
  *                               Jog Buttons                          *
  *********************************************************************/

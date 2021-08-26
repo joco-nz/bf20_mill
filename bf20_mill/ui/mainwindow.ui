@@ -8638,6 +8638,9 @@ SLOWER</string>
                    <property name="alignment">
                     <set>Qt::AlignCenter</set>
                    </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:din&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Style Class&quot;, &quot;expression&quot;: &quot;'atSpeed' if ch[0][3] else 'notAtSpeed'&quot;, &quot;name&quot;: &quot;atSpeed&quot;}]</string>
+                   </property>
                    <property name="pinBaseName" stdset="0">
                     <string>spindleRPM</string>
                    </property>
@@ -11467,12 +11470,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

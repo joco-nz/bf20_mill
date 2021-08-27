@@ -197,6 +197,22 @@ nostics</string>
               </widget>
              </item>
              <item>
+              <widget class="ActionButton" name="btn_camera">
+               <property name="text">
+                <string>Camera</string>
+               </property>
+               <property name="page" stdset="0">
+                <number>8</number>
+               </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
               <spacer name="verticalSpacer_5">
                <property name="orientation">
                 <enum>Qt::Vertical</enum>
@@ -7228,7 +7244,13 @@ Editor</string>
                  </item>
                 </layout>
                </widget>
-               <widget class="QWidget" name="conv"/>
+               <widget class="QWidget" name="conv">
+                <layout class="QVBoxLayout" name="verticalLayout_27">
+                 <item>
+                  <widget class="Camera" name="camera"/>
+                 </item>
+                </layout>
+               </widget>
               </widget>
              </item>
             </layout>
@@ -10770,6 +10792,12 @@ Override</string>
    <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
   </customwidget>
   <customwidget>
+   <class>Camera</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.camera.camera</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>MDIHistory</class>
    <extends>QListWidget</extends>
    <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
@@ -11531,12 +11559,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

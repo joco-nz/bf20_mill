@@ -727,8 +727,8 @@ Extent</string>
                       </property>
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -747,8 +747,8 @@ From</string>
                      <widget class="ActionButton" name="actionbutton_30">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -766,8 +766,8 @@ From</string>
                      <widget class="ActionButton" name="actionbutton_31">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="gcodeBtn" stdset="0">
@@ -779,8 +779,8 @@ From</string>
                      <widget class="ActionButton" name="btnSaveAs">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -796,8 +796,8 @@ As</string>
                      <widget class="ActionButton" name="btnSaveGcode">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -812,8 +812,8 @@ As</string>
                      <widget class="ActionButton" name="btnEditGcode">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -2609,8 +2609,8 @@ color: white;
                           </property>
                           <property name="minimumSize">
                            <size>
-                            <width>54</width>
-                            <height>54</height>
+                            <width>44</width>
+                            <height>44</height>
                            </size>
                           </property>
                           <property name="maximumSize">
@@ -2671,8 +2671,8 @@ color: white;
                           </property>
                           <property name="minimumSize">
                            <size>
-                            <width>54</width>
-                            <height>54</height>
+                            <width>44</width>
+                            <height>44</height>
                            </size>
                           </property>
                           <property name="maximumSize">
@@ -2733,8 +2733,8 @@ color: white;
                           </property>
                           <property name="minimumSize">
                            <size>
-                            <width>54</width>
-                            <height>54</height>
+                            <width>44</width>
+                            <height>44</height>
                            </size>
                           </property>
                           <property name="maximumSize">
@@ -4683,8 +4683,8 @@ color: white;
                      <widget class="QPushButton" name="btn_del_history_row">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -4700,8 +4700,8 @@ Row</string>
                      <widget class="ActionButton" name="btn_pause_mdi">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -4720,8 +4720,8 @@ Queue</string>
                      <widget class="QPushButton" name="btn_clear_queue">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -4737,8 +4737,8 @@ Queue</string>
                      <widget class="QPushButton" name="btn_run_from_line">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -4754,8 +4754,8 @@ From</string>
                      <widget class="QPushButton" name="btn_run_line">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="text">
@@ -4804,8 +4804,8 @@ Editor</string>
                      <widget class="SubCallButton" name="subcallbutton_14">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="maximumSize">
@@ -4826,8 +4826,8 @@ Editor</string>
                      <widget class="SubCallButton" name="subcallbutton_13">
                       <property name="minimumSize">
                        <size>
-                        <width>54</width>
-                        <height>54</height>
+                        <width>44</width>
+                        <height>44</height>
                        </size>
                       </property>
                       <property name="maximumSize">
@@ -7258,8 +7258,8 @@ Editor</string>
            <widget class="ActionButton" name="actionbutton_23">
             <property name="minimumSize">
              <size>
-              <width>54</width>
-              <height>54</height>
+              <width>44</width>
+              <height>44</height>
              </size>
             </property>
             <property name="text">
@@ -7293,8 +7293,8 @@ Editor</string>
            <widget class="ActionButton" name="actionbutton_24">
             <property name="minimumSize">
              <size>
-              <width>54</width>
-              <height>54</height>
+              <width>44</width>
+              <height>44</height>
              </size>
             </property>
             <property name="maximumSize">
@@ -7494,8 +7494,8 @@ Delete</string>
            <widget class="ActionButton" name="actionbutton_2">
             <property name="minimumSize">
              <size>
-              <width>54</width>
-              <height>54</height>
+              <width>44</width>
+              <height>44</height>
              </size>
             </property>
             <property name="text">
@@ -7525,8 +7525,8 @@ Delete</string>
            <widget class="ActionButton" name="actionbutton_27">
             <property name="minimumSize">
              <size>
-              <width>54</width>
-              <height>54</height>
+              <width>44</width>
+              <height>44</height>
              </size>
             </property>
             <property name="text">
@@ -7556,8 +7556,8 @@ Delete</string>
            <widget class="ActionButton" name="actionbutton_42">
             <property name="minimumSize">
              <size>
-              <width>54</width>
-              <height>54</height>
+              <width>44</width>
+              <height>44</height>
              </size>
             </property>
             <property name="text">
@@ -7749,28 +7749,6 @@ Delete</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
-                </property>
-                <property name="DROHeading" stdset="0">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="0">
-               <widget class="StatusLabel" name="lblAxisA">
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>A</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="rules" stdset="0">
-                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                 </property>
                 <property name="DROHeading" stdset="0">
                  <string/>
@@ -8080,7 +8058,7 @@ Delete</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -8108,12 +8086,18 @@ Delete</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
               <item row="6" column="4">
                <widget class="DROLineEdit" name="a_rel">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
                 <property name="rules" stdset="0">
                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
                 </property>
@@ -8136,7 +8120,7 @@ Delete</string>
                  <number>0</number>
                 </property>
                 <property name="labelFont" stdset="0">
-                 <number>20</number>
+                 <number>18</number>
                 </property>
                </widget>
               </item>
@@ -8153,8 +8137,8 @@ Delete</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>40</height>
+                  <width>44</width>
+                  <height>44</height>
                  </size>
                 </property>
                 <property name="maximumSize">
@@ -8190,8 +8174,8 @@ Delete</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>40</height>
+                  <width>44</width>
+                  <height>44</height>
                  </size>
                 </property>
                 <property name="maximumSize">
@@ -8224,8 +8208,8 @@ Delete</string>
                 </property>
                 <property name="minimumSize">
                  <size>
-                  <width>40</width>
-                  <height>40</height>
+                  <width>44</width>
+                  <height>44</height>
                  </size>
                 </property>
                 <property name="maximumSize">
@@ -8239,6 +8223,40 @@ Delete</string>
                 </property>
                 <property name="MDICommand" stdset="0">
                  <string>G10L20P0Z0</string>
+                </property>
+                <property name="DROHeading" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="MDIButton" name="mdibutton_25">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>44</width>
+                  <height>44</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>44</width>
+                  <height>44</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>A</string>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                </property>
+                <property name="MDICommand" stdset="0">
+                 <string>G10L20P0A0</string>
                 </property>
                 <property name="DROHeading" stdset="0">
                  <string/>
@@ -8525,8 +8543,8 @@ CHANGED</string>
                   <widget class="ActionButton" name="actionbutton">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="text">
@@ -8548,8 +8566,8 @@ CCW</string>
                   <widget class="ActionButton" name="actionbutton_4">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="text">
@@ -8571,8 +8589,8 @@ CW</string>
                   <widget class="ActionButton" name="actionbutton_14">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="text">
@@ -8591,8 +8609,8 @@ FASTER</string>
                   <widget class="ActionButton" name="actionbutton_9">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="text">
@@ -8611,8 +8629,8 @@ SLOWER</string>
                   <widget class="ActionButton" name="actionbutton_47">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="text">
@@ -8891,8 +8909,8 @@ Speed</string>
                   <widget class="MDIButton" name="mdibutton_20">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -8920,8 +8938,8 @@ Speed</string>
                   <widget class="MDIButton" name="mdibutton_19">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -8949,8 +8967,8 @@ Speed</string>
                   <widget class="MDIButton" name="mdibutton_22">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -9008,8 +9026,8 @@ Speed</string>
                   <widget class="MDIButton" name="mdibutton_21">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -9037,8 +9055,8 @@ Speed</string>
                   <widget class="MDIButton" name="mdibutton_17">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -9174,8 +9192,8 @@ X0 Y0</string>
                   <widget class="SubCallButton" name="subcallbutton_37">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="maximumSize">
@@ -9875,8 +9893,8 @@ Not Homed</string>
                   <widget class="ActionButton" name="actionbutton_22">
                    <property name="minimumSize">
                     <size>
-                     <width>54</width>
-                     <height>54</height>
+                     <width>44</width>
+                     <height>44</height>
                     </size>
                    </property>
                    <property name="styleSheet">
@@ -10401,8 +10419,8 @@ DIR</string>
         <widget class="QPushButton" name="btnExit">
          <property name="minimumSize">
           <size>
-           <width>54</width>
-           <height>54</height>
+           <width>44</width>
+           <height>44</height>
           </size>
          </property>
          <property name="maximumSize">
@@ -11500,12 +11518,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

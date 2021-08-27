@@ -5399,7 +5399,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>1</number>
+                    <number>2</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7119,41 +7119,12 @@ Editor</string>
                      <item>
                       <widget class="QLabel" name="label_26">
                        <property name="text">
-                        <string>X-Axis</string>
+                        <string>X/Y/Z-Axis</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="HalPlot" name="plot_x_cl">
-                       <property name="yAxisLabel" stdset="0">
-                        <string>Follow Error</string>
-                       </property>
-                       <property name="yAxisUnits" stdset="0">
-                        <string>mm</string>
-                       </property>
-                       <property name="minYRange" stdset="0">
-                        <double>-0.050000000000000</double>
-                       </property>
-                       <property name="maxYRange" stdset="0">
-                        <double>0.050000000000000</double>
-                       </property>
-                       <property name="series1enable" stdset="0">
-                        <bool>true</bool>
-                       </property>
-                       <property name="series1name" stdset="0">
-                        <string>FERROR</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="QLabel" name="label_27">
-                       <property name="text">
-                        <string>Y-Axis</string>
-                       </property>
-                      </widget>
-                     </item>
-                     <item>
-                      <widget class="HalPlot" name="plot_y_cl">
+                      <widget class="HalPlot" name="plot_xyz_cl">
                        <property name="yAxisLabel" stdset="0">
                         <string>Follow Error</string>
                        </property>
@@ -7167,45 +7138,87 @@ Editor</string>
                         <double>0.050000000000000</double>
                        </property>
                        <property name="legendenable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series1enable" stdset="0">
                         <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
-                        <string>FERROR</string>
+                        <string>X-FERROR</string>
+                       </property>
+                       <property name="series2enable" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="series2name" stdset="0">
+                        <string>Y-FERROR</string>
+                       </property>
+                       <property name="series2colour" stdset="0">
+                        <color>
+                         <red>85</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
+                       </property>
+                       <property name="series3enable" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="series3name" stdset="0">
+                        <string>Z-FERROR</string>
+                       </property>
+                       <property name="series3colour" stdset="0">
+                        <color>
+                         <red>0</red>
+                         <green>255</green>
+                         <blue>0</blue>
+                        </color>
                        </property>
                       </widget>
                      </item>
                      <item>
                       <widget class="QLabel" name="label_28">
                        <property name="text">
-                        <string>Z-Axis</string>
+                        <string>Spindle Motor and Real Spindle</string>
                        </property>
                       </widget>
                      </item>
                      <item>
-                      <widget class="HalPlot" name="plot_z_cl">
+                      <widget class="HalPlot" name="plot_spindle_cl">
                        <property name="yAxisLabel" stdset="0">
                         <string>Follow Error</string>
                        </property>
                        <property name="yAxisUnits" stdset="0">
-                        <string>mm</string>
+                        <string>rpm</string>
                        </property>
                        <property name="minYRange" stdset="0">
-                        <double>-0.050000000000000</double>
+                        <double>-200.000000000000000</double>
                        </property>
                        <property name="maxYRange" stdset="0">
-                        <double>0.050000000000000</double>
+                        <double>200.000000000000000</double>
+                       </property>
+                       <property name="legendenable" stdset="0">
+                        <bool>true</bool>
                        </property>
                        <property name="series1enable" stdset="0">
                         <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
-                        <string>FERROR</string>
+                        <string>Motor-FERROR</string>
                        </property>
                        <property name="series1style" stdset="0">
                         <enum>Qt::SolidLine</enum>
+                       </property>
+                       <property name="series2enable" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="series2name" stdset="0">
+                        <string>Spindle-FERROR</string>
+                       </property>
+                       <property name="series2colour" stdset="0">
+                        <color>
+                         <red>85</red>
+                         <green>255</green>
+                         <blue>255</blue>
+                        </color>
                        </property>
                       </widget>
                      </item>
@@ -11518,12 +11531,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

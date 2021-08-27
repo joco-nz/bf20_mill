@@ -540,6 +540,11 @@ StatusLabel[DROHeading] {
     background-color: lightgray;
 }
 
+MDIButton[DROHeading] {
+    font: 16pt "Bebas Kai";
+    background-color: lightgray;
+}
+
 StatusLabel[ActiveGCode] {
     font: 14pt "Bebas Kai";
     background-color: lightgray;

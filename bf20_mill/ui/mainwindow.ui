@@ -5399,7 +5399,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>2</number>
+                    <number>1</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7659,57 +7659,7 @@ Delete</string>
               <property name="spacing">
                <number>5</number>
               </property>
-              <item row="2" column="0">
-               <widget class="StatusLabel" name="lblAxisX">
-                <property name="minimumSize">
-                 <size>
-                  <width>40</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>X</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="DROHeading" stdset="0">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="StatusLabel" name="lblAxisZ">
-                <property name="minimumSize">
-                 <size>
-                  <width>40</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Z</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="DROHeading" stdset="0">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="3">
+              <item row="1" column="4">
                <widget class="StatusLabel" name="statuslabel_8">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -7743,7 +7693,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="1" column="5">
+              <item row="1" column="6">
                <widget class="StatusLabel" name="statuslabel_9">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -7774,7 +7724,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="1" column="1">
+              <item row="1" column="2">
                <widget class="StatusLabel" name="statuslabel_7">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -7796,31 +7746,6 @@ Delete</string>
                 </property>
                 <property name="text">
                  <string>ABS</string>
-                </property>
-                <property name="alignment">
-                 <set>Qt::AlignCenter</set>
-                </property>
-                <property name="DROHeading" stdset="0">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0">
-               <widget class="StatusLabel" name="lblAxisY">
-                <property name="minimumSize">
-                 <size>
-                  <width>40</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>40</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Y</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -7852,7 +7777,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="2" column="1">
+              <item row="2" column="2">
                <widget class="DROLabel" name="x_abs">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
@@ -7895,7 +7820,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="4" column="1">
+              <item row="4" column="2">
                <widget class="DROLabel" name="z_abs">
                 <property name="referenceType" stdset="0">
                  <number>0</number>
@@ -7920,7 +7845,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="1">
+              <item row="3" column="2">
                <widget class="DROLabel" name="y_abs">
                 <property name="referenceType" stdset="0">
                  <number>0</number>
@@ -7945,10 +7870,10 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="2" column="3">
+              <item row="2" column="4">
                <widget class="DROLineEdit" name="x_rel">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
@@ -7982,10 +7907,10 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="3">
+              <item row="3" column="4">
                <widget class="DROLineEdit" name="y_rel">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
@@ -8013,10 +7938,10 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="4" column="3">
+              <item row="4" column="4">
                <widget class="DROLineEdit" name="z_rel">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
@@ -8044,10 +7969,10 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="2" column="5">
+              <item row="2" column="6">
                <widget class="DROLabel" name="x_dtg">
                 <property name="sizePolicy">
-                 <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                   <horstretch>0</horstretch>
                   <verstretch>0</verstretch>
                  </sizepolicy>
@@ -8081,7 +8006,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="5">
+              <item row="3" column="6">
                <widget class="DROLabel" name="y_dtg">
                 <property name="referenceType" stdset="0">
                  <number>2</number>
@@ -8106,7 +8031,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="4" column="5">
+              <item row="4" column="6">
                <widget class="DROLabel" name="z_dtg">
                 <property name="referenceType" stdset="0">
                  <number>2</number>
@@ -8131,7 +8056,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="6" column="1">
+              <item row="6" column="2">
                <widget class="DROLabel" name="a_abs">
                 <property name="rules" stdset="0">
                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
@@ -8159,7 +8084,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="6" column="5">
+              <item row="6" column="6">
                <widget class="DROLabel" name="a_dtg">
                 <property name="rules" stdset="0">
                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
@@ -8187,7 +8112,7 @@ Delete</string>
                 </property>
                </widget>
               </item>
-              <item row="6" column="3">
+              <item row="6" column="4">
                <widget class="DROLineEdit" name="a_rel">
                 <property name="rules" stdset="0">
                  <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
@@ -8212,6 +8137,111 @@ Delete</string>
                 </property>
                 <property name="labelFont" stdset="0">
                  <number>20</number>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="MDIButton" name="mdibutton_18">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>X</string>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+                <property name="MDICommand" stdset="0">
+                 <string>G10L20P0X0</string>
+                </property>
+                <property name="DROHeading" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="MDIButton" name="mdibutton_23">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Y</string>
+                </property>
+                <property name="MDICommand" stdset="0">
+                 <string>G10L20P0Y0</string>
+                </property>
+                <property name="DROHeading" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="MDIButton" name="mdibutton_24">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Z</string>
+                </property>
+                <property name="MDICommand" stdset="0">
+                 <string>G10L20P0Z0</string>
+                </property>
+                <property name="DROHeading" stdset="0">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -11470,12 +11500,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

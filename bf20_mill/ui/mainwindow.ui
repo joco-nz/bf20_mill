@@ -5399,7 +5399,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>2</number>
+                    <number>0</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -11531,12 +11531,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

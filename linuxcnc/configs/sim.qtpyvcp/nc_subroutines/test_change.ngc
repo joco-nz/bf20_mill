@@ -3,13 +3,17 @@
 o<test_change> sub
 (DEBUG,<-------- M6 remap firing -------->)
 
+o50 if [[#<selected_tool> EQ 999] OR [#<selected_tool> EQ 0] OR [#<selected_tool> EQ #<tool_in_spindle>]]
+o50 return [1]
+o50 endif
+
 ; we need #<_ReferenceTool> to exist so check and create if needed
-o10 if [EXISTS[#<_ReferenceTool>]]
+o100 if [EXISTS[#<_ReferenceTool>]]
     (DEBUG, _ReferenceTool exists with value: #<_ReferenceTool>)
-o10 else
+o100 else
     (DEBUG, _ReferenceTool initalised)
     #<_ReferenceTool>=0
-o10 endif
+o100 endif
 
 ; activate the tool change panel
 M64 P #<_ini[pins]change>

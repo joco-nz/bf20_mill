@@ -945,9 +945,15 @@ As</string>
                      <number>5</number>
                     </property>
                     <item>
-                     <widget class="QPushButton" name="pushButton_44">
+                     <widget class="MDIButton" name="mdibutton_26">
                       <property name="text">
-                       <string>PushButton</string>
+                       <string>Unload Tool</string>
+                      </property>
+                      <property name="MDICommand" stdset="0">
+                       <string>M6 T0</string>
+                      </property>
+                      <property name="buttonFont" stdset="0">
+                       <number>14</number>
                       </property>
                      </widget>
                     </item>
@@ -11581,12 +11587,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

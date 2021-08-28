@@ -8752,6 +8752,22 @@ Speed</string>
                    </property>
                   </widget>
                  </item>
+                 <item row="2" column="0">
+                  <widget class="HalButton" name="halbutton">
+                   <property name="text">
+                    <string>High Ratio</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="pinBaseName" stdset="0">
+                    <string>spindleRatioHigh</string>
+                   </property>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
                 </layout>
                </widget>
               </item>
@@ -11566,11 +11582,11 @@ Override</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

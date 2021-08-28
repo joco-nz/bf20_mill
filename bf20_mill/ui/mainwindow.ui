@@ -201,6 +201,12 @@ nostics</string>
                <property name="text">
                 <string>Camera</string>
                </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
                <property name="page" stdset="0">
                 <number>8</number>
                </property>
@@ -7206,10 +7212,10 @@ Editor</string>
                         <string>rpm</string>
                        </property>
                        <property name="minYRange" stdset="0">
-                        <double>-200.000000000000000</double>
+                        <double>-80.000000000000000</double>
                        </property>
                        <property name="maxYRange" stdset="0">
-                        <double>200.000000000000000</double>
+                        <double>80.000000000000000</double>
                        </property>
                        <property name="legendenable" stdset="0">
                         <bool>true</bool>
@@ -11559,11 +11565,11 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
  </buttongroups>

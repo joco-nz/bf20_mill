@@ -21,8 +21,10 @@ class MyMainWindow(VCPMainWindow):
         self.btnPlotRollPan.clicked.connect(self.toggleRollPan)
         self.vtk.enable_panning(True)
         self.mdi_vtk.enable_panning(True)
+        self.monitor_vtk.enable_panning(True)
         self.vtk.setViewP()
         self.mdi_vtk.setViewP()
+        self.monitor_vtk.setViewP()
         jog.set_jog_continuous(True)
         
         # signal connectoins

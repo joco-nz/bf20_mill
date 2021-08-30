@@ -7289,7 +7289,7 @@ Editor</string>
                <widget class="QWidget" name="monitor_run">
                 <layout class="QGridLayout" name="gridLayout_33">
                  <item row="0" column="0">
-                  <widget class="VTKBackPlot" name="vtkbackplot">
+                  <widget class="VTKBackPlot" name="monitor_vtk">
                    <property name="enableProgramTicks" stdset="0">
                     <bool>false</bool>
                    </property>
@@ -7768,7 +7768,7 @@ Delete</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>G53</string>
+                 <string>G54</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -11628,12 +11628,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

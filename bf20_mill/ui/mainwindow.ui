@@ -232,6 +232,29 @@ nostics</string>
               </spacer>
              </item>
              <item>
+              <widget class="ActionButton" name="actionbutton_25">
+               <property name="text">
+                <string>MONITOR
+RUN</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="autoExclusive">
+                <bool>true</bool>
+               </property>
+               <property name="leftNavBtn" stdset="0">
+                <string/>
+               </property>
+               <property name="page" stdset="0">
+                <number>9</number>
+               </property>
+               <attribute name="buttonGroup">
+                <string notr="true">btngrpLeftNav</string>
+               </attribute>
+              </widget>
+             </item>
+             <item>
               <widget class="ActionButton" name="actionbutton_20">
                <property name="enabled">
                 <bool>true</bool>
@@ -7263,6 +7286,24 @@ Editor</string>
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="monitor_run">
+                <layout class="QGridLayout" name="gridLayout_33">
+                 <item row="0" column="0">
+                  <widget class="VTKBackPlot" name="vtkbackplot">
+                   <property name="enableProgramTicks" stdset="0">
+                    <bool>false</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="GcodeTextEdit" name="gcodetextedit_2">
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
               </widget>
              </item>
             </layout>
@@ -11588,11 +11629,11 @@ Override</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
  </buttongroups>
 </ui>

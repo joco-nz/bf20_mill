@@ -7293,6 +7293,38 @@ Editor</string>
                    <property name="enableProgramTicks" stdset="0">
                     <bool>false</bool>
                    </property>
+                   <widget class="QPushButton" name="btnMonPlotIn">
+                    <property name="geometry">
+                     <rect>
+                      <x>5</x>
+                      <y>5</y>
+                      <width>90</width>
+                      <height>44</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string>+</string>
+                    </property>
+                    <property name="plotNavBtn" stdset="0">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="btnMonPlotOut">
+                    <property name="geometry">
+                     <rect>
+                      <x>100</x>
+                      <y>5</y>
+                      <width>90</width>
+                      <height>44</height>
+                     </rect>
+                    </property>
+                    <property name="text">
+                     <string>-</string>
+                    </property>
+                    <property name="plotNavBtn" stdset="0">
+                     <string/>
+                    </property>
+                   </widget>
                   </widget>
                  </item>
                  <item row="1" column="0">
@@ -7768,7 +7800,7 @@ Delete</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>G54</string>
+                 <string>G53</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -11609,6 +11641,38 @@ Override</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnMonPlotIn</sender>
+   <signal>clicked()</signal>
+   <receiver>monitor_vtk</receiver>
+   <slot>zoomIn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMonPlotOut</sender>
+   <signal>clicked()</signal>
+   <receiver>monitor_vtk</receiver>
+   <slot>zoomOut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>129</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -11628,12 +11692,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

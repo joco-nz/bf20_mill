@@ -5450,7 +5450,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>0</number>
+                    <number>2</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7298,9 +7298,21 @@ Editor</string>
                      <rect>
                       <x>5</x>
                       <y>5</y>
-                      <width>90</width>
+                      <width>65</width>
                       <height>44</height>
                      </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>65</width>
+                      <height>44</height>
+                     </size>
                     </property>
                     <property name="text">
                      <string>+</string>
@@ -7312,14 +7324,110 @@ Editor</string>
                    <widget class="QPushButton" name="btnMonPlotOut">
                     <property name="geometry">
                      <rect>
-                      <x>100</x>
+                      <x>70</x>
                       <y>5</y>
-                      <width>90</width>
+                      <width>65</width>
                       <height>44</height>
                      </rect>
                     </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>65</width>
+                      <height>44</height>
+                     </size>
+                    </property>
                     <property name="text">
                      <string>-</string>
+                    </property>
+                    <property name="plotNavBtn" stdset="0">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="btnMonPlotClear">
+                    <property name="geometry">
+                     <rect>
+                      <x>135</x>
+                      <y>5</y>
+                      <width>65</width>
+                      <height>44</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>65</width>
+                      <height>44</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>CLEAR</string>
+                    </property>
+                    <property name="plotNavBtn" stdset="0">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="btnMonPlotZ">
+                    <property name="geometry">
+                     <rect>
+                      <x>200</x>
+                      <y>5</y>
+                      <width>65</width>
+                      <height>44</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>65</width>
+                      <height>44</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Z</string>
+                    </property>
+                    <property name="plotNavBtn" stdset="0">
+                     <string/>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="btnMonPlotP">
+                    <property name="geometry">
+                     <rect>
+                      <x>265</x>
+                      <y>5</y>
+                      <width>65</width>
+                      <height>44</height>
+                     </rect>
+                    </property>
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>65</width>
+                      <height>44</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>P</string>
                     </property>
                     <property name="plotNavBtn" stdset="0">
                      <string/>
@@ -7331,6 +7439,20 @@ Editor</string>
                   <widget class="GcodeTextEdit" name="gcodetextedit_2">
                    <property name="readOnly">
                     <bool>true</bool>
+                   </property>
+                   <property name="currentLineBackground" stdset="0">
+                    <color>
+                     <red>186</red>
+                     <green>186</green>
+                     <blue>186</blue>
+                    </color>
+                   </property>
+                   <property name="marginCurrentLineBackground" stdset="0">
+                    <color>
+                     <red>186</red>
+                     <green>186</green>
+                     <blue>186</blue>
+                    </color>
                    </property>
                   </widget>
                  </item>
@@ -8631,7 +8753,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>2</number>
+             <number>0</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -11673,6 +11795,54 @@ Override</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>btnMonPlotClear</sender>
+   <signal>clicked()</signal>
+   <receiver>monitor_vtk</receiver>
+   <slot>clearLivePlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>373</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMonPlotZ</sender>
+   <signal>clicked()</signal>
+   <receiver>monitor_vtk</receiver>
+   <slot>setViewZ()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMonPlotP</sender>
+   <signal>clicked()</signal>
+   <receiver>monitor_vtk</receiver>
+   <slot>setViewP()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>386</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <designerdata>
   <property name="gridDeltaX">
@@ -11693,11 +11863,11 @@ Override</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

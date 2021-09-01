@@ -7288,8 +7288,59 @@ Editor</string>
                </widget>
                <widget class="QWidget" name="monitor_run">
                 <layout class="QGridLayout" name="gridLayout_33">
-                 <item row="0" column="0">
+                 <item row="2" column="0">
+                  <widget class="GcodeTextEdit" name="gcodetextedit_2">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>400</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                   <property name="currentLineBackground" stdset="0">
+                    <color>
+                     <red>186</red>
+                     <green>186</green>
+                     <blue>186</blue>
+                    </color>
+                   </property>
+                   <property name="marginCurrentLineBackground" stdset="0">
+                    <color>
+                     <red>186</red>
+                     <green>186</green>
+                     <blue>186</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0" colspan="2">
                   <widget class="VTKBackPlot" name="monitor_vtk">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>500</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
                    <property name="enableProgramTicks" stdset="0">
                     <bool>false</bool>
                    </property>
@@ -7435,23 +7486,103 @@ Editor</string>
                    </widget>
                   </widget>
                  </item>
-                 <item row="1" column="0">
-                  <widget class="GcodeTextEdit" name="gcodetextedit_2">
-                   <property name="readOnly">
+                 <item row="0" column="2">
+                  <widget class="HalPlot" name="plot_xyz_cl_mon">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="timeWindow" stdset="0">
+                    <number>300</number>
+                   </property>
+                   <property name="yAxisLabel" stdset="0">
+                    <string>Follow Error</string>
+                   </property>
+                   <property name="yAxisUnits" stdset="0">
+                    <string>mm</string>
+                   </property>
+                   <property name="minYRange" stdset="0">
+                    <double>-0.050000000000000</double>
+                   </property>
+                   <property name="maxYRange" stdset="0">
+                    <double>0.050000000000000</double>
+                   </property>
+                   <property name="legendenable" stdset="0">
                     <bool>true</bool>
                    </property>
-                   <property name="currentLineBackground" stdset="0">
+                   <property name="series1enable" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="series1name" stdset="0">
+                    <string>X-FERROR</string>
+                   </property>
+                   <property name="series2enable" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="series2name" stdset="0">
+                    <string>Y-FERROR</string>
+                   </property>
+                   <property name="series2colour" stdset="0">
                     <color>
-                     <red>186</red>
-                     <green>186</green>
-                     <blue>186</blue>
+                     <red>0</red>
+                     <green>255</green>
+                     <blue>0</blue>
                     </color>
                    </property>
-                   <property name="marginCurrentLineBackground" stdset="0">
+                   <property name="series3enable" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="series3name" stdset="0">
+                    <string>Z-FERROR</string>
+                   </property>
+                   <property name="series3colour" stdset="0">
                     <color>
-                     <red>186</red>
-                     <green>186</green>
-                     <blue>186</blue>
+                     <red>106</red>
+                     <green>101</green>
+                     <blue>255</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="HalPlot" name="plot_spindle_cl_mon">
+                   <property name="yAxisLabel" stdset="0">
+                    <string>Rpm Error</string>
+                   </property>
+                   <property name="yAxisUnits" stdset="0">
+                    <string>rpm</string>
+                   </property>
+                   <property name="minYRange" stdset="0">
+                    <double>-80.000000000000000</double>
+                   </property>
+                   <property name="maxYRange" stdset="0">
+                    <double>80.000000000000000</double>
+                   </property>
+                   <property name="legendenable" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="series1enable" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="series1name" stdset="0">
+                    <string>Motor-FERROR</string>
+                   </property>
+                   <property name="series1style" stdset="0">
+                    <enum>Qt::SolidLine</enum>
+                   </property>
+                   <property name="series2enable" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="series2name" stdset="0">
+                    <string>Spindle-FERROR</string>
+                   </property>
+                   <property name="series2colour" stdset="0">
+                    <color>
+                     <red>85</red>
+                     <green>255</green>
+                     <blue>255</blue>
                     </color>
                    </property>
                   </widget>
@@ -11862,12 +11993,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

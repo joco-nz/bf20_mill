@@ -57,6 +57,19 @@ QLineEdit, QLabel {
     padding-right: 2px;
 }
 
+QSpinBox {
+    border-style: transparent;
+    border-color: rgb(134, 136, 138);
+    border-width: 2px;
+    border-radius: 5px;
+    color: black;
+    background: white;
+    selection-color: white;
+    selection-background-color: rgb(65, 84, 255);
+    font: 15pt "Bebas Kai";
+    padding-right: 2px;
+}
+
 QLineEdit:focus {
     border-style: solid;
     border-width: 3px;
@@ -415,6 +428,10 @@ MDIHistory::item:hover {
 
 QPushButton[spindleBtn] {
     font: 16pt "Bebas Kai";
+}
+
+QSpinBox[spindleRPM] {
+    font: 20pt "Bebas Kai";
 }
 
 StatusLabel[spindleRPM] {

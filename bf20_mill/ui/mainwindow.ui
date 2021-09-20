@@ -247,7 +247,7 @@ RUN</string>
                 <string/>
                </property>
                <property name="page" stdset="0">
-                <number>9</number>
+                <number>10</number>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -272,7 +272,7 @@ RUN</string>
                 <string/>
                </property>
                <property name="page" stdset="0">
-                <number>8</number>
+                <number>9</number>
                </property>
                <attribute name="buttonGroup">
                 <string notr="true">btngrpLeftNav</string>
@@ -7286,6 +7286,7 @@ Editor</string>
                  </item>
                 </layout>
                </widget>
+               <widget class="QWidget" name="feedswizard"/>
                <widget class="QWidget" name="monitor_run">
                 <layout class="QGridLayout" name="gridLayout_33">
                  <item row="2" column="2">
@@ -8884,7 +8885,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>0</number>
+             <number>2</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -9048,7 +9049,7 @@ SLOWER</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="2">
+                 <item row="3" column="2">
                   <widget class="HalLabel" name="hallabel">
                    <property name="minimumSize">
                     <size>
@@ -9073,7 +9074,7 @@ SLOWER</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="1">
+                 <item row="3" column="1">
                   <widget class="QLabel" name="label_29">
                    <property name="text">
                     <string>Measured Spindle
@@ -9081,6 +9082,53 @@ Speed</string>
                    </property>
                    <property name="alignment">
                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="QSpinBox" name="setSpindleSpeed">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>60</height>
+                    </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="buttonSymbols">
+                    <enum>QAbstractSpinBox::UpDownArrows</enum>
+                   </property>
+                   <property name="minimum">
+                    <number>0</number>
+                   </property>
+                   <property name="maximum">
+                    <number>6000</number>
+                   </property>
+                   <property name="singleStep">
+                    <number>100</number>
+                   </property>
+                   <property name="spindleRPM" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="MDIButton" name="mdibutton_27">
+                   <property name="text">
+                    <string>Set Speed</string>
+                   </property>
+                   <property name="MDICommand" stdset="0">
+                    <string>S#&lt;setSpindleSpeed&gt;</string>
+                   </property>
+                   <property name="spindleBtn" stdset="0">
+                    <string/>
                    </property>
                   </widget>
                  </item>
@@ -9198,6 +9246,12 @@ Speed</string>
                    <property name="value">
                     <number>100</number>
                    </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>10</number>
+                   </property>
                    <property name="actionName" stdset="0">
                     <string>machine.rapid-override.set</string>
                    </property>
@@ -9210,6 +9264,12 @@ Speed</string>
                    </property>
                    <property name="pageStep">
                     <number>5</number>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>10</number>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>spindle.override</string>
@@ -9226,6 +9286,12 @@ Speed</string>
                    </property>
                    <property name="value">
                     <number>100</number>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>10</number>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.feed-override.set</string>
@@ -10690,6 +10756,9 @@ Z</string>
               </property>
               <item>
                <widget class="FileSystemTable" name="filesystemtable">
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
                 <property name="hiddenColumns" stdset="0">
                  <string>1,2</string>
                 </property>
@@ -11993,12 +12062,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

@@ -8885,7 +8885,7 @@ CHANGED</string>
           <item>
            <widget class="VCPStackedWidget" name="stwRight">
             <property name="currentIndex">
-             <number>2</number>
+             <number>3</number>
             </property>
             <property name="rules" stdset="0">
              <string>[]</string>
@@ -9146,6 +9146,59 @@ Speed</string>
                    <property name="spindleBtn" stdset="0">
                     <string/>
                    </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QWidget" name="widget_22" native="true">
+                   <layout class="QHBoxLayout" name="horizontalLayout_18">
+                    <property name="spacing">
+                     <number>6</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_26">
+                      <property name="text">
+                       <string>MIST</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>coolant.mist.toggle</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">btngrpCoolant</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="ActionButton" name="actionbutton_46">
+                      <property name="text">
+                       <string>AIR</string>
+                      </property>
+                      <property name="checkable">
+                       <bool>true</bool>
+                      </property>
+                      <property name="actionName" stdset="0">
+                       <string>coolant.flood.toggle</string>
+                      </property>
+                      <attribute name="buttonGroup">
+                       <string notr="true">btngrpCoolant</string>
+                      </attribute>
+                     </widget>
+                    </item>
+                   </layout>
                   </widget>
                  </item>
                 </layout>
@@ -12062,12 +12115,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpCoolant"/>
  </buttongroups>
 </ui>

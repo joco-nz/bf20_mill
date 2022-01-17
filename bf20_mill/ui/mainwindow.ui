@@ -5450,7 +5450,7 @@ Editor</string>
                     <enum>QTabWidget::Rounded</enum>
                    </property>
                    <property name="currentIndex">
-                    <number>2</number>
+                    <number>1</number>
                    </property>
                    <widget class="QWidget" name="tabMachine">
                     <attribute name="title">
@@ -7096,7 +7096,7 @@ Editor</string>
                            <item row="1" column="1">
                             <widget class="HalLabel" name="enc0_counts">
                              <property name="textFormat" stdset="0">
-                              <string>%d</string>
+                              <string>2d</string>
                              </property>
                              <property name="pinType" stdset="0">
                               <enum>HalLabel::s32</enum>
@@ -7120,7 +7120,10 @@ Editor</string>
                            <item row="0" column="1">
                             <widget class="HalLabel" name="enc0_position">
                              <property name="textFormat" stdset="0">
-                              <string>%.3f</string>
+                              <string>.3f</string>
+                             </property>
+                             <property name="pinType" stdset="0">
+                              <enum>HalLabel::float</enum>
                              </property>
                             </widget>
                            </item>
@@ -7134,7 +7137,7 @@ Editor</string>
                            <item row="2" column="1">
                             <widget class="HalLabel" name="enc0_raw_counts">
                              <property name="textFormat" stdset="0">
-                              <string>%d</string>
+                              <string>2d</string>
                              </property>
                              <property name="pinType" stdset="0">
                               <enum>HalLabel::s32</enum>
@@ -7404,7 +7407,7 @@ Editor</string>
                      <height>450</height>
                     </size>
                    </property>
-                   <property name="readOnly">
+                   <property name="readOnly" stdset="0">
                     <bool>true</bool>
                    </property>
                    <property name="currentLineBackground" stdset="0">
@@ -8302,7 +8305,7 @@ Delete</string>
                  <number>1</number>
                 </property>
                 <property name="axisNumber" stdset="0">
-                 <number>2</number>
+                 <number>-4</number>
                 </property>
                 <property name="inchFormat" stdset="0">
                  <string>%9.4f</string>
@@ -9066,8 +9069,8 @@ SLOWER</string>
                    <property name="pinBaseName" stdset="0">
                     <string>spindleRPM</string>
                    </property>
-                   <property name="textFormat" stdset="0">
-                    <string>%.1f</string>
+                   <property name="pinType" stdset="0">
+                    <enum>HalLabel::float</enum>
                    </property>
                    <property name="spindleRPM" stdset="0">
                     <string/>
@@ -10481,14 +10484,14 @@ ALL</string>
                 <attribute name="horizontalHeaderVisible">
                  <bool>false</bool>
                 </attribute>
-                <attribute name="horizontalHeaderDefaultSectionSize">
-                 <number>70</number>
-                </attribute>
                 <attribute name="horizontalHeaderMinimumSectionSize">
                  <number>24</number>
                 </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>70</number>
+                </attribute>
                 <attribute name="verticalHeaderDefaultSectionSize">
-                 <number>25</number>
+                 <number>27</number>
                 </attribute>
                </widget>
               </item>
@@ -11068,7 +11071,7 @@ Offsets</string>
           <bool>true</bool>
          </property>
          <property name="checked">
-          <bool>false</bool>
+          <bool>true</bool>
          </property>
          <property name="autoExclusive">
           <bool>true</bool>
@@ -11094,7 +11097,7 @@ Touch</string>
           <bool>true</bool>
          </property>
          <property name="checked">
-          <bool>true</bool>
+          <bool>false</bool>
          </property>
          <property name="autoExclusive">
           <bool>true</bool>
@@ -11175,77 +11178,9 @@ Override</string>
  <layoutdefault spacing="5" margin="5"/>
  <customwidgets>
   <customwidget>
-   <class>HalButton</class>
+   <class>ActionButton</class>
    <extends>QPushButton</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
-  </customwidget>
-  <customwidget>
-   <class>HalPlot</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_plot</header>
-  </customwidget>
-  <customwidget>
-   <class>FileSystemTable</class>
-   <extends>QTableView</extends>
-   <header>qtpyvcp.widgets.input_widgets.file_system</header>
-  </customwidget>
-  <customwidget>
-   <class>HalGroupBox</class>
-   <extends>QGroupBox</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_groupbox</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>MDIEntry</class>
-   <extends>QLineEdit</extends>
-   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
-  </customwidget>
-  <customwidget>
-   <class>ActionSlider</class>
-   <extends>QSlider</extends>
-   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
-  </customwidget>
-  <customwidget>
-   <class>OffsetTable</class>
-   <extends>QTableView</extends>
-   <header>qtpyvcp.widgets.input_widgets.offset_table</header>
-  </customwidget>
-  <customwidget>
-   <class>VCPWidget</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.containers.widget</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>DROLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
-  </customwidget>
-  <customwidget>
-   <class>StatusLabel</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.status_label</header>
-  </customwidget>
-  <customwidget>
-   <class>VCPStackedWidget</class>
-   <extends>QStackedWidget</extends>
-   <header>qtpyvcp.widgets.containers.stack</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>StatusLED</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.status_led</header>
-  </customwidget>
-  <customwidget>
-   <class>VCPSettingsLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
-  </customwidget>
-  <customwidget>
-   <class>HalLedIndicator</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_led</header>
+   <header>qtpyvcp.widgets.button_widgets.action_button</header>
   </customwidget>
   <customwidget>
    <class>SubCallButton</class>
@@ -11253,19 +11188,19 @@ Override</string>
    <header>qtpyvcp.widgets.button_widgets.subcall_button</header>
   </customwidget>
   <customwidget>
-   <class>ToolTable</class>
-   <extends>QTableView</extends>
-   <header>qtpyvcp.widgets.input_widgets.tool_table</header>
-  </customwidget>
-  <customwidget>
    <class>MDIButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.mdi_button</header>
   </customwidget>
   <customwidget>
-   <class>GcodeTextEdit</class>
-   <extends>QPlainTextEdit</extends>
-   <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>DROLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
   </customwidget>
   <customwidget>
    <class>Camera</class>
@@ -11274,9 +11209,9 @@ Override</string>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>MDIHistory</class>
-   <extends>QListWidget</extends>
-   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
+   <class>StatusLED</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_led</header>
   </customwidget>
   <customwidget>
    <class>VTKBackPlot</class>
@@ -11285,19 +11220,64 @@ Override</string>
    <container>1</container>
   </customwidget>
   <customwidget>
+   <class>NotificationWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.notification_widget</header>
+  </customwidget>
+  <customwidget>
    <class>VCPLineEdit</class>
    <extends>QLineEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.line_edit</header>
   </customwidget>
   <customwidget>
-   <class>DROLabel</class>
-   <extends>QLabel</extends>
-   <header>qtpyvcp.widgets.display_widgets.dro_label</header>
+   <class>MDIEntry</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
   </customwidget>
   <customwidget>
-   <class>ActionButton</class>
-   <extends>QPushButton</extends>
-   <header>qtpyvcp.widgets.button_widgets.action_button</header>
+   <class>MDIHistory</class>
+   <extends>QListWidget</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
+  </customwidget>
+  <customwidget>
+   <class>GcodeTextEdit</class>
+   <extends>QPlainTextEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>ToolTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.tool_table</header>
+  </customwidget>
+  <customwidget>
+   <class>FileSystemTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>OffsetTable</class>
+   <extends>QTableView</extends>
+   <header>qtpyvcp.widgets.input_widgets.offset_table</header>
+  </customwidget>
+  <customwidget>
+   <class>DROLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>HalLedIndicator</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_led</header>
   </customwidget>
   <customwidget>
    <class>HalLabel</class>
@@ -11305,9 +11285,32 @@ Override</string>
    <header>qtpyvcp.widgets.hal_widgets.hal_label</header>
   </customwidget>
   <customwidget>
-   <class>NotificationWidget</class>
+   <class>HalButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_button</header>
+  </customwidget>
+  <customwidget>
+   <class>HalGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>qtpyvcp.widgets.hal_widgets.hal_groupbox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HalPlot</class>
    <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.notification_widget</header>
+   <header>qtpyvcp.widgets.hal_widgets.hal_plot</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.containers.widget</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VCPStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>qtpyvcp.widgets.containers.stack</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
@@ -12115,13 +12118,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpCoolant"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpCoolant"/>
  </buttongroups>
 </ui>

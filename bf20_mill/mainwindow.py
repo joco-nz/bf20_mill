@@ -1,6 +1,7 @@
 from qtpyvcp.widgets.form_widgets.main_window import VCPMainWindow
 from qtpyvcp.plugins import getPlugin
 from qtpyvcp.actions.machine_actions import jog
+from qtpyvcp.actions.coolant_actions import flood, mist
 ### Supports the @Slot decorator to solve property type issues.
 from qtpy.QtCore import Slot
 from qtpy.QtWidgets import QAbstractButton
@@ -27,17 +28,42 @@ class MyMainWindow(VCPMainWindow):
         self.monitor_vtk.setViewP()
         jog.set_jog_continuous(True)
         
-        # signal connectoins
+        # signal connections
         self.btnG5xBackSpace.clicked.connect(self.btnG5xBackSpace_clicked)
         self.btnParams.clicked.connect(self.btnParams_clicked)
         self.btnMdiBksp.clicked.connect(self.mdiBackSpace_clicked)
         self.btnMdiSpace.clicked.connect(self.mdiSpace_clicked)
+        self.btn_air.toggled.connect(self.air_mist_toggle)
+        self.btn_mist.toggled.connect(self.air_mist_toggle)
 
 
     # add any custom methods here
 
     def on_btnExit_clicked(self):
         self.app.quit()
+
+    def air_mist_toggle(self, state):
+        sender = self.sender()
+        name = sender.objectName()
+        if name == 'btn_mist':
+            if state:
+                self.btn_mist.setChecked(True)
+                self.btn_air.setChecked(False)
+                flood.off()
+                mist.on()
+            else:
+                self.btn_mist.setChecked(False)
+                mist.off()
+                
+        if name == 'btn_air':
+            if state:
+                self.btn_air.setChecked(True)
+                self.btn_mist.setChecked(False)
+                mist.off()
+                flood.on()
+            else:
+                self.btn_air.setChecked(False)
+                flood.off()
 
     @Slot(QAbstractButton)
     def on_btngrpLeftNav_buttonClicked(self, button):

@@ -9170,35 +9170,29 @@ Speed</string>
                      <number>0</number>
                     </property>
                     <item>
-                     <widget class="ActionButton" name="actionbutton_26">
+                     <widget class="ActionButton" name="btn_mist">
                       <property name="text">
                        <string>MIST</string>
                       </property>
                       <property name="checkable">
                        <bool>true</bool>
                       </property>
-                      <property name="actionName" stdset="0">
-                       <string>coolant.mist.toggle</string>
+                      <property name="coolantBtn" stdset="0">
+                       <string/>
                       </property>
-                      <attribute name="buttonGroup">
-                       <string notr="true">btngrpCoolant</string>
-                      </attribute>
                      </widget>
                     </item>
                     <item>
-                     <widget class="ActionButton" name="actionbutton_46">
+                     <widget class="ActionButton" name="btn_air">
                       <property name="text">
                        <string>AIR</string>
                       </property>
                       <property name="checkable">
                        <bool>true</bool>
                       </property>
-                      <property name="actionName" stdset="0">
-                       <string>coolant.flood.toggle</string>
+                      <property name="coolantBtn" stdset="0">
+                       <string/>
                       </property>
-                      <attribute name="buttonGroup">
-                       <string notr="true">btngrpCoolant</string>
-                      </attribute>
                      </widget>
                     </item>
                    </layout>
@@ -12118,13 +12112,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpCoolant"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

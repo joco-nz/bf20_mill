@@ -1140,10 +1140,10 @@ LINE</string>
                    <widget class="QTabWidget" name="tabWidget">
                     <property name="geometry">
                      <rect>
-                      <x>220</x>
+                      <x>-5</x>
                       <y>0</y>
-                      <width>471</width>
-                      <height>376</height>
+                      <width>761</width>
+                      <height>366</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -1162,17 +1162,24 @@ LINE</string>
                      <string notr="true">QTabWidget::pane {
     border: #2e3436;
 }
-</string>
+
+QTabWidget QTabBar::tab {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    min-width: 130px;
+    min-height: 30px;
+    font: 15pt &quot;bebas kai&quot;;
+}</string>
                     </property>
                     <property name="tabPosition">
-                     <enum>QTabWidget::South</enum>
+                     <enum>QTabWidget::North</enum>
                     </property>
                     <property name="currentIndex">
                      <number>0</number>
                     </property>
                     <widget class="QWidget" name="tab_outside">
                      <attribute name="title">
-                      <string>Outside</string>
+                      <string>OUTSIDE</string>
                      </attribute>
                      <layout class="QHBoxLayout" name="horizontalLayout_17">
                       <item>
@@ -1195,6 +1202,12 @@ LINE</string>
                          </property>
                          <item row="0" column="1">
                           <widget class="SubCallButton" name="subcallbutton_2">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/back_middle_outside_edge.png</normaloff>../resources/images/back_middle_outside_edge.png</iconset>
@@ -1212,6 +1225,12 @@ LINE</string>
                          </item>
                          <item row="1" column="1">
                           <widget class="SubCallButton" name="subcallbutton_4">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
@@ -1229,6 +1248,12 @@ LINE</string>
                          </item>
                          <item row="1" column="0">
                           <widget class="SubCallButton" name="subcallbutton_3">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/left_side_edge.png</normaloff>../resources/images/left_side_edge.png</iconset>
@@ -1246,6 +1271,12 @@ LINE</string>
                          </item>
                          <item row="2" column="1">
                           <widget class="SubCallButton" name="subcallbutton_6">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/front_middle_edge.png</normaloff>../resources/images/front_middle_edge.png</iconset>
@@ -1263,6 +1294,12 @@ LINE</string>
                          </item>
                          <item row="0" column="0">
                           <widget class="SubCallButton" name="subcallbutton">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/back_left_outside_corner.png</normaloff>../resources/images/back_left_outside_corner.png</iconset>
@@ -1280,6 +1317,12 @@ LINE</string>
                          </item>
                          <item row="0" column="2">
                           <widget class="SubCallButton" name="subcallbutton_7">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/back_right_outside_corner.png</normaloff>../resources/images/back_right_outside_corner.png</iconset>
@@ -1297,6 +1340,12 @@ LINE</string>
                          </item>
                          <item row="1" column="2">
                           <widget class="SubCallButton" name="subcallbutton_8">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/right_side_edge.png</normaloff>../resources/images/right_side_edge.png</iconset>
@@ -1314,6 +1363,12 @@ LINE</string>
                          </item>
                          <item row="2" column="2">
                           <widget class="SubCallButton" name="subcallbutton_9">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/front_right_outside_corner.png</normaloff>../resources/images/front_right_outside_corner.png</iconset>
@@ -1331,6 +1386,12 @@ LINE</string>
                          </item>
                          <item row="2" column="0">
                           <widget class="SubCallButton" name="subcallbutton_5">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/front_left_outside_corner.png</normaloff>../resources/images/front_left_outside_corner.png</iconset>
@@ -1353,7 +1414,7 @@ LINE</string>
                     </widget>
                     <widget class="QWidget" name="tab_inside">
                      <attribute name="title">
-                      <string>Inside</string>
+                      <string>INSIDE</string>
                      </attribute>
                      <layout class="QHBoxLayout" name="horizontalLayout_16">
                       <item>
@@ -1379,6 +1440,12 @@ LINE</string>
                         <layout class="QGridLayout" name="gridLayout_28">
                          <item row="0" column="2">
                           <widget class="SubCallButton" name="subcallbutton_23">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/inside_back_right_corner.png</normaloff>../resources/images/inside_back_right_corner.png</iconset>
@@ -1396,6 +1463,12 @@ LINE</string>
                          </item>
                          <item row="1" column="2">
                           <widget class="SubCallButton" name="subcallbutton_21">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/x_plus.png</normaloff>../resources/images/x_plus.png</iconset>
@@ -1413,6 +1486,12 @@ LINE</string>
                          </item>
                          <item row="0" column="1">
                           <widget class="SubCallButton" name="subcallbutton_24">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/y_plus.png</normaloff>../resources/images/y_plus.png</iconset>
@@ -1430,6 +1509,12 @@ LINE</string>
                          </item>
                          <item row="0" column="0">
                           <widget class="SubCallButton" name="subcallbutton_22">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/inside_back_left_corner.png</normaloff>../resources/images/inside_back_left_corner.png</iconset>
@@ -1447,6 +1532,12 @@ LINE</string>
                          </item>
                          <item row="2" column="2">
                           <widget class="SubCallButton" name="subcallbutton_28">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/inside_front_right_corner.png</normaloff>../resources/images/inside_front_right_corner.png</iconset>
@@ -1464,6 +1555,12 @@ LINE</string>
                          </item>
                          <item row="2" column="0">
                           <widget class="SubCallButton" name="subcallbutton_26">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/inside_front_left_corner.png</normaloff>../resources/images/inside_front_left_corner.png</iconset>
@@ -1481,6 +1578,12 @@ LINE</string>
                          </item>
                          <item row="2" column="1">
                           <widget class="SubCallButton" name="subcallbutton_27">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/y_minus.png</normaloff>../resources/images/y_minus.png</iconset>
@@ -1498,6 +1601,12 @@ LINE</string>
                          </item>
                          <item row="1" column="1">
                           <widget class="SubCallButton" name="subcallbutton_31">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/z_top.png</normaloff>../resources/images/z_top.png</iconset>
@@ -1515,6 +1624,12 @@ LINE</string>
                          </item>
                          <item row="1" column="0">
                           <widget class="SubCallButton" name="subcallbutton_20">
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
                            <property name="icon">
                             <iconset>
                              <normaloff>../resources/images/x_minus.png</normaloff>../resources/images/x_minus.png</iconset>
@@ -1538,7 +1653,7 @@ LINE</string>
                       </item>
                      </layout>
                     </widget>
-                    <widget class="QWidget" name="tab_2">
+                    <widget class="QWidget" name="tab_boss_pocket">
                      <attribute name="title">
                       <string>BOSS &amp;&amp; POCKET</string>
                      </attribute>
@@ -1829,6 +1944,12 @@ padding-left: 5px;
                       <layout class="QGridLayout" name="gridLayout_29">
                        <item row="0" column="0">
                         <widget class="SubCallButton" name="subcallbutton_32">
+                         <property name="maximumSize">
+                          <size>
+                           <width>88</width>
+                           <height>88</height>
+                          </size>
+                         </property>
                          <property name="icon">
                           <iconset>
                            <normaloff>../resources/images/probe_cal_round_boss.png</normaloff>../resources/images/probe_cal_round_boss.png</iconset>
@@ -1846,6 +1967,12 @@ padding-left: 5px;
                        </item>
                        <item row="0" column="1">
                         <widget class="SubCallButton" name="subcallbutton_30">
+                         <property name="maximumSize">
+                          <size>
+                           <width>88</width>
+                           <height>88</height>
+                          </size>
+                         </property>
                          <property name="icon">
                           <iconset>
                            <normaloff>../resources/images/probe_cal_round_pocket.png</normaloff>../resources/images/probe_cal_round_pocket.png</iconset>
@@ -1866,6 +1993,12 @@ padding-left: 5px;
                        </item>
                        <item row="1" column="0">
                         <widget class="SubCallButton" name="subcallbutton_29">
+                         <property name="maximumSize">
+                          <size>
+                           <width>88</width>
+                           <height>88</height>
+                          </size>
+                         </property>
                          <property name="icon">
                           <iconset>
                            <normaloff>../resources/images/probe_cal_square_boss.png</normaloff>../resources/images/probe_cal_square_boss.png</iconset>
@@ -1886,6 +2019,12 @@ padding-left: 5px;
                        </item>
                        <item row="1" column="1">
                         <widget class="SubCallButton" name="subcallbutton_25">
+                         <property name="maximumSize">
+                          <size>
+                           <width>88</width>
+                           <height>88</height>
+                          </size>
+                         </property>
                          <property name="icon">
                           <iconset>
                            <normaloff>../resources/images/probe_cal_square_pocket.png</normaloff>../resources/images/probe_cal_square_pocket.png</iconset>
@@ -1907,15 +2046,15 @@ padding-left: 5px;
                       </layout>
                      </widget>
                     </widget>
-                    <widget class="QWidget" name="tab_3">
+                    <widget class="QWidget" name="tab_ridge_valley">
                      <attribute name="title">
                       <string>RIDGE &amp;&amp; VALLEY</string>
                      </attribute>
                      <widget class="QFrame" name="frame_9">
                       <property name="geometry">
                        <rect>
-                        <x>60</x>
-                        <y>205</y>
+                        <x>9</x>
+                        <y>242</y>
                         <width>400</width>
                         <height>65</height>
                        </rect>
@@ -2120,37 +2259,20 @@ padding-left: 5px;
                        </item>
                       </layout>
                      </widget>
-                     <widget class="SubCallButton" name="subcallbutton_36">
-                      <property name="geometry">
-                       <rect>
-                        <x>65</x>
-                        <y>100</y>
-                        <width>165</width>
-                        <height>80</height>
-                       </rect>
-                      </property>
-                      <property name="icon">
-                       <iconset>
-                        <normaloff>../resources/images/probe_y_ridge.png</normaloff>../resources/images/probe_y_ridge.png</iconset>
-                      </property>
-                      <property name="iconSize">
-                       <size>
-                        <width>80</width>
-                        <height>80</height>
-                       </size>
-                      </property>
-                      <property name="filename" stdset="0">
-                       <string>probe_ridge_y.ngc</string>
-                      </property>
-                     </widget>
                      <widget class="SubCallButton" name="subcallbutton_35">
                       <property name="geometry">
                        <rect>
-                        <x>65</x>
-                        <y>15</y>
-                        <width>165</width>
-                        <height>79</height>
+                        <x>9</x>
+                        <y>24</y>
+                        <width>88</width>
+                        <height>84</height>
                        </rect>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>88</width>
+                        <height>88</height>
+                       </size>
                       </property>
                       <property name="icon">
                        <iconset>
@@ -2166,14 +2288,78 @@ padding-left: 5px;
                        <string>probe_ridge_x.ngc</string>
                       </property>
                      </widget>
+                     <widget class="SubCallButton" name="subcallbutton_36">
+                      <property name="geometry">
+                       <rect>
+                        <x>9</x>
+                        <y>133</y>
+                        <width>88</width>
+                        <height>84</height>
+                       </rect>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>88</width>
+                        <height>88</height>
+                       </size>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>../resources/images/probe_y_ridge.png</normaloff>../resources/images/probe_y_ridge.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>80</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="filename" stdset="0">
+                       <string>probe_ridge_y.ngc</string>
+                      </property>
+                     </widget>
+                     <widget class="SubCallButton" name="subcallbutton_33">
+                      <property name="geometry">
+                       <rect>
+                        <x>103</x>
+                        <y>133</y>
+                        <width>88</width>
+                        <height>84</height>
+                       </rect>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>88</width>
+                        <height>88</height>
+                       </size>
+                      </property>
+                      <property name="icon">
+                       <iconset>
+                        <normaloff>../resources/images/probe_x_valley.png</normaloff>../resources/images/probe_x_valley.png</iconset>
+                      </property>
+                      <property name="iconSize">
+                       <size>
+                        <width>80</width>
+                        <height>80</height>
+                       </size>
+                      </property>
+                      <property name="filename" stdset="0">
+                       <string>probe_valley_x.ngc</string>
+                      </property>
+                     </widget>
                      <widget class="SubCallButton" name="subcallbutton_34">
                       <property name="geometry">
                        <rect>
-                        <x>280</x>
-                        <y>15</y>
-                        <width>165</width>
-                        <height>79</height>
+                        <x>103</x>
+                        <y>24</y>
+                        <width>88</width>
+                        <height>84</height>
                        </rect>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>88</width>
+                        <height>88</height>
+                       </size>
                       </property>
                       <property name="icon">
                        <iconset>
@@ -2189,28 +2375,927 @@ padding-left: 5px;
                        <string>probe_valley_y.ngc</string>
                       </property>
                      </widget>
-                     <widget class="SubCallButton" name="subcallbutton_33">
+                    </widget>
+                    <widget class="QWidget" name="tab_calibrate">
+                     <attribute name="title">
+                      <string>CALIBRATE</string>
+                     </attribute>
+                     <widget class="QFrame" name="frame_47">
                       <property name="geometry">
                        <rect>
-                        <x>280</x>
-                        <y>100</y>
-                        <width>165</width>
-                        <height>80</height>
+                        <x>5</x>
+                        <y>0</y>
+                        <width>751</width>
+                        <height>331</height>
                        </rect>
                       </property>
-                      <property name="icon">
-                       <iconset>
-                        <normaloff>../resources/images/probe_x_valley.png</normaloff>../resources/images/probe_x_valley.png</iconset>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
                       </property>
-                      <property name="iconSize">
+                      <property name="maximumSize">
                        <size>
-                        <width>80</width>
-                        <height>80</height>
+                        <width>1000</width>
+                        <height>520</height>
                        </size>
                       </property>
-                      <property name="filename" stdset="0">
-                       <string>probe_valley_x.ngc</string>
+                      <property name="styleSheet">
+                       <string notr="true">.QFrame{
+    border-style: solid;
+    border-color: rgb(206, 209, 202);
+    background-color: rgb(57, 63, 65);
+    border-radius: 8px;
+}
+</string>
                       </property>
+                      <layout class="QGridLayout" name="gridLayout_34">
+                       <property name="leftMargin">
+                        <number>9</number>
+                       </property>
+                       <property name="topMargin">
+                        <number>12</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>9</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>18</number>
+                       </property>
+                       <item row="1" column="0">
+                        <layout class="QHBoxLayout" name="horizontalLayout_60">
+                         <property name="spacing">
+                          <number>6</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>9</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>3</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>3</number>
+                         </property>
+                         <item>
+                          <widget class="SubCallButton" name="probe_cal_round_pocket">
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="statusTip">
+                            <string/>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_round_pocket.png</normaloff>../resources/images/probe_cal_round_pocket.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="filename" stdset="0">
+                            <string>probe_cal_round_pocket.ngc</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="SubCallButton" name="probe_cal_round_boss">
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="statusTip">
+                            <string/>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_round_boss.png</normaloff>../resources/images/probe_cal_round_boss.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="autoDefault">
+                            <bool>false</bool>
+                           </property>
+                           <property name="filename" stdset="0">
+                            <string>probe_cal_round_boss.ngc</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QWidget" name="widget_23" native="true">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>130</width>
+                             <height>120</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>130</width>
+                             <height>120</height>
+                            </size>
+                           </property>
+                           <property name="sizeIncrement">
+                            <size>
+                             <width>0</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="layoutDirection">
+                            <enum>Qt::LeftToRight</enum>
+                           </property>
+                           <layout class="QFormLayout" name="formLayout_2">
+                            <property name="fieldGrowthPolicy">
+                             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                            </property>
+                            <property name="rowWrapPolicy">
+                             <enum>QFormLayout::DontWrapRows</enum>
+                            </property>
+                            <property name="labelAlignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="formAlignment">
+                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                            </property>
+                            <property name="horizontalSpacing">
+                             <number>0</number>
+                            </property>
+                            <property name="verticalSpacing">
+                             <number>6</number>
+                            </property>
+                            <property name="leftMargin">
+                             <number>1</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>1</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
+                            <item row="0" column="0">
+                             <widget class="QLabel" name="hint_label_4">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>130</width>
+                                <height>58</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>130</width>
+                                <height>58</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel{
+    color: rgb(238, 238, 236);
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>CALIBRATION DIAMETER</string>
+                              </property>
+                              <property name="textFormat">
+                               <enum>Qt::PlainText</enum>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                              <property name="wordWrap">
+                               <bool>true</bool>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="1">
+                             <widget class="VCPLineEdit" name="cal_diameter">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>130</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>130</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="focusPolicy">
+                               <enum>Qt::ClickFocus</enum>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">margin-right: 14px;
+margin-left: 14px;</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                              </property>
+                              <property name="placeholderText">
+                               <string>0.0000</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="1" column="1">
+                        <layout class="QHBoxLayout" name="horizontalLayout_62">
+                         <property name="spacing">
+                          <number>6</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>9</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>3</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>6</number>
+                         </property>
+                         <item>
+                          <widget class="SubCallButton" name="probe_cal_square_pocket">
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="statusTip">
+                            <string/>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_square_pocket.png</normaloff>../resources/images/probe_cal_square_pocket.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="filename" stdset="0">
+                            <string>probe_cal_square_pocket.ngc</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="SubCallButton" name="probe_cal_square_boss">
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="statusTip">
+                            <string/>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string/>
+                           </property>
+                           <property name="icon">
+                            <iconset>
+                             <normaloff>../resources/images/probe_cal_square_boss.png</normaloff>../resources/images/probe_cal_square_boss.png</iconset>
+                           </property>
+                           <property name="iconSize">
+                            <size>
+                             <width>88</width>
+                             <height>88</height>
+                            </size>
+                           </property>
+                           <property name="filename" stdset="0">
+                            <string>probe_cal_square_boss.ngc</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QWidget" name="widget_19" native="true">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>130</width>
+                             <height>120</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>130</width>
+                             <height>120</height>
+                            </size>
+                           </property>
+                           <layout class="QFormLayout" name="formLayout">
+                            <property name="labelAlignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="formAlignment">
+                             <set>Qt::AlignCenter</set>
+                            </property>
+                            <property name="verticalSpacing">
+                             <number>6</number>
+                            </property>
+                            <property name="leftMargin">
+                             <number>1</number>
+                            </property>
+                            <property name="topMargin">
+                             <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>1</number>
+                            </property>
+                            <property name="bottomMargin">
+                             <number>0</number>
+                            </property>
+                            <item row="0" column="0" colspan="2">
+                             <widget class="QLabel" name="hint_label_3">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>120</width>
+                                <height>23</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>130</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel{
+    color: rgb(238, 238, 236);
+	font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>CALIBRATION WIDTH</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="0">
+                             <widget class="QLabel" name="label_103">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>23</width>
+                                <height>31</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>23</width>
+                                <height>31</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel{
+font: 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                              </property>
+                              <property name="lineWidth">
+                               <number>0</number>
+                              </property>
+                              <property name="text">
+                               <string>X :</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                              </property>
+                              <property name="indent">
+                               <number>0</number>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="1" column="1">
+                             <widget class="VCPLineEdit" name="x_cal_width">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>87</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>87</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="focusPolicy">
+                               <enum>Qt::ClickFocus</enum>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                              </property>
+                              <property name="placeholderText">
+                               <string>0.0000</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="0">
+                             <widget class="QLabel" name="label_107">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>23</width>
+                                <height>31</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>23</width>
+                                <height>31</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel{
+font: 14pt &quot;Bebas Kai&quot;;
+color: white;
+}</string>
+                              </property>
+                              <property name="lineWidth">
+                               <number>0</number>
+                              </property>
+                              <property name="text">
+                               <string>Y :</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                              </property>
+                              <property name="indent">
+                               <number>0</number>
+                              </property>
+                             </widget>
+                            </item>
+                            <item row="2" column="1">
+                             <widget class="VCPLineEdit" name="y_cal_width">
+                              <property name="sizePolicy">
+                               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                               </sizepolicy>
+                              </property>
+                              <property name="minimumSize">
+                               <size>
+                                <width>87</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>87</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="focusPolicy">
+                               <enum>Qt::ClickFocus</enum>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                              </property>
+                              <property name="placeholderText">
+                               <string>0.0000</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="0" column="0" colspan="2">
+                        <layout class="QHBoxLayout" name="horizontalLayout_61">
+                         <property name="spacing">
+                          <number>6</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>9</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>3</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>9</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>3</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="label_93">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>210</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>210</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="baseSize">
+                            <size>
+                             <width>140</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{
+font: 16pt &quot;Bebas Kai&quot;;
+}</string>
+                           </property>
+                           <property name="lineWidth">
+                            <number>0</number>
+                           </property>
+                           <property name="text">
+                            <string>PROBE CALIBRATION OFFSET:</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="indent">
+                            <number>0</number>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="VCPSettingsLineEdit" name="calibration_offset">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>100</width>
+                             <height>35</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>100</width>
+                             <height>35</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::ClickFocus</enum>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                           <property name="readOnly">
+                            <bool>false</bool>
+                           </property>
+                           <property name="placeholderText">
+                            <string>0.000000</string>
+                           </property>
+                           <property name="clearButtonEnabled">
+                            <bool>false</bool>
+                           </property>
+                           <property name="rules" stdset="0">
+                            <string>[]</string>
+                           </property>
+                           <property name="settingName" stdset="0">
+                            <string>touch-probe.calibration-offset</string>
+                           </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:4f}</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="SubCallButton" name="probe_cal_reset">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>150</width>
+                             <height>37</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">SubCallButton{
+    border-radius: 5px;  
+	font: 15pt &quot;Bebas Kai&quot;;
+  	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+}
+
+.SubCallButton:disabled {
+    border-color: black;
+}
+
+.SubCallButton:hover {
+    background:  qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                     stop: 0 #A19E9E, stop: 1.0 #5C5959);
+}
+
+.SubCallButton:pressed {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked[option=&quot;true&quot;] {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}
+
+.SubCallButton:checked {
+    background:  qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(85, 85, 238, 255), stop:0.544974 rgba(90, 91, 239, 255), stop:1 rgba(126, 135, 243, 255));
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>PROBE CAL RESET</string>
+                           </property>
+                           <property name="filename" stdset="0">
+                            <string>probe_cal_reset.ngc</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item row="2" column="0" colspan="2">
+                        <layout class="QHBoxLayout" name="horizontalLayout_56">
+                         <property name="spacing">
+                          <number>9</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>3</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>3</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>3</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>3</number>
+                         </property>
+                         <item>
+                          <widget class="QPushButton" name="cal_avg_error">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>165</width>
+                             <height>37</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string>CAL ON AVG XY ERROR</string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checkedAction" stdset="0">
+                            <string>0</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="cal_x_error">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>37</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="text">
+                            <string>CAL ON X ERROR</string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checked">
+                            <bool>false</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checkedAction" stdset="0">
+                            <string>1</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="cal_y_error">
+                           <property name="sizePolicy">
+                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                             <horstretch>0</horstretch>
+                             <verstretch>0</verstretch>
+                            </sizepolicy>
+                           </property>
+                           <property name="minimumSize">
+                            <size>
+                             <width>44</width>
+                             <height>44</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>140</width>
+                             <height>37</height>
+                            </size>
+                           </property>
+                           <property name="focusPolicy">
+                            <enum>Qt::NoFocus</enum>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true"/>
+                           </property>
+                           <property name="text">
+                            <string>CAL ON Y ERROR</string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="autoExclusive">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checkedAction" stdset="0">
+                            <string>2</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
                      </widget>
                     </widget>
                    </widget>
@@ -4620,6 +5705,454 @@ background: #2e3436;
                   </widget>
                  </item>
                 </layout>
+               </widget>
+               <widget class="QWidget" name="page_2">
+                <widget class="QFrame" name="frame_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>505</x>
+                   <y>760</y>
+                   <width>290</width>
+                   <height>280</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">.QFrame{
+    background-color: rgb(51, 57, 59);
+}</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_29">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_52">
+                    <item>
+                     <widget class="QLabel" name="label_111">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                      </property>
+                      <property name="lineWidth">
+                       <number>0</number>
+                      </property>
+                      <property name="text">
+                       <string>PROBE POS/WCO MODE</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="probe_mode">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="frame">
+                       <bool>false</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_53">
+                    <item>
+                     <widget class="QLabel" name="label_112">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>0</number>
+                      </property>
+                      <property name="text">
+                       <string>WCO ROTATION MODE</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="wco_rotation">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="frame">
+                       <bool>false</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_59">
+                    <item>
+                     <widget class="QLabel" name="label_115">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::NoFrame</enum>
+                      </property>
+                      <property name="lineWidth">
+                       <number>0</number>
+                      </property>
+                      <property name="text">
+                       <string>X and Y CAL AXIS SELECTION</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="sq_cal_axis">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="frame">
+                       <bool>false</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_74">
+                    <item>
+                     <widget class="QLabel" name="label_116">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+    color: white;
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                      </property>
+                      <property name="lineWidth">
+                       <number>0</number>
+                      </property>
+                      <property name="text">
+                       <string>TOOL DIAMETER PROBE</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="tool_diameter_probe_mode">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="frame">
+                       <bool>false</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_76">
+                    <item>
+                     <widget class="QLabel" name="label_117">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QLabel{
+    color: white;
+	font: 14pt &quot;Bebas Kai&quot;;
+}</string>
+                      </property>
+                      <property name="lineWidth">
+                       <number>0</number>
+                      </property>
+                      <property name="text">
+                       <string>TOOL DIAM OFFSET TOUCH OFF</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                      <property name="indent">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="tool_diameter_offset_mode">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>60</width>
+                        <height>31</height>
+                       </size>
+                      </property>
+                      <property name="focusPolicy">
+                       <enum>Qt::ClickFocus</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="frame">
+                       <bool>false</bool>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <property name="readOnly">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
                </widget>
                <widget class="QWidget" name="mdi_large">
                 <layout class="QVBoxLayout" name="verticalLayout_20">
@@ -10397,6 +11930,70 @@ X0 Y0</string>
                  <property name="spacing">
                   <number>5</number>
                  </property>
+                 <item row="1" column="1">
+                  <widget class="ActionButton" name="actionbutton_36">
+                   <property name="text">
+                    <string>Y+</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:y,pos</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0" colspan="3">
+                  <widget class="ActionSlider" name="actionslider_angular">
+                   <property name="sliderPosition">
+                    <number>99</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-angular-speed-percentage</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="ActionButton" name="btn_jog_cont">
+                   <property name="text">
+                    <string>CONT</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog-mode.continuous</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpContInc</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="ActionButton" name="actionbutton_34">
+                   <property name="text">
+                    <string>X+</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:x,pos</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
                  <item row="2" column="4">
                   <widget class="ActionButton" name="actionbutton_41">
                    <property name="text">
@@ -10441,26 +12038,20 @@ X0 Y0</string>
                    </attribute>
                   </widget>
                  </item>
-                 <item row="3" column="4">
-                  <widget class="ActionButton" name="actionbutton_45">
+                 <item row="3" column="0">
+                  <widget class="ActionButton" name="jog_A_plus">
                    <property name="text">
-                    <string>0.005</string>
+                    <string>A+</string>
                    </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
-                    <string>machine.jog.set-increment:0.005</string>
+                    <string>machine.jog.axis:a,pos</string>
                    </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
+                   <property name="buttonFont" stdset="0">
+                    <string>20</string>
                    </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpIncrements</string>
-                   </attribute>
                   </widget>
                  </item>
                  <item row="5" column="4">
@@ -10476,96 +12067,6 @@ X0 Y0</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="2">
-                  <widget class="ActionButton" name="actionbutton_38">
-                   <property name="text">
-                    <string>Z+</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:z,pos</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="2">
-                  <widget class="ActionButton" name="actionbutton_40">
-                   <property name="text">
-                    <string>Z-</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:z,neg</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="0">
-                  <widget class="ActionButton" name="actionbutton_34">
-                   <property name="text">
-                    <string>X+</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:x,pos</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="1" column="1">
-                  <widget class="ActionButton" name="actionbutton_36">
-                   <property name="text">
-                    <string>Y+</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:y,pos</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="0">
-                  <widget class="ActionButton" name="btn_jog_cont">
-                   <property name="text">
-                    <string>CONT</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="checked">
-                    <bool>true</bool>
-                   </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog-mode.continuous</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpContInc</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="2" column="0">
-                  <widget class="ActionButton" name="actionbutton_35">
-                   <property name="text">
-                    <string>X-</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:x,neg</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="2" column="1">
                   <widget class="ActionButton" name="actionbutton_37">
                    <property name="text">
@@ -10577,94 +12078,6 @@ X0 Y0</string>
                    <property name="jogBtn" stdset="0">
                     <string/>
                    </property>
-                  </widget>
-                 </item>
-                 <item row="5" column="0" colspan="3">
-                  <widget class="ActionSlider" name="jogFeedRateSlider">
-                   <property name="maximum">
-                    <number>100</number>
-                   </property>
-                   <property name="pageStep">
-                    <number>5</number>
-                   </property>
-                   <property name="value">
-                    <number>100</number>
-                   </property>
-                   <property name="sliderPosition">
-                    <number>100</number>
-                   </property>
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="tickPosition">
-                    <enum>QSlider::TicksBothSides</enum>
-                   </property>
-                   <property name="tickInterval">
-                    <number>50</number>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.set-linear-speed-percentage</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="3" column="2">
-                  <widget class="ActionButton" name="jog_A_neg">
-                   <property name="text">
-                    <string>A-</string>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:a,neg</string>
-                   </property>
-                   <property name="buttonFont" stdset="0">
-                    <string>20</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="0" column="4">
-                  <widget class="ActionButton" name="actionbutton_33">
-                   <property name="text">
-                    <string>1</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.set-increment:1</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpIncrements</string>
-                   </attribute>
-                  </widget>
-                 </item>
-                 <item row="1" column="4">
-                  <widget class="ActionButton" name="actionbutton_39">
-                   <property name="text">
-                    <string>0.1</string>
-                   </property>
-                   <property name="checkable">
-                    <bool>true</bool>
-                   </property>
-                   <property name="autoExclusive">
-                    <bool>true</bool>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.set-increment:0.1</string>
-                   </property>
-                   <property name="jogBtn" stdset="0">
-                    <string/>
-                   </property>
-                   <attribute name="buttonGroup">
-                    <string notr="true">btngrpIncrements</string>
-                   </attribute>
                   </widget>
                  </item>
                  <item row="0" column="5" rowspan="4">
@@ -10862,32 +12275,236 @@ X0 Y0</string>
                    </layout>
                   </widget>
                  </item>
-                 <item row="3" column="0">
-                  <widget class="ActionButton" name="jog_A_plus">
+                 <item row="2" column="0">
+                  <widget class="ActionButton" name="actionbutton_35">
                    <property name="text">
-                    <string>A+</string>
+                    <string>X-</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:x,neg</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="ActionButton" name="actionbutton_33">
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:1</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="ActionButton" name="actionbutton_40">
+                   <property name="text">
+                    <string>Z-</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:z,neg</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="4">
+                  <widget class="ActionButton" name="actionbutton_45">
+                   <property name="text">
+                    <string>0.005</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:0.005</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
+                  <widget class="ActionButton" name="actionbutton_39">
+                   <property name="text">
+                    <string>0.1</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-increment:0.1</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrpIncrements</string>
+                   </attribute>
+                  </widget>
+                 </item>
+                 <item row="5" column="0" colspan="3">
+                  <widget class="ActionSlider" name="jogFeedRateSlider">
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>5</number>
+                   </property>
+                   <property name="value">
+                    <number>100</number>
+                   </property>
+                   <property name="sliderPosition">
+                    <number>100</number>
+                   </property>
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>50</number>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.set-linear-speed-percentage</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="2">
+                  <widget class="ActionButton" name="actionbutton_38">
+                   <property name="text">
+                    <string>Z+</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.jog.axis:z,pos</string>
+                   </property>
+                   <property name="jogBtn" stdset="0">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="2">
+                  <widget class="ActionButton" name="jog_A_neg">
+                   <property name="text">
+                    <string>A-</string>
                    </property>
                    <property name="rules" stdset="0">
                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:axis_mask&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Visible&quot;, &quot;expression&quot;: &quot;ch[0]==15&quot;, &quot;name&quot;: &quot;AxisExists&quot;}]</string>
                    </property>
                    <property name="actionName" stdset="0">
-                    <string>machine.jog.axis:a,pos</string>
+                    <string>machine.jog.axis:a,neg</string>
                    </property>
                    <property name="buttonFont" stdset="0">
                     <string>20</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="4" column="0" colspan="3">
-                  <widget class="ActionSlider" name="actionslider_angular">
-                   <property name="sliderPosition">
-                    <number>99</number>
+                 <item row="5" column="5">
+                  <widget class="QPushButton" name="probe_Position_only">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>156</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
                    </property>
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
+                   <property name="minimumSize">
+                    <size>
+                     <width>44</width>
+                     <height>44</height>
+                    </size>
                    </property>
-                   <property name="actionName" stdset="0">
-                    <string>machine.jog.set-angular-speed-percentage</string>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>38</height>
+                    </size>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+    font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>PROBE POS'N</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checkedAction" stdset="0">
+                    <string>1</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="5">
+                  <widget class="QPushButton" name="probe_wco">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                     <horstretch>156</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>44</width>
+                     <height>44</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>100</width>
+                     <height>38</height>
+                    </size>
+                   </property>
+                   <property name="focusPolicy">
+                    <enum>Qt::NoFocus</enum>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+    font: 15pt &quot;Bebas Kai&quot;;
+}</string>
+                   </property>
+                   <property name="text">
+                    <string>PROBE WCO</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                   <property name="autoExclusive">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checkedAction" stdset="0">
+                    <string>0</string>
                    </property>
                   </widget>
                  </item>
@@ -11974,8 +13591,15 @@ Override</string>
    <header>qtpyvcp.widgets.containers.stack</header>
    <container>1</container>
   </customwidget>
+  <customwidget>
+   <class>FacingWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp_conversational_gcode.widgets.facing</header>
+  </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../../../probe_basic/probe_basic/probe_basic.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>btnPlotP</sender>
@@ -12796,12 +14420,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
  </buttongroups>
 </ui>

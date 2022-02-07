@@ -42,6 +42,12 @@ class MyMainWindow(VCPMainWindow):
     def on_btnExit_clicked(self):
         self.app.quit()
 
+    def on_set_wco_offset_Btn_clicked(self):
+        if self.set_wco_offset_Btn.isChecked():
+            self.wco_rotation.setText('1')
+        else:
+            self.wco_rotation.setText('0')
+
     def air_mist_toggle(self, state):
         sender = self.sender()
         name = sender.objectName()

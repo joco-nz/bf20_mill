@@ -12467,6 +12467,9 @@ X0 Y0</string>
                    <property name="checkedAction" stdset="0">
                     <string>1</string>
                    </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrp_probe_wco</string>
+                   </attribute>
                   </widget>
                  </item>
                  <item row="4" column="5">
@@ -12512,6 +12515,9 @@ X0 Y0</string>
                    <property name="checkedAction" stdset="0">
                     <string>0</string>
                    </property>
+                   <attribute name="buttonGroup">
+                    <string notr="true">btngrp_probe_wco</string>
+                   </attribute>
                   </widget>
                  </item>
                 </layout>
@@ -14426,12 +14432,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrp_probe_wco"/>
  </buttongroups>
 </ui>

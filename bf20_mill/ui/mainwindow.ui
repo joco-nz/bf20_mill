@@ -11416,14 +11416,52 @@ Speed</string>
                  <property name="spacing">
                   <number>5</number>
                  </property>
-                 <item row="0" column="1">
-                  <widget class="ActionButton" name="actionbutton_15">
-                   <property name="text">
-                    <string>Spindle
-100%</string>
+                 <item row="2" column="3">
+                  <widget class="StatusLabel" name="statuslabel_13">
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;rapid&quot;}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="StatusLabel" name="statuslabel_5">
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle&quot;}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="2">
+                  <widget class="StatusLabel" name="statuslabel_6">
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:feedrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;feed&quot;}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="ActionSlider" name="actionslider_2">
+                   <property name="maximum">
+                    <number>100</number>
+                   </property>
+                   <property name="pageStep">
+                    <number>5</number>
+                   </property>
+                   <property name="tickPosition">
+                    <enum>QSlider::TicksBothSides</enum>
+                   </property>
+                   <property name="tickInterval">
+                    <number>10</number>
                    </property>
                    <property name="actionName" stdset="0">
-                    <string>spindle.override.reset</string>
+                    <string>spindle.override</string>
                    </property>
                   </widget>
                  </item>
@@ -11449,36 +11487,6 @@ Speed</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="2" column="1">
-                  <widget class="StatusLabel" name="statuslabel_5">
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:spindle.0.override&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;spindle&quot;}]</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="2">
-                  <widget class="StatusLabel" name="statuslabel_6">
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:feedrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;feed&quot;}]</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item row="2" column="3">
-                  <widget class="StatusLabel" name="statuslabel_13">
-                   <property name="alignment">
-                    <set>Qt::AlignCenter</set>
-                   </property>
-                   <property name="rules" stdset="0">
-                    <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0%}'.format(ch[0])&quot;, &quot;name&quot;: &quot;rapid&quot;}]</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="1" column="3">
                   <widget class="ActionSlider" name="actionslider_4">
                    <property name="maximum">
@@ -11501,25 +11509,6 @@ Speed</string>
                    </property>
                   </widget>
                  </item>
-                 <item row="1" column="1">
-                  <widget class="ActionSlider" name="actionslider_2">
-                   <property name="maximum">
-                    <number>100</number>
-                   </property>
-                   <property name="pageStep">
-                    <number>5</number>
-                   </property>
-                   <property name="tickPosition">
-                    <enum>QSlider::TicksBothSides</enum>
-                   </property>
-                   <property name="tickInterval">
-                    <number>10</number>
-                   </property>
-                   <property name="actionName" stdset="0">
-                    <string>spindle.override</string>
-                   </property>
-                  </widget>
-                 </item>
                  <item row="1" column="2">
                   <widget class="ActionSlider" name="actionslider_3">
                    <property name="maximum">
@@ -11539,6 +11528,51 @@ Speed</string>
                    </property>
                    <property name="actionName" stdset="0">
                     <string>machine.feed-override.set</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="ActionButton" name="actionbutton_15">
+                   <property name="text">
+                    <string>Spindle
+100%</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>spindle.override.reset</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="4">
+                  <widget class="ActionSlider" name="actionslider">
+                   <property name="invertedAppearance">
+                    <bool>false</bool>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.max-velocity.set</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="4">
+                  <widget class="StatusLabel" name="max_vel_slider">
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                   <property name="rules" stdset="0">
+                    <string>[{&quot;name&quot;: &quot;New Rule&quot;, &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;'{:.0f}'.format(ch[0] * 60)&quot;, &quot;channels&quot;: [{&quot;url&quot;: &quot;status:max_velocity&quot;, &quot;trigger&quot;: true}]}]</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="ActionButton" name="actionbutton_26">
+                   <property name="text">
+                    <string>Vel
+100%</string>
+                   </property>
+                   <property name="actionName" stdset="0">
+                    <string>machine.max-velocity.reset</string>
                    </property>
                   </widget>
                  </item>
@@ -14432,13 +14466,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrp_probe_wco"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

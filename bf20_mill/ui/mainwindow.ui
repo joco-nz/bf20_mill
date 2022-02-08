@@ -4355,13 +4355,13 @@ background: #2e3436;
                           <property name="minimumSize">
                            <size>
                             <width>44</width>
-                            <height>44</height>
+                            <height>31</height>
                            </size>
                           </property>
                           <property name="maximumSize">
                            <size>
                             <width>120</width>
-                            <height>27</height>
+                            <height>31</height>
                            </size>
                           </property>
                           <property name="focusPolicy">
@@ -4373,6 +4373,8 @@ background: #2e3436;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    min-height: 27px;
+    max-height: 27px;
 	font: 14pt &quot;Bebas Kai&quot;;
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }
@@ -4417,13 +4419,13 @@ background: #2e3436;
                           <property name="minimumSize">
                            <size>
                             <width>44</width>
-                            <height>44</height>
+                            <height>31</height>
                            </size>
                           </property>
                           <property name="maximumSize">
                            <size>
                             <width>110</width>
-                            <height>27</height>
+                            <height>31</height>
                            </size>
                           </property>
                           <property name="focusPolicy">
@@ -4435,6 +4437,8 @@ background: #2e3436;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    min-height: 27px;
+    max-height: 27px;
 	font: 14pt &quot;Bebas Kai&quot;;
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }
@@ -4479,13 +4483,13 @@ background: #2e3436;
                           <property name="minimumSize">
                            <size>
                             <width>44</width>
-                            <height>44</height>
+                            <height>31</height>
                            </size>
                           </property>
                           <property name="maximumSize">
                            <size>
                             <width>110</width>
-                            <height>27</height>
+                            <height>31</height>
                            </size>
                           </property>
                           <property name="focusPolicy">
@@ -4497,6 +4501,8 @@ background: #2e3436;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    min-height: 27px;
+    max-height: 27px;
 	font: 14pt &quot;Bebas Kai&quot;;
   	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }
@@ -14420,12 +14426,12 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpContInc"/>
  </buttongroups>
 </ui>

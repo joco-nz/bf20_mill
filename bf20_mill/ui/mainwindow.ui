@@ -4583,7 +4583,7 @@ background: #2e3436;
                            </property>
                            <property name="maximumSize">
                             <size>
-                             <width>16777215</width>
+                             <width>150</width>
                              <height>31</height>
                             </size>
                            </property>
@@ -4863,7 +4863,7 @@ background: #2e3436;
                            </property>
                            <property name="maximumSize">
                             <size>
-                             <width>16777215</width>
+                             <width>150</width>
                              <height>31</height>
                             </size>
                            </property>
@@ -5137,7 +5137,7 @@ background: #2e3436;
                            </property>
                            <property name="maximumSize">
                             <size>
-                             <width>16777215</width>
+                             <width>150</width>
                              <height>31</height>
                             </size>
                            </property>
@@ -5417,7 +5417,7 @@ background: #2e3436;
                            </property>
                            <property name="maximumSize">
                             <size>
-                             <width>16777215</width>
+                             <width>150</width>
                              <height>31</height>
                             </size>
                            </property>
@@ -14467,12 +14467,12 @@ Override</string>
  </designerdata>
  <buttongroups>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrp_probe_wco"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

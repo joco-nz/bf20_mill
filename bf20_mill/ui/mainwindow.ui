@@ -10499,7 +10499,7 @@ Delete</string>
                  <number>1</number>
                 </property>
                 <property name="axisNumber" stdset="0">
-                 <number>-4</number>
+                 <number>2</number>
                 </property>
                 <property name="inchFormat" stdset="0">
                  <string>%9.4f</string>
@@ -14466,13 +14466,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrp_probe_wco"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpG5x"/>
  </buttongroups>
 </ui>

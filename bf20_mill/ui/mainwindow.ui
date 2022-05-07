@@ -1175,7 +1175,7 @@ QTabWidget QTabBar::tab {
                      <enum>QTabWidget::North</enum>
                     </property>
                     <property name="currentIndex">
-                     <number>1</number>
+                     <number>0</number>
                     </property>
                     <widget class="QWidget" name="tab_outside">
                      <attribute name="title">
@@ -3476,6 +3476,9 @@ background: #2e3436;
                            <property name="settingName" stdset="0">
                             <string>probe-parameters.probe-tool-number</string>
                            </property>
+                           <property name="textFormat" stdset="0">
+                            <string>{:0f}</string>
+                           </property>
                           </widget>
                          </item>
                          <item>
@@ -3646,7 +3649,7 @@ background: #2e3436;
                             <string>probe-parameters.probe-fast-fr</string>
                            </property>
                            <property name="textFormat" stdset="0">
-                            <string>{:4f}</string>
+                            <string>{:1f}</string>
                            </property>
                           </widget>
                          </item>
@@ -3730,7 +3733,7 @@ background: #2e3436;
                             <string>probe-parameters.probe-slow-fr</string>
                            </property>
                            <property name="textFormat" stdset="0">
-                            <string>{:4f}</string>
+                            <string>{:1f}</string>
                            </property>
                           </widget>
                          </item>
@@ -14456,13 +14459,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrp_probe_wco"/>
-  <buttongroup name="btngrpG5x"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

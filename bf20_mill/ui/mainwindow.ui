@@ -8907,13 +8907,13 @@ Editor</string>
                         <bool>true</bool>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>X-FERROR</string>
                        </property>
                        <property name="series2enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series2name" stdset="0">
                         <string>Y-FERROR</string>
@@ -8926,7 +8926,7 @@ Editor</string>
                         </color>
                        </property>
                        <property name="series3enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series3name" stdset="0">
                         <string>Z-FERROR</string>
@@ -8965,7 +8965,7 @@ Editor</string>
                         <bool>true</bool>
                        </property>
                        <property name="series1enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series1name" stdset="0">
                         <string>Motor-FERROR</string>
@@ -8974,7 +8974,7 @@ Editor</string>
                         <enum>Qt::SolidLine</enum>
                        </property>
                        <property name="series2enable" stdset="0">
-                        <bool>false</bool>
+                        <bool>true</bool>
                        </property>
                        <property name="series2name" stdset="0">
                         <string>Spindle-FERROR</string>
@@ -9052,7 +9052,7 @@ Editor</string>
                     <bool>true</bool>
                    </property>
                    <property name="series1enable" stdset="0">
-                    <bool>false</bool>
+                    <bool>true</bool>
                    </property>
                    <property name="series1name" stdset="0">
                     <string>Motor-FERROR</string>
@@ -9061,7 +9061,7 @@ Editor</string>
                     <enum>Qt::SolidLine</enum>
                    </property>
                    <property name="series2enable" stdset="0">
-                    <bool>false</bool>
+                    <bool>true</bool>
                    </property>
                    <property name="series2name" stdset="0">
                     <string>Spindle-FERROR</string>
@@ -9102,13 +9102,13 @@ Editor</string>
                     <bool>true</bool>
                    </property>
                    <property name="series1enable" stdset="0">
-                    <bool>false</bool>
+                    <bool>true</bool>
                    </property>
                    <property name="series1name" stdset="0">
                     <string>X-FERROR</string>
                    </property>
                    <property name="series2enable" stdset="0">
-                    <bool>false</bool>
+                    <bool>true</bool>
                    </property>
                    <property name="series2name" stdset="0">
                     <string>Y-FERROR</string>
@@ -9121,7 +9121,7 @@ Editor</string>
                     </color>
                    </property>
                    <property name="series3enable" stdset="0">
-                    <bool>false</bool>
+                    <bool>true</bool>
                    </property>
                    <property name="series3name" stdset="0">
                     <string>Z-FERROR</string>

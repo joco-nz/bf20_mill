@@ -5330,7 +5330,7 @@ background: #2e3436;
                             <number>0</number>
                            </property>
                            <property name="text">
-                            <string>X CENTER:</string>
+                            <string>X CENTRE:</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -5616,7 +5616,7 @@ background: #2e3436;
                             <number>0</number>
                            </property>
                            <property name="text">
-                            <string>Y CENTER:</string>
+                            <string>Y CENTRE:</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -14459,13 +14459,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrp_probe_wco"/>
-  <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpRightNav"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrp_probe_wco"/>
   <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

@@ -918,9 +918,6 @@ As</string>
                  </property>
                  <item>
                   <widget class="ToolTable" name="toolTbl">
-                   <property name="displayColumns" stdset="0">
-                    <string>TPXYZADR</string>
-                   </property>
                    <property name="confirmActions" stdset="0">
                     <bool>true</bool>
                    </property>
@@ -937,6 +934,9 @@ As</string>
                      <green>128</green>
                      <blue>0</blue>
                     </color>
+                   </property>
+                   <property name="displayColumns" stdset="0">
+                    <string>TPXYZADR</string>
                    </property>
                    <attribute name="horizontalHeaderDefaultSectionSize">
                     <number>80</number>
@@ -8995,11 +8995,7 @@ Editor</string>
                 </layout>
                </widget>
                <widget class="QWidget" name="conv">
-                <layout class="QVBoxLayout" name="verticalLayout_27">
-                 <item>
-                  <widget class="Camera" name="camera"/>
-                 </item>
-                </layout>
+                <layout class="QVBoxLayout" name="verticalLayout_27"/>
                </widget>
                <widget class="QWidget" name="feedswizard">
                 <widget class="QTabWidget" name="tabWidget_2">
@@ -13528,12 +13524,6 @@ Override</string>
    <header>qtpyvcp.widgets.display_widgets.dro_label</header>
   </customwidget>
   <customwidget>
-   <class>Camera</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp.widgets.display_widgets.camera.camera</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>StatusLED</class>
    <extends>QWidget</extends>
    <header>qtpyvcp.widgets.display_widgets.status_led</header>
@@ -14466,13 +14456,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrp_probe_wco"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrp_probe_wco"/>
   <buttongroup name="btngrpG5x"/>
+  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpContInc"/>
+  <buttongroup name="btngrpIncrements"/>
  </buttongroups>
 </ui>

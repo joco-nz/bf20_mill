@@ -1,0 +1,27 @@
+(author: James W)
+(version: 0.1)
+(date: 8-May-2022)
+
+(Use the probed data for WCS Z0 and the inpt params)
+(calculate the tool length offset value.)
+(Then set the required global var values in the gcode interpreter.)
+
+o<probe_setup_ready_to_run> sub
+
+  (uses NGCGUI style arg spec)
+  (number after "=" in comment is default value)
+  #<spindle_nose_to_tool_setter> = #1      (=0.0)
+  #<probe_point_to_spindle_nose> = #2      (=0.0)
+
+
+  #<_ReferenceToolLength>=ABS[#[5220+#5220+2]]+#<probe_point_to_spindle_nose>-#<spindle_nose_to_tool_setter> (save reference tool length)
+  #<_ReferenceTool>=1
+
+  (output some debug data)
+  (DEBUG, Spindle Nose to Tool Setter = #<spindle_nose_to_tool_setter>)
+  (DEBUG, Probe Point to Spindle Nose = #<probe_point_to_spindle_nose>)
+  (DEBUG, Reference Tool Length = #<_ReferenceToolLength>)
+
+o<probe_setup_ready_to_run> endsub
+
+M2 (end program)

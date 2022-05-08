@@ -179,4 +179,16 @@ settings:
         min_value: 0
         max_value: 1000
 
+    probe-parameters.spindle-nose-to-tool-setter:
+        description: Measurement of spindle nose to toolsetter in machine units.
+        default_value: 0.0
+        persistent: true
+        min_value: 0
+        max_value: 1000
 
+    probe-parameters.probe-point-to-spindle-nose:
+        description: Measurement of probe point to spindle nose in machine units.
+        default_value: 0.0
+        persistent: true
+        min_value: 0
+        max_value: 1000

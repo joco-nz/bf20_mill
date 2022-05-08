@@ -3,7 +3,10 @@
 o<test_change> sub
 (DEBUG,<-------- M6 remap firing -------->)
 
-o50 if [[#<selected_tool> EQ 999] OR [#<selected_tool> EQ 0] OR [#<selected_tool> EQ #<tool_in_spindle>]]
+o50 if [[#<selected_tool> EQ 999] OR [#<selected_tool> EQ #<tool_in_spindle>]]
+(DEBUG, Either tool is 999 or the same tool as already loaded.)
+M61 Q#<selected_tool> 
+(DEBUG, Exiting M6 Remap)
 o50 return [1]
 o50 endif
 
@@ -28,7 +31,7 @@ M6
 
 (we change feed, metric/in and potentially G90)
 (so record current modal state)
-(M73 is not useful here because it reverts G43 on return too)
+(M73 is not useful here because it reverts G43 on return)
 #<metric> = #<_metric>
 #<absolute> = #<_absolute>
 #<feed> = #<_feed>
@@ -39,7 +42,7 @@ M6
 (DEBUG, Feed == #<feed>)
 
 ; turn off toolset offsets
-(DEBUG, Turn off TLO with G49)
+(DEBUG, Turn off TLO toolset offsets with G49)
 G49
 
 G21 (TLO and toolchange position is in mm as per ini)
@@ -85,7 +88,9 @@ M65 P0
 ; if true then save Z neasurement to #1000 for later tool change
 ; offset calcs
 O400 if [#<_ReferenceTool> EQ 0]
-    #<_ReferenceToolLength>=#5063 (save reference tool length)
+    ; referencetool==0 means it has been set for the first time in this sub
+    #<_ReferenceToolLength>=#5063 (save reference tool length based on current wcs)
+    ; record that reference tool length has now been measured
     #<_ReferenceTool>=1
     (DEBUG,Reference length is: #<_ReferenceToolLength>)
 O400 else

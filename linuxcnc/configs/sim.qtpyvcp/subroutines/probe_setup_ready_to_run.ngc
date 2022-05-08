@@ -14,7 +14,7 @@ o<probe_setup_ready_to_run> sub
   #<probe_point_to_spindle_nose> = #2      (=0.0)
 
 
-  #<_ReferenceToolLength>=ABS[#[5220+#5220+2]]+#<probe_point_to_spindle_nose>-#<spindle_nose_to_tool_setter> (save reference tool length)
+  #<_ReferenceToolLength>=[ABS[#[#5220 + 5220 + 2]] + #<probe_point_to_spindle_nose> - #<spindle_nose_to_tool_setter>] (save reference tool length)
   #<_ReferenceTool>=1
 
   (output some debug data)

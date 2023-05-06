@@ -2534,6 +2534,9 @@ HEIGHT SETTER DATA</string>
                         <property name="settingName" stdset="0">
                          <string>probe-parameters.probe-point-to-spindle-nose</string>
                         </property>
+                        <property name="textFormat" stdset="0">
+                         <string>{:4f}</string>
+                        </property>
                        </widget>
                       </item>
                       <item row="0" column="1">
@@ -2546,6 +2549,9 @@ HEIGHT SETTER DATA</string>
                         </property>
                         <property name="settingName" stdset="0">
                          <string>probe-parameters.spindle-nose-to-tool-setter</string>
+                        </property>
+                        <property name="textFormat" stdset="0">
+                         <string>{:4f}</string>
                         </property>
                        </widget>
                       </item>
@@ -14647,13 +14653,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrp_probe_wco"/>
-  <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMdi"/>
-  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrp_probe_wco"/>
   <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpRightNav"/>
  </buttongroups>
 </ui>

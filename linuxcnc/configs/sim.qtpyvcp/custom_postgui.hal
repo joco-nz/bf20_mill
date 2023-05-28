@@ -21,3 +21,6 @@ net guiProbeActive      => qtpyvcp.halProbeLed.flash
 # CHANGED = 0
 #net guiToolChangeDone   qtpyvcp.halToolReady.out => motion.digital-in-00
 net tool-change-confirmed <= qtpyvcp.halToolReady.out
+
+# link ui tool change lbl to iocontrol
+net tool-number  => qtpyvcp.lbl-hal-tool-prep.in

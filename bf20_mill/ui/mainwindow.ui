@@ -11136,6 +11136,16 @@ Delete</string>
               </widget>
              </item>
              <item>
+              <widget class="HalLabel" name="lbl_hal_tool_prep">
+               <property name="textFormat" stdset="0">
+                <string>0&gt;3d</string>
+               </property>
+               <property name="pinType" stdset="0">
+                <enum>HalLabel::s32</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="HalButton" name="halToolReady">
                <property name="enabled">
                 <bool>false</bool>
@@ -14653,13 +14663,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpIncrements"/>
   <buttongroup name="btngrpMdi"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
-  <buttongroup name="btngrpMode"/>
-  <buttongroup name="btngrp_probe_wco"/>
-  <buttongroup name="btngrpLeftNav"/>
   <buttongroup name="btngrpRightNav"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMode"/>
+  <buttongroup name="btngrpIncrements"/>
+  <buttongroup name="btngrp_probe_wco"/>
  </buttongroups>
 </ui>

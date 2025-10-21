@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	dh_auto_install
+	
+	# Create the truetype directory if it doesn't exist
+	#mkdir -p debian/python3-probe-basic/usr/share/fonts/truetype/
+	# Install the font file
+	#install -m 644 fonts/BebasKai.ttf debian/python3-probe-basic/usr/share/fonts/truetype/
+	
+	# create icons directory if it doesn't exist
+	#mkdir -p debian/python3-probe-basic/usr/share/icons/
+	# copy icons from source to icons directory
+	#cp -r src/probe_basic/images/probe_basic_icon.png debian/python3-probe-basic/usr/share/icons/
+	#cp -r src/probe_basic/images/probe_basic_icon_lathe.png debian/python3-probe-basic/usr/share/icons/
+	
+	# create linuxcnc configs directory if it doesn't exist
+	mkdir -p debian/python3-monokrom/usr/share/monokrom/
+	
+	# Install the config file contents
+	cp -r linuxcnc debian/python3-bf20_mill/usr/share/monokrom/
+
+
+override_dh_install:
+	dh_install
+	qcompile debian/python3-bf20_mill

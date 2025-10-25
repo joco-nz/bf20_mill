@@ -13,7 +13,7 @@ sudo -u ${SUDO_USER:-$USER} mkdir -p "${TARGET_HOME}linuxcnc"
 #sudo -u ${SUDO_USER:-$USER} mkdir -p "${TARGET_HOME}.local/usr/share/icons"
 
 # Copy the sims directory to the target directory
-sudo -u ${SUDO_USER:-$USER} cp -r /usr/share/bf20_mill/linuxcnc "${TARGET_HOME}/"
+sudo -u ${SUDO_USER:-$USER} cp -r /usr/share/bf20mill/linuxcnc "${TARGET_HOME}/"
 
 # Copy the icons directory to the target directory
 #sudo -u ${SUDO_USER:-$USER} cp -r /usr/share/icons/probe_basic_icon.png "${TARGET_HOME}.local/usr/share/icons/"

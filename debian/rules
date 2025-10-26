@@ -20,12 +20,12 @@ override_dh_auto_install:
 	#cp -r src/probe_basic/images/probe_basic_icon_lathe.png debian/python3-probe-basic/usr/share/icons/
 	
 	# create linuxcnc configs directory if it doesn't exist
-	mkdir -p debian/python3-bf20mill/usr/share/bf20mill/
+	mkdir -p debian/python3-bf20-mill/usr/share/configs
 	
 	# Install the config file contents
-	cp -r linuxcnc debian/python3-bf20mill/usr/share/bf20mill/
+	cp -r linuxcnc/configs debian/python3-bf20-mill/usr/share/
 
 
 override_dh_install:
 	dh_install
-	qcompile debian/python3-bf20mill
+	#qcompile debian/python3-bf20-mill

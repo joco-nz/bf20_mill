@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "bf20_mill"
 authors = [
-  "Joco <james@snaggingpixels.com>",
+  "James Walker <james@snaggingpixels.com>",
 ]
 description = "Custom Mill interface for cnc'd BF20 with MT3 spindle"
 readme = "README.md"
@@ -22,18 +22,23 @@ python = "^3.7"
 [tool.poetry.scripts]
 bf20_mill = "bf20_mill:main"
 
+
 [tool.poetry.plugins]
+
 
 [tool.poetry.plugins."qtpyvcp.vcp"]
 bf20_mill = "bf20_mill"
 
+
+
+
 [tool.poetry.plugins."qtpyvcp.widgets"]
 
 
-# [tool.versioneer]
-# VCS = "git"
-# style = "pep440"
-# versionfile_source = "src/bf20_mill/_version.py"
-# versionfile_build = "src/bf20_mill/_version.py"
-# tag_prefix = ""
-# parentdir_prefix = ""
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "bf20_mill/_version.py"
+versionfile_build = "bf20_mill/_version.py"
+tag_prefix = ""
+parentdir_prefix = ""

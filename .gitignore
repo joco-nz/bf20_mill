@@ -27,5 +27,14 @@ bf20_mill/.pydevproject
 bf20_mill/.project
 
 .project
-
 .pydevproject
+.pybuild
+debian/.debhelper
+
+debian/debhelper-build-stamp
+debian/python3-bf20-mill
+debian/files
+
+*.debhelper
+
+*.substvars

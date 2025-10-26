@@ -1,4 +1,4 @@
-Source: bf20_mill
+Source: bf20-mill
 Section: cnc
 Priority: optional
 Maintainer: Joco <james@snaggingpixels.com>
@@ -10,8 +10,12 @@ X-Python3-Version: >= 3.7
 #Testsuite: autopkgtest-pkg-python
 Rules-Requires-Root: no
 
-Package: python3-bf20mill
+Package: python3-bf20-mill
 Architecture: amd64 arm64
 Description: BF20 Mill UI for cnc'd MT3 mill.
 Depends: ${python3:Depends}, ${misc:Depends}, python3-setuptools, python3-yaml, python3-pyqt5, python3-dbus.mainloop.pyqt5, python3-pyqt5.qtopengl, python3-pyqt5.qsci, python3-serial, python3-docopt, python3-qtpy, python3-psutil, python3-pyudev, python3-vtk9, python3-deepdiff, python3-sqlalchemy, python3-pyqtgraph, python3-simpleeval, qttools5-dev-tools
+# Specify the postinst script
+# This will install the postinst script to /usr/lib/python3/dist-packages/python3-probe-basic
+# and automatically run it after installation
+#XB-Python3-Extension: postinst
 

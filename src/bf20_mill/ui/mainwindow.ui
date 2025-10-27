@@ -9208,19 +9208,6 @@ Editor</string>
                   <attribute name="title">
                    <string>Tab 1</string>
                   </attribute>
-                  <widget class="FacingWidget" name="Form">
-                   <property name="geometry">
-                    <rect>
-                     <x>0</x>
-                     <y>0</y>
-                     <width>817</width>
-                     <height>1135</height>
-                    </rect>
-                   </property>
-                   <property name="uiFileMame" stdset="0">
-                    <string>facing_bf20.ui</string>
-                   </property>
-                  </widget>
                  </widget>
                  <widget class="QWidget" name="tab_3">
                   <attribute name="title">
@@ -13834,11 +13821,6 @@ Override</string>
    <header>qtpyvcp.widgets.containers.stack</header>
    <container>1</container>
   </customwidget>
-  <customwidget>
-   <class>FacingWidget</class>
-   <extends>QWidget</extends>
-   <header>qtpyvcp_conversational_gcode.widgets.facing</header>
-  </customwidget>
  </customwidgets>
  <resources>
   <include location="../../../probe_basic/probe_basic/probe_basic.qrc"/>
@@ -14663,13 +14645,13 @@ Override</string>
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrp_probe_wco"/>
   <buttongroup name="btngrpG5x"/>
   <buttongroup name="btngrpContInc"/>
   <buttongroup name="btngrpRightNav"/>
-  <buttongroup name="btngrpLeftNav"/>
-  <buttongroup name="btngrpMode"/>
   <buttongroup name="btngrpIncrements"/>
-  <buttongroup name="btngrp_probe_wco"/>
+  <buttongroup name="btngrpLeftNav"/>
+  <buttongroup name="btngrpMdi"/>
+  <buttongroup name="btngrpMode"/>
  </buttongroups>
 </ui>

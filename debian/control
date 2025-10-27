@@ -17,5 +17,5 @@ Depends: ${python3:Depends}, ${misc:Depends}, python3-setuptools, python3-yaml, 
 # Specify the postinst script
 # This will install the postinst script to /usr/lib/python3/dist-packages/python3-probe-basic
 # and automatically run it after installation
-#XB-Python3-Extension: postinst
+XB-Python3-Extension: postinst
 

@@ -7,13 +7,13 @@ TARGET_HOME="/home/${SUDO_USER:-$USER}/"
 
 
 # Create the linuxcnc directory if it doesn't exist
-sudo -u ${SUDO_USER:-$USER} mkdir -p "${TARGET_HOME}linuxcnc"
+#sudo -u ${SUDO_USER:-$USER} mkdir -p "${TARGET_HOME}linuxcnc"
 
 # Create the icons directory if it doesn't exist
 #sudo -u ${SUDO_USER:-$USER} mkdir -p "${TARGET_HOME}.local/usr/share/icons"
 
 # Copy the sims directory to the target directory
-sudo -u ${SUDO_USER:-$USER} cp -r /usr/share/bf20-mill/linuxcnc "${TARGET_HOME}/"
+#sudo -u ${SUDO_USER:-$USER} cp -r /usr/share/bf20-mill/linuxcnc "${TARGET_HOME}/"
 
 # Copy the icons directory to the target directory
 #sudo -u ${SUDO_USER:-$USER} cp -r /usr/share/icons/probe_basic_icon.png "${TARGET_HOME}.local/usr/share/icons/"
